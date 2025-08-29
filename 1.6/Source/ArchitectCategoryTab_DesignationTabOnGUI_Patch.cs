@@ -160,7 +160,7 @@ namespace BetterArchitect
                     icon = MoreIcon;
                 }
 
-                var iconRect = new Rect(rowRect.x + 4f, rowRect.y + 8f, 24f, 20f);
+                var iconRect = new Rect(rowRect.x + 4f, rowRect.y + 8f, 20f, 20f);
                 if (icon != null) Widgets.DrawTextureFitted(iconRect, icon, 1f);
                 Text.Font = GameFont.Small;
                 var labelRect = new Rect(iconRect.xMax + 8f, rowRect.y, rowRect.width - iconRect.width - 16f, rowRect.height);
