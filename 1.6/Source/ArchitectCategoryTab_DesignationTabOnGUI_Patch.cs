@@ -24,7 +24,8 @@ namespace BetterArchitect
         private static readonly Texture2D AscendingIcon = ContentFinder<Texture2D>.Get("SortAscend");
         private static readonly Texture2D DescendingIcon = ContentFinder<Texture2D>.Get("SortDescend");
         private static readonly Texture2D FreeIcon = ContentFinder<Texture2D>.Get("UI/Free");
-        
+        private static readonly Texture2D MoreIcon = ContentFinder<Texture2D>.Get("More");
+
         private static (List<Designator> buildables, List<Designator> orders) SeparateDesignatorsByType(IEnumerable<Designator> allDesignators)
         {
             var buildables = new List<Designator>();
@@ -42,7 +43,7 @@ namespace BetterArchitect
             }
             return (buildables, orders);
         }
-        
+
         public static bool Prefix(ArchitectCategoryTab __instance)
         {
             if (BetterArchitectSettings.hideOnSelection && Find.DesignatorManager.SelectedDesignator != null)
@@ -66,15 +67,15 @@ namespace BetterArchitect
                 UI.screenHeight - menuHeight - 35f,
                 UI.screenWidth - 195f - (((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).RequestedTabSize.x + 10f),
                 menuHeight);
-            var leftRect = new Rect(mainRect.x, mainRect.y, 200f, mainRect.height);
-            var ordersRect = new Rect(mainRect.xMax - 95f, mainRect.y, 95f, mainRect.height);
+            var leftRect = new Rect(mainRect.x, mainRect.y + 20f, 200f, mainRect.height - 30f);
+            var ordersRect = new Rect(mainRect.xMax - 95f, mainRect.y + 30f, 95f, mainRect.height - 30f);
             var gridRect = new Rect(leftRect.xMax, mainRect.y, mainRect.width - leftRect.width - ordersRect.width, mainRect.height);
             Widgets.DrawWindowBackground(mainRect);
             List<Designator> designatorsToDisplay;
             List<Designator> orderDesignators;
-            var allCategories = new List<DesignationCategoryDef> { tab.def };
-            allCategories.AddRange(DefDatabase<DesignationCategoryDef>.AllDefsListForReading
-                .Where(d => d.GetModExtension<NestedCategoryExtension>()?.parentCategory == tab.def).ToList());
+            var allCategories = DefDatabase<DesignationCategoryDef>.AllDefsListForReading
+                .Where(d => d.GetModExtension<NestedCategoryExtension>()?.parentCategory == tab.def).ToList();
+            allCategories.Add(tab.def);
             DesignationCategoryDef categoryForGridAndOrders;
             if (tab.def == DesignationCategoryDefOf.Floors)
             {
@@ -105,14 +106,14 @@ namespace BetterArchitect
                 }
                 orderDesignators = orderSpecificDesignators;
                 designatorsToDisplay = DrawMaterialListForFloors(leftRect, floorSpecificDesignators);
-                categoryForGridAndOrders = tab.def; // Floors always uses its own def
+                categoryForGridAndOrders = tab.def;
             }
             else
             {
                 var selectedCategory = HandleCategorySelection(leftRect, allCategories);
                 var allDesignators = selectedCategory.ResolvedAllowedDesignators.Where(d => d.Visible).ToList();
                 (designatorsToDisplay, orderDesignators) = SeparateDesignatorsByType(allDesignators);
-                categoryForGridAndOrders = selectedCategory; // Use the selected subcategory
+                categoryForGridAndOrders = selectedCategory;
             }
             var mouseoverGizmo = DrawDesignatorGrid(gridRect, categoryForGridAndOrders, designatorsToDisplay);
             var orderGizmo = DrawOrdersPanel(ordersRect, categoryForGridAndOrders, orderDesignators);
@@ -121,26 +122,11 @@ namespace BetterArchitect
             if (Event.current.type == EventType.MouseDown && Mouse.IsOver(mainRect)) Event.current.Use();
         }
 
-        private static void DrawCategoryHeader(Rect rect, DesignationCategoryDef categoryDef)
-        {
-            var outRect = rect.ContractedBy(10f);
-            var headerRect = new Rect(outRect.x, outRect.y, outRect.width, 32f);
-            DrawOptionBackground(headerRect, true);
-            var icon = ArchitectIcons.Resources.FindArchitectTabCategoryIcon(categoryDef.defName);
-
-            var iconRect = new Rect(headerRect.x + 4f, headerRect.y + 4f, 24f, 24f);
-            if (icon != null) Widgets.DrawTextureFitted(iconRect, icon, 1f);
-            var labelRect = new Rect(iconRect.xMax + 4f, headerRect.y, headerRect.width - iconRect.width - 8f, headerRect.height);
-            Text.Anchor = TextAnchor.MiddleLeft;
-            Widgets.Label(labelRect, categoryDef.LabelCap);
-            Text.Anchor = TextAnchor.UpperLeft;
-        }
-
         private static DesignationCategoryDef HandleCategorySelection(Rect rect, List<DesignationCategoryDef> allCategories)
         {
             var mainCat = allCategories.First();
             SelectedSubCategory.TryGetValue(mainCat, out var currentSelection);
-            
+
             if (currentSelection == null || !allCategories.Contains(currentSelection))
             {
                 currentSelection = mainCat;
@@ -157,7 +143,7 @@ namespace BetterArchitect
             var overflowItems = allCategories.Skip(maxVisibleItems).ToList();
             foreach (var cat in itemsToDraw)
             {
-                var rowRect = new Rect(0, curY, viewRect.width, 32f);
+                var rowRect = new Rect(0, curY, viewRect.width, 40f);
                 bool isSelected = currentSelection == cat;
                 DrawOptionBackground(rowRect, isSelected);
                 if (Widgets.ButtonInvisible(rowRect))
@@ -166,18 +152,29 @@ namespace BetterArchitect
                     SelectedSubCategory[mainCat] = cat;
                     currentSelection = cat;
                 }
-                var icon = ArchitectIcons.Resources.FindArchitectTabCategoryIcon(cat.defName);
+                string label = cat.LabelCap;
+                Texture2D icon = ArchitectIcons.Resources.FindArchitectTabCategoryIcon(cat.defName);
+                if (cat == allCategories.Last() && allCategories.Count > 1)
+                {
+                    label = "BA.More".Translate();
+                    icon = MoreIcon;
+                }
 
-                var iconRect = new Rect(rowRect.x + 4f, rowRect.y + 4f, 24f, 24f);
+                var iconRect = new Rect(rowRect.x + 4f, rowRect.y + 8f, 24f, 24f);
                 if (icon != null) Widgets.DrawTextureFitted(iconRect, icon, 1f);
-                var labelRect = new Rect(iconRect.xMax + 4f, rowRect.y, rowRect.width - iconRect.width - 8f, rowRect.height);
-                Text.Anchor = TextAnchor.MiddleLeft; Widgets.Label(labelRect, cat.LabelCap); Text.Anchor = TextAnchor.UpperLeft;
-                curY += 35f;
+                Text.Font = GameFont.Small;
+                var labelRect = new Rect(iconRect.xMax + 8f, rowRect.y, rowRect.width - iconRect.width - 16f, rowRect.height);
+                if (cat == allCategories.Last() && allCategories.Count > 1)
+                {
+                    label = "BA.More".Translate();
+                }
+                Text.Anchor = TextAnchor.MiddleLeft; Widgets.Label(labelRect, label); Text.Anchor = TextAnchor.UpperLeft;
+                curY += 45f;
             }
             if (useMoreButton && overflowItems.Any())
             {
                 var moreRect = new Rect(0, curY, viewRect.width, 32f);
-                if (Widgets.ButtonText(moreRect, "... " + "More".Translate()))
+                if (Widgets.ButtonText(moreRect, "... " + "BA.More".Translate()))
                 {
                     var floatMenuOptions = overflowItems.Select(hiddenCat =>
                     {
@@ -202,19 +199,20 @@ namespace BetterArchitect
             if ((selectedMaterial == null || !materials.Contains(selectedMaterial)) && materials.Any()) selectedMaterial = materials.First();
             var outRect = rect.ContractedBy(10f);
             var viewRect = new Rect(0, 0, outRect.width - 16f, materials.Count * 35f);
-            Widgets.BeginScrollView(outRect, ref leftPanelScrollPosition, viewRect);
             HandleScrollBar(outRect, viewRect, ref leftPanelScrollPosition);
+            Widgets.BeginScrollView(outRect, ref leftPanelScrollPosition, viewRect);
             float curY = 0;
             foreach (var material in materials)
             {
-                var rowRect = new Rect(0, curY, viewRect.width, 32f);
+                var rowRect = new Rect(0, curY, viewRect.width, 40f);
                 DrawOptionBackground(rowRect, selectedMaterial?.def == material.def);
                 MouseoverSounds.DoRegion(rowRect);
-                var iconRect = new Rect(rowRect.x + 4f, rowRect.y + 4f, 24f, 24f);
+                var iconRect = new Rect(rowRect.x + 4f, rowRect.y + 8f, 24f, 24f);
                 GUI.color = material.color;
                 Widgets.DrawTextureFitted(iconRect, material.icon, 1f);
                 GUI.color = Color.white;
-                var labelRect = new Rect(iconRect.xMax + 4f, rowRect.y, rowRect.width - iconRect.width - 8f, rowRect.height);
+                Text.Font = GameFont.Small;
+                var labelRect = new Rect(iconRect.xMax + 8f, rowRect.y, rowRect.width - iconRect.width - 16f, rowRect.height);
                 Text.Anchor = TextAnchor.MiddleLeft;
                 Widgets.Label(labelRect, material.label);
                 Text.Anchor = TextAnchor.UpperLeft;
@@ -222,7 +220,7 @@ namespace BetterArchitect
                 {
                     selectedMaterial = material;
                 }
-                curY += 35f;
+                curY += 45f;
             }
             Widgets.EndScrollView();
             return (selectedMaterial != null && floorsByMaterial.ContainsKey(selectedMaterial)) ? floorsByMaterial[selectedMaterial] : new List<Designator>();
@@ -271,7 +269,7 @@ namespace BetterArchitect
             var rowHeight = gizmoSize + gizmoSpacing + 5f;
             var viewRectWidth = rect.width - 16f;
             var gizmosPerRow = Mathf.Max(1, Mathf.FloorToInt(viewRectWidth / (gizmoSize + gizmoSpacing)));
-            
+
             float totalHeight = 0f;
             foreach (var group in groupedDesignators)
             {
@@ -280,7 +278,7 @@ namespace BetterArchitect
                 int rowCount = Mathf.CeilToInt((float)groupItems.Count / gizmosPerRow);
                 totalHeight += rowCount * rowHeight + gizmoSpacing;
             }
-            
+
             var viewRect = new Rect(0, 0, viewRectWidth, totalHeight);
             Designator mouseoverGizmo = null;
             float currentY = 0;
@@ -447,7 +445,8 @@ namespace BetterArchitect
         {
             var b = GetBuildableDefFrom(d);
             if (b?.researchPrerequisites != null && b.researchPrerequisites.Any()) return b.researchPrerequisites.First().techLevel;
-            return (b as ThingDef)?.techLevel ?? TechLevel.Neolithic;
+            var techLevel = (b as ThingDef)?.techLevel;
+            return (techLevel == TechLevel.Undefined || techLevel == null) ? TechLevel.Neolithic : techLevel.Value;
         }
 
         private static Color GetColorFor(TechLevel l)
