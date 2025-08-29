@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Verse;
 
@@ -8,15 +9,21 @@ namespace BetterArchitect
     {
         public static float menuHeight = 285;
         public static bool hideOnSelection = false;
-        public static float backgroundAlpha = 0f;
+        public static float backgroundAlpha = 0.15f;
         public static Dictionary<string, SortSettings> sortSettingsPerCategory = new Dictionary<string, SortSettings>();
         public static Dictionary<string, bool> groupByTechLevelPerCategory = new Dictionary<string, bool>();
+        
+        public static BetterArchitectMod mod;
+        public static void Save()
+        {
+            mod.GetSettings<BetterArchitectSettings>().Write();
+        }
 
         public override void ExposeData()
         {
             Scribe_Values.Look(ref menuHeight, "menuHeight", 285);
             Scribe_Values.Look(ref hideOnSelection, "hideOnSelection", false);
-            Scribe_Values.Look(ref backgroundAlpha, "backgroundAlpha", 0f);
+            Scribe_Values.Look(ref backgroundAlpha, "backgroundAlpha", 0.15f);
             Scribe_Collections.Look(ref sortSettingsPerCategory, "sortSettingsPerCategory", LookMode.Value, LookMode.Deep);
             Scribe_Collections.Look(ref groupByTechLevelPerCategory, "groupByTechLevelPerCategory", LookMode.Value, LookMode.Value);
             if (Scribe.mode == LoadSaveMode.LoadingVars)
