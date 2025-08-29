@@ -459,7 +459,7 @@ namespace BetterArchitect
         private static TechLevel GetTechLevelFor(Designator d)
         {
             var b = GetBuildableDefFrom(d);
-            if (b?.researchPrerequisites != null && b.researchPrerequisites.Any()) return b.researchPrerequisites.First().techLevel;
+            if (b?.researchPrerequisites != null && b.researchPrerequisites.Any(x => x.techLevel != TechLevel.Undefined)) return b.researchPrerequisites.FirstOrDefault(x => x.techLevel != TechLevel.Undefined).techLevel;
             var techLevel = (b as ThingDef)?.techLevel;
             return (techLevel == TechLevel.Undefined || techLevel == null) ? TechLevel.Neolithic : techLevel.Value;
         }
