@@ -9,5 +9,10 @@
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
     </specialDesignatorClasses>
+	<modExtensions>
+		<li Class="BetterArchitect.NestedCategoryExtension">
+			<parentCategory>Furniture</parentCategory>
+		</li>
+	</modExtensions>
   </DesignationCategoryDef>
 </Defs>

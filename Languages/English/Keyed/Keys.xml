@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<BA.Free>Free</BA.Free>
+	<BA.GroupByTechLevel>Group by Tech Level</BA.GroupByTechLevel>
+	<BA.MenuHeight>Menu Height</BA.MenuHeight>
+	<BA.HideOnSelection>Hide on selection</BA.HideOnSelection>
+	<BA.HideOnSelectionTooltip>When building is selected, fully hide the menu. To hide only the center grid, right click.</BA.HideOnSelectionTooltip>
+	<BA.Default>Default</BA.Default>
+	<BA.Label>Label</BA.Label>
+	<BA.Beauty>Beauty</BA.Beauty>
+	<BA.Comfort>Comfort</BA.Comfort>
+	<BA.Value>Value</BA.Value>
+	<BA.WorkToBuild>Work to build</BA.WorkToBuild>
+	<BA.Health>Health</BA.Health>
+	<BA.Cleanliness>Cleanliness</BA.Cleanliness>
+	<BA.SkillRequired>Skill required</BA.SkillRequired>
+	<BA.Flammability>Flammability</BA.Flammability>
+	<BA.CoverEffectiveness>Cover effectiveness</BA.CoverEffectiveness>
+
+</LanguageData>
