@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>   
+
+<!-- LIGHTING -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="Brazier"]/designationCategory</xpath>
@@ -19,6 +21,16 @@
                     <xpath>Defs/ThingDef[defName="DarklightBrazier"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Lighting</designationCategory>
+                    </value>
+                </Operation>
+
+
+<!-- CULTURE -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="NatureShrineBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ideology</designationCategory>
                     </value>
                 </Operation>
 </Patch>

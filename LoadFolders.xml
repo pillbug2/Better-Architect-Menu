@@ -57,5 +57,10 @@
     <li IfModActive="Mlie.AnimalHarvestingSpot">Mods and Shit/Animal Harvesting Spot</li>
     <li IfModActive="mn.autoAnimalFlap">Mods and Shit/Auto Animal Flap</li>
     <li IfModActive="cucumpear.animalbeds">Mods and Shit/Large Animal Beds</li>
+    <li IfModActive="overpl.AnimalSarcophagus">Mods and Shit/Animal Sarcophagus</li>
+    <li IfModActive="VanillaExpanded.VMemesE">Mods and Shit/VE Memes</li>
+    <li IfModActive="pyrce.mass.graves.continued">Mods and Shit/Mass Graves</li>
+    <li IfModActive="grave.cross">Mods and Shit/Memorial Cross</li>
+    <li IfModActive="inglix.widermarriagespot">Mods and Shit/Wider Marriage Spot</li>
   </v1.6>
 </loadFolders>

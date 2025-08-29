@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>          
+<!-- WIDER MARRAIGE SPOT PATCH -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="BigMarriageSpotBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ideology</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="MarriageSpot"]</xpath>
+                    <value>
+                        <designatorDropdown>MarriageSpots</designatorDropdown>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="MarriageSpot"]/label</xpath>
+                    <value>
+                        <label>2x1 marriage spot</label>
+                    </value>
+                </Operation>
+</Patch>
