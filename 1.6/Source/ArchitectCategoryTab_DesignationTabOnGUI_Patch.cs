@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
 using RimWorld;
@@ -243,7 +243,8 @@ namespace BetterArchitect
             var settings = BetterArchitectSettings.sortSettingsPerCategory[mainCat.defName];
             SortDesignators(designators, settings);
             var outRect = new Rect(rect.x, rect.y + 30f, rect.width, rect.height - 30f);
-            return BetterArchitectSettings.groupByTechLevel ? DrawGroupedGrid(outRect, designators) : DrawFlatGrid(outRect, designators);
+            bool groupByTechLevel = BetterArchitectSettings.groupByTechLevelPerCategory.ContainsKey(mainCat.defName) ? BetterArchitectSettings.groupByTechLevelPerCategory[mainCat.defName] : false;
+            return groupByTechLevel ? DrawGroupedGrid(outRect, designators) : DrawFlatGrid(outRect, designators);
         }
 
         private static Designator DrawFlatGrid(Rect rect, List<Designator> designators)
@@ -322,13 +323,14 @@ namespace BetterArchitect
             var groupButtonRect = new Rect(rect.x, rect.y, rect.height, rect.height).ExpandedBy(-4f);
             var sortButtonRect = new Rect(groupButtonRect.xMax + 4f, rect.y + 4f, groupButtonRect.height, groupButtonRect.height).ExpandedBy(2f);
             var toggleRect = new Rect(sortButtonRect.xMax + 4f, rect.y + 4f, groupButtonRect.height, groupButtonRect.height).ExpandedBy(2f);
+            bool groupByTechLevel = BetterArchitectSettings.groupByTechLevelPerCategory.ContainsKey(mainCat.defName) ? BetterArchitectSettings.groupByTechLevelPerCategory[mainCat.defName] : false;
 
             if (Widgets.ButtonImage(groupButtonRect, GroupingIcon))
             {
-                BetterArchitectSettings.groupByTechLevel = !BetterArchitectSettings.groupByTechLevel;
+                BetterArchitectSettings.groupByTechLevelPerCategory[mainCat.defName] = !groupByTechLevel;
                 SoundDefOf.Tick_High.PlayOneShotOnCamera();
             }
-            if (BetterArchitectSettings.groupByTechLevel) Widgets.DrawHighlight(groupButtonRect);
+            if (groupByTechLevel) Widgets.DrawHighlight(groupButtonRect);
             TooltipHandler.TipRegion(groupButtonRect, "BA.GroupByTechLevel".Translate());
 
             if (!BetterArchitectSettings.sortSettingsPerCategory.ContainsKey(mainCat.defName)) BetterArchitectSettings.sortSettingsPerCategory[mainCat.defName] = new SortSettings();
