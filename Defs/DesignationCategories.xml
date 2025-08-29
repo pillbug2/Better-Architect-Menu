@@ -47,4 +47,31 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Auxiliaries</defName>
+    <label>Auxiliaries</label>
+    <description>Things that boost workspeed.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Production</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Automation</defName>
+    <label>Automation</label>
+    <description>Things that automate stuff.</description>
+    <order>540</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
 </Defs>

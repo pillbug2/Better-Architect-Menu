@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
-
-<!-- KITCHEN -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="VFEM2_MeadFermentingBarrel"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="VBY_PrimitiveTabletTable"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Kitchen</designationCategory>
+                        <designationCategory>Ferny_Auxiliaries</designationCategory>
                     </value>
                 </Operation>
-
-<!-- AUXILIARIES -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[@Name="VFEM2_LinkableBase"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="VBY_PrimitiveToolBench"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Auxiliaries</designationCategory>
                     </value>
