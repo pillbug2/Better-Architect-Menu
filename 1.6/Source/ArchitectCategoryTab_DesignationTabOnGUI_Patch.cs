@@ -299,7 +299,7 @@ namespace BetterArchitect
                 GUI.color = GetColorFor(group.Key);
                 Widgets.Label(headerRect, group.Key.ToStringHuman().CapitalizeFirst());
                 GUI.color = Color.white;
-                currentY += 18;
+                currentY += 20;
                 Widgets.DrawLineHorizontal(0, currentY, viewRect.width);
                 currentY += 10;
                 var groupItems = group.ToList();
