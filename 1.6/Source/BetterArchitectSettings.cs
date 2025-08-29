@@ -19,6 +19,11 @@ namespace BetterArchitect
             Scribe_Values.Look(ref backgroundAlpha, "backgroundAlpha", 0f);
             Scribe_Collections.Look(ref sortSettingsPerCategory, "sortSettingsPerCategory", LookMode.Value, LookMode.Deep);
             Scribe_Collections.Look(ref groupByTechLevelPerCategory, "groupByTechLevelPerCategory", LookMode.Value, LookMode.Value);
+            if (Scribe.mode == LoadSaveMode.LoadingVars)
+            {
+                sortSettingsPerCategory ??= new Dictionary<string, SortSettings>();
+                groupByTechLevelPerCategory ??= new Dictionary<string, bool>();
+            }
             base.ExposeData();
         }
     }
