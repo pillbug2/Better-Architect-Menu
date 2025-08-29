@@ -65,6 +65,23 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_PowerGeneration</defName>
+    <label>Generation</label>
+    <description>Things that help you generate your power.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Designator_DeconstructConduit</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Power</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_PowerManagement</defName>
     <label>Management</label>
     <description>Things that help you manage your power.</description>
@@ -81,22 +98,6 @@
     </modExtensions>
   </DesignationCategoryDef>
 
-  <DesignationCategoryDef>
-    <defName>Ferny_PowerGeneration</defName>
-    <label>Generation</label>
-    <description>Things that help you generate your power.</description>
-    <order>7</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-      <li>Designator_DeconstructConduit</li>
-    </specialDesignatorClasses>
-    <modExtensions>
-      <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Power</parentCategory>
-      </li>
-    </modExtensions>
-  </DesignationCategoryDef>
 
   <DesignationCategoryDef>
     <defName>Ferny_Animals</defName>
@@ -253,7 +254,55 @@
     </modExtensions>
   </DesignationCategoryDef>
 
+  <DesignationCategoryDef>
+    <defName>Ferny_Heating</defName>
+    <label>Heating</label>
+    <description>Heat your colonists.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Temperature</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
 
+  <DesignationCategoryDef>
+    <defName>Ferny_Cooling</defName>
+    <label>Cooling</label>
+    <description>Cool your colonists.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Temperature</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+
+
+  <DesignationCategoryDef>
+    <defName>Ferny_AirManagement</defName>
+    <label>Management</label>
+    <description>Manage airflow.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Temperature</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
   <!-- <DesignationCategoryDef>
     <defName>Ferny_Automation</defName>
     <label>Automation</label>
