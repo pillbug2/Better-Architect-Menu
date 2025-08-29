@@ -143,7 +143,7 @@ namespace BetterArchitect
             var overflowItems = allCategories.Skip(maxVisibleItems).ToList();
             foreach (var cat in itemsToDraw)
             {
-                var rowRect = new Rect(0, curY, viewRect.width, 40f);
+                var rowRect = new Rect(0, curY, viewRect.width, 36);
                 bool isSelected = currentSelection == cat;
                 DrawOptionBackground(rowRect, isSelected);
                 if (Widgets.ButtonInvisible(rowRect))
@@ -160,7 +160,7 @@ namespace BetterArchitect
                     icon = MoreIcon;
                 }
 
-                var iconRect = new Rect(rowRect.x + 4f, rowRect.y + 8f, 24f, 24f);
+                var iconRect = new Rect(rowRect.x + 4f, rowRect.y + 8f, 24f, 20f);
                 if (icon != null) Widgets.DrawTextureFitted(iconRect, icon, 1f);
                 Text.Font = GameFont.Small;
                 var labelRect = new Rect(iconRect.xMax + 8f, rowRect.y, rowRect.width - iconRect.width - 16f, rowRect.height);
@@ -169,7 +169,7 @@ namespace BetterArchitect
                     label = "BA.More".Translate();
                 }
                 Text.Anchor = TextAnchor.MiddleLeft; Widgets.Label(labelRect, label); Text.Anchor = TextAnchor.UpperLeft;
-                curY += 45f;
+                curY += rowRect.height + 5;
             }
             if (useMoreButton && overflowItems.Any())
             {
@@ -204,7 +204,7 @@ namespace BetterArchitect
             float curY = 0;
             foreach (var material in materials)
             {
-                var rowRect = new Rect(0, curY, viewRect.width, 40f);
+                var rowRect = new Rect(0, curY, viewRect.width, 36);
                 DrawOptionBackground(rowRect, selectedMaterial?.def == material.def);
                 MouseoverSounds.DoRegion(rowRect);
                 var iconRect = new Rect(rowRect.x + 4f, rowRect.y + 8f, 24f, 24f);
@@ -220,7 +220,7 @@ namespace BetterArchitect
                 {
                     selectedMaterial = material;
                 }
-                curY += 45f;
+                curY += rowRect.height + 5;
             }
             Widgets.EndScrollView();
             return (selectedMaterial != null && floorsByMaterial.ContainsKey(selectedMaterial)) ? floorsByMaterial[selectedMaterial] : new List<Designator>();
