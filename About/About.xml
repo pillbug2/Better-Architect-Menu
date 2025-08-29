@@ -15,5 +15,42 @@
         <li>Ludeon.RimWorld.Anomaly</li>
         <li>Ludeon.RimWorld.Odyssey</li>
         <li>brrainz.harmony</li>
+		<li>VanillaExpanded.VFECore</li>
+		<li>VanillaExpanded.VFESpacer</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.SettlersModule</li>
+		<li>kentington.saveourship2</li>
+		<li>ferny.fuckextfurniture</li>
+		<li>oskarpotocki.vfe.empire</li>
+		<li>biomesteam.biomesfossils</li>
+		<li>ferny.progressionhospitality</li>
+		<li>com.bymarcin.architecticons</li>
+		<li>rebuild.cotr.doorsandcorners</li>
+		<li>zal.lanterns</li>
+		<li>dankpyon.medieval.overhaul</li>
+		<li>ferny.progressionaesthetics</li>
+		<li>Sov.BBrazier</li>
+		<li>van.dacrypts</li>
+		<li>sarg.alphapropsparks</li>
+		<li>dev.tobot.vpe.betterautocast</li>
+		<li>arquebus.stagzmerfolk</li>
+		<li>sierra.rf.medievaloverhaul</li>
+		<li>addie.housevanilla</li>
+		<li>mos.victoriandecorations</li>
+		<li>whaley.whaleysprops</li>
+        <li>OskarPotocki.VFE.Classical</li>
+        <li>zylle.clocks</li>
+        <li>OskarPotocki.VFE.Medieval2</li>
+        <li>VanillaExpanded.VCookEHaute</li>
+        <li>det.keshig</li>
+        <li>det.sbdelights</li>
+        <li>oskarpotocki.vfe.classical</li>
+        <li>sarg.alphacrafts</li>
+        <li>syrchalis.processor.framework</li>
+        <li>vanillaexpanded.vbrewe</li>
+        <li>vanillaexpanded.vbrewecandt</li>
+        <li>vanillaexpanded.vcooke</li>
+        <li>vanillaexpanded.vcookestews</li>
+        <li>vanillaexpanded.vcookesushi</li>
+        <li>vanillaexpanded.vfeproduction</li>
     </loadAfter>
 </ModMetaData>

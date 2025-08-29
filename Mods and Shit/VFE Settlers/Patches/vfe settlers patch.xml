@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch>              
-<!-- CORE PATCHES -->
+<Patch>   
                 <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="TorchLamp"]/designationCategory</xpath>
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Chemlamp"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Lighting</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[@Name="LampBase"]/designationCategory</xpath>
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="ChemlampPost"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Lighting</designationCategory>
                     </value>

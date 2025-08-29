@@ -9,10 +9,42 @@
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
     </specialDesignatorClasses>
-	<modExtensions>
-		<li Class="BetterArchitect.NestedCategoryExtension">
-			<parentCategory>Furniture</parentCategory>
-		</li>
-	</modExtensions>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Furniture</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Bedroom</defName>
+    <label>Bedroom</label>
+    <description>Things that relate to bedrooms.</description>
+    <order>457</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Furniture</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Kitchen</defName>
+    <label>Kitchen</label>
+    <description>Things that relate to food.</description>
+    <order>650</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Production</parentCategory>
+      </li>
+    </modExtensions>
   </DesignationCategoryDef>
 </Defs>
