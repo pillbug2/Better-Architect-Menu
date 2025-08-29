@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>              
+
+<!-- RENAME SECURITY -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/DesignationCategoryDef[defName="Security"]/label</xpath>
+                    <value>
+                        <label>Combat</label>
+                    </value>
+                </Operation>
+
 <!-- LIGHTING -->
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="TorchLamp"]/designationCategory</xpath>
@@ -162,27 +171,6 @@
                         <designationCategory>Ferny_Animals</designationCategory>
                     </value>
                 </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AnimalSleepingSpot"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Animals</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AnimalSleepingBox"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_Animals</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AnimalBed"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_Animals</designationCategory>
-                    </value>
-                </Operation>
 
 
 <!-- POWER MANAGEMENT -->
@@ -296,6 +284,87 @@
                     </nomatch>
                 </Operation>
 
+<!-- WALLS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Wall"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Walls</designationCategory>
+                    </value>
+                </Operation>
 
+<!-- DOORS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DoorBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Doors</designationCategory>
+                    </value>
+                </Operation>
 
+<!-- BRIDGES -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/TerrainDef[@Name="BridgeBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Bridges</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- SUPPORTS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Column"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Supports</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- BARRICADES -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Sandbags"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Barricades</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Barricade"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Barricades</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- TRAPS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="TrapSpike"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Traps</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="TrapIEDBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Traps</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- ANIMAL BEDDING -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AnimalSleepingSpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_AnimalBedding</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="AnimalBedFurnitureBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_AnimalBedding</designationCategory>
+                    </value>
+                </Operation>
 </Patch>

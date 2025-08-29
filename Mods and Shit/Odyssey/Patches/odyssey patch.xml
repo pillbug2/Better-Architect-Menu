@@ -1,11 +1,57 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>              
+
+<!-- NO ODYSSEY CATEGORY -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/*[designationCategory="Odyssey"]/designationCategory</xpath>
+        <value>
+        <designationCategory>Ship</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/DesignationCategoryDef[defName="Ship"]/label</xpath>
+        <value>
+            <label>Space</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <success>Always</success>
+        <xpath>Defs/DesignationCategoryDef[defName="Odyssey"]</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <success>Always</success>
+        <xpath>Defs/DesignationCategoryDef[defName="Ship"]/researchPrerequisites</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/DesignationCategoryDef[defName="Ship"]/specialDesignatorClasses</xpath>
+        <value>
+            <specialDesignatorClasses>
+            <li>Designator_Cancel</li>
+            <li>Designator_Deconstruct</li>
+            <li>Designator_RemoveFoundation</li>
+            </specialDesignatorClasses>
+        </value>
+    </Operation>
+
 <!-- POWER GENERATION -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="GravcorePowerCell"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_PowerGeneration</designationCategory>
+                    </value>
+                </Operation>
+
+
+<!-- TRAPS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="HunterDroneTrap"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Traps</designationCategory>
                     </value>
                 </Operation>
 </Patch>

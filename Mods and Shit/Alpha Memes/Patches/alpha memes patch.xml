@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+<!-- KITCHEN -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="AM_RumBurialSpot"]/designationCategory</xpath>
@@ -12,6 +13,15 @@
                     <xpath>Defs/ThingDef[defName="AM_GrogDispenser"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Kitchen</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- ANIMALS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_AnimalDatabase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Animals</designationCategory>
                     </value>
                 </Operation>
 </Patch>

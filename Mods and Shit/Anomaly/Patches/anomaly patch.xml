@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>              
+
+
+<!-- Rename category -->   
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/DesignationCategoryDef[defName="Anomaly"]/label</xpath>
+                    <value>
+                        <label>Monolith</label>
+                    </value>
+                </Operation>      
+
+
+
 <!-- POWER GENERATION -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
@@ -8,4 +20,6 @@
                         <designationCategory>Ferny_PowerGeneration</designationCategory>
                     </value>
                 </Operation>
+
+
 </Patch>
