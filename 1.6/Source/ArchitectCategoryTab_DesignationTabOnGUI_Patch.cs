@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
 using RimWorld;
@@ -324,10 +324,10 @@ namespace BetterArchitect
             var sortButtonRect = new Rect(groupButtonRect.xMax + 4f, rect.y + 4f, groupButtonRect.height, groupButtonRect.height).ExpandedBy(2f);
             var toggleRect = new Rect(sortButtonRect.xMax + 4f, rect.y + 4f, groupButtonRect.height, groupButtonRect.height).ExpandedBy(2f);
             bool groupByTechLevel = BetterArchitectSettings.groupByTechLevelPerCategory.ContainsKey(mainCat.defName) ? BetterArchitectSettings.groupByTechLevelPerCategory[mainCat.defName] : false;
-
             if (Widgets.ButtonImage(groupButtonRect, GroupingIcon))
             {
                 BetterArchitectSettings.groupByTechLevelPerCategory[mainCat.defName] = !groupByTechLevel;
+                BetterArchitectSettings.Save();
                 SoundDefOf.Tick_High.PlayOneShotOnCamera();
             }
             if (groupByTechLevel) Widgets.DrawHighlight(groupButtonRect);
@@ -337,12 +337,17 @@ namespace BetterArchitect
             var settings = BetterArchitectSettings.sortSettingsPerCategory[mainCat.defName];
             if (Widgets.ButtonImage(sortButtonRect, SortType))
             {
-                var options = System.Enum.GetValues(typeof(SortBy)).Cast<SortBy>().Select(s => new FloatMenuOption(s.ToStringTranslated(), () => settings.SortBy = s)).ToList();
+                var options = System.Enum.GetValues(typeof(SortBy)).Cast<SortBy>().Select(s => new FloatMenuOption(s.ToStringTranslated(), delegate
+                {
+                    settings.SortBy = s;
+                    BetterArchitectSettings.Save();
+                })).ToList();
                 Find.WindowStack.Add(new FloatMenu(options));
             }
             if (Widgets.ButtonImage(toggleRect, settings.Ascending ? AscendingIcon : DescendingIcon))
             {
                 settings.Ascending = !settings.Ascending;
+                BetterArchitectSettings.Save();
                 SoundDefOf.Tick_High.PlayOneShotOnCamera();
             }
         }

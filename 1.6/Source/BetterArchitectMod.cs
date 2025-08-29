@@ -11,10 +11,8 @@ namespace BetterArchitect
 
         public BetterArchitectMod(ModContentPack content) : base(content)
         {
-            LongEventHandler.ExecuteWhenFinished(delegate
-            {
-                settings = GetSettings<BetterArchitectSettings>();
-            });
+            settings = GetSettings<BetterArchitectSettings>();
+            BetterArchitectSettings.mod = this;
             new Harmony("BetterArchitectMod").PatchAll();
         }
 
