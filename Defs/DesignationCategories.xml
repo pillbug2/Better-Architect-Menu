@@ -206,6 +206,38 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_Weapons</defName>
+    <label>Weapons</label>
+    <description>Build weapons for your enemies.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Security</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Ranching</defName>
+    <label>Ranching</label>
+    <description>Farming your animals.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Animals</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_AnimalBedding</defName>
     <label>Bedding</label>
     <description>Build bedding for your animals.</description>
@@ -220,6 +252,8 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
+
+
   <!-- <DesignationCategoryDef>
     <defName>Ferny_Automation</defName>
     <label>Automation</label>

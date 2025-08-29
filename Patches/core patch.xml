@@ -135,43 +135,6 @@
                     </value>
                 </Operation>
 
-<!-- CORE PATCHES -->
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="Fence"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Animals</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="FenceGate"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_Animals</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AnimalFlap"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_Animals</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="PenMarker"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Animals</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="EggBox"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Animals</designationCategory>
-                    </value>
-                </Operation>
-
 
 <!-- POWER MANAGEMENT -->
                 <Operation Class="PatchOperationReplace">
@@ -352,6 +315,74 @@
                     </value>
                 </Operation>
 
+<!-- WEAPONS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="BaseArtilleryBuilding"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Turret_MiniTurret"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="AutocannonTurret"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Turret_RocketswarmLauncher"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+
+
+<!-- ANIMAL RANCHING -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Fence"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Ranching</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="FenceGate"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Ranching</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AnimalFlap"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Ranching</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="PenMarker"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Ranching</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="EggBox"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Ranching</designationCategory>
+                    </value>
+                </Operation>
+
 <!-- ANIMAL BEDDING -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
@@ -363,6 +394,20 @@
                 <Operation Class="PatchOperationAdd">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[@Name="AnimalBedFurnitureBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_AnimalBedding</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AnimalSleepingBox"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_AnimalBedding</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AnimalBed"]</xpath>
                     <value>
                         <designationCategory>Ferny_AnimalBedding</designationCategory>
                     </value>
