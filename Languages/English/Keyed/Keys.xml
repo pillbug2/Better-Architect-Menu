@@ -17,6 +17,12 @@
 	<BA.SkillRequired>Skill required</BA.SkillRequired>
 	<BA.Flammability>Flammability</BA.Flammability>
 	<BA.CoverEffectiveness>Cover effectiveness</BA.CoverEffectiveness>
+	<BA.MaxPowerOutput>Max power output</BA.MaxPowerOutput>
+	<BA.PowerConsumption>Power consumption</BA.PowerConsumption>
+	<BA.RecreationPower>Recreation power</BA.RecreationPower>
+	<BA.MoveSpeed>Move speed</BA.MoveSpeed>
+	<BA.TotalStorageCapacity>Total storage capacity</BA.TotalStorageCapacity>
 	<BA.More>More</BA.More>
 	<BA.BackgroundAlpha>Background transparency</BA.BackgroundAlpha>
+	<BA.NothingAvailableToBuild>There is nothing available to build yet.</BA.NothingAvailableToBuild>
 </LanguageData>

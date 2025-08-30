@@ -2,7 +2,7 @@ using Verse;
 
 namespace BetterArchitect
 {
-    public enum SortBy { Default, Label, Beauty, Comfort, Value, WorkToBuild, Health, Cleanliness, SkillRequired, Flammability, CoverEffectiveness }
+    public enum SortBy { Default, Label, Beauty, Comfort, Value, WorkToBuild, Health, Cleanliness, SkillRequired, Flammability, CoverEffectiveness, MaxPowerOutput, PowerConsumption, RecreationPower, MoveSpeed, TotalStorageCapacity }
 
     public class SortSettings : IExposable
     {

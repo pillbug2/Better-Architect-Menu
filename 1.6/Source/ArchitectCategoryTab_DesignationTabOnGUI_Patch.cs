@@ -18,13 +18,18 @@ namespace BetterArchitect
         private static readonly Dictionary<DesignationCategoryDef, DesignationCategoryDef> selectedCategory = new Dictionary<DesignationCategoryDef, DesignationCategoryDef>();
         private static Vector2 leftPanelScrollPosition, designatorGridScrollPosition, ordersScrollPosition;
         private static DesignationCategoryDef lastMainCategory;
-        private static MaterialInfo selectedMaterial;
+        public static MaterialInfo selectedMaterial;
         private static readonly Texture2D GroupingIcon = ContentFinder<Texture2D>.Get("GroupType");
         private static readonly Texture2D SortType = ContentFinder<Texture2D>.Get("SortType");
         private static readonly Texture2D AscendingIcon = ContentFinder<Texture2D>.Get("SortAscend");
         private static readonly Texture2D DescendingIcon = ContentFinder<Texture2D>.Get("SortDescend");
         private static readonly Texture2D FreeIcon = ContentFinder<Texture2D>.Get("UI/Free");
         private static readonly Texture2D MoreIcon = ContentFinder<Texture2D>.Get("More");
+        private static bool IsSpecialCategory(DesignationCategoryDef cat)
+        {
+            return cat == DefsOf.Orders || cat == DesignationCategoryDefOf.Zone || cat.defName == "Blueprints";
+        }
+
         private static (List<Designator> buildables, List<Designator> orders) SeparateDesignatorsByType(IEnumerable<Designator> allDesignators, DesignationCategoryDef category)
         {
             var buildables = new List<Designator>();
@@ -40,8 +45,7 @@ namespace BetterArchitect
                     orders.Add(designator);
                 }
             }
-            if (category == DesignationCategoryDefOf.Zone || category == DefsOf.Orders ||
-                category.defName == "Blueprints")
+            if (IsSpecialCategory(category))
             {
                 buildables.AddRange(orders);
                 orders.Clear();
@@ -53,6 +57,10 @@ namespace BetterArchitect
         {
             if (BetterArchitectSettings.hideOnSelection && Find.DesignatorManager.SelectedDesignator != null)
             {
+                if (Find.DesignatorManager.SelectedDesignator != null)
+                {
+                    Find.DesignatorManager.SelectedDesignator.DoExtraGuiControls(0f, (float)(UI.screenHeight - 35) - ((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).WinHeight - 270f);
+                }
                 DoInfoBox(Find.DesignatorManager.SelectedDesignator);
                 return false;
             }
@@ -67,6 +75,10 @@ namespace BetterArchitect
 
         private static void DrawBetterArchitectMenu(ArchitectCategoryTab tab)
         {
+            if (Find.DesignatorManager.SelectedDesignator != null)
+            {
+                Find.DesignatorManager.SelectedDesignator.DoExtraGuiControls(0f, (float)(UI.screenHeight - 35) - ((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).WinHeight - 270f);
+            }
             var menuHeight = BetterArchitectSettings.menuHeight;
             var mainRect = new Rect(
                 ((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).RequestedTabSize.x + 10f,
@@ -88,13 +100,14 @@ namespace BetterArchitect
                 var (buildables, orders) = SeparateDesignatorsByType(allDesignators, category);
                 designatorDataList.Add(new DesignatorCategoryData(category, category == tab.def, allDesignators, buildables, orders));
             }
-            
+
             List<Designator> designatorsToDisplay;
             List<Designator> orderDesignators;
             DesignationCategoryDef categoryForGridAndOrders;
-            
+
             if (tab.def == DesignationCategoryDefOf.Floors)
             {
+                Designator_Build_ProcessInput_Transpiler.shouldSkipFloatMenu = true;
                 var floorData = designatorDataList.FirstOrDefault(d => d.def == tab.def);
                 var floorSpecificDesignators = new List<Designator>();
                 var orderSpecificDesignators = new List<Designator>();
@@ -126,14 +139,30 @@ namespace BetterArchitect
             }
             else
             {
+                Designator_Build_ProcessInput_Transpiler.shouldSkipFloatMenu = false;
                 var selectedCategory = HandleCategorySelection(leftRect, tab.def, designatorDataList);
                 var selectedData = designatorDataList.FirstOrDefault(d => d.def == selectedCategory);
                 designatorsToDisplay = selectedData.buildables;
                 orderDesignators = selectedData.orders;
                 categoryForGridAndOrders = selectedCategory;
             }
-            
-            var mouseoverGizmo = DrawDesignatorGrid(gridRect, categoryForGridAndOrders, designatorsToDisplay);
+            bool onlyMainCategoryAvailable = true;
+            foreach (var data in designatorDataList)
+            {
+                if (data.def == tab.def) continue;
+                if (IsSpecialCategory(data.def))
+                {
+                    onlyMainCategoryAvailable = false;
+                    break;
+                }
+                if (!data.buildables.NullOrEmpty())
+                {
+                    onlyMainCategoryAvailable = false;
+                    break;
+                }
+            }
+
+            var mouseoverGizmo = DrawDesignatorGrid(gridRect, categoryForGridAndOrders, designatorsToDisplay, onlyMainCategoryAvailable);
             var orderGizmo = DrawOrdersPanel(ordersRect, categoryForGridAndOrders, orderDesignators);
             if (orderGizmo != null) mouseoverGizmo = orderGizmo;
             DoInfoBox(mouseoverGizmo ?? Find.DesignatorManager.SelectedDesignator);
@@ -145,29 +174,63 @@ namespace BetterArchitect
             var allCategories = designatorDataList.Select(d => d.def).ToList();
             selectedCategory.TryGetValue(mainCat, out var currentSelection);
 
-            if (currentSelection == null || !allCategories.Contains(currentSelection))
-            {
-                currentSelection = mainCat;
-                selectedCategory[mainCat] = currentSelection;
-            }
-
             var mainCategoryData = designatorDataList.FirstOrDefault(d => d.def == mainCat);
             var mainCategoryHasDesignators = mainCategoryData != null && mainCategoryData.buildables.Any(x => x is Designator_Place || x is Designator_Dropdown);
             var subCategories = allCategories.Where(c => c != mainCat).ToList();
-            bool subCategoriesHaveBuildings = subCategories.Any(cat => {
-                var categoryData = designatorDataList.FirstOrDefault(d => d.def == cat);
-                return categoryData != null && !categoryData.buildables.NullOrEmpty();
-            });
+            var filteredSubCategories = new List<DesignationCategoryDef>();
 
-            bool hideMoreCategory = subCategories.Any() && subCategoriesHaveBuildings && !mainCategoryHasDesignators;
-            if (hideMoreCategory) allCategories.Remove(mainCat);
+            foreach (var cat in subCategories)
+            {
+                if (IsSpecialCategory(cat))
+                {
+                    filteredSubCategories.Add(cat);
+                }
+                else
+                {
+                    var categoryData = designatorDataList.FirstOrDefault(d => d.def == cat);
+                    if (categoryData != null && !categoryData.buildables.NullOrEmpty())
+                    {
+                        filteredSubCategories.Add(cat);
+                    }
+                }
+            }
+
+            filteredSubCategories = filteredSubCategories.OrderBy(cat => cat.order).ToList();
+            bool shouldHideMoreCategory = false;
+            if (filteredSubCategories.Any())
+            {
+                bool subCategoriesHaveBuildings = filteredSubCategories.Any(cat =>
+                {
+                    if (IsSpecialCategory(cat)) return true;
+                    var categoryData = designatorDataList.FirstOrDefault(d => d.def == cat);
+                    return categoryData != null && !categoryData.buildables.NullOrEmpty();
+                });
+
+                shouldHideMoreCategory = subCategoriesHaveBuildings && !mainCategoryHasDesignators;
+            }
+            if (shouldHideMoreCategory) allCategories.Remove(mainCat);
+            var displayCategories = new List<DesignationCategoryDef>();
+            displayCategories.AddRange(filteredSubCategories);
+            if (!shouldHideMoreCategory) displayCategories.Add(mainCat);
+            if (currentSelection == null || !allCategories.Contains(currentSelection))
+            {
+                if (displayCategories.Any())
+                {
+                    currentSelection = displayCategories.First();
+                }
+                else
+                {
+                    currentSelection = mainCat;
+                }
+                selectedCategory[mainCat] = currentSelection;
+            }
 
             var outRect = rect.ContractedBy(10f);
-            var viewRect = new Rect(0, 0, outRect.width - 16f, allCategories.Count * 35f);
+            var viewRect = new Rect(0, 0, outRect.width - 16f, displayCategories.Count * 35f);
             Widgets.BeginScrollView(outRect, ref leftPanelScrollPosition, viewRect);
             float curY = 0;
-            
-            foreach (var cat in allCategories)
+
+            foreach (var cat in displayCategories)
             {
                 var rowRect = new Rect(0, curY, viewRect.width, 36);
                 bool isSelected = currentSelection == cat;
@@ -180,7 +243,7 @@ namespace BetterArchitect
                 }
                 string label = cat.LabelCap;
                 Texture2D icon = ArchitectIcons.Resources.FindArchitectTabCategoryIcon(cat.defName);
-                if (cat == mainCat && subCategories.Any())
+                if (cat == mainCat && filteredSubCategories.Any())
                 {
                     label = "BA.More".Translate();
                     icon = MoreIcon;
@@ -232,18 +295,46 @@ namespace BetterArchitect
                 curY += rowRect.height + 5;
             }
             Widgets.EndScrollView();
-            return (selectedMaterial != null && floorsByMaterial.ContainsKey(selectedMaterial)) ? floorsByMaterial[selectedMaterial] : new List<Designator>();
+            var result = (selectedMaterial != null && floorsByMaterial.ContainsKey(selectedMaterial)) ? floorsByMaterial[selectedMaterial] : new List<Designator>();
+            if (selectedMaterial?.def != null)
+            {
+                foreach (var designator in result)
+                {
+                    if (designator is Designator_Build buildDesignator && buildDesignator.entDef is ThingDef thingDef && thingDef.MadeFromStuff)
+                    {
+                        buildDesignator.SetStuffDef(selectedMaterial.def);
+                    }
+                }
+            }
+            return result;
         }
 
-        private static Designator DrawDesignatorGrid(Rect rect, DesignationCategoryDef mainCat, List<Designator> designators)
+        private static Designator DrawDesignatorGrid(Rect rect, DesignationCategoryDef mainCat, List<Designator> designators, bool onlyMainCategoryAvailable = false)
         {
-            if (designators.NullOrEmpty()) return null;
             var viewControlsRect = new Rect(rect.xMax - 100f, rect.y, 235f, 28f);
-            DrawViewControls(viewControlsRect, mainCat);
+            DrawViewControls(viewControlsRect, mainCat, designators);
             if (!BetterArchitectSettings.sortSettingsPerCategory.ContainsKey(mainCat.defName)) BetterArchitectSettings.sortSettingsPerCategory[mainCat.defName] = new SortSettings();
             var settings = BetterArchitectSettings.sortSettingsPerCategory[mainCat.defName];
             SortDesignators(designators, settings);
             var outRect = new Rect(rect.x, rect.y + 30f, rect.width, rect.height - 30f);
+            if (designators.NullOrEmpty())
+            {
+                Text.Font = GameFont.Medium;
+                Text.Anchor = TextAnchor.MiddleCenter;
+                var message = "BA.NothingAvailableToBuild".Translate();
+                var textSize = Text.CalcSize(message);
+                var messageRect = new Rect(
+                    outRect.x + (outRect.width - textSize.x) / 2,
+                    outRect.y + (outRect.height - textSize.y) / 2,
+                    textSize.x,
+                    textSize.y
+                );
+                Widgets.Label(messageRect, message);
+                Text.Anchor = TextAnchor.UpperLeft;
+                Text.Font = GameFont.Small;
+                return null;
+            }
+
             bool groupByTechLevel = BetterArchitectSettings.groupByTechLevelPerCategory.ContainsKey(mainCat.defName) ? BetterArchitectSettings.groupByTechLevelPerCategory[mainCat.defName] : false;
             return groupByTechLevel ? DrawGroupedGrid(outRect, designators) : DrawFlatGrid(outRect, designators);
         }
@@ -319,7 +410,7 @@ namespace BetterArchitect
             return mouseoverGizmo;
         }
 
-        private static void DrawViewControls(Rect rect, DesignationCategoryDef mainCat)
+        private static void DrawViewControls(Rect rect, DesignationCategoryDef mainCat, List<Designator> designators)
         {
             var groupButtonRect = new Rect(rect.x, rect.y, rect.height, rect.height).ExpandedBy(-4f);
             var sortButtonRect = new Rect(groupButtonRect.xMax + 4f, rect.y + 4f, groupButtonRect.height, groupButtonRect.height).ExpandedBy(2f);
@@ -338,12 +429,22 @@ namespace BetterArchitect
             var settings = BetterArchitectSettings.sortSettingsPerCategory[mainCat.defName];
             if (Widgets.ButtonImage(sortButtonRect, SortType))
             {
-                var options = System.Enum.GetValues(typeof(SortBy)).Cast<SortBy>().Select(s => new FloatMenuOption(s.ToStringTranslated(), delegate
+                var availableSortOptions = System.Enum.GetValues(typeof(SortBy)).Cast<SortBy>().Where(sortBy =>
+                {
+                    if (sortBy == SortBy.Default || sortBy == SortBy.Label) return true;
+                    foreach (var designator in designators)
+                    {
+                        var value = GetSortValueFor(designator, sortBy);
+                        if (value != null) return true;
+                    }
+                    return false;
+                }).Select(s => new FloatMenuOption(s.ToStringTranslated(), delegate
                 {
                     settings.SortBy = s;
                     BetterArchitectSettings.Save();
                 })).ToList();
-                Find.WindowStack.Add(new FloatMenu(options));
+
+                Find.WindowStack.Add(new FloatMenu(availableSortOptions));
             }
             if (Widgets.ButtonImage(toggleRect, settings.Ascending ? AscendingIcon : DescendingIcon))
             {
@@ -366,9 +467,24 @@ namespace BetterArchitect
                 }
                 else
                 {
-                    float valA = GetSortValueFor(a, settings.SortBy);
-                    float valB = GetSortValueFor(b, settings.SortBy);
-                    primaryResult = valA.CompareTo(valB);
+                    float? valA = GetSortValueFor(a, settings.SortBy);
+                    float? valB = GetSortValueFor(b, settings.SortBy);
+                    if (valA == null && valB == null)
+                    {
+                        primaryResult = 0;
+                    }
+                    else if (valA == null)
+                    {
+                        primaryResult = -1;
+                    }
+                    else if (valB == null)
+                    {
+                        primaryResult = 1;
+                    }
+                    else
+                    {
+                        primaryResult = valA.Value.CompareTo(valB.Value);
+                    }
                 }
                 if (!settings.Ascending)
                 {
@@ -384,22 +500,27 @@ namespace BetterArchitect
             });
         }
 
-        private static float GetSortValueFor(Designator d, SortBy sortBy)
+        private static float? GetSortValueFor(Designator d, SortBy sortBy)
         {
             BuildableDef buildable = GetBuildableDefFrom(d);
-            if (buildable == null) return -1f;
+            if (buildable == null) return null;
             return sortBy switch
             {
-                SortBy.Beauty => buildable.GetStatValueAbstract(StatDefOf.Beauty),
-                SortBy.Comfort => buildable.GetStatValueAbstract(StatDefOf.Comfort),
-                SortBy.Value => buildable.GetStatValueAbstract(StatDefOf.MarketValue),
-                SortBy.WorkToBuild => buildable.GetStatValueAbstract(StatDefOf.WorkToBuild),
-                SortBy.Health => buildable.GetStatValueAbstract(StatDefOf.MaxHitPoints),
-                SortBy.Cleanliness => buildable.GetStatValueAbstract(StatDefOf.Cleanliness),
-                SortBy.Flammability => buildable.GetStatValueAbstract(StatDefOf.Flammability),
+                SortBy.Beauty => GetStatValueIfDefined(buildable, StatDefOf.Beauty),
+                SortBy.Comfort => GetStatValueIfDefined(buildable, StatDefOf.Comfort),
+                SortBy.Value => GetStatValueIfDefined(buildable, StatDefOf.MarketValue),
+                SortBy.WorkToBuild => GetStatValueIfDefined(buildable, StatDefOf.WorkToBuild),
+                SortBy.Health => GetStatValueIfDefined(buildable, StatDefOf.MaxHitPoints),
+                SortBy.Cleanliness => GetStatValueIfDefined(buildable, StatDefOf.Cleanliness),
+                SortBy.Flammability => GetStatValueIfDefined(buildable, StatDefOf.Flammability),
                 SortBy.SkillRequired => buildable.constructionSkillPrerequisite,
-                SortBy.CoverEffectiveness => buildable is ThingDef thingDef ? thingDef.fillPercent : 0,
-                _ => 0f
+                SortBy.CoverEffectiveness => buildable is ThingDef thingDef ? thingDef.fillPercent : (float?)null,
+                SortBy.MaxPowerOutput => GetMaxPowerOutput(buildable),
+                SortBy.PowerConsumption => GetPowerConsumption(buildable),
+                SortBy.RecreationPower => GetStatValueIfDefined(buildable, StatDefOf.JoyGainFactor),
+                SortBy.MoveSpeed => GetMoveSpeed(buildable),
+                SortBy.TotalStorageCapacity => GetTotalStorageCapacity(buildable),
+                _ => null
             };
         }
 
@@ -460,7 +581,13 @@ namespace BetterArchitect
         private static TechLevel GetTechLevelFor(Designator d)
         {
             var b = GetBuildableDefFrom(d);
-            if (b?.researchPrerequisites != null && b.researchPrerequisites.Any(x => x.techLevel != TechLevel.Undefined)) return b.researchPrerequisites.FirstOrDefault(x => x.techLevel != TechLevel.Undefined).techLevel;
+            if (b?.researchPrerequisites != null && b.researchPrerequisites.Any(x => x.techLevel != TechLevel.Undefined))
+            {
+                var highestTechLevel = b.researchPrerequisites
+                    .Where(x => x.techLevel != TechLevel.Undefined)
+                    .Max(x => x.techLevel);
+                return highestTechLevel;
+            }
             var techLevel = (b as ThingDef)?.techLevel;
             return (techLevel == TechLevel.Undefined || techLevel == null) ? TechLevel.Neolithic : techLevel.Value;
         }
@@ -560,29 +687,200 @@ namespace BetterArchitect
             }
             return costs;
         }
-    }
 
-    [DefOf]
-    public class DefsOf
-    {
-        public static DesignationCategoryDef Orders;
-    }
-    
-    public class DesignatorCategoryData
-    {
-        public readonly DesignationCategoryDef def;
-        public readonly bool isMainCategory;
-        public readonly List<Designator> allDesignators;
-        public readonly List<Designator> buildables;
-        public readonly List<Designator> orders;
-        
-        public DesignatorCategoryData(DesignationCategoryDef def, bool isMainCategory, List<Designator> allDesignators, List<Designator> buildables, List<Designator> orders)
+        private static float? GetMaxPowerOutput(BuildableDef buildable)
         {
-            this.def = def;
-            this.isMainCategory = isMainCategory;
-            this.allDesignators = allDesignators;
-            this.buildables = buildables;
-            this.orders = orders;
+            if (buildable is ThingDef thingDef)
+            {
+                var powerComp = thingDef.GetCompProperties<CompProperties_Power>();
+                if (powerComp != null)
+                {
+                    if (powerComp.basePowerConsumption < 0)
+                    {
+                        return -powerComp.basePowerConsumption;
+                    }
+                }
+            }
+            return null;
+        }
+
+        private static float? GetPowerConsumption(BuildableDef buildable)
+        {
+            if (buildable is ThingDef thingDef)
+            {
+                var powerComp = thingDef.GetCompProperties<CompProperties_Power>();
+                if (powerComp != null)
+                {
+                    if (powerComp.basePowerConsumption > 0)
+                    {
+                        return powerComp.basePowerConsumption;
+                    }
+                }
+            }
+            return null;
+        }
+        private static System.Type vehicleBuildDefType;
+        private static System.Reflection.FieldInfo thingToSpawnProp;
+        private static System.Reflection.FieldInfo vehicleStatsField;
+        private static System.Reflection.FieldInfo statDefProp;
+        private static System.Reflection.PropertyInfo workerProp;
+        private static System.Reflection.MethodInfo getValueMethod;
+        
+        private static void InitializeVehicleFrameworkReflection()
+        {
+            if (vehicleBuildDefType != null) return;
+            
+            try
+            {
+                vehicleBuildDefType = AccessTools.TypeByName("Vehicles.VehicleBuildDef");
+                if (vehicleBuildDefType == null)
+                {
+                    Log.Error("InitializeVehicleFrameworkReflection: vehicleBuildDefType is null");
+                    return;
+                }
+                thingToSpawnProp = AccessTools.Field(vehicleBuildDefType, "thingToSpawn");
+                if (thingToSpawnProp == null)
+                {
+                    Log.Error("InitializeVehicleFrameworkReflection: thingToSpawnProp is null");
+                    return;
+                }
+                var vehicleDefType = AccessTools.TypeByName("Vehicles.VehicleDef");
+                if (vehicleDefType != null)
+                {
+                    vehicleStatsField = AccessTools.Field(vehicleDefType, "vehicleStats");
+                    if (vehicleStatsField == null)
+                    {
+                        Log.Error("InitializeVehicleFrameworkReflection: vehicleStatsField is null");
+                        return;
+                    }
+                }
+                else
+                {
+                    Log.Error("InitializeVehicleFrameworkReflection: vehicleDefType is null");
+                    return;
+                }
+                var vehicleStatModifierType = AccessTools.TypeByName("Vehicles.VehicleStatModifier");
+                if (vehicleStatModifierType != null)
+                {
+                    statDefProp = AccessTools.Field(vehicleStatModifierType, "statDef");
+                    if (statDefProp == null)
+                    {
+                        Log.Error("InitializeVehicleFrameworkReflection: statDefProp is null");
+                        return;
+                    }
+                }
+                else
+                {
+                    Log.Error("InitializeVehicleFrameworkReflection: vehicleStatModifierType is null");
+                    return;
+                }
+                var vehicleStatDefType = AccessTools.TypeByName("Vehicles.VehicleStatDef");
+                if (vehicleStatDefType != null)
+                {
+                    workerProp = AccessTools.Property(vehicleStatDefType, "Worker");
+                    if (workerProp == null)
+                    {
+                        Log.Error("InitializeVehicleFrameworkReflection: workerProp is null");
+                        return;
+                    }
+                }
+                else
+                {
+                    Log.Error("InitializeVehicleFrameworkReflection: vehicleStatDefType is null");
+                    return;
+                }
+                var vehicleStatWorkerType = AccessTools.TypeByName("Vehicles.VehicleStatWorker");
+                if (vehicleStatWorkerType != null)
+                {
+                    getValueMethod = AccessTools.Method(vehicleStatWorkerType, "GetValueAbstract", new[] { vehicleDefType });
+                    if (getValueMethod == null)
+                    {
+                        Log.Error("InitializeVehicleFrameworkReflection: getValueMethod is null");
+                        return;
+                    }
+                }
+                else
+                {
+                    Log.Error("InitializeVehicleFrameworkReflection: vehicleStatWorkerType is null");
+                    return;
+                }
+            }
+            catch (System.Exception ex)
+            {
+                Log.Error($"Error in InitializeVehicleFrameworkReflection: {ex}");
+            }
+        }
+
+        private static bool? _vehicleFrameworkActive;
+        public static bool VehicleFrameworkActive => _vehicleFrameworkActive ??= ModsConfig.IsActive("SmashPhil.VehicleFramework");
+        private static float? GetMoveSpeed(BuildableDef buildable)
+        {
+            if (VehicleFrameworkActive)
+            {
+                InitializeVehicleFrameworkReflection();
+                if (vehicleBuildDefType.IsAssignableFrom(buildable.GetType()) is false) return null;
+                try
+                {
+                    var vehicleDef = thingToSpawnProp.GetValue(buildable);
+                    if (vehicleDef == null)
+                    {
+                        Log.Error("GetMoveSpeed: vehicleDef is null");
+                        return null;
+                    }
+                    
+                    var vehicleStats = vehicleStatsField.GetValue(vehicleDef) as System.Collections.IList;
+                    
+                    foreach (var statModifier in vehicleStats)
+                    {
+                        var statDef = statDefProp.GetValue(statModifier) as Def;
+                        if (statDef.defName == "MoveSpeed")
+                        {
+                            var worker = workerProp.GetValue(statDef);
+                            if (worker == null)
+                            {
+                                Log.Error("GetMoveSpeed: worker is null");
+                                return null;
+                            }
+                            
+                            var result = getValueMethod.Invoke(worker, new object[] { vehicleDef });
+                            if (result is float f)
+                            {
+                                return f;
+                            }
+                            else
+                            {
+                                Log.Error("GetMoveSpeed: result is not a float");
+                                return null;
+                            }
+                        }
+                    }
+                }
+                catch (System.Exception ex)
+                {
+                    Log.Error($"Error in GetMoveSpeed for VehicleFramework: {ex}");
+                }
+            }
+            
+            return null;
+        }
+
+        private static float? GetStatValueIfDefined(BuildableDef buildable, StatDef statDef)
+        {
+            if (buildable.StatBaseDefined(statDef))
+            {
+                var value = buildable.GetStatValueAbstract(statDef);
+                return value;
+            }
+            return null;
+        }
+
+        private static float? GetTotalStorageCapacity(BuildableDef buildable)
+        {
+            if (buildable is ThingDef thingDef && thingDef.building != null && thingDef.building.maxItemsInCell > 0)
+            {
+                return thingDef.building.maxItemsInCell * thingDef.size.x * thingDef.size.z;
+            }
+            return null;
         }
     }
 }
