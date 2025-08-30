@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_GroundTransport</defName>
+    <label>Ground</label>
+    <description>Build ground transport.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Vehicles.Designator_AreaRoadExpand</li>
+      <li>Vehicles.Designator_AreaRoadClear</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>VF_Vehicles</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_AerialTransport</defName>
+    <label>Aerial</label>
+    <description>Build aerial transport.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Vehicles.Designator_AreaRoadExpand</li>
+      <li>Vehicles.Designator_AreaRoadClear</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>VF_Vehicles</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_MilitaryTransport</defName>
+    <label>Military</label>
+    <description>Build military transport.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Vehicles.Designator_AreaRoadExpand</li>
+      <li>Vehicles.Designator_AreaRoadClear</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>VF_Vehicles</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_TransportInfrastructure</defName>
+    <label>Infrastructure</label>
+    <description>Build transport infrastructure.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Vehicles.Designator_AreaRoadExpand</li>
+      <li>Vehicles.Designator_AreaRoadClear</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>VF_Vehicles</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+</Defs>

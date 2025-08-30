@@ -1,6 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <DesignationCategoryDef>
+    <defName>Ferny_Seating</defName>
+    <label>Seating</label>
+    <description>Manage seating.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Furniture</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Tables</defName>
+    <label>Tables</label>
+    <description>Manage tables.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Furniture</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_Lighting</defName>
     <label>Lighting</label>
     <description>Buildings that emit light.</description>
@@ -28,6 +60,23 @@
     <modExtensions>
       <li Class="BetterArchitect.NestedCategoryExtension">
         <parentCategory>Furniture</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Farming</defName>
+    <label>Farming</label>
+    <description>Things that relate to agriculture.</description>
+    <order>650</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Designator_ZoneAdd_Growing</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Production</parentCategory>
       </li>
     </modExtensions>
   </DesignationCategoryDef>
@@ -83,7 +132,7 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_PowerManagement</defName>
-    <label>Management</label>
+    <label>Infrastructure</label>
     <description>Things that help you manage your power.</description>
     <order>7</order>
     <specialDesignatorClasses>
@@ -290,7 +339,7 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_AirManagement</defName>
-    <label>Management</label>
+    <label>Airflow</label>
     <description>Manage airflow.</description>
     <order>7</order>
     <specialDesignatorClasses>
@@ -302,6 +351,17 @@
         <parentCategory>Temperature</parentCategory>
       </li>
     </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Environment</defName>
+    <label>Environment</label>
+    <description>Things that interact with the environment.</description>
+    <order>223</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
   </DesignationCategoryDef>
   <!-- <DesignationCategoryDef>
     <defName>Ferny_Automation</defName>

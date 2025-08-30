@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- POWER GENERATION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="HPGMHumanPowerGenerator"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                    </value>
+                </Operation>   
+</Patch>

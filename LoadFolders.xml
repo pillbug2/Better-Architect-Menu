@@ -62,5 +62,20 @@
     <li IfModActive="pyrce.mass.graves.continued">Mods and Shit/Mass Graves</li>
     <li IfModActive="grave.cross">Mods and Shit/Memorial Cross</li>
     <li IfModActive="inglix.widermarriagespot">Mods and Shit/Wider Marriage Spot</li>
+    <li IfModActive="scurvyez.stevesdoors">Mods and Shit/Steve's Doors</li>
+    <li IfModActive="oracle.miscellania">Mods and Shit/Oracle's Miscellania</li>
+    <li IfModActive="xmb.ancienturbanruins.mo">Mods and Shit/Ancient Urban Ruins</li>
+    <li IfModActive="sarg.alphaanimals">Mods and Shit/Alpha Animals</li>
+    <li IfModActive="vanillaexpanded.vfepower">Mods and Shit/VFE Power</li>
+    <li IfModActive="vanillaexpanded.helixiengas">Mods and Shit/VE Helixien Gas</li>
+    <li IfModActive="flashpoint55.humanpowergeneratormod">Mods and Shit/Human Power Generator</li>
+    <li IfModActive="ratys.rtfuse">Mods and Shit/RT Fuse</li>
+    <li IfModActive="oskarpotocki.vfe.insectoid2">Mods and Shit/VFE Insectoids 2</li>
+    <li IfModActive="vanillaexpanded.vplantsemore">Mods and Shit/VE Plants More</li>
+    <li IfModActive="vanillaexpanded.vplantsemushrooms">Mods and Shit/VE Plants Mushrooms</li>
+    <li IfModActive="biomesteam.biomescore">Mods and Shit/Biomes Core</li>
+    <li IfModActive="adamas.plantgenetics">Mods and Shit/Plant Genetics</li>
+
+
   </v1.6>
 </loadFolders>

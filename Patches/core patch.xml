@@ -273,7 +273,7 @@
                         <designationCategory>Ferny_Doors</designationCategory>
                     </value>
                 </Operation>
-
+Door
 <!-- BRIDGES -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
@@ -500,4 +500,16 @@
                         <designationCategory>Ideology</designationCategory>
                     </value>
                 </Operation>
+
+<!-- FARMING -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="HydroponicsBasin"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Farming</designationCategory>
+                    </value>
+                </Operation>
+
+
+
 </Patch>

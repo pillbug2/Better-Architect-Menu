@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>              
+<!-- DOORS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="SD_GlassDoorBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Doors</designationCategory>
+                    </value>
+                </Operation>
+</Patch>
