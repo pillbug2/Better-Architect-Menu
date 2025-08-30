@@ -80,14 +80,21 @@ namespace BetterArchitect
                 Find.DesignatorManager.SelectedDesignator.DoExtraGuiControls(0f, (float)(UI.screenHeight - 35) - ((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).WinHeight - 270f);
             }
             var menuHeight = BetterArchitectSettings.menuHeight;
+            var leftWidth = 200f;
+            var ordersWidth = 175f;
+            var gizmoSize = 75f;
+            var gizmoSpacing = 5f;
+            var availableWidth = UI.screenWidth - 195f - (((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).RequestedTabSize.x + 10f) - leftWidth - ordersWidth;
+            var gizmosPerRow = Mathf.Max(1, Mathf.FloorToInt(availableWidth / (gizmoSize + gizmoSpacing)));
+            var gridWidth = gizmosPerRow * (gizmoSize + gizmoSpacing) + gizmoSpacing + 11;
             var mainRect = new Rect(
                 ((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).RequestedTabSize.x + 10f,
                 UI.screenHeight - menuHeight - 35f,
-                UI.screenWidth - 195f - (((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).RequestedTabSize.x + 10f),
+                leftWidth + gridWidth + ordersWidth,
                 menuHeight);
-            var leftRect = new Rect(mainRect.x, mainRect.y + 20f, 200f, mainRect.height - 30f);
-            var ordersRect = new Rect(mainRect.xMax - 95f, mainRect.y + 30f, 95f, mainRect.height - 30f);
-            var gridRect = new Rect(leftRect.xMax, mainRect.y, mainRect.width - leftRect.width - ordersRect.width, mainRect.height);
+            var leftRect = new Rect(mainRect.x, mainRect.y + 20f, leftWidth, mainRect.height - 30f);
+            var gridRect = new Rect(leftRect.xMax, mainRect.y, gridWidth, mainRect.height);
+            var ordersRect = new Rect(gridRect.xMax, mainRect.y + 30f, ordersWidth, mainRect.height - 30f);
             var newColor = new Color(Color.white.r, Color.white.g, Color.white.b, 1f - BetterArchitectSettings.backgroundAlpha);
             Widgets.DrawWindowBackground(mainRect, newColor);
             var allCategories = DefDatabase<DesignationCategoryDef>.AllDefsListForReading
@@ -146,24 +153,9 @@ namespace BetterArchitect
                 orderDesignators = selectedData.orders;
                 categoryForGridAndOrders = selectedCategory;
             }
-            bool onlyMainCategoryAvailable = true;
-            foreach (var data in designatorDataList)
-            {
-                if (data.def == tab.def) continue;
-                if (IsSpecialCategory(data.def))
-                {
-                    onlyMainCategoryAvailable = false;
-                    break;
-                }
-                if (!data.buildables.NullOrEmpty())
-                {
-                    onlyMainCategoryAvailable = false;
-                    break;
-                }
-            }
 
-            var mouseoverGizmo = DrawDesignatorGrid(gridRect, categoryForGridAndOrders, designatorsToDisplay, onlyMainCategoryAvailable);
-            var orderGizmo = DrawOrdersPanel(ordersRect, categoryForGridAndOrders, orderDesignators);
+            var mouseoverGizmo = DrawDesignatorGrid(gridRect, categoryForGridAndOrders, designatorsToDisplay);
+            var orderGizmo = DrawOrdersPanel(ordersRect, orderDesignators);
             if (orderGizmo != null) mouseoverGizmo = orderGizmo;
             DoInfoBox(mouseoverGizmo ?? Find.DesignatorManager.SelectedDesignator);
             if (Event.current.type == EventType.MouseDown && Mouse.IsOver(mainRect)) Event.current.Use();
@@ -309,7 +301,7 @@ namespace BetterArchitect
             return result;
         }
 
-        private static Designator DrawDesignatorGrid(Rect rect, DesignationCategoryDef mainCat, List<Designator> designators, bool onlyMainCategoryAvailable = false)
+        private static Designator DrawDesignatorGrid(Rect rect, DesignationCategoryDef mainCat, List<Designator> designators)
         {
             var viewControlsRect = new Rect(rect.xMax - 100f, rect.y, 235f, 28f);
             DrawViewControls(viewControlsRect, mainCat, designators);
@@ -343,7 +335,8 @@ namespace BetterArchitect
         {
             var gizmoSize = 75f;
             var gizmoSpacing = 5f;
-            var gizmosPerRow = Mathf.Max(1, Mathf.FloorToInt((rect.width - 16f) / (gizmoSize + gizmoSpacing)));
+            var availableWidth = rect.width - 16f;
+            var gizmosPerRow = Mathf.Max(1, Mathf.FloorToInt(availableWidth / (gizmoSize + gizmoSpacing)));
             var rowCount = Mathf.CeilToInt((float)designators.Count / gizmosPerRow);
             var rowHeight = gizmoSize + gizmoSpacing + 5f;
             var viewRect = new Rect(0, 0, rect.width - 16f, rowCount * rowHeight);
@@ -432,12 +425,12 @@ namespace BetterArchitect
                 var availableSortOptions = System.Enum.GetValues(typeof(SortBy)).Cast<SortBy>().Where(sortBy =>
                 {
                     if (sortBy == SortBy.Default || sortBy == SortBy.Label) return true;
-                    foreach (var designator in designators)
+                    var values = designators.Select(d => GetSortValueFor(d, sortBy)).ToList();
+                    if (values.All(v => v == null) || values.Distinct().Count() <= 1)
                     {
-                        var value = GetSortValueFor(designator, sortBy);
-                        if (value != null) return true;
+                        return false;
                     }
-                    return false;
+                    return values.Any(v => v != null);
                 }).Select(s => new FloatMenuOption(s.ToStringTranslated(), delegate
                 {
                     settings.SortBy = s;
@@ -458,46 +451,25 @@ namespace BetterArchitect
         {
             if (settings.SortBy == SortBy.Default) return;
 
-            designators.Sort((a, b) =>
+            List<Designator> sortedDesignators;
+            
+            if (settings.SortBy == SortBy.Label)
             {
-                int primaryResult;
-                if (settings.SortBy == SortBy.Label)
-                {
-                    primaryResult = a.Label.CompareTo(b.Label);
-                }
-                else
-                {
-                    float? valA = GetSortValueFor(a, settings.SortBy);
-                    float? valB = GetSortValueFor(b, settings.SortBy);
-                    if (valA == null && valB == null)
-                    {
-                        primaryResult = 0;
-                    }
-                    else if (valA == null)
-                    {
-                        primaryResult = -1;
-                    }
-                    else if (valB == null)
-                    {
-                        primaryResult = 1;
-                    }
-                    else
-                    {
-                        primaryResult = valA.Value.CompareTo(valB.Value);
-                    }
-                }
-                if (!settings.Ascending)
-                {
-                    primaryResult *= -1;
-                }
-                if (primaryResult != 0)
-                {
-                    return primaryResult;
-                }
-                float orderA = GetUiOrderFor(a);
-                float orderB = GetUiOrderFor(b);
-                return orderA.CompareTo(orderB);
-            });
+                sortedDesignators = designators.OrderBy(a => a.GetLabel()).ToList();
+            }
+            else
+            {
+                sortedDesignators = designators.OrderBy(a => GetSortValueFor(a, settings.SortBy).GetValueOrDefault(float.MinValue))
+                                               .ThenBy(a => GetUiOrderFor(a))
+                                               .ThenBy(a => a.GetLabel())
+                                               .ToList();
+            }
+            if (!settings.Ascending)
+            {
+                sortedDesignators.Reverse();
+            }
+            designators.Clear();
+            designators.AddRange(sortedDesignators);
         }
 
         private static float? GetSortValueFor(Designator d, SortBy sortBy)
@@ -526,19 +498,48 @@ namespace BetterArchitect
             };
         }
 
-        private static Designator DrawOrdersPanel(Rect rect, DesignationCategoryDef category, List<Designator> designators)
+        private static ThingDef GetStuffFrom(BuildableDef buildable)
+        {
+            if (buildable is not ThingDef thingDef || thingDef.MadeFromStuff is false) return null;
+            
+            if (Find.CurrentMap == null) return null;
+            
+            foreach (ThingDef item in from d in Find.CurrentMap.resourceCounter.AllCountedAmounts.Keys
+                orderby d.stuffProps?.commonality ?? float.PositiveInfinity descending, d.BaseMarketValue
+                select d)
+            {
+                if (item.IsStuff && item.stuffProps.CanMake(thingDef) && (DebugSettings.godMode || Find.CurrentMap.listerThings.ThingsOfDef(item).Count > 0))
+                {
+                    return item;
+                }
+            }
+            
+            return null;
+        }
+
+        private static Designator DrawOrdersPanel(Rect rect, List<Designator> designators)
         {
             var gizmoSize = 75f;
             var gizmoSpacing = 5f;
             var rowHeight = gizmoSize + gizmoSpacing + 5f;
             var outRect = rect.ContractedBy(2f);
             outRect.width += 2;
-            var viewRect = new Rect(0, 0, outRect.width - 16f, designators.Count * rowHeight);
+
+            var columns = 2;
+            var columnWidth = (outRect.width - 16f - (columns - 1) * gizmoSpacing) / columns;
+
+            var rowCount = Mathf.CeilToInt((float)designators.Count / columns);
+            var viewRect = new Rect(0, 0, outRect.width - 16f, rowCount * rowHeight);
+
             Designator mouseoverGizmo = null;
             Widgets.BeginScrollView(outRect, ref ordersScrollPosition, viewRect);
             for (var i = 0; i < designators.Count; i++)
             {
-                var result = designators[i].GizmoOnGUI(new Rect(0, rowHeight * i, gizmoSize, gizmoSize).position, gizmoSize, default);
+                int row = i / columns;
+                int col = i % columns;
+                var xPos = col * (gizmoSize + gizmoSpacing);
+                var yPos = row * rowHeight;
+                var result = designators[i].GizmoOnGUI(new Vector2(xPos, yPos), gizmoSize, default);
                 if (result.State >= GizmoState.Mouseover) mouseoverGizmo = designators[i];
                 if (result.State == GizmoState.Interacted) designators[i].ProcessInput(result.InteractEvent);
             }
@@ -727,11 +728,11 @@ namespace BetterArchitect
         private static System.Reflection.FieldInfo statDefProp;
         private static System.Reflection.PropertyInfo workerProp;
         private static System.Reflection.MethodInfo getValueMethod;
-        
+
         private static void InitializeVehicleFrameworkReflection()
         {
             if (vehicleBuildDefType != null) return;
-            
+
             try
             {
                 vehicleBuildDefType = AccessTools.TypeByName("Vehicles.VehicleBuildDef");
@@ -829,9 +830,9 @@ namespace BetterArchitect
                         Log.Error("GetMoveSpeed: vehicleDef is null");
                         return null;
                     }
-                    
+
                     var vehicleStats = vehicleStatsField.GetValue(vehicleDef) as System.Collections.IList;
-                    
+
                     foreach (var statModifier in vehicleStats)
                     {
                         var statDef = statDefProp.GetValue(statModifier) as Def;
@@ -843,7 +844,7 @@ namespace BetterArchitect
                                 Log.Error("GetMoveSpeed: worker is null");
                                 return null;
                             }
-                            
+
                             var result = getValueMethod.Invoke(worker, new object[] { vehicleDef });
                             if (result is float f)
                             {
@@ -862,27 +863,41 @@ namespace BetterArchitect
                     Log.Error($"Error in GetMoveSpeed for VehicleFramework: {ex}");
                 }
             }
-            
+
             return null;
         }
 
         private static float? GetStatValueIfDefined(BuildableDef buildable, StatDef statDef)
         {
-            if (buildable.StatBaseDefined(statDef))
+            if (statDef.showIfUndefined is false && buildable.StatBaseDefined(statDef) is false)
             {
-                var value = buildable.GetStatValueAbstract(statDef);
-                return value;
+                return null;
             }
-            return null;
+            var stuff = GetStuffFrom(buildable);
+            var value = buildable.GetStatValueAbstract(statDef, stuff);
+            return value;
         }
 
         private static float? GetTotalStorageCapacity(BuildableDef buildable)
         {
-            if (buildable is ThingDef thingDef && thingDef.building != null && thingDef.building.maxItemsInCell > 0)
+            if (buildable is ThingDef thingDef && typeof(Building_Storage).IsAssignableFrom(thingDef.thingClass) && thingDef.building != null && thingDef.building.maxItemsInCell > 0)
             {
                 return thingDef.building.maxItemsInCell * thingDef.size.x * thingDef.size.z;
             }
             return null;
+        }
+        
+        private static string GetLabel(this Designator designator)
+        {
+            if (designator is Designator_Build buildDesignator)
+            {
+                var oldWriteStuff = buildDesignator.writeStuff;
+                buildDesignator.writeStuff = false;
+                var label = buildDesignator.LabelCap;
+                buildDesignator.writeStuff = oldWriteStuff;
+                return label;
+            }
+            return designator.LabelCap;
         }
     }
 }
