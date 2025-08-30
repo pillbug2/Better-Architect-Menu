@@ -77,5 +77,15 @@
     <li IfModActive="adamas.plantgenetics">Mods and Shit/Plant Genetics</li>
     <li IfModActive="vanillaexpanded.vfefarming">Mods and Shit/VFE Farming</li>
     <li IfModActive="smashphil.vehicleframework">Mods and Shit/Vehicle Framework</li>
+    <li IfModActive="nightmare.museums">Mods and Shit/Museums</li>
+    <li IfModActive="vanillaracesexpanded.android">Mods and Shit/VRE Androids</li>
+    <li IfModActive="scpchemfuel.appliances">Mods and Shit/Appliances Expanded</li>
+    <li IfModActive="vanillaexpanded.vchemfuele">Mods and Shit/VE Chemfuel</li>
+    <li IfModActive="thek.guardingp">Mods and Shit/Guarding Pawns</li>
+    <li IfModActive="oskarpotocki.vanillavehiclesexpanded">Mods and Shit/VE Vehicles</li>
+    <li IfModActive="oskarpotocki.vanillavehiclesexpandedtier3">Mods and Shit/VE Vehicles Tier 3</li>
+    <li IfModActive="ht.lunartika">Mods and Shit/Heavy Truck</li>
+    <li IfModActive="chaotic.rvinterior">Mods and Shit/Vehicle Interior Framework</li>
+    <li IfModActive="defi.blueprints.fork">Mods and Shit/Blueprints</li>
   </v1.6>
 </loadFolders>

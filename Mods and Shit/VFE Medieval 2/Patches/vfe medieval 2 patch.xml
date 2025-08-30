@@ -58,4 +58,21 @@
                         <designationCategory>Ferny_Farming</designationCategory>
                     </value>
                 </Operation>
+
+<!-- WEAPONS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_Turret_WallMountedArbalest"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_Turret_WallMountedArquebus"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+
 </Patch>

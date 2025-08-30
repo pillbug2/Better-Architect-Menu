@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>              
 
+<!-- NEST INTO COLONY MENU -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="Orders"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Ferny_Colony</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="Zone"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Ferny_Colony</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+                </Operation>
+
 <!-- RENAME SECURITY -->
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/DesignationCategoryDef[defName="Security"]/label</xpath>
@@ -17,6 +41,21 @@
                         <label>Culture</label>
                     </value>
                 </Operation>
+
+<!-- RENAME TEMPERATURE -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/DesignationCategoryDef[defName="Temperature"]/label</xpath>
+                    <value>
+                        <label>Environment</label>
+                    </value>
+                </Operation>
+
+
+
+
+
+
+
 
 <!-- LIGHTING -->
                 <Operation Class="PatchOperationReplace">
@@ -193,13 +232,6 @@
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="WindTurbine"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="SolarGenerator"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_PowerGeneration</designationCategory>
@@ -273,7 +305,6 @@
                         <designationCategory>Ferny_Doors</designationCategory>
                     </value>
                 </Operation>
-Door
 <!-- BRIDGES -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
@@ -510,6 +541,28 @@ Door
                     </value>
                 </Operation>
 
+<!-- FIREFOAM -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Turret_FoamTurret"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Firefoam</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="FirefoamPopper"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Firefoam</designationCategory>
+                    </value>
+                </Operation>
 
-
+<!-- FOUNDATIONAL PRODUCTION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="CraftingSpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoundationalProduction</designationCategory>
+                    </value>
+                </Operation>
 </Patch>

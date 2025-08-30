@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>              
 
-<!-- NO ODYSSEY CATEGORY -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/*[designationCategory="Odyssey"]/designationCategory</xpath>
-        <value>
-        <designationCategory>Ship</designationCategory>
-        </value>
-    </Operation>
+<!-- ORBIT CATEGORY -->
+
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/DesignationCategoryDef[defName="Ship"]/label</xpath>
@@ -15,24 +10,36 @@
             <label>Space</label>
         </value>
     </Operation>
-    <Operation Class="PatchOperationRemove">
-        <success>Always</success>
-        <xpath>Defs/DesignationCategoryDef[defName="Odyssey"]</xpath>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/*[designationCategory="Ship"]/designationCategory</xpath>
+        <value>
+        <designationCategory>Ferny_Space</designationCategory>
+        </value>
     </Operation>
-    <Operation Class="PatchOperationRemove">
-        <success>Always</success>
-        <xpath>Defs/DesignationCategoryDef[defName="Ship"]/researchPrerequisites</xpath>
-    </Operation>
-
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
-        <xpath>Defs/DesignationCategoryDef[defName="Ship"]/specialDesignatorClasses</xpath>
+        <xpath>Defs/DesignationCategoryDef[defName="Odyssey"]/order</xpath>
         <value>
-            <specialDesignatorClasses>
-            <li>Designator_Cancel</li>
-            <li>Designator_Deconstruct</li>
-            <li>Designator_RemoveFoundation</li>
-            </specialDesignatorClasses>
+            <order>7</order>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/DesignationCategoryDef[defName="Odyssey"]/label</xpath>
+        <value>
+            <label>Orbit</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/DesignationCategoryDef[defName="Odyssey"]</xpath>
+        <value>
+            <modExtensions>
+            <li Class="BetterArchitect.NestedCategoryExtension">
+                <parentCategory>Ship</parentCategory>
+            </li>
+            </modExtensions>
         </value>
     </Operation>
 

@@ -486,4 +486,21 @@
                     </value>
                 </Operation>
 
+<!-- FOUNDATIONAL PRODUCTION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/TerrainDef[defName="DankPyon_Trestle"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoundationalProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_SawTable"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoundationalProduction</designationCategory>
+                    </value>
+                </Operation>
+
+
 </Patch>

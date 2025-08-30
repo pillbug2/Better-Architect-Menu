@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <DesignationCategoryDef>
+    <defName>Ferny_Colony</defName>
+    <label>Colony</label>
+    <description>Manage the colony.</description>
+    <order>9999999</order>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_Seating</defName>
     <label>Seating</label>
     <description>Manage seating.</description>
@@ -60,6 +67,23 @@
     <modExtensions>
       <li Class="BetterArchitect.NestedCategoryExtension">
         <parentCategory>Furniture</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_FoundationalProduction</defName>
+    <label>Foundational</label>
+    <description>Foundational production methods.</description>
+    <order>650</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Designator_ZoneAdd_Growing</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Production</parentCategory>
       </li>
     </modExtensions>
   </DesignationCategoryDef>
@@ -272,6 +296,22 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_CombatInfrastructure</defName>
+    <label>Infrastructure</label>
+    <description>Build infrastructure for your enemies.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Security</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_Ranching</defName>
     <label>Ranching</label>
     <description>Farming your animals.</description>
@@ -354,15 +394,22 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
-    <defName>Ferny_Environment</defName>
-    <label>Environment</label>
-    <description>Things that interact with the environment.</description>
-    <order>223</order>
+    <defName>Ferny_Firefoam</defName>
+    <label>Firefoam</label>
+    <description>Manage firefoam.</description>
+    <order>7</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
     </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Temperature</parentCategory>
+      </li>
+    </modExtensions>
   </DesignationCategoryDef>
+
+
   <!-- <DesignationCategoryDef>
     <defName>Ferny_Automation</defName>
     <label>Automation</label>

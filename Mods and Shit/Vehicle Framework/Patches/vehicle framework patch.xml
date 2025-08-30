@@ -33,18 +33,41 @@
                         <designationCategory>VF_Vehicles</designationCategory>
                     </value>
                 </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/DesignationCategoryDef[defName="Ship"]</xpath>
-                    <value>
-                        <modExtensions>
-                        <li Class="BetterArchitect.NestedCategoryExtension">
-                            <parentCategory>VF_Vehicles</parentCategory>
-                        </li>
-                        </modExtensions>
-                    </value>
-                </Operation>
 
+
+                <Operation Class="PatchOperationConditional">
+                <success>Always</success>
+                    <xpath>/Defs/DesignationCategoryDef[defName="Ship"]/modExtensions</xpath>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationReplace">
+                                <success>Always</success>
+                                <xpath>Defs/DesignationCategoryDef[defName="Ship"]/modExtensions</xpath>
+                                <value>
+                                    <modExtensions>
+                                    <li Class="BetterArchitect.NestedCategoryExtension">
+                                        <parentCategory>VF_Vehicles</parentCategory>
+                                    </li>
+                                    </modExtensions>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/DesignationCategoryDef[defName="Ship"]</xpath>
+                                <value>
+                                    <modExtensions>
+                                    <li Class="BetterArchitect.NestedCategoryExtension">
+                                        <parentCategory>VF_Vehicles</parentCategory>
+                                    </li>
+                                    </modExtensions>                                
+                                </value>
+                            </li>
+                        </operations>
+                    </nomatch>
+                </Operation>
 <!-- ROYALTY PATCHES -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>

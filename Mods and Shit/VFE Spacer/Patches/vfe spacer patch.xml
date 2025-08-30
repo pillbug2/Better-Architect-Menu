@@ -58,4 +58,15 @@
                         <designationCategory>Ferny_Tables</designationCategory>
                     </value>
                 </Operation>
+
+<!-- AIRFLOW -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFES_AirPurifier"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_AirManagement</designationCategory>
+                    </value>
+                </Operation>
+
+
 </Patch>

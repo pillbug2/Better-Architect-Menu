@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- <DesignationCategoryDef>
+    <defName>Ferny_Woodworking</defName>
+    <label>Woodworking</label>
+    <description>Engage in woodworking.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ship</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef> -->
+
+</Defs>

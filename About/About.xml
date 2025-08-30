@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ModMetaData>
-    <name>Better-Architect</name>
+    <name>Better Architect Menu</name>
     <author>ferny</author>
     <packageId>ferny.BetterArchitect</packageId>
     <description>Better architect</description>
@@ -97,5 +97,11 @@
         <li>adamas.plantgenetics</li>
         <li>vanillaexpanded.vfefarming</li>
         <li>smashphil.vehicleframework</li>
+        <li>thek.guardingp</li>
+        <li>oskarpotocki.vanillavehiclesexpanded</li>
+        <li>oskarpotocki.vanillavehiclesexpandedtier3</li>
+        <li>ht.lunartika</li>
+        <li>chaotic.rvinterior</li>
+        <li>defi.blueprints.fork</li>
     </loadAfter>
 </ModMetaData>
