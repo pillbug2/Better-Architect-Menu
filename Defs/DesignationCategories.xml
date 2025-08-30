@@ -192,8 +192,8 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
-    <defName>Ferny_Bridges</defName>
-    <label>Bridges</label>
+    <defName>Ferny_Foundations</defName>
+    <label>Foundations</label>
     <description>Build structural bridges.</description>
     <order>7</order>
     <specialDesignatorClasses>

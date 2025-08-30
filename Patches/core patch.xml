@@ -279,7 +279,7 @@ Door
                     <success>Always</success>
                     <xpath>Defs/TerrainDef[@Name="BridgeBase"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Bridges</designationCategory>
+                        <designationCategory>Ferny_Foundations</designationCategory>
                     </value>
                 </Operation>
 

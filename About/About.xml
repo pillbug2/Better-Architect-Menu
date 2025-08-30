@@ -96,5 +96,6 @@
         <li>biomesteam.biomescore</li>
         <li>adamas.plantgenetics</li>
         <li>vanillaexpanded.vfefarming</li>
+        <li>smashphil.vehicleframework</li>
     </loadAfter>
 </ModMetaData>
