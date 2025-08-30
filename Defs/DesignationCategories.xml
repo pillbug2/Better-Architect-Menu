@@ -11,7 +11,7 @@
     <defName>Ferny_Seating</defName>
     <label>Seating</label>
     <description>Manage seating.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -27,7 +27,7 @@
     <defName>Ferny_Tables</defName>
     <label>Tables</label>
     <description>Manage tables.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -125,7 +125,7 @@
     <defName>Ferny_Auxiliaries</defName>
     <label>Auxiliaries</label>
     <description>Things that boost workspeed.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -141,7 +141,7 @@
     <defName>Ferny_PowerGeneration</defName>
     <label>Generation</label>
     <description>Things that help you generate your power.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -158,7 +158,7 @@
     <defName>Ferny_PowerManagement</defName>
     <label>Infrastructure</label>
     <description>Things that help you manage your power.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -187,7 +187,7 @@
     <defName>Ferny_Walls</defName>
     <label>Walls</label>
     <description>Build structural walls.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -203,7 +203,7 @@
     <defName>Ferny_Doors</defName>
     <label>Doors</label>
     <description>Build structural doors.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -219,7 +219,7 @@
     <defName>Ferny_Foundations</defName>
     <label>Foundations</label>
     <description>Build structural bridges.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -235,7 +235,7 @@
     <defName>Ferny_Supports</defName>
     <label>Supports</label>
     <description>Build structural supports.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -251,7 +251,7 @@
     <defName>Ferny_Barricades</defName>
     <label>Barricades</label>
     <description>Build barricades for your enemies.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -267,7 +267,7 @@
     <defName>Ferny_Traps</defName>
     <label>Traps</label>
     <description>Build traps for your enemies.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -283,7 +283,7 @@
     <defName>Ferny_Weapons</defName>
     <label>Weapons</label>
     <description>Build weapons for your enemies.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -299,7 +299,7 @@
     <defName>Ferny_CombatInfrastructure</defName>
     <label>Infrastructure</label>
     <description>Build infrastructure for your enemies.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -315,7 +315,7 @@
     <defName>Ferny_Ranching</defName>
     <label>Ranching</label>
     <description>Farming your animals.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -331,7 +331,7 @@
     <defName>Ferny_AnimalBedding</defName>
     <label>Bedding</label>
     <description>Build bedding for your animals.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -347,7 +347,7 @@
     <defName>Ferny_Heating</defName>
     <label>Heating</label>
     <description>Heat your colonists.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -363,7 +363,7 @@
     <defName>Ferny_Cooling</defName>
     <label>Cooling</label>
     <description>Cool your colonists.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -381,7 +381,7 @@
     <defName>Ferny_AirManagement</defName>
     <label>Airflow</label>
     <description>Manage airflow.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -397,7 +397,7 @@
     <defName>Ferny_Firefoam</defName>
     <label>Firefoam</label>
     <description>Manage firefoam.</description>
-    <order>7</order>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -409,7 +409,18 @@
     </modExtensions>
   </DesignationCategoryDef>
 
+  <DesignationCategoryDef>
+    <defName>Ferny_Life</defName>
+    <label>Life</label>
+    <description>Manage life.</description>
+    <order>350</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
 
+  
   <!-- <DesignationCategoryDef>
     <defName>Ferny_Automation</defName>
     <label>Automation</label>

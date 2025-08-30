@@ -180,7 +180,7 @@
     <success>Always</success>
     <xpath>Defs/ThingDef[defName="CE_InfiniteChemfuelPump"]/designationCategory</xpath>
     <value>
-        <designationCategory></Ferny_ChemfuelNetwork>
+        <designationCategory></designationCategory>
     </value>
 </Operation>
 <Operation Class="PatchOperationReplace">
