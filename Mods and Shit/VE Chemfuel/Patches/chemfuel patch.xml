@@ -5,7 +5,7 @@
 <Operation Class="PatchOperationReplace">
     <xpath>Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]/label</xpath>
     <value>
-        <label>Networking</label>
+        <label>Resources</label>
     </value>
 </Operation>
 

@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>              
+
+<!-- RENAME IDEOLOGY -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="Ideology"]/label</xpath>
+                    <value>
+                        <label>Culture</label>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="Ideology"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Ferny_Life</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+                </Operation>
+
+<!-- BEDROOM -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="SleepAccelerator"]/designationCategory</xpath>
@@ -7,4 +29,5 @@
                         <designationCategory>Ferny_Bedroom</designationCategory>
                     </value>
                 </Operation>
+
 </Patch>

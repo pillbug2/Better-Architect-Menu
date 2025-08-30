@@ -170,4 +170,31 @@
                         <designationCategory>Ferny_Tables</designationCategory>
                     </value>
                 </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="RoyalTableDesc"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Tables</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- CHAIRS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Seat_RoyalChair"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Chairs</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Seat_RoyalArmchair"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Chairs</designationCategory>
+                    </value>
+                </Operation>
+
+
+
+
 </Patch>

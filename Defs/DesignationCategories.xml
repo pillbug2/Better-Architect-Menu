@@ -79,7 +79,22 @@
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
-      <li>Designator_ZoneAdd_Growing</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Production</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_ArtProduction</defName>
+    <label>Artistic</label>
+    <description>Artistic production methods.</description>
+    <order>650</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
     </specialDesignatorClasses>
     <modExtensions>
       <li Class="BetterArchitect.NestedCategoryExtension">
@@ -413,14 +428,47 @@
     <defName>Ferny_Life</defName>
     <label>Life</label>
     <description>Manage life.</description>
-    <order>350</order>
+    <order>452</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
     </specialDesignatorClasses>
   </DesignationCategoryDef>
 
-  
+  <DesignationCategoryDef>
+    <defName>Ferny_Childhood</defName>
+    <label>Childhood</label>
+    <description>Things that relate to childhood.</description>
+    <order>2</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Life</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_ColonyLocations</defName>
+    <label>Locations</label>
+    <description>Manage relevant colony locations.</description>
+    <order>10</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Colony</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+
+
   <!-- <DesignationCategoryDef>
     <defName>Ferny_Automation</defName>
     <label>Automation</label>

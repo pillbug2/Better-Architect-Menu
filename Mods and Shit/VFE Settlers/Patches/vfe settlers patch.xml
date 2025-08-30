@@ -29,7 +29,7 @@
 <!-- HEATING -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="Chemboiler"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="ChemBoiler"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Heating</designationCategory>
                     </value>

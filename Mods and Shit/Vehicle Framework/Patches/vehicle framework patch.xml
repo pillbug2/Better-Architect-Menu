@@ -23,14 +23,14 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="TransportPod"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>VF_Vehicles</designationCategory>
+                        <designationCategory>Ferny_AerialTransport</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="PodLauncher"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>VF_Vehicles</designationCategory>
+                        <designationCategory>Ferny_AerialTransport</designationCategory>
                     </value>
                 </Operation>
 
