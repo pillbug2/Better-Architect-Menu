@@ -15,7 +15,7 @@ namespace BetterArchitect
     [HarmonyPatch(typeof(ArchitectCategoryTab), nameof(ArchitectCategoryTab.DesignationTabOnGUI))]
     public static class ArchitectCategoryTab_DesignationTabOnGUI_Patch
     {
-        private static readonly Dictionary<DesignationCategoryDef, DesignationCategoryDef> SelectedSubCategory = new Dictionary<DesignationCategoryDef, DesignationCategoryDef>();
+        private static readonly Dictionary<DesignationCategoryDef, DesignationCategoryDef> selectedCategory = new Dictionary<DesignationCategoryDef, DesignationCategoryDef>();
         private static Vector2 leftPanelScrollPosition, designatorGridScrollPosition, ordersScrollPosition;
         private static DesignationCategoryDef lastMainCategory;
         private static MaterialInfo selectedMaterial;
@@ -40,7 +40,8 @@ namespace BetterArchitect
                     orders.Add(designator);
                 }
             }
-            if (category == DesignationCategoryDefOf.Zone || category == DefsOf.Orders)
+            if (category == DesignationCategoryDefOf.Zone || category == DefsOf.Orders ||
+                category.defName == "Blueprints")
             {
                 buildables.AddRange(orders);
                 orders.Clear();
@@ -142,12 +143,12 @@ namespace BetterArchitect
         private static DesignationCategoryDef HandleCategorySelection(Rect rect, DesignationCategoryDef mainCat, List<DesignatorCategoryData> designatorDataList)
         {
             var allCategories = designatorDataList.Select(d => d.def).ToList();
-            SelectedSubCategory.TryGetValue(mainCat, out var currentSelection);
+            selectedCategory.TryGetValue(mainCat, out var currentSelection);
 
             if (currentSelection == null || !allCategories.Contains(currentSelection))
             {
                 currentSelection = mainCat;
-                SelectedSubCategory[mainCat] = currentSelection;
+                selectedCategory[mainCat] = currentSelection;
             }
 
             var mainCategoryData = designatorDataList.FirstOrDefault(d => d.def == mainCat);
@@ -174,7 +175,7 @@ namespace BetterArchitect
                 if (Widgets.ButtonInvisible(rowRect))
                 {
                     if (!isSelected) SoundDefOf.Tick_High.PlayOneShotOnCamera();
-                    SelectedSubCategory[mainCat] = cat;
+                    selectedCategory[mainCat] = cat;
                     currentSelection = cat;
                 }
                 string label = cat.LabelCap;
@@ -459,7 +460,7 @@ namespace BetterArchitect
         private static TechLevel GetTechLevelFor(Designator d)
         {
             var b = GetBuildableDefFrom(d);
-            if (b?.researchPrerequisites != null && b.researchPrerequisites.Any()) return b.researchPrerequisites.First().techLevel;
+            if (b?.researchPrerequisites != null && b.researchPrerequisites.Any(x => x.techLevel != TechLevel.Undefined)) return b.researchPrerequisites.FirstOrDefault(x => x.techLevel != TechLevel.Undefined).techLevel;
             var techLevel = (b as ThingDef)?.techLevel;
             return (techLevel == TechLevel.Undefined || techLevel == null) ? TechLevel.Neolithic : techLevel.Value;
         }
