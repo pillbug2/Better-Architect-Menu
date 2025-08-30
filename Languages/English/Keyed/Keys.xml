@@ -22,6 +22,8 @@
 	<BA.RecreationPower>Recreation power</BA.RecreationPower>
 	<BA.MoveSpeed>Move speed</BA.MoveSpeed>
 	<BA.TotalStorageCapacity>Total storage capacity</BA.TotalStorageCapacity>
+	<BA.DoorOpeningSpeed>Door opening speed</BA.DoorOpeningSpeed>
+	<BA.WorkSpeedFactor>Work speed factor</BA.WorkSpeedFactor>
 	<BA.More>More</BA.More>
 	<BA.BackgroundAlpha>Background transparency</BA.BackgroundAlpha>
 	<BA.NothingAvailableToBuild>There is nothing available to build yet.</BA.NothingAvailableToBuild>
