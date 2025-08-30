@@ -489,7 +489,7 @@
 <!-- FOUNDATIONAL PRODUCTION -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/TerrainDef[defName="DankPyon_Trestle"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Trestle"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_FoundationalProduction</designationCategory>
                     </value>
@@ -502,5 +502,106 @@
                     </value>
                 </Operation>
 
+
+<!-- BARRICADES -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_CavalrySpike"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Barricades</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Trench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Barricades</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RTrench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Barricades</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- WEAPONS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Turret_Scorpio"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Turret_Ballista"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DankPyon_BaseTrebuchetBuilding"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DankPyon_BaseTrebuchetBuilding"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Turret_RepeaterBallista"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+
+
+<!-- MERGE IN RUSTIC CATEGORIES IF THEY ARE STILL THERE -->
+                <Operation Class="PatchOperationConditional">
+                <success>Always</success>
+                    <xpath>/Defs/DesignationCategoryDef[defName="DankPyon_RusticFurniture"]</xpath>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/DesignationCategoryDef[defName="DankPyon_RusticFurniture"]</xpath>
+                                <value>
+                                    <modExtensions>
+                                    <li Class="BetterArchitect.NestedCategoryExtension">
+                                        <parentCategory>Furniture</parentCategory>
+                                    </li>
+                                    </modExtensions>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </Operation>
+                <Operation Class="PatchOperationConditional">
+                <success>Always</success>
+                    <xpath>/Defs/DesignationCategoryDef[defName="DankPyon_RusticDecoration"]</xpath>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/DesignationCategoryDef[defName="DankPyon_RusticDecoration"]</xpath>
+                                <value>
+                                    <modExtensions>
+                                    <li Class="BetterArchitect.NestedCategoryExtension">
+                                        <parentCategory>Furniture</parentCategory>
+                                    </li>
+                                    </modExtensions>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </Operation>
 
 </Patch>
