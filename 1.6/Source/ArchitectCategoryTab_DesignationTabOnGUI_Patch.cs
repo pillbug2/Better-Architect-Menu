@@ -195,7 +195,7 @@ namespace BetterArchitect
                 }
             }
 
-            filteredSubCategories = filteredSubCategories.OrderBy(cat => cat.order).ToList();
+            filteredSubCategories = filteredSubCategories.OrderByDescending(cat => cat.order).ToList();
             bool shouldHideMoreCategory = false;
             if (filteredSubCategories.Any())
             {
@@ -520,6 +520,8 @@ namespace BetterArchitect
                 SortBy.RecreationPower => GetStatValueIfDefined(buildable, StatDefOf.JoyGainFactor),
                 SortBy.MoveSpeed => GetMoveSpeed(buildable),
                 SortBy.TotalStorageCapacity => GetTotalStorageCapacity(buildable),
+                SortBy.DoorOpeningSpeed => GetStatValueIfDefined(buildable, StatDefOf.DoorOpenSpeed),
+                SortBy.WorkSpeedFactor => GetStatValueIfDefined(buildable, StatDefOf.WorkTableWorkSpeedFactor),
                 _ => null
             };
         }
