@@ -140,7 +140,7 @@
     <defName>Ferny_Auxiliaries</defName>
     <label>Auxiliaries</label>
     <description>Things that boost workspeed.</description>
-    <order>900</order>
+    <order>2</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -358,6 +358,23 @@
     </modExtensions>
   </DesignationCategoryDef>
 
+
+  <DesignationCategoryDef>
+    <defName>Ferny_AnimalTravel</defName>
+    <label>Travel</label>
+    <description>Travel management for animals.</description>
+    <order>900</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Animals</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
   <DesignationCategoryDef>
     <defName>Ferny_Heating</defName>
     <label>Heating</label>
@@ -466,6 +483,146 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
+
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Biotech</defName>
+    <label>Biotech</label>
+    <description>Manage biotechnology.</description>
+    <order>12</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Transport</defName>
+    <label>Transport</label>
+    <description>Manage transport.</description>
+    <order>24</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Medical</defName>
+    <label>Medical</label>
+    <description>Manage medical tech.</description>
+    <order>900</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Biotech</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+  <DesignationCategoryDef>
+    <defName>Ferny_Enhancement</defName>
+    <label>Enhancement</label>
+    <description>Enhance your colonists.</description>
+    <order>900</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Biotech</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+
+
+
+  <DesignationCategoryDef>
+    <defName>Ferny_GroundTransport</defName>
+    <label>Ground</label>
+    <description>Build ground transport.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Transport</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_NavalTransport</defName>
+    <label>Naval</label>
+    <description>Build naval transport.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Transport</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_AerialTransport</defName>
+    <label>Aerial</label>
+    <description>Build aerial transport.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Transport</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_MilitaryTransport</defName>
+    <label>Military</label>
+    <description>Build military transport.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Transport</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_TransportInfrastructure</defName>
+    <label>Infrastructure</label>
+    <description>Build transport infrastructure.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Transport</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+
+
 
 
 

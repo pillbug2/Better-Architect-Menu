@@ -181,8 +181,39 @@
                 </Operation>
 
 
+<!-- INFRASTRUCTURE -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VVE_RefuelingPump"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_TransportInfrastructure</designationCategory>
+                    </value>
+                </Operation>
 
+                <Operation Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationReplace">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="ShipLandingBeacon"]/designationCategory</xpath>
+                                <value>
+                                    <designationCategory>Ferny_TransportInfrastructure</designationCategory>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </Operation>
 
-
+<!-- TRAPS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VVE_TankTrap"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Traps</designationCategory>
+                    </value>
+                </Operation>
 
 </Patch>

@@ -17,4 +17,20 @@
     </modExtensions>
   </DesignationCategoryDef>
 
+  <DesignationCategoryDef>
+    <defName>Ferny_Deathrest</defName>
+    <label>Deathrest</label>
+    <description>Manage Deathrest.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Biotech</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
 </Defs>

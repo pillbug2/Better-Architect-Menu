@@ -28,6 +28,14 @@
 
 <Operation Class="PatchOperationReplace">
     <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VREA_NeutroPipe"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
     <xpath>Defs/ThingDef[defName="VREA_SubterraneanNeutroPipe"]/designationCategory</xpath>
     <value>
         <designationCategory>Ferny_NeutroamineNetwork</designationCategory>
