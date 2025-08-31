@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
+<!-- AUXILIARIES -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="RBPArtCabinet"]/designationCategory</xpath>
@@ -7,4 +9,15 @@
                         <designationCategory>Ferny_Auxiliaries</designationCategory>
                     </value>
                 </Operation>
+
+<!-- ARTISTIC -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="RBPEaselPainting"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_CreativeProduction</designationCategory>
+                    </value>
+                </Operation>
+
+
 </Patch>

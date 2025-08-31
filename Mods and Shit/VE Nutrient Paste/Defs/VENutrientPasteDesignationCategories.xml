@@ -5,7 +5,7 @@
     <defName>Ferny_NutrientPasteNetwork</defName>
     <label>Nutrient Paste</label>
     <description>Manage nutrient paste.</description>
-    <order>7</order>
+    <order>2</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>

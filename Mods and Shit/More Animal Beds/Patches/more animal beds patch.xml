@@ -4,14 +4,14 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="GSAnimalBedBig"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Animals</designationCategory>
+                        <designationCategory>Ferny_AnimalBedding</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationAdd">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="GSAnimalBedBigPrestige"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Animals</designationCategory>
+                        <designationCategory>Ferny_AnimalBedding</designationCategory>
                     </value>
                 </Operation>
 </Patch>

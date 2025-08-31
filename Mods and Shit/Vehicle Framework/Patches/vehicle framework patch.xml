@@ -45,15 +45,22 @@
                 </Operation>
 
 <!-- VEHICLES PATCHES -->
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/*[designationCategory="VF_Vehicles"]/designationCategory</xpath>
-                    <value>
-                    <designationCategory>Ferny_Transport</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationRemove">
+                <!-- <Operation Class="PatchOperationAdd">
                     <success>Always</success>
                     <xpath>Defs/DesignationCategoryDef[defName="VF_Vehicles"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Ferny_Transport</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+                </Operation> -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="VF_Vehicles"]/order</xpath>
+                    <value>
+                        <order>1</order>
+                    </value>
                 </Operation>
-
 </Patch>

@@ -21,7 +21,7 @@
     <defName>Ferny_Deathrest</defName>
     <label>Deathrest</label>
     <description>Manage Deathrest.</description>
-    <order>7</order>
+    <order>100</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>

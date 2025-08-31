@@ -5,7 +5,7 @@
     <defName>Ferny_AmmunitionNetwork</defName>
     <label>Ammunition</label>
     <description>Manage ammunition.</description>
-    <order>7</order>
+    <order>5</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>

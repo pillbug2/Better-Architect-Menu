@@ -72,6 +72,22 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_Decorations</defName>
+    <label>Decorations</label>
+    <description>Things that decorate.</description>
+    <order>456</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Furniture</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_FoundationalProduction</defName>
     <label>Foundational</label>
     <description>Foundational production methods.</description>
@@ -88,9 +104,25 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
-    <defName>Ferny_ArtProduction</defName>
-    <label>Artistic</label>
-    <description>Artistic production methods.</description>
+    <defName>Ferny_ProcessingProduction</defName>
+    <label>Processing</label>
+    <description>Processing production methods.</description>
+    <order>650</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Production</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_CreativeProduction</defName>
+    <label>Creative</label>
+    <description>Creative production methods.</description>
     <order>650</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
@@ -107,7 +139,7 @@
     <defName>Ferny_Farming</defName>
     <label>Farming</label>
     <description>Things that relate to agriculture.</description>
-    <order>650</order>
+    <order>639</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -124,7 +156,7 @@
     <defName>Ferny_Kitchen</defName>
     <label>Kitchen</label>
     <description>Things that relate to food.</description>
-    <order>650</order>
+    <order>640</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -443,7 +475,7 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_Life</defName>
-    <label>Life</label>
+    <label>People</label>
     <description>Manage life.</description>
     <order>452</order>
     <specialDesignatorClasses>
@@ -522,6 +554,7 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
+
   <DesignationCategoryDef>
     <defName>Ferny_Enhancement</defName>
     <label>Enhancement</label>
@@ -545,22 +578,6 @@
     <defName>Ferny_GroundTransport</defName>
     <label>Ground</label>
     <description>Build ground transport.</description>
-    <order>7</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-    <modExtensions>
-      <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Ferny_Transport</parentCategory>
-      </li>
-    </modExtensions>
-  </DesignationCategoryDef>
-
-  <DesignationCategoryDef>
-    <defName>Ferny_NavalTransport</defName>
-    <label>Naval</label>
-    <description>Build naval transport.</description>
     <order>7</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
@@ -606,6 +623,22 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_NavalTransport</defName>
+    <label>Naval</label>
+    <description>Build naval transport.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Transport</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+  
+  <DesignationCategoryDef>
     <defName>Ferny_TransportInfrastructure</defName>
     <label>Infrastructure</label>
     <description>Build transport infrastructure.</description>
@@ -621,9 +654,36 @@
     </modExtensions>
   </DesignationCategoryDef>
 
+  <DesignationCategoryDef>
+    <defName>Ferny_Storage</defName>
+    <label>Storage</label>
+    <description>Build storage.</description>
+    <order>503</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Designator_ZoneAddStockpile_Resources</li>
+      <li>Designator_ZoneAddStockpile_Dumping</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
 
-
-
+  <DesignationCategoryDef>
+    <defName>Ferny_GeneralStorage</defName>
+    <label>General</label>
+    <description>Build general storage.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Designator_ZoneAddStockpile_Resources</li>
+      <li>Designator_ZoneAddStockpile_Dumping</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Storage</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
 
 
   <!-- <DesignationCategoryDef>

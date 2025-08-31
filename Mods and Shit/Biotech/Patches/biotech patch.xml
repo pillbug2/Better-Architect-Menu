@@ -29,7 +29,7 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/DesignationCategoryDef[defName="Biotech"]/label</xpath>
                     <value>
-                        <label>Xenogenetics</label>
+                        <label>Genetics</label>
                     </value>
                 </Operation>      
                 <Operation Class="PatchOperationAdd">
@@ -53,5 +53,55 @@
                     </value>
                 </Operation>
 
+<!-- CHILDHOOD -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="SchoolDesk"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Childhood</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Crib"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Childhood</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Blackboard"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Childhood</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="ToyBox"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Childhood</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="BabyDecoration"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Childhood</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="GrowthVat"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Childhood</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="BabySleepingSpot"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Childhood</designationCategory>
+                    </value>
+                </Operation>
 
 </Patch>

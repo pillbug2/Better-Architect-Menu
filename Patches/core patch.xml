@@ -93,7 +93,13 @@
                         <label>Space</label>
                     </value>
                 </Operation>
-
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="Ship"]/order</xpath>
+                    <value>
+                        <order>5</order>
+                    </value>
+                </Operation>
 
 
 
@@ -106,12 +112,6 @@
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[@Name="LampBase"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Lighting</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="VFE_DeskLamp"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Lighting</designationCategory>
                     </value>
@@ -611,6 +611,22 @@
                         <designationCategory>Ferny_FoundationalProduction</designationCategory>
                     </value>
                 </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="SimpleResearchBench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoundationalProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="HiTechResearchBench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoundationalProduction</designationCategory>
+                    </value>
+                </Operation>
+
+
 
 <!-- TABLES -->
                 <Operation Class="PatchOperationAdd">
@@ -650,52 +666,6 @@
                         <designationCategory>Ferny_Seating</designationCategory>
                     </value>
                 </Operation>
-
-<!-- CHILDHOOD -->
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="Crib"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_Childhood</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="Blackboard"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Childhood</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="ToyBox"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Childhood</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="BabyDecoration"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Childhood</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="GrowthVat"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Childhood</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="BabySleepingSpot"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_Childhood</designationCategory>
-                    </value>
-                </Operation>
-
-
 
 <!-- MEDICAL -->
                 <Operation Class="PatchOperationReplace">
@@ -774,4 +744,90 @@
                     </nomatch>
                 </Operation>
 
+<!-- ART PRODUCTION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="TableSculpting"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_CreativeProduction</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- ANIMAL TRAVEL -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="CaravanPackingSpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_AnimalTravel</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- PROCESSING PRODUCTION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="BiofuelRefinery"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="ElectricSmelter"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="ElectricCrematorium"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- DECORATIONS -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="PlantPot"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- GENERAL STORAGE -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="ShelfSmall"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Shelf"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="BookcaseBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Bookcase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="BookcaseSmall"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
 </Patch>
