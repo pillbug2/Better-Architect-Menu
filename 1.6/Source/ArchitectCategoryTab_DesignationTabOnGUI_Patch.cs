@@ -321,7 +321,8 @@ namespace BetterArchitect
             }
             
             var outRect = rect.ContractedBy(10f);
-            var viewRect = new Rect(0, 0, outRect.width - 16f, displayCategories.Count * 35f);
+            var viewRect = new Rect(0, 0, outRect.width - 16f, displayCategories.Count * 41f);
+            HandleScrollBar(outRect, viewRect, ref leftPanelScrollPosition);
             Widgets.BeginScrollView(outRect, ref leftPanelScrollPosition, viewRect);
             float curY = 0;
 
@@ -717,6 +718,7 @@ namespace BetterArchitect
             var viewRect = new Rect(0, 0, outRect.width - 16f, rowCount * rowHeight);
 
             Designator mouseoverGizmo = null;
+            HandleScrollBar(outRect, viewRect, ref ordersScrollPosition);
             Widgets.BeginScrollView(outRect, ref ordersScrollPosition, viewRect);
             for (var i = 0; i < designators.Count; i++)
             {
