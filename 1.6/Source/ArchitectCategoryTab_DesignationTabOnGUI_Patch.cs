@@ -23,6 +23,18 @@ namespace BetterArchitect
         private static DesignationCategoryDef lastMainCategory;
         private static string lastSearchText = "";
         public static MaterialInfo selectedMaterial;
+
+        public static void Reset()
+        {
+            selectedCategory.Clear();
+            categorySearchMatches.Clear();
+            cachedSortedDesignators.Clear();
+            selectedMaterial = null;
+            lastMainCategory = null;
+            lastSearchText = "";
+            leftPanelScrollPosition = designatorGridScrollPosition = ordersScrollPosition = Vector2.zero;
+            currentArchitectCategoryTab = null;
+        }
         private struct SortCacheKey : IEquatable<SortCacheKey>
         {
             public readonly int DesignatorCount;
