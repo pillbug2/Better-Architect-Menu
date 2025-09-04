@@ -23,7 +23,16 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFET_ResearchSpot"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_FoundationalProduction</designationCategory>
+                        <designationCategory>Ferny_ResearchProduction</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- WEAPONS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFET_AnimalTrap"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Traps</designationCategory>
                     </value>
                 </Operation>
 </Patch>

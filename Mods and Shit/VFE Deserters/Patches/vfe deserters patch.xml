@@ -8,4 +8,29 @@
                         <designationCategory>Ferny_Weapons</designationCategory>
                     </value>
                 </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="VFED_RemoteChargeBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- AMMUNITION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="VFED_AmmoBoxBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_AmmunitionNetwork</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- OUTREACH -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFED_BurnoutIntelScraper"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Outreach</designationCategory>
+                    </value>
+                </Operation>
 </Patch>

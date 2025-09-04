@@ -45,6 +45,15 @@
                 </Operation>
 
 <!-- DEATHREST -->
+
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DeathrestCasket"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Deathrest</designationCategory>
+                    </value>
+                </Operation>
+
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[@Name="DeathrestBuildingBase"]/designationCategory</xpath>
@@ -103,5 +112,46 @@
                         <designationCategory>Ferny_Childhood</designationCategory>
                     </value>
                 </Operation>
+
+<!-- MECHANOIDS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="BaseMechCharger"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Mechanoids</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="BandNode"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Mechanoids</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="BurnoutMechlinkBooster"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Mechanoids</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="MechbandDish"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Mechanoids</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="MechBooster"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Mechanoids</designationCategory>
+                    </value>
+                </Operation>
+
+
+
+
 
 </Patch>

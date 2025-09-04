@@ -105,13 +105,11 @@
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="VPE_ADvancedGeothermalGenerator"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="VPE_AdvancedGeothermalGenerator"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_PowerGeneration</designationCategory>
                     </value>
                 </Operation>
-
-
 
 
 

@@ -15,7 +15,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="RBPEaselPainting"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_CreativeProduction</designationCategory>
+                        <designationCategory>Ferny_Production</designationCategory>
                     </value>
                 </Operation>
 

@@ -8,4 +8,27 @@
                         <designationCategory>Ferny_PowerGeneration</designationCategory>
                     </value>
                 </Operation>
+
+<!-- POWER MANAGEMENT -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_ElectricalBox"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_PowerManagement</designationCategory>
+                    </value>
+                </Operation>
+
+
+<!-- PRODUCTION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_AncientDismantlingWorkbench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+
+
+
+
 </Patch>

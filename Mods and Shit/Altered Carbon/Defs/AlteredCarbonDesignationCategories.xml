@@ -2,17 +2,17 @@
 <Defs>
 
   <DesignationCategoryDef>
-    <defName>Ferny_AmmunitionNetwork</defName>
-    <label>Ammunition</label>
-    <description>Manage ammunition.</description>
-    <order>5</order>
+    <defName>Ferny_Sleeving</defName>
+    <label>Sleeving</label>
+    <description>Manage sleeves.</description>
+    <order>3</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
     </specialDesignatorClasses>
     <modExtensions>
       <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>VCHE_PipeNetworks</parentCategory>
+        <parentCategory>Biotech</parentCategory>
       </li>
     </modExtensions>
   </DesignationCategoryDef>

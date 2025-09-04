@@ -58,14 +58,6 @@
                         <designationCategory>Ferny_Lighting</designationCategory>
                     </value>
                 </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName="DankPyon_RusticLamp"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_Lighting</designationCategory>
-                    </value>
-                </Operation>
-
 
 <!-- PROG AESTHETICS -->
                 <Operation Class="PatchOperationFindMod">
@@ -415,13 +407,6 @@
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="DankPyon_MiningTools"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Auxiliaries</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="DankPyon_RoyalBookshelf"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Auxiliaries</designationCategory>
@@ -488,35 +473,21 @@
                     </value>
                 </Operation>
 
-<!-- FOUNDATIONAL PRODUCTION -->
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="DankPyon_Trestle"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_FoundationalProduction</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="DankPyon_SawTable"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_FoundationalProduction</designationCategory>
-                    </value>
-                </Operation>
+<!-- RESEARCH PRODUCTION -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="DankPyon_AdvancedResearchBench"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_FoundationalProduction</designationCategory>
+                        <designationCategory>Ferny_ResearchProduction</designationCategory>
                     </value>
                 </Operation>
-                <Operation Class="PatchOperationReplace">
+                <!-- <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="DankPyon_Workbench"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_FoundationalProduction</designationCategory>
                     </value>
-                </Operation>
+                </Operation> -->
 
 <!-- BARRICADES -->
                 <Operation Class="PatchOperationReplace">
@@ -565,13 +536,6 @@
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[@Name="DankPyon_BaseTrebuchetBuilding"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Weapons</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="DankPyon_Turret_RepeaterBallista"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Weapons</designationCategory>
@@ -604,6 +568,12 @@
                     <xpath>/Defs/DesignationCategoryDef[defName="DankPyon_RusticDecoration"]</xpath>
                     <match Class="PatchOperationSequence">
                         <operations>
+                            <li Class="PatchOperationReplace">
+                                <xpath>Defs/*[designationCategory="DankPyon_RusticDecoration"]/designationCategory</xpath>
+                                    <value>
+                                    <designationCategory>Ferny_Decorations</designationCategory>
+                                </value>
+                            </li>
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
                                 <xpath>Defs/DesignationCategoryDef[defName="DankPyon_RusticDecoration"]</xpath>
@@ -628,15 +598,23 @@
                                 <xpath>Defs/DesignationCategoryDef[defName="DankPyon_RusticStorage"]</xpath>
                                 <value>
                                     <modExtensions>
-                                    <li Class="BetterArchitect.NestedCategoryExtension">
-                                        <parentCategory>Ferny_Storage</parentCategory>
-                                    </li>
+                                        <li Class="BetterArchitect.NestedCategoryExtension">
+                                            <parentCategory>Ferny_Storage</parentCategory>
+                                        </li>
                                     </modExtensions>
                                 </value>
+                            </li>
+                            <li Class="PatchOperationReplace">
+                                <success>Always</success>
+                                <xpath>Defs/DesignationCategoryDef[defName="DankPyon_RusticStorage"]/order</xpath>
+                                    <value>
+                                        <order>2</order>
+                                    </value>
                             </li>
                         </operations>
                     </match>
                 </Operation>
+
 
 
 
@@ -753,4 +731,367 @@
                     </value>
                 </Operation>
 
+<!-- RESOURCE STORAGE -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DankPyon_LumberStorageBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DankPyon_BrickStorageBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DankPyon_BrickStorageBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DankPyon_IronIngotStackBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DankPyon_IronIngotStackBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DankPyon_SteelIngotStackBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DankPyon_SilverIngotStackBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DankPyon_GoldIngotStackBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DankPyon_PlasteelStackBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_HayPile1x2c"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Timber1x1c"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Timber1x2c"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Timber2x2c"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+
+
+<!-- PROCESSING PRODUCTION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_TanningDrum"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_BlastFurnace"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_ClothSpinner"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_StonecuttingSpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_SpinningWheel"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Furnace"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RawhideRack"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_TanningRack"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_SilkBed"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Smelter"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Kiln"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_WindMill"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_IceBlock_Maker"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Trestle"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_SawTable"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_CleaningBench"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_MendingBench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_MendingBench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Press_Paper"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_WaterMill"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_CharcoalPile"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>
+
+
+
+
+<!-- PRODUCTION -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Workbench"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_JewelryBench"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_AlchemyBench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Book_ScribeTable"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Anvil"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Cauldron"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+
+
+
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_MineShaft"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_MiningSpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_DiggingSpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_WaterSpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+
+
+
+<!-- OUTREACH -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_ScribeTable"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Outreach</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_BirdPost"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Outreach</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_QuestFinder"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Outreach</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Cart"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Outreach</designationCategory>
+                    </value>
+                </Operation>
 </Patch>

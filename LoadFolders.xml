@@ -116,5 +116,20 @@
     <li IfModActive="grizzlemethis.tradingspot.rw">Mods and Shit/Trading Spot</li>
     <li IfModActive="oskarpotocki.vanillafactionsexpanded.core">Mods and Shit/VE Framework</li>
     <li IfModActive="vanillastorytellersexpanded.winstonwave">Mods and Shit/Winston Waves</li>
+    <li IfModActive="smxrez.nonlethalreexamined">Mods and Shit/Non Lethal RE</li>
+    <li IfModActive="smxrez.laserreexamined">Mods and Shit/Laser Weapons RE</li>
+    <li IfModActive="detvisor.pulseweaponry">Mods and Shit/Pulse Weaponry</li>
+    <li IfModActive="detvisor.impactweaponryreloaded">Mods and Shit/Impact Weaponry</li>
+    <li IfModActive="adaptive.primitivestorage">Mods and Shit/Adaptive Primitive Storage</li>
+    <li IfModActive="sarg.alphagenes">Mods and Shit/Alpha Genes</li>
+    <li IfModActive="hlx.ultratechalteredcarbon">Mods and Shit/Altered Carbon</li>
+    <li IfModActive="vanillaexpanded.vanillatradingexpanded">Mods and Shit/VE Trading</li>
+    <li IfModActive="amegakull.wmotbeacon">Mods and Shit/Wall Mounted Orbital Trade Beacon</li>
+    <li IfModActive="dubwise.dubsbadhygiene">Mods and Shit/Dubs Bad Hygiene</li>
+    <li IfModActive="ratys.rtsolarflareshield">Mods and Shit/RT Solar Flare Shield</li>
+    <li IfModActive="co.uk.epicguru.rimforgepoles">Mods and Shit/Power Poles</li>
+    <li IfModActive="gy.ppextend">Mods and Shit/Power Poles Extended</li>
+    <li IfModActive="rabiosus.extinguisherdrone">Mods and Shit/Extinguisher Drone</li>
+    <li IfModActive="gogatio.mechanoidupgrades">Mods and Shit/Mechanoid Upgrades</li>
   </v1.6>
 </loadFolders>

@@ -59,4 +59,62 @@
                         <designationCategory>Ferny_Auxiliaries</designationCategory>
                     </value>
                 </Operation>
+
+<!-- PRODUCTION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFE_TableMachiningLarge"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFE_TableSmithyLarge"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFE_TableTailorLarge"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFE_ComponentFabricationBench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFE_TableDrugLabElectric"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- PROCESSING -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFE_FueledSmelter"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>          
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFE_TableStonecutterElectric"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                    </value>
+                </Operation>          
+
+
+
+
+                      
 </Patch>

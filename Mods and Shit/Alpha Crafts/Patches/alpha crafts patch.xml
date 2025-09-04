@@ -23,5 +23,36 @@
                         <designationCategory>Ferny_Kitchen</designationCategory>
                     </value>
                 </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AC_DairyProcessingStation"]/designationCategory</xpath> 
+                    <value>
+                        <designationCategory>Ferny_Kitchen</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- PRODUCTION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AC_ArtisanWorkshop"]/designationCategory</xpath> 
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AC_ArtisanWorkshop"]/designationCategory</xpath> 
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AC_OilPressWorkshop"]/designationCategory</xpath> 
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+
 
 </Patch>

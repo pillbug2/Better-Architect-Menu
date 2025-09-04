@@ -11,6 +11,18 @@
                 </Operation>      
 
 
+<!-- NEST INTO WORLD -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="Anomaly"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Ferny_World</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+                </Operation>
 
 <!-- POWER GENERATION -->
                 <Operation Class="PatchOperationReplace">

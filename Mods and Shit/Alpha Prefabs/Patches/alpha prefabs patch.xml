@@ -35,4 +35,13 @@
                     </nomatch>
                 </Operation> -->
 
+
+<!-- OUTREACH -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AP_PrefabCatalogBuilding"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Outreach</designationCategory>
+                    </value>
+                </Operation>
 </Patch>

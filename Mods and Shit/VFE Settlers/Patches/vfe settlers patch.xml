@@ -36,11 +36,11 @@
                 </Operation>
 
 <!-- WEAPONS -->
-                <Operation Class="PatchOperationReplace">
+                <!-- <Operation Class="PatchOperationAdd">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="Gun_GatlingGun"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="Gun_GatlingGun"]</xpath>
                     <value>
                         <designationCategory>Ferny_Weapons</designationCategory>
                     </value>
-                </Operation>
+                </Operation> -->
 </Patch>
