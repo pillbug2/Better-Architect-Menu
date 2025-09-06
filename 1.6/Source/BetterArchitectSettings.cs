@@ -7,9 +7,9 @@ namespace BetterArchitect
 
     public class BetterArchitectSettings : ModSettings
     {
-        public static float menuHeight = 285;
+        public static float menuHeight = 330;
         public static bool hideOnSelection = false;
-        public static float backgroundAlpha = 0.15f;
+        public static float backgroundAlpha = 0.42f;
         public static Dictionary<string, SortSettings> sortSettingsPerCategory = new Dictionary<string, SortSettings>();
         public static Dictionary<string, bool> groupByTechLevelPerCategory = new Dictionary<string, bool>();
         
