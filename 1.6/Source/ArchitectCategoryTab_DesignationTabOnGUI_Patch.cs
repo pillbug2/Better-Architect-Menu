@@ -93,7 +93,6 @@ namespace BetterArchitect
         private static readonly Texture2D AscendingIcon = ContentFinder<Texture2D>.Get("SortAscend");
         private static readonly Texture2D DescendingIcon = ContentFinder<Texture2D>.Get("SortDescend");
         private static readonly Texture2D FreeIcon = ContentFinder<Texture2D>.Get("UI/Free");
-        private static readonly Texture2D MoreIcon = ContentFinder<Texture2D>.Get("More");
         private static Color CategoryHighlightColor => Color.yellow;
         private static Color CategoryLowlightColor => Color.grey;
 
@@ -363,7 +362,7 @@ namespace BetterArchitect
                 if (cat == mainCat && filteredSubCategories.Any())
                 {
                     label = "BA.More".Translate();
-                    icon = MoreIcon;
+                    icon = ArchitectIcons.Resources.FindArchitectTabCategoryIcon(mainCat.defName);
                 }
 
                 var iconRect = new Rect(rowRect.x + 4f, rowRect.y + 8f, 20f, 20f);
