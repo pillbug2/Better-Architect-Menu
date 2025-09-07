@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-<!-- POWER MANAGEMENT -->
+<!-- POWER STORAGE -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_LargeBattery"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerManagement</designationCategory>
+                        <designationCategory>Ferny_PowerStorage</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_SmallBattery"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerManagement</designationCategory>
+                        <designationCategory>Ferny_PowerStorage</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_AdvancedBattery"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerManagement</designationCategory>
+                        <designationCategory>Ferny_PowerStorage</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_LargeAdvancedBattery"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerManagement</designationCategory>
+                        <designationCategory>Ferny_PowerStorage</designationCategory>
                     </value>
                 </Operation>
-
 
 
 <!-- POWER GENERATION -->

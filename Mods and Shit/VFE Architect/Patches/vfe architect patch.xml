@@ -78,4 +78,13 @@
                     </value>
                 </Operation>
 
+<!-- CONCRETE FOUNDATIONS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/TerrainDef[defName="VFEArch_ConcreteFoundation"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Foundations</designationCategory>
+                    </value>
+                </Operation>
+
 </Patch>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-<!-- GROUND TRANSPORT -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="HT_Blueprint"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="Objectchute"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                        <designationCategory>MultiFloors</designationCategory>
                     </value>
                 </Operation>
 

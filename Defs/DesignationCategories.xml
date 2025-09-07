@@ -120,22 +120,6 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
-    <defName>Ferny_ProcessingProduction</defName>
-    <label>Processing</label>
-    <description>Processing production methods.</description>
-    <order>651</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-    <modExtensions>
-      <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Production</parentCategory>
-      </li>
-    </modExtensions>
-  </DesignationCategoryDef>
-
-  <DesignationCategoryDef>
     <defName>Ferny_CreativeProduction</defName>
     <label>Creative</label>
     <description>Creative production methods.</description>
@@ -183,6 +167,23 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_ProcessingProduction</defName>
+    <label>Processing</label>
+    <description>Processing production methods.</description>
+    <order>639</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Production</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
 
   <DesignationCategoryDef>
     <defName>Ferny_Auxiliaries</defName>
@@ -234,6 +235,23 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_PowerStorage</defName>
+    <label>Storage</label>
+    <description>Things that help you store power.</description>
+    <order>900</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Designator_DeconstructConduit</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Power</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_PowerManagement</defName>
     <label>Infrastructure</label>
     <description>Things that help you manage your power.</description>
@@ -249,7 +267,6 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
-
 
   <DesignationCategoryDef>
     <defName>Ferny_Animals</defName>
@@ -298,7 +315,7 @@
     <defName>Ferny_Foundations</defName>
     <label>Foundations</label>
     <description>Build structural bridges.</description>
-    <order>900</order>
+    <order>810</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -314,7 +331,7 @@
     <defName>Ferny_Supports</defName>
     <label>Supports</label>
     <description>Build structural supports.</description>
-    <order>900</order>
+    <order>800</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -509,7 +526,7 @@
     <defName>Ferny_Life</defName>
     <label>People</label>
     <description>Manage colonists.</description>
-    <order>1</order>
+    <order>11</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -700,6 +717,24 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_GeneralStorage</defName>
+    <label>General</label>
+    <description>Build general storage.</description>
+    <order>8</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Designator_ZoneAddStockpile_Resources</li>
+      <li>Designator_ZoneAddStockpile_Dumping</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Storage</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_ResourcesStorage</defName>
     <label>Resources</label>
     <description>Build resources storages.</description>
@@ -717,11 +752,10 @@
     </modExtensions>
   </DesignationCategoryDef>
 
-
   <DesignationCategoryDef>
-    <defName>Ferny_GeneralStorage</defName>
-    <label>General</label>
-    <description>Build general storage.</description>
+    <defName>Ferny_GearStorage</defName>
+    <label>Gear</label>
+    <description>Build gear storage.</description>
     <order>7</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
@@ -808,5 +842,44 @@
     </specialDesignatorClasses>
   </DesignationCategoryDef>
 
+	<DesignationCategoryDef>
+		<defName>Ferny_Hosting</defName>
+		<label>Amenities</label>
+		<order>9</order>
+		<specialDesignatorClasses>
+		  <li>Designator_Cancel</li>
+		  <li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+  </DesignationCategoryDef>  
+  
+	<DesignationCategoryDef>
+		<defName>Ferny_Market</defName>
+		<label>Market</label>
+		<order>900</order>
+		<specialDesignatorClasses>
+		  <li>Designator_Cancel</li>
+		  <li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Hosting</parentCategory>
+			</li>
+		</modExtensions>
+  </DesignationCategoryDef>  
+
+	<DesignationCategoryDef>
+		<defName>Ferny_Museum</defName>
+		<label>Museum</label>
+		<order>900</order>
+		<specialDesignatorClasses>
+		  <li>Designator_Cancel</li>
+		  <li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Hosting</parentCategory>
+			</li>
+		</modExtensions>
+  </DesignationCategoryDef>  
 
 </Defs>

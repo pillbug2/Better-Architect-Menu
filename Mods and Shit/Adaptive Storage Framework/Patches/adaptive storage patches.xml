@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="ASFstorage"]/label</xpath>
+			<value>
+				<label>More</label>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="ASFstorage"]/order</xpath>
+			<value>
+				<order>1</order>
+			</value>
+	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>Defs[DesignationCategoryDef/defName="ASFstorage"]</xpath>

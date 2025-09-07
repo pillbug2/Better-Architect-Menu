@@ -12,7 +12,7 @@
     </specialDesignatorClasses>
     <modExtensions>
       <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Ferny_Life</parentCategory>
+        <parentCategory>Ferny_Hosting</parentCategory>
       </li>
     </modExtensions>
   </DesignationCategoryDef>

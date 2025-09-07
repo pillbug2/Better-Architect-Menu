@@ -84,7 +84,7 @@
     <li IfModActive="thek.guardingp">Mods and Shit/Guarding Pawns</li>
     <li IfModActive="oskarpotocki.vanillavehiclesexpanded">Mods and Shit/VE Vehicles</li>
     <li IfModActive="oskarpotocki.vanillavehiclesexpandedtier3">Mods and Shit/VE Vehicles Tier 3</li>
-    <li IfModActive="ht.lunartika">Mods and Shit/Heavy Truck</li>
+    <!-- <li IfModActive="ht.lunartika">Mods and Shit/Heavy Truck</li> -->
     <li IfModActive="chaotic.rvinterior">Mods and Shit/Vehicle Interior Framework</li>
     <li IfModActive="defi.blueprints.fork">Mods and Shit/Blueprints</li>
     <li IfModActive="ninagoblin.enhancedvatlearning">Mods and Shit/Enhanced Vat Learning</li>
@@ -131,5 +131,13 @@
     <li IfModActive="gy.ppextend">Mods and Shit/Power Poles Extended</li>
     <li IfModActive="rabiosus.extinguisherdrone">Mods and Shit/Extinguisher Drone</li>
     <li IfModActive="gogatio.mechanoidupgrades">Mods and Shit/Mechanoid Upgrades</li>
+    <li IfModActive="sbz.neatstorage">Mods and Shit/Neat Storage</li>
+    <li IfModActive="vanillaexpanded.vfepropsanddecor">Mods and Shit/VFE Props</li>
+    <li IfModActive="orion.cashregister">Mods and Shit/Cash Register</li>
+    <li IfModActive="adamas.hospitalitycasino">Mods and Shit/Hospitality Casino</li>
+    <li IfModActive="adamas.hospitalityspa">Mods and Shit/Hospitality Spa</li>
+    <li IfModActive="adamas.vendingmachines">Mods and Shit/Vending Machines</li>
+    <li IfModActive="sarg.alphabooks">Mods and Shit/Alpha Books</li>
+    <li IfModActive="telardo.multifloors">Mods and Shit/Multifloors</li>
   </v1.6>
 </loadFolders>

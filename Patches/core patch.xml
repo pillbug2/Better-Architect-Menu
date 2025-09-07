@@ -255,11 +255,13 @@
                         <designationCategory>Ferny_PowerManagement</designationCategory>
                     </value>
                 </Operation>
+
+<!-- POWER STORAGE -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="Battery"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerManagement</designationCategory>
+                        <designationCategory>Ferny_PowerStorage</designationCategory>
                     </value>
                 </Operation>
 

@@ -42,4 +42,11 @@
                         <designationCategory>Ferny_Pollution</designationCategory>
                     </value>
                 </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VRecyclingE_WasteCrate"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Pollution</designationCategory>
+                    </value>
+                </Operation>
 </Patch>

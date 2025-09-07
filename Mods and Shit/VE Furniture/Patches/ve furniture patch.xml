@@ -273,5 +273,11 @@
                 </Operation>
 
 
-
+<!-- GEAR STORAGE -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Shelf_WeaponRack"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </Operation>
 </Patch>

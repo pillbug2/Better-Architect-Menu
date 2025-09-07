@@ -89,4 +89,13 @@
                     </value>
                 </Operation>
 
+<!-- GEAR STORAGE -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Shelf_RepairRack"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </Operation>
+
+
 </Patch>

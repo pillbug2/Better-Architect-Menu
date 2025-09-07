@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>          
+
+<!-- GENERAL -->
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="sbzSmallDisplayShelfBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="sbzCrateBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="sbzCrateBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- FOOD STORAGE -->
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_MeatHook"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoodStorage</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- GEAR STORAGE -->
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </Operation>
+
+
+<!-- ReelStorageNewBarrel -->
+</Patch>

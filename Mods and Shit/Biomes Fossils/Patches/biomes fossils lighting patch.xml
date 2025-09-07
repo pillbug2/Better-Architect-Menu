@@ -19,4 +19,60 @@
                     </value>
                 </Operation>
 
+
+
+<!-- AMENITIES -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="BMT_DisplayCaseBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="BMT_DisplaySkeletonBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="BMT_DisplaySkeleMedBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="BMT_DisplaySkeleSmallBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="BMT_DisplaySkeleSmallBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="BMT_DisplaySkeleLargeBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="BMT_FossilInfoBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="BMT_FossilDisplayBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- FUCK THAT CATEGORY -->
+                <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/DesignationCategoryDef[defName="BMT_Paleontology"]</xpath>
+                </Operation>
 </Patch>
