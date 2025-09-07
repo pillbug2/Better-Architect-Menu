@@ -27,6 +27,8 @@ namespace BetterArchitect
             BetterArchitectSettings.backgroundAlpha = listingStandard.Slider(BetterArchitectSettings.backgroundAlpha, 0f, 1.0f);
             listingStandard.Gap();
             listingStandard.CheckboxLabeled("BA.HideOnSelection".Translate(), ref BetterArchitectSettings.hideOnSelection, "BA.HideOnSelectionTooltip".Translate());
+            listingStandard.Gap();
+            listingStandard.CheckboxLabeled("BA.RememberSubcategory".Translate(), ref BetterArchitectSettings.rememberSubcategory, "BA.RememberSubcategoryTooltip".Translate());
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);
         }

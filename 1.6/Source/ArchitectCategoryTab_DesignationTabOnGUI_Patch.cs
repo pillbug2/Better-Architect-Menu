@@ -136,12 +136,12 @@ namespace BetterArchitect
                 DoInfoBox(Find.DesignatorManager.SelectedDesignator);
                 return false;
             }
+            DrawBetterArchitectMenu(__instance);
             if (lastMainCategory != __instance.def)
             {
                 leftPanelScrollPosition = designatorGridScrollPosition = ordersScrollPosition = Vector2.zero;
                 lastMainCategory = __instance.def;
             }
-            DrawBetterArchitectMenu(__instance);
             return false;
         }
 
@@ -237,7 +237,10 @@ namespace BetterArchitect
         {
             var allCategories = designatorDataList.Select(d => d.def).ToList();
             DesignationCategoryDef currentSelection = null;
-            selectedCategory.TryGetValue(mainCat, out currentSelection);
+            if (BetterArchitectSettings.rememberSubcategory || lastMainCategory == mainCat)
+            {
+                selectedCategory.TryGetValue(mainCat, out currentSelection);
+            }
             string currentSearchText = currentArchitectCategoryTab?.quickSearchFilter?.Active == true ? currentArchitectCategoryTab.quickSearchFilter.Text : "";
             if (currentSearchText != lastSearchText)
             {
