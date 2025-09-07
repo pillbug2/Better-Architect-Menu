@@ -20,6 +20,9 @@
 			<steamWorkshopUrl>steam://url/CommunityFilePage/1195427067</steamWorkshopUrl>
 		</li>
 	</modDependencies>
+    <incompatibleWith>
+        <li>ferny.floormenu</li>
+    </incompatibleWith>
     <loadAfter>
         <li>Ludeon.RimWorld</li>
         <li>Ludeon.RimWorld.Royalty</li>
@@ -41,6 +44,7 @@
 		<li>zal.lanterns</li>
 		<li>dankpyon.medieval.overhaul</li>
 		<li>ferny.progressionaesthetics</li>
+        <li>ferny.progressionstorage</li>
 		<li>Sov.BBrazier</li>
 		<li>van.dacrypts</li>
 		<li>sarg.alphapropsparks</li>

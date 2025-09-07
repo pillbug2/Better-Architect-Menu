@@ -755,13 +755,6 @@
                         <designationCategory>Ferny_ResourcesStorage</designationCategory>
                     </value>
                 </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[@Name="DankPyon_BrickStorageBase"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
-                    </value>
-                </Operation>
                 <Operation Class="PatchOperationAdd">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[@Name="DankPyon_IronIngotStackBase"]</xpath>

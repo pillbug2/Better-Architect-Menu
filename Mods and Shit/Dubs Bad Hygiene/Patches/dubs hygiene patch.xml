@@ -8,9 +8,9 @@
                     </value>
                 </Operation>
 
-                <Operation Class="PatchOperationConditional">
-               <xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
-                    <match Class="PatchOperationAdd">
+              <Operation Class="PatchOperationConditional">
+             <xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
+                <match Class="PatchOperationAdd">
                     <success>Always</success>
                     <xpath>Defs/DesignationCategoryDef[defName="Hygiene"]</xpath>
                     <value>
@@ -20,8 +20,8 @@
                         </li>
                         </modExtensions>
                     </value>
-                    </match>
-                </Operation>
+                </match>
+              </Operation>
 
 	<!--  Move shit      -->
                 <Operation Class="PatchOperationReplace">

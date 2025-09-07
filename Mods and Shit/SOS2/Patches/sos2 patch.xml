@@ -40,12 +40,6 @@
                         <designationCategory>Ship</designationCategory>
                     </value>
                 </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ResearchProjectDef[defName="Holodeck_Basic"]/techLevel</xpath>
-                    <value>
-                        <techLevel>Spacer</techLevel>
-                    </value>
-                </Operation>
 
 <!-- PROCESSING PRODUCTION -->
                 <Operation Class="PatchOperationReplace">

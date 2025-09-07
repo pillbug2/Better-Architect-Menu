@@ -43,12 +43,12 @@
                 </Operation>
 
 <!-- AIR MANAGEMENT -->
-                <Operation Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Vanilla Temperature Expanded</li>
-                    </mods>
-                    <match Class="PatchOperationSequence">
-                        <operations>
+              <Operation Class="PatchOperationFindMod">
+                <mods>
+                  <li>Vanilla Temperature Expanded</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                  <operations>
                             <li Class="PatchOperationAdd">
                                 <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="RB_ACUnitFloor"]</xpath>
@@ -57,8 +57,8 @@
                                 </value>
                             </li>
                         </operations>
-                    </match>
-                </Operation>
+                </match>
+              </Operation>
 
 
 </Patch>
