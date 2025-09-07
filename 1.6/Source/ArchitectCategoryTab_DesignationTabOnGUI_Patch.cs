@@ -335,7 +335,7 @@ namespace BetterArchitect
             }
             
             var outRect = rect.ContractedBy(10f);
-            var viewRect = new Rect(0, 0, outRect.width - 16f, displayCategories.Count * 41f);
+            var viewRect = new Rect(0, 0, outRect.width - 16f, GetCategoryViewHeight(displayCategories.Count));
             HandleScrollBar(outRect, viewRect, ref leftPanelScrollPosition);
             Widgets.BeginScrollView(outRect, ref leftPanelScrollPosition, viewRect);
             float curY = 0;
@@ -391,7 +391,7 @@ namespace BetterArchitect
                 .ThenByDescending(m => m.def?.stuffProps?.commonality ?? float.PositiveInfinity).ThenBy(m => m.def?.BaseMarketValue ?? 0).ToList();
             if ((selectedMaterial == null || !materials.Contains(selectedMaterial)) && materials.Any()) selectedMaterial = materials.First();
             var outRect = rect.ContractedBy(10f);
-            var viewRect = new Rect(0, 0, outRect.width - 16f, materials.Count * 35f);
+            var viewRect = new Rect(0, 0, outRect.width - 16f, GetCategoryViewHeight(materials.Count));
             HandleScrollBar(outRect, viewRect, ref leftPanelScrollPosition);
             Widgets.BeginScrollView(outRect, ref leftPanelScrollPosition, viewRect);
             float curY = 0;
@@ -463,6 +463,7 @@ namespace BetterArchitect
             }
 
             bool groupByTechLevel = BetterArchitectSettings.groupByTechLevelPerCategory.ContainsKey(category.defName) ? BetterArchitectSettings.groupByTechLevelPerCategory[category.defName] : false;
+            //designators = designators.Concat(designators).ToList();
             return groupByTechLevel ? DrawGroupedGrid(outRect, designators) : DrawFlatGrid(outRect, designators);
         }
 
@@ -478,8 +479,13 @@ namespace BetterArchitect
             viewRect.x += 1f;
             viewRect.width -= 7f;
             Designator mouseoverGizmo = null;
+            Designator interactedGizmo = null;
+            Designator floatMenuGizmo = null;
+            Event interactedEvent = null;
             HandleScrollBar(rect, viewRect, ref designatorGridScrollPosition);
             Widgets.BeginScrollView(rect, ref designatorGridScrollPosition, viewRect);
+            GizmoGridDrawer.drawnHotKeys.Clear();
+            
             for (int i = 0; i < designators.Count; i++)
             {
                 int row = i / gizmosPerRow;
@@ -494,10 +500,10 @@ namespace BetterArchitect
                 };
 
                 var result = designator.GizmoOnGUI(new Vector2(col * (gizmoSize + gizmoSpacing), row * rowHeight), gizmoSize, parms);
-
-                if (result.State >= GizmoState.Mouseover) mouseoverGizmo = designator;
-                if (result.State == GizmoState.Interacted) designator.ProcessInput(result.InteractEvent);
+                ProcessGizmoResult(result, designator, ref mouseoverGizmo, ref interactedGizmo, ref floatMenuGizmo, ref interactedEvent);
             }
+            ProcessGizmoInteractions(interactedGizmo, floatMenuGizmo, interactedEvent);
+            
             Widgets.EndScrollView();
             return mouseoverGizmo;
         }
@@ -523,9 +529,14 @@ namespace BetterArchitect
             var viewRect = new Rect(0, 0, viewRectWidth, totalHeight);
             viewRect.x -= 3f;
             Designator mouseoverGizmo = null;
+            Designator interactedGizmo = null;
+            Designator floatMenuGizmo = null;
+            Event interactedEvent = null;
             float currentY = 0;
             HandleScrollBar(rect, viewRect, ref designatorGridScrollPosition);
             Widgets.BeginScrollView(rect, ref designatorGridScrollPosition, viewRect);
+            GizmoGridDrawer.drawnHotKeys.Clear();
+            
             foreach (var group in groupedDesignators)
             {
                 var headerRect = new Rect(0, currentY, viewRect.width, 24f);
@@ -550,12 +561,13 @@ namespace BetterArchitect
                     };
 
                     var result = designator.GizmoOnGUI(new Vector2(col * (gizmoSize + gizmoSpacing), currentY + row * rowHeight), gizmoSize, parms);
-                    if (result.State >= GizmoState.Mouseover) mouseoverGizmo = designator;
-                    if (result.State == GizmoState.Interacted) designator.ProcessInput(result.InteractEvent);
+                    ProcessGizmoResult(result, designator, ref mouseoverGizmo, ref interactedGizmo, ref floatMenuGizmo, ref interactedEvent);
                 }
                 int rowCount = Mathf.CeilToInt((float)groupItems.Count / gizmosPerRow);
                 currentY += rowCount * rowHeight + gizmoSpacing;
             }
+            ProcessGizmoInteractions(interactedGizmo, floatMenuGizmo, interactedEvent);
+            
             Widgets.EndScrollView();
             return mouseoverGizmo;
         }
@@ -732,8 +744,13 @@ namespace BetterArchitect
             var viewRect = new Rect(0, 0, outRect.width - 16f, rowCount * rowHeight);
 
             Designator mouseoverGizmo = null;
+            Designator interactedGizmo = null;
+            Designator floatMenuGizmo = null;
+            Event interactedEvent = null;
             HandleScrollBar(outRect, viewRect, ref ordersScrollPosition);
             Widgets.BeginScrollView(outRect, ref ordersScrollPosition, viewRect);
+            GizmoGridDrawer.drawnHotKeys.Clear();
+            
             for (var i = 0; i < designators.Count; i++)
             {
                 int row = i / columns;
@@ -750,9 +767,10 @@ namespace BetterArchitect
                 };
 
                 var result = designator.GizmoOnGUI(new Vector2(xPos, yPos), gizmoSize, parms);
-                if (result.State >= GizmoState.Mouseover) mouseoverGizmo = designator;
-                if (result.State == GizmoState.Interacted) designator.ProcessInput(result.InteractEvent);
+                ProcessGizmoResult(result, designator, ref mouseoverGizmo, ref interactedGizmo, ref floatMenuGizmo, ref interactedEvent);
             }
+            ProcessGizmoInteractions(interactedGizmo, floatMenuGizmo, interactedEvent);
+            
             Widgets.EndScrollView();
             return mouseoverGizmo;
         }
@@ -1158,6 +1176,49 @@ namespace BetterArchitect
                 return label;
             }
             return designator.LabelCap;
+        }
+        
+        private static void ProcessGizmoResult(GizmoResult result, Designator designator, ref Designator mouseoverGizmo, ref Designator interactedGizmo, ref Designator floatMenuGizmo, ref Event interactedEvent)
+        {
+            if (result.State >= GizmoState.Mouseover) mouseoverGizmo = designator;
+            if (result.State == GizmoState.Interacted)
+            {
+                interactedGizmo = designator;
+                interactedEvent = result.InteractEvent;
+            }
+            else if (result.State == GizmoState.OpenedFloatMenu)
+            {
+                floatMenuGizmo = designator;
+                interactedEvent = result.InteractEvent;
+            }
+        }
+        
+        private static void ProcessGizmoInteractions(Designator interactedGizmo, Designator floatMenuGizmo, Event interactedEvent)
+        {
+            if (interactedGizmo != null)
+            {
+                interactedGizmo.ProcessInput(interactedEvent);
+                Event.current.Use();
+            }
+            if (floatMenuGizmo != null)
+            {
+                var floatMenuOptions = floatMenuGizmo.RightClickFloatMenuOptions.ToList();
+                if (floatMenuOptions.Any())
+                {
+                    Find.WindowStack.Add(new FloatMenu(floatMenuOptions));
+                    Event.current.Use();
+                }
+                else
+                {
+                    floatMenuGizmo.ProcessInput(interactedEvent);
+                    Event.current.Use();
+                }
+            }
+        }
+        
+        private static float GetCategoryViewHeight(int itemCount)
+        {
+            return itemCount * 41f;
         }
     }
 }
