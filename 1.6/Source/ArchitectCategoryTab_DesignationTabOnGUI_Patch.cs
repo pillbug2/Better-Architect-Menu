@@ -23,6 +23,18 @@ namespace BetterArchitect
         private static DesignationCategoryDef lastMainCategory;
         private static string lastSearchText = "";
         public static MaterialInfo selectedMaterial;
+
+        public static void Reset()
+        {
+            selectedCategory.Clear();
+            categorySearchMatches.Clear();
+            cachedSortedDesignators.Clear();
+            selectedMaterial = null;
+            lastMainCategory = null;
+            lastSearchText = "";
+            leftPanelScrollPosition = designatorGridScrollPosition = ordersScrollPosition = Vector2.zero;
+            currentArchitectCategoryTab = null;
+        }
         private struct SortCacheKey : IEquatable<SortCacheKey>
         {
             public readonly int DesignatorCount;
@@ -81,7 +93,6 @@ namespace BetterArchitect
         private static readonly Texture2D AscendingIcon = ContentFinder<Texture2D>.Get("SortAscend");
         private static readonly Texture2D DescendingIcon = ContentFinder<Texture2D>.Get("SortDescend");
         private static readonly Texture2D FreeIcon = ContentFinder<Texture2D>.Get("UI/Free");
-        private static readonly Texture2D MoreIcon = ContentFinder<Texture2D>.Get("More");
         private static Color CategoryHighlightColor => Color.yellow;
         private static Color CategoryLowlightColor => Color.grey;
 
@@ -125,12 +136,12 @@ namespace BetterArchitect
                 DoInfoBox(Find.DesignatorManager.SelectedDesignator);
                 return false;
             }
+            DrawBetterArchitectMenu(__instance);
             if (lastMainCategory != __instance.def)
             {
                 leftPanelScrollPosition = designatorGridScrollPosition = ordersScrollPosition = Vector2.zero;
                 lastMainCategory = __instance.def;
             }
-            DrawBetterArchitectMenu(__instance);
             return false;
         }
 
@@ -226,7 +237,10 @@ namespace BetterArchitect
         {
             var allCategories = designatorDataList.Select(d => d.def).ToList();
             DesignationCategoryDef currentSelection = null;
-            selectedCategory.TryGetValue(mainCat, out currentSelection);
+            if (BetterArchitectSettings.rememberSubcategory || lastMainCategory == mainCat)
+            {
+                selectedCategory.TryGetValue(mainCat, out currentSelection);
+            }
             string currentSearchText = currentArchitectCategoryTab?.quickSearchFilter?.Active == true ? currentArchitectCategoryTab.quickSearchFilter.Text : "";
             if (currentSearchText != lastSearchText)
             {
@@ -351,7 +365,7 @@ namespace BetterArchitect
                 if (cat == mainCat && filteredSubCategories.Any())
                 {
                     label = "BA.More".Translate();
-                    icon = MoreIcon;
+                    icon = ArchitectIcons.Resources.FindArchitectTabCategoryIcon(mainCat.defName);
                 }
 
                 var iconRect = new Rect(rowRect.x + 4f, rowRect.y + 8f, 20f, 20f);
