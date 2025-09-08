@@ -190,5 +190,8 @@
         <li>adamas.vendingmachines</li>
         <li>sarg.alphabooks</li>
         <li>telardo.multifloors</li>
+        <li>cixwow.helixienboiler</li>
+        <li>cixwow.helixienbrazier</li>
+        <li>cixwow.helixiengasproduction</li>
     </loadAfter>
 </ModMetaData>
