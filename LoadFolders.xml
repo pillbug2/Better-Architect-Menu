@@ -174,5 +174,6 @@
     <li IfModActive="aoba.deadmanswitch.motorized">Mods and Shit/DMS Motorized</li>
     <li IfModActive="vin.warehouse.storage">Mods and Shit/Warehouse Storage</li>
     <li IfModActive="jf.royalcarpets">Mods and Shit/Royal Carpets</li>
+    <li IfModActive="dubwise.dubsskylights">Mods and Shit/Dubs Skylights</li>
   </v1.6>
 </loadFolders>
