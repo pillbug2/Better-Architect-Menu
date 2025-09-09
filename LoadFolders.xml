@@ -179,5 +179,6 @@
     <li IfModActive="dubwise.dubsskylights">Mods and Shit/Dubs Skylights</li>
     <li IfModActive="as1aw.morehunterdrones">Mods and Shit/More Hunter Drones</li>
     <li IfModActive="tug.satyrfaun.expanded">Mods and Shit/Roo SFE</li>
+    <li IfModActive="jdgg.adaptive.cargoholds">Mods and Shit/Cargo Holds</li>
   </v1.6>
 </loadFolders>
