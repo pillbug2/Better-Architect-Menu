@@ -139,6 +139,7 @@
     <li IfModActive="adamas.vendingmachines">Mods and Shit/Vending Machines</li>
     <li IfModActive="sarg.alphabooks">Mods and Shit/Alpha Books</li>
     <li IfModActive="telardo.multifloors">Mods and Shit/Multifloors</li>
+    <li IfModActive="drilledhead.chute">Mods and Shit/Chute</li>
     <li IfModActive="cixwow.helixienboiler">Mods and Shit/Helixien Gas Boiler</li>
     <li IfModActive="cixwow.helixienbrazier">Mods and Shit/Helixien Gas Brazier</li>
     <li IfModActive="cixwow.helixiengasproduction">Mods and Shit/Helixien Gas Production</li>
