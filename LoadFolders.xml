@@ -198,6 +198,15 @@
 	<li IfModActive="ilyvion.colonymanagerredux">Mods and Shit/Colony Manager Redux</li>
 	<li IfModActive="breadmo.cinders">Mods and Shit/Cinders of the Embergarden</li>
 	<li IfModActive="azzyh.mechchargerbooster">Mods and Shit/Mech Charger Booster</li>
+	<li IfModActive="mrhydralisk.complementaryodyssey">Mods and Shit/Complementary Odyssey</li>
+	<li IfModActive="als.gravtech">Mods and Shit/GravTech</li>
+	<li IfModActive="aelanna.eccentrictech.fusionpower">Mods and Shit/Eccentric Tech Fusion Power</li>
+	<li IfModActive="trugerman.altdeuteriumextractor">Mods and Shit/Piped Deuterium Extractor</li>
+	<li IfModActive="supes.autoseller.core">Mods and Shit/Auto Seller</li>
+	<li IfModActive="aelanna.eccentrictech.defensegrid">Mods and Shit/Eccentric Tech Defense Grid</li>
+	<li IfModActive="mjeiouws.outlander.continuouscontention">Mods and Shit/Outlander Solutions Continuous Contention</li>
+	<li IfModActive="bulldog.vanillachemfuelexpandedodysseypatch">Mods and Shit/VE Chemfuel Odyssey Patch</li>
+	<li IfModActive="oskarpotocki.vfe.pirates">Mods and Shit/VFE Pirates</li>
 	<!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

@@ -263,6 +263,14 @@
 		<li>ilyvion.colonymanagerredux</li>
 		<li>breadmo.cinders</li>
 		<li>azzyh.mechchargerbooster</li>
+		<li>mrhydralisk.complementaryodyssey</li>
+		<li>als.gravtech</li>
+		<li>aelanna.eccentrictech.fusionpower</li>
+		<li>trugerman.altdeuteriumextractor</li>
+		<li>supes.autoseller.core</li>
+		<li>aelanna.eccentrictech.defensegrid</li>
+		<li>mjeiouws.outlander.continuouscontention</li>
+		<li>bulldog.vanillachemfuelexpandedodysseypatch</li>
         <!-- (Add new mods here ^^^^^) -->
     </loadAfter>  
 </ModMetaData>

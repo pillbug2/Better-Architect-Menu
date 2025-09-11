@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ChemfuelTank"]</xpath>
+		<value>
+			<designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="LargeChemfuelTank"]</xpath>
+		<value>
+			<designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+		</value>
+	</Operation>
+
+<!-- 3RD PARTY GRAVSHIP TANKS -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>GravTech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="AdvShip_GravChemfuelTank"]</xpath>
+					<value>
+						<designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

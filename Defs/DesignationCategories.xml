@@ -396,7 +396,7 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_CombatInfrastructure</defName>
-    <label>Locations</label>
+    <label>Infrastructure</label>
     <description>Build infrastructure for your enemies.</description>
     <order>900</order>
     <specialDesignatorClasses>
