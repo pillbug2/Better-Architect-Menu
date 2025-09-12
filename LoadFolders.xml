@@ -162,7 +162,26 @@
     <li IfModActive="nephlite.orbitaltradecolumn">Mods and Shit/Utility Columns</li>
 	<li IfModActive="xmb.giantimperialcannonturret.mo">Mods and Shit/Giant Imperial Turret</li>
     <li IfModActive="aranmaho.rimsalehouse">Mods and Shit/Trading House</li>
-	<li IfModActive="biotexpans.mythic">Mods and Shit/Biotech Expansion Mythic</li>
+    <li IfModActive="biotexpans.mythic">Mods and Shit/Biotech Expansion Mythic</li>
+    <li IfModActive="blues.breaker">Mods and Shit/Circuit Breaker</li>
+    <li IfModActive="jalapenolabs.rimworld.electricitymeter">Mods and Shit/Electricity Meter</li>
+    <li IfModActive="cruelmoose.uc">Mods and Shit/Universal Conduit</li>
+    <li IfModActive="mlie.temperaturegauge">Mods and Shit/Temperature Gauge</li>
+    <li IfModActive="deadbeat.medicalcabinet">Mods and Shit/Medical Cabinet</li>
+    <li IfModActive="side1iner.possessionsplus">Mods and Shit/Possessions Plus</li>
+    <li IfModActive="mlie.bioreactor">Mods and Shit/BioReactor</li>
+    <li IfModActive="det.epochstallow">Mods and Shit/Epochs Tallow</li>
+    <li IfModActive="det.epochsincense">Mods and Shit/Epochs Incense</li>
+    <li IfModActive="det.epochspottery">Mods and Shit/Epochs Pottery</li>
+    <li IfModActive="sumghai.medpod">Mods and Shit/MedPod</li>
+    <li IfModActive="aoba.deadmanswitch.motorized">Mods and Shit/DMS Motorized</li>
+    <li IfModActive="vin.warehouse.storage">Mods and Shit/Warehouse Storage</li>
+    <li IfModActive="jf.royalcarpets">Mods and Shit/Royal Carpets</li>
+    <li IfModActive="dubwise.dubsskylights">Mods and Shit/Dubs Skylights</li>
+    <li IfModActive="as1aw.morehunterdrones">Mods and Shit/More Hunter Drones</li>
+    <li IfModActive="tug.satyrfaun.expanded">Mods and Shit/Roo SFE</li>
+    <li IfModActive="Poncho.AutomaticHydroponics">Mods and Shit/Automatic Hydroponics</li>
+<li IfModActive="biotexpans.mythic">Mods and Shit/Biotech Expansion Mythic</li>
 	<li IfModActive="ccyt.stargatesmod">Mods and Shit/Stargates!</li>
 	<li IfModActive="blues.breaker">Mods and Shit/Circuit Breaker</li>
 	<li IfModActive="supes.autoseller.core">Mods and Shit/Auto Seller</li>
@@ -217,6 +236,6 @@
   <li IfModActive="thatthing.mycohazard">Mods and Shit/Mycohazard</li>
   <li IfModActive="wanzi.smallgraves">Mods and Shit/Small Graves and Sarcophaguses</li>
   <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>	
-    <!-- (Add new mods here ^^^^^) -->
+            <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
