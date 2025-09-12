@@ -37,6 +37,7 @@
         <li>ferny.noodysseycategory</li>
         <li>ferny.outreachcategory</li>
         <li>ferny.transportcategory</li>
+        <li>cedaro.tidy.designation</li>
     </incompatibleWith>
     <loadAfter>
 
@@ -73,7 +74,6 @@
 		<li>ferny.fuckextfurniture</li>
 		<li>oskarpotocki.vfe.empire</li>
 		<li>biomesteam.biomesfossils</li>
-		<li>com.bymarcin.architecticons</li>
 		<li>rebuild.cotr.doorsandcorners</li>
 		<li>zal.lanterns</li>
 		<li>dankpyon.medieval.overhaul</li>
@@ -92,7 +92,6 @@
         <li>VanillaExpanded.VCookEHaute</li>
         <li>det.keshig</li>
         <li>det.sbdelights</li>
-        <li>oskarpotocki.vfe.classical</li>
         <li>sarg.alphacrafts</li>
         <li>syrchalis.processor.framework</li>
         <li>vanillaexpanded.vbrewe</li>
@@ -109,7 +108,6 @@
 		<li>VanillaExpanded.VGeneticsEMoreLabStuff</li>
 		<li>VanillaExpanded.VFEArchitect</li>
 		<li>ferny.xenooranimalgenetics</li>
-		<li>com.bymarcin.architecticons</li>
 		<li>animal.bedsnew</li>
 		<li>sarg.alphaimplants</li>
 		<li>reel.expanded.storage</li>
@@ -153,8 +151,6 @@
         <li>ninagoblin.enhancedvatlearning</li>
         <li>tribalcrib.mod</li>
         <li>nightmare.aquariums</li>
-        <li>ninagoblin.enhancedvatlearning</li>
-        <li>tribalcrib.mod</li>
         <li>vanillaracesexpanded.sanguophage</li>
         <li>vanillaexpanded.recycling</li>
         <li>zal.snowcrawler</li>
@@ -165,7 +161,6 @@
         <li>heremeus.medicaldissection</li>
         <li>harkon.biotechaddon.medievaldeathrestcoffin</li>
         <li>vanillaexpanded.vnutriente</li>
-        <li>reel.turretpipeline</li>
         <li>vemp.pipenetwork</li>
         <li>oskarpotocki.vfe.deserters</li>
         <li>oskarpotocki.vfe.tribals</li>
@@ -212,37 +207,76 @@
         <li>Mlie.MorePlanning</li>
         <li>doug.mapedittools</li>
         <li>scherub.planningextended</li>
-		<li>chaoticenrico.researchpapers</li>
-		<li>ccyt.stargatesmod</li>
-		<li>k.glitternet</li>
-		<li>spdskatr.projectrimfactory</li>
-		<li>sumghai.replimat</li>
-		<li>bart.bioformmatrix</li>
-		<li>akaster.ivdruginfuser</li>
-		<li>mf.ahm</li>
-		<li>moistestwhale.gitscyberneticequipment</li>
-		<li>troopersmith1.lifesupport</li>
-		<li>xmb.ancienthydroponicfarmfacilities.mo</li>
-		<li>nephlite.orbitaltradecolumn</li>
-		<li>xmb.giantimperialcannonturret.mo</li>
-		<li>aranmaho.rimsalehouse</li>
-		<li>biotexpans.mythic</li>
-		<li>blues.breaker</li>
-		<li>jalapenolabs.rimworld.electricitymeter</li>
-		<li>cruelmoose.uc</li>
-		<li>mlie.temperaturegauge</li>
-		<li>mlie.reinforcedmechanoid2</li>
-		<li>deadbeat.medicalcabinet</li>
-		<li>side1iner.possessionsplus</li>
-		<li>mlie.bioreactor</li>
-		<li>det.epochstallow</li>
-		<li>det.epochsincense</li>
-		<li>det.epochspottery</li>
-		<li>sumghai.medpod</li>
-		<li>aoba.deadmanswitch.motorized</li>
-		<li>vin.warehouse.storage</li>
-		<li>jf.royalcarpets</li>
+        <li>chaoticenrico.researchpapers</li>
+        <li>ccyt.stargatesmod</li>
+        <li>k.glitternet</li>
+        <li>spdskatr.projectrimfactory</li>
+        <li>sumghai.replimat</li>
+        <li>bart.bioformmatrix</li>
+        <li>akaster.ivdruginfuser</li>
+        <li>mf.ahm</li>
+        <li>moistestwhale.gitscyberneticequipment</li>
+        <li>troopersmith1.lifesupport</li>
+        <li>xmb.ancienthydroponicfarmfacilities.mo</li>
+        <li>nephlite.orbitaltradecolumn</li>
+        <li>xmb.giantimperialcannonturret.mo</li>
+        <li>aranmaho.rimsalehouse</li>
+        <li>biotexpans.mythic</li>
+        <li>blues.breaker</li>
+        <li>jalapenolabs.rimworld.electricitymeter</li>
+        <li>cruelmoose.uc</li>
+        <li>mlie.temperaturegauge</li>
+        <li>mlie.reinforcedmechanoid2</li>
+		<li>mlie.gestaltengine</li>
+		<li>hlx.vanometricgenerator</li>
+        <li>deadbeat.medicalcabinet</li>
+        <li>side1iner.possessionsplus</li>
+        <li>mlie.bioreactor</li>
+        <li>det.epochstallow</li>
+        <li>det.epochsincense</li>
+        <li>det.epochspottery</li>
+        <li>sumghai.medpod</li>
+        <li>aoba.deadmanswitch.motorized</li>
+        <li>vin.warehouse.storage</li>
+        <li>jf.royalcarpets</li>
+        <li>divineDerivative.tilledsoil</li>
+        <li>BriannBanned.BriannsMissileFramework</li>
+        <li>Poncho.AutomaticHydroponics</li>
+        <li>mlie.jwlatmosphericwaterprocessor</li>
+        <li>eclair155.reinforcedmechanoid2extended</li>
+        <li>vanillaexpanded.vhe</li>
+        <li>cp.uncle.boris.brainwash.chair</li>
+        <li>storagewindow.programmerlily.com</li>
+        <li>kikohi.jewelry</li>
+        <li>orion.therapy</li>
+        <li>windwardsnow.mechanitorweapons</li>
+        <li>zal.sbt</li>
+        <li>rimthunder.core</li>
+        <li>k.psitech</li>
+        <li>statistno1.personabond</li>
+        <li>kimo.cryptotechprint</li>
+        <li>xmb.ancientminingindustry.mo</li>
+        <li>rah.rvte</li>
+        <li>ilyvion.colonymanagerredux</li>
+        <li>breadmo.cinders</li>
+        <li>azzyh.mechchargerbooster</li>
+        <li>mrhydralisk.complementaryodyssey</li>
+        <li>als.gravtech</li>
+        <li>aelanna.eccentrictech.fusionpower</li>
+        <li>trugerman.altdeuteriumextractor</li>
+        <li>supes.autoseller.core</li>
+        <li>aelanna.eccentrictech.defensegrid</li>
+        <li>mjeiouws.outlander.continuouscontention</li>
+        <li>bulldog.vanillachemfuelexpandedodysseypatch</li>
+        <li>aoba.deadmanswitch.core</li>
+		<li>aoba.deadmanswitch.ancientcorps</li>
+        <li>redmattis.bsfurniture</li>
+        <li>thatthing.mycohazard</li>
         <li>as1aw.morehunterdrones</li>
         <li>tug.satyrfaun.expanded</li>
+        <li>wanzi.smallgraves</li>
+        <li>wanzi.biggraves</li>
+		<li>relvl.digitalstorageunit</li>
+        <!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

@@ -162,14 +162,13 @@
     <description>Things that relate to agriculture.</description>
     <order>640</order>
     <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
       <li>Designator_ZoneAdd_Growing</li>
     </specialDesignatorClasses>
     <modExtensions>
       <li Class="BetterArchitect.NestedCategoryExtension">
         <parentCategory>Production</parentCategory>
       </li>
+      <li Class="BetterArchitect.SpecialCategoryExtension"></li>
     </modExtensions>
   </DesignationCategoryDef>
 
@@ -397,7 +396,7 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_CombatInfrastructure</defName>
-    <label>Locations</label>
+    <label>Infrastructure</label>
     <description>Build infrastructure for your enemies.</description>
     <order>900</order>
     <specialDesignatorClasses>
@@ -835,6 +834,7 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
+	
   <DesignationCategoryDef>
     <defName>Ferny_Automation</defName>
     <label>Automation</label>
@@ -845,6 +845,21 @@
       <li>Designator_Deconstruct</li>
     </specialDesignatorClasses>
   </DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>Ferny_Logistics</defName>
+		<label>Logistics</label>
+		<order>800</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Automation</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
 
 	<DesignationCategoryDef>
 		<defName>Ferny_Hosting</defName>
