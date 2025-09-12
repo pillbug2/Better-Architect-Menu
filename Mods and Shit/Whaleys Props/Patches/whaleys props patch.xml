@@ -7,4 +7,32 @@
             <designationCategory>Ferny_Lighting</designationCategory>
         </value>
     </Operation>
+
+    <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+        <xpath>/Defs/DesignationCategoryDef[defName="WhaleysProps"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="WhaleysProps"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Furniture</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="WhaleysProps"]/order</xpath>
+                    <value>
+                        <order>1</order>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
 </Patch>
