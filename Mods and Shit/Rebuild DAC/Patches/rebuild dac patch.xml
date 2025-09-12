@@ -29,14 +29,7 @@
 <!-- HEATING -->
                 <Operation Class="PatchOperationAdd">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="RB_Fireplace"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_Heating</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="RB_OverwallFireplace"]</xpath>
+                    <xpath>Defs/ThingDef[@Name="RB_Fireplace"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Heating</designationCategory>
                     </value>
