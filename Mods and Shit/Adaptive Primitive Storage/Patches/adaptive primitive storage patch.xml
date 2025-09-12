@@ -39,7 +39,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]</xpath>
                     <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationAdd">
@@ -70,7 +70,6 @@
                         <designationCategory>Ferny_GeneralStorage</designationCategory>
                     </value>
                 </Operation>
-  
                 <Operation Class="PatchOperationAdd">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="ASF_MeatRack"]</xpath>
@@ -78,5 +77,4 @@
                         <designationCategory>Ferny_FoodStorage</designationCategory>
                     </value>
                 </Operation>
-      
 </Patch>
