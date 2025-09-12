@@ -211,7 +211,8 @@
     <li IfModActive="breadmo.cinders">Mods and Shit/Cinders of the Embergarden</li>
     <li IfModActive="aoba.deadmanswitch.core">Mods and Shit/DMS The Dead Man's Switch</li>                                  <!-- Implicit support for DMS AncientCorps -->
     <li IfModActive="spdskatr.projectrimfactory">Mods and Shit/Project RimFactory Revived</li>                              <!-- TODO Unpack battery, storage dropdowns -->
-    <li IfModActive="jf.royalcarpets">Mods and Shit/Royal Carpets</li>
+	<li IfModActive="relvl.digitalstorageunit">Mods and Shit/Digital Storage Unit</li>                                      <!-- TODO Unpack dropdown -->
+	<li IfModActive="jf.royalcarpets">Mods and Shit/Royal Carpets</li>
     <li IfModActive="as1aw.morehunterdrones">Mods and Shit/More Hunter Drones</li>
     <li IfModActive="redmattis.bsfurniture">Mods and Shit/Big and Small Furniture</li>
     <li IfModActive="thatthing.mycohazard">Mods and Shit/Mycohazard</li>
