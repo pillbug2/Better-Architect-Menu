@@ -16,4 +16,32 @@
             <designationCategory>Ferny_Auxiliaries</designationCategory>
         </value>
     </Operation>
+
+    <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+        <xpath>/Defs/DesignationCategoryDef[defName="Victoria_Decorations"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="Victoria_Decorations"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Furniture</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="Victoria_Decorations"]/order</xpath>
+                    <value>
+                        <order>1</order>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
 </Patch>
