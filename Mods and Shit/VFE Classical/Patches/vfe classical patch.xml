@@ -67,4 +67,13 @@
                         <designationCategory>Ferny_Outreach</designationCategory>
                     </value>
                 </Operation>
+
+  <!-- WEAPONS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEC_Turret_Scorpion"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
 </Patch>
