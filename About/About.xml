@@ -227,6 +227,8 @@
         <li>cruelmoose.uc</li>
         <li>mlie.temperaturegauge</li>
         <li>mlie.reinforcedmechanoid2</li>
+		<li>mlie.gestaltengine</li>
+		<li>hlx.vanometricgenerator</li>
         <li>deadbeat.medicalcabinet</li>
         <li>side1iner.possessionsplus</li>
         <li>mlie.bioreactor</li>
@@ -267,12 +269,14 @@
         <li>mjeiouws.outlander.continuouscontention</li>
         <li>bulldog.vanillachemfuelexpandedodysseypatch</li>
         <li>aoba.deadmanswitch.core</li>
+		<li>aoba.deadmanswitch.ancientcorps</li>
         <li>redmattis.bsfurniture</li>
         <li>thatthing.mycohazard</li>
         <li>as1aw.morehunterdrones</li>
         <li>tug.satyrfaun.expanded</li>
         <li>wanzi.smallgraves</li>
         <li>wanzi.biggraves</li>
+		<li>relvl.digitalstorageunit</li>
         <!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

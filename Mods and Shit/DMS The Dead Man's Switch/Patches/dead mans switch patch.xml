@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Patch supports DMS Core and DMS AncientCorps -->
+
 <Patch>
 
 	<Operation Class="PatchOperationReplace">
