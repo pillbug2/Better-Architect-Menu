@@ -84,7 +84,7 @@
     <li IfModActive="thek.guardingp">Mods and Shit/Guarding Pawns</li>
     <li IfModActive="oskarpotocki.vanillavehiclesexpanded">Mods and Shit/VE Vehicles</li>
     <li IfModActive="oskarpotocki.vanillavehiclesexpandedtier3">Mods and Shit/VE Vehicles Tier 3</li>
-    <li IfModActive="ht.lunartika">Mods and Shit/Heavy Truck</li>
+    <!-- <li IfModActive="ht.lunartika">Mods and Shit/Heavy Truck</li> -->
     <li IfModActive="chaotic.rvinterior">Mods and Shit/Vehicle Interior Framework</li>
     <li IfModActive="defi.blueprints.fork">Mods and Shit/Blueprints</li>
     <li IfModActive="ninagoblin.enhancedvatlearning">Mods and Shit/Enhanced Vat Learning</li>
