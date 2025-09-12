@@ -2,20 +2,15 @@
 <Patch>
 	
 <!-- WEAPONS -->
+	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Cinder_ErodedAutocannon"]</xpath>
+		<xpath>Defs/ThingDef[@ParentName="Cinder_AutocannonTurret"]</xpath>
 		<value>
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Cinder_ErodedSniperBase"]</xpath>
-		<value>
-			<designationCategory>Ferny_Weapons</designationCategory>
-		</value>
-	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Cinder_RocketswarmLauncher"]/designationCategory</xpath>
@@ -23,6 +18,7 @@
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Cinder_TacticalTurret"]/designationCategory</xpath>
@@ -32,6 +28,7 @@
 	</Operation>
 
 <!-- OUTREACH -->
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Cinder_SignalGenerator"]/designationCategory</xpath>
@@ -41,6 +38,7 @@
 	</Operation>
 
 <!-- PRODUCTION -->
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Cinder_AncientWorkstation"]/designationCategory</xpath>
@@ -49,33 +47,31 @@
 		</value>
 	</Operation>
 
-<!-- MECHANOIDS --> <!-- Possibly put in a DMS automatroid category? -->
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Cinder_ErodedEXOBuliding"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Mechanoids</designationCategory>
-		</value>
+<!-- MECHANOIDS or AUTOMATROIDS -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>The Dead Man's Switch</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[@ParentName="Cinder_NonfunctionalBuilding_Impassable"]/designationCategory</xpath>
+			<value>
+				<designationCategory>DMS_Category</designationCategory>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationFindMod">
+			<mods>
+				<li>Biotech</li>
+			</mods>
+			<match Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[@ParentName="Cinder_NonfunctionalBuilding_Impassable"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Mechanoids</designationCategory>
+				</value>
+			</match>
+		</nomatch>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Cinder_WarAttackerBuliding"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Mechanoids</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Cinder_WarSweeperBuliding"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Mechanoids</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Cinder_erodedKrepostBuliding"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Mechanoids</designationCategory>
-		</value>
-	</Operation>
+	
 </Patch>

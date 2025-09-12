@@ -5,77 +5,15 @@
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Eccentric_ArtillerySensorTower"]</xpath>
+		<xpath>Defs/ThingDef[@ParentName="Eccentric_DefenseGridBuildingBase"]</xpath>
 		<value>
 			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Eccentric_ShieldGenerator"]</xpath>
-		<value>
-			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Eccentric_ShieldProjector"]</xpath>
-		<value>
-			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Eccentric_ShieldProjectorWide"]</xpath>
-		<value>
-			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Eccentric_ShieldProjector3x3Wide"]</xpath>
-		<value>
-			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Eccentric_ShieldCapacitor"]</xpath>
-		<value>
-			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Eccentric_ShieldHeatsink"]</xpath>
-		<value>
-			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
-		</value>
-	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Eccentric_DefenseConduit"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Eccentric_DefenseConduitUnderground"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Eccentric_DefenseGridConsole"]</xpath>
-		<value>
-			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Eccentric_DefenseTurretController"]</xpath>
 		<value>
 			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
 		</value>
@@ -90,6 +28,7 @@
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Eccentric_Turret_M51AC"]/designationCategory</xpath>
@@ -97,6 +36,7 @@
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Eccentric_Turret_M64RG"]/designationCategory</xpath>
@@ -104,4 +44,5 @@
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
+	
 </Patch>

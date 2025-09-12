@@ -2,14 +2,7 @@
 <Patch>
 	
 <!-- WORLD -->
-
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/DesignationCategoryDef[defName="Ferny_World"]/specialDesignatorClasses</xpath>
-		<value>
-			<li>Designator_DeconstructConduit</li>
-		</value>
-	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ContinuousContention_DefenseNetController"]/designationCategory</xpath>
@@ -17,6 +10,7 @@
 			<designationCategory>Ferny_World</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ContinuousContention_DefenseNetCable"]/designationCategory</xpath>
@@ -24,6 +18,7 @@
 			<designationCategory>Ferny_World</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ContinuousContention_DefenseNetCompiler"]/designationCategory</xpath>
@@ -31,6 +26,7 @@
 			<designationCategory>Ferny_World</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ContinuousContention_DefenseNetProcAssistant"]/designationCategory</xpath>
@@ -38,6 +34,7 @@
 			<designationCategory>Ferny_World</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ContinuousContention_DefenseNode_SignalTower"]/designationCategory</xpath>
@@ -65,6 +62,7 @@
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ContinuousContention_Turret_StrikeCannon"]</xpath>

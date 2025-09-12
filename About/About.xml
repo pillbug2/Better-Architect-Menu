@@ -271,6 +271,7 @@
 		<li>aelanna.eccentrictech.defensegrid</li>
 		<li>mjeiouws.outlander.continuouscontention</li>
 		<li>bulldog.vanillachemfuelexpandedodysseypatch</li>
+		<li>aoba.deadmanswitch.core</li>
         <!-- (Add new mods here ^^^^^) -->
-    </loadAfter>  
+    </loadAfter>
 </ModMetaData>

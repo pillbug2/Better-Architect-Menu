@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-<!-- GROUND TRANSPORT-->
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Bicycle_Blueprint"]</xpath>
-		<value>
-			<designationCategory>Ferny_GroundTransport</designationCategory>
-		</value>
-	</Operation>
 
 <!-- TRANSPORT INFRASTRUCTURE -->
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName=""]/designationCategory</xpath>
@@ -17,6 +10,7 @@
 			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RTC_ToolShelf"]/designationCategory</xpath>
@@ -24,6 +18,7 @@
 			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RTC_BlastCabinet"]/designationCategory</xpath>
@@ -31,6 +26,7 @@
 			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RTC_EngineHanger"]/designationCategory</xpath>
@@ -38,6 +34,7 @@
 			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RT_AssemblyBench"]/designationCategory</xpath>
@@ -45,6 +42,7 @@
 			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RT_AssemblyCrane"]/designationCategory</xpath>
@@ -52,4 +50,15 @@
 			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
 		</value>
 	</Operation>
+	
+<!-- GROUND TRANSPORT-->
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Bicycle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+	
 </Patch>

@@ -30,6 +30,7 @@
 			<designationCategory>Misc</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="BreadMoAM_MineralConveyor"]</xpath>
@@ -37,6 +38,7 @@
 			<designationCategory>Misc</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="BreadMoAM_TunnelStructuralSupport_a"]</xpath>
@@ -44,6 +46,7 @@
 			<designationCategory>Misc</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="BreadMoAM_TunnelStructuralSupport_b"]</xpath>
@@ -51,6 +54,7 @@
 			<designationCategory>Misc</designationCategory>
 		</value>
 	</Operation>
+		
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="BreadMoAM_MineralExports"]</xpath>
@@ -58,4 +62,5 @@
 			<designationCategory>Misc</designationCategory>
 		</value>
 	</Operation>
+	
 </Patch>

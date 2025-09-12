@@ -11,7 +11,7 @@
 		</value>
 	</Operation>
 
-<!-- RESEARCH PRODUCTION -->
+<!-- PRODUCTION -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
