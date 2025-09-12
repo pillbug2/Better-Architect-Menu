@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]/label</xpath>
+    <value>
+        <label>Resources</label>
+    </value>
+</Operation>
+
+<!-- HEMOGEN NETWORK -->
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/PipeSystem.PipeNetDef[defName="VRE_HemogenNet"]/designator/designationCategoryDef</xpath>
+    <value>
+        <designationCategoryDef>Ferny_HemogenNetwork</designationCategoryDef>
+    </value>
+</Operation>
+
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VRE_HemogenPipe"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_HemogenNetwork</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VRE_UndergroundHemogenPipe"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_HemogenNetwork</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VRE_HemogenValve"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_HemogenNetwork</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VRE_HemogenVat"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_HemogenNetwork</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VRE_HemogenTap"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_HemogenNetwork</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VRE_HemogenDrain"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_HemogenNetwork</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VRE_Draincasket"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_HemogenNetwork</designationCategory>
+    </value>
+</Operation>
+
+
+</Patch>

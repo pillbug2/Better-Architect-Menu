@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!-- <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_Seating"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>VFEProps.Designator_Props</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_Tables"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>VFEProps.Designator_Props</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_Lighting"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>VFEProps.Designator_Props</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_Bedroom"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>VFEProps.Designator_Props</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_Decorations"]/specialDesignatorClasses</xpath>
+    <value>
+    <specialDesignatorClasses>
+      <li>VFEProps.Designator_Props</li>
+    </specialDesignatorClasses>
+    </value>
+  </Operation> -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_Decorations"]/specialDesignatorClasses</xpath>
+    <value>
+    <specialDesignatorClasses>
+      <li>VFEProps.Designator_Props</li>
+    </specialDesignatorClasses>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>Defs/DesignationCategoryDef[defName="Ferny_Decorations"]/modExtensions</xpath>
+      <value>
+          <modExtensions>
+          <li Class="BetterArchitect.SpecialCategoryExtension"></li>
+          <li Class="BetterArchitect.NestedCategoryExtension">
+              <parentCategory>Furniture</parentCategory>
+          </li>
+          </modExtensions>
+      </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_GeneralStorage"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>VFEProps.Designator_Props</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_ResourcesStorage"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>VFEProps.Designator_Props</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_GearStorage"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>VFEProps.Designator_Props</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_FoodStorage"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>VFEProps.Designator_Props</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+      <mods>
+          <li>Adaptive Storage Framework</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+          <operations>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/DesignationCategoryDef[defName="ASFstorage"]/specialDesignatorClasses</xpath>
+                <value>
+                  <li>VFEProps.Designator_Props</li>
+                </value>
+              </li>
+          </operations>
+      </match>
+  </Operation>
+
+</Patch>

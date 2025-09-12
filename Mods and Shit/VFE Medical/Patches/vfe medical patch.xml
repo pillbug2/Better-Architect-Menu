@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- AUXILIARIES -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Facility_ResearchCounter"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Auxiliaries</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- WALLS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM_Wall_Sterile"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Walls</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- MEDICAL -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Facility_VitalsCentre"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Medical</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Bed_CryptoBed"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Medical</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Facility_IVDrip"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Medical</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Bed_OperatingTable"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Medical</designationCategory>
+                    </value>
+                </Operation>
+
+</Patch>

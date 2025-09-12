@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>              
+<!-- WALLS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="oracle_TireWall"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Walls</designationCategory>
+                    </value>
+                </Operation>
+</Patch>

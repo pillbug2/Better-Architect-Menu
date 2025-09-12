@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Sleeving</defName>
+    <label>Sleeving</label>
+    <description>Manage sleeves.</description>
+    <order>3</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Biotech</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+</Defs>

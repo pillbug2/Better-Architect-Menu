@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- GROUND TRANSPORT -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_BigRig_Blueprint"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Hermano_Blueprint"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Lightning_Blueprint"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Nomad_Blueprint"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Springbok_Blueprint"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- AERIAL TRANSPORT -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Cherokee_Blueprint"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_AerialTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Goliath_Blueprint"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_AerialTransport</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- MILITARY TRANSPORT -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Badger_Blueprint"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilitaryTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Burya_Blueprint"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilitaryTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Louie_Blueprint"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilitaryTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Marshal_Blueprint"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilitaryTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Paladin_Blueprint"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilitaryTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Udar_Blueprint"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilitaryTransport</designationCategory>
+                    </value>
+                </Operation>
+
+
+</Patch>

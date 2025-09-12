@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]/label</xpath>
+    <value>
+        <label>Resources</label>
+    </value>
+</Operation>
+
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/PipeSystem.PipeNetDef[defName="VREA_NeutroamineNet"]/designator/designationCategoryDef</xpath>
+    <value>
+        <designationCategoryDef>Ferny_NeutroamineNetwork</designationCategoryDef>
+    </value>
+</Operation>
+
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VREA_NeutroTank"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VREA_NeutroPipe"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VREA_SubterraneanNeutroPipe"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VREA_NeutroTap"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VREA_NeutroDrain"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+    </value>
+</Operation>
+
+<!-- ANDROIDS -->
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VREA_AndroidPartWorkbench"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Androids</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VREA_SubcorePolyanalyzer"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Androids</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VREA_AndroidCreationStation"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Androids</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VREA_AndroidBehavioristStation"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Androids</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VREA_NeutroCasket"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Androids</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VREA_NeutroCasket"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Androids</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VREA_AndroidStandSpot"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Androids</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VREA_AndroidStand"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Androids</designationCategory>
+    </value>
+</Operation>
+</Patch>

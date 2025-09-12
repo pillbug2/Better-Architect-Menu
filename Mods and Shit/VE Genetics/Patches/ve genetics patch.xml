@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>          
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="GR_GeneticsTab"]/order</xpath>
+                    <value>
+                        <order>6</order>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="GR_GeneticsTab"]/label</xpath>
+                    <value>
+                        <label>Genetics</label>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="GR_GeneticsTab"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Ferny_Animals</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+                </Operation>
+
+
+</Patch>

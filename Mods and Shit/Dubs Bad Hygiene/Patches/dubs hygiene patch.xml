@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>   
+
+                <Operation Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Hygiene"]/label</xpath>
+                    <value>
+                        <label>Water</label>
+                    </value>
+                </Operation>
+
+              <Operation Class="PatchOperationConditional">
+             <xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
+                <match Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="Hygiene"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>VCHE_PipeNetworks</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+                </match>
+              </Operation>
+
+	<!--  Move shit      -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="BasedHeating"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Hygiene</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="SolarHeater"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Hygiene</designationCategory>
+                    </value>
+                </Operation>
+                    <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="GeothermHeater"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Hygiene</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="WashingMachine"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Hygiene</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="BasedCeilingFan"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Cooling</designationCategory>
+                    </value>
+                </Operation>
+
+</Patch>

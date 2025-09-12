@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<!-- KITCHEN -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_MeadFermentingBarrel"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Kitchen</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- AUXILIARIES -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="VFEM2_LinkableBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Auxiliaries</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- WALLS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_ClothWall"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Walls</designationCategory>
+                    </value>
+                </Operation>
+                    <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_LowCastleWall"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Walls</designationCategory>
+                    </value>
+                </Operation>
+                  <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_CastleWall"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Walls</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_TimberedWall"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Walls</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_Palisade"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Walls</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/VFEMedieval.CobblestoneWallTemplateDef[defName="VFEM2_CobblestoneWall_"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Walls</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- FARMING -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_Apiary"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Farming</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- WEAPONS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_Turret_WallMountedArbalest"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_Turret_WallMountedArquebus"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- HEATING -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_Hearth"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Heating</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Ideology</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationReplace">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="VFEM2_HearthDarklight"]/designationCategory</xpath>
+                                <value>
+                                    <designationCategory>Ferny_Heating</designationCategory>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </Operation>
+
+<!-- PRODUCTION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_LeatherBoilpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- DECORATIONS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEE_ImperialBanner"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- GENERAL STORAGE -->
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VFEM2_AilmentsShelf"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+</Patch>

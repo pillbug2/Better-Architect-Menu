@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>   
+<!-- LIGHTING -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Light_SpacerLamp"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Lighting</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Spacer_OutdoorLamp"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Lighting</designationCategory>
+                    </value>
+                </Operation>
+
+
+<!-- BEDROOM -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="VFES_AdvancedBedBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Bedroom</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Table_IlluminatedDresser"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Bedroom</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Table_IlluminatedEndTable"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Bedroom</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VFES_Table_IlluminatedWardrobe"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Bedroom</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- TABLES -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Table_interactive_1x1c"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Tables</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Table_interactive_2x2c"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Tables</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- AIRFLOW -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFES_AirPurifier"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_AirManagement</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- SEATING -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Seat_AdvChair"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Seating</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFES_ModernArmchair"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Seating</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFES_ModernCouch"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Seating</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- GEAR STORAGE -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Shelf_RepairRack"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </Operation>
+
+
+</Patch>

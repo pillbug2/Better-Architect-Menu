@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>   
+<!-- LIGHTING -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEE_Candelabra"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Lighting</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- BEDROOM -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEE_RoyalMirror"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Bedroom</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- TABLES -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEE_GrandTable"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Tables</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- CHAIRS -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEE_GrandChair"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Seating</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEE_RoyalStool"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Seating</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEE_StellicThrone"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Seating</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- DECORATIONS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEE_ImperialBanner"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+
+
+</Patch>

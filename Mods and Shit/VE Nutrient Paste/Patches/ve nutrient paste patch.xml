@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]/label</xpath>
+    <value>
+        <label>Resources</label>
+    </value>
+</Operation>        
+
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/PipeSystem.PipeNetDef[defName="VNPE_NutrientPasteNet"]/designator/designationCategoryDef</xpath>
+                    <value>
+                        <designationCategoryDef>Ferny_NutrientPasteNetwork</designationCategoryDef>
+                    </value>
+                </Operation>
+
+
+<!-- NUTRIENT PASTE -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VNPE_NutrientPastePipe"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NutrientPasteNetwork</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VNPE_UndergroundNutrientPastePipe"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NutrientPasteNetwork</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VNPE_NutrientPasteValve"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NutrientPasteNetwork</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VNPE_NutrientPasteGrinder"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NutrientPasteNetwork</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VNPE_NutrientPasteTap"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NutrientPasteNetwork</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VNPE_NutrientPasteFeeder"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NutrientPasteNetwork</designationCategory>
+                    </value>
+                </Operation>
+
+                
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VNPE_NutrientPasteDripper"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NutrientPasteNetwork</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VNPE_NutrientPasteVat"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NutrientPasteNetwork</designationCategory>
+                    </value>
+                </Operation>
+
+</Patch>

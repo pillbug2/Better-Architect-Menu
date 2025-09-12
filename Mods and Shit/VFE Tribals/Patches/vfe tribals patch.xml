@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- HEATING -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFET_LargeFire"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Heating</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- SEATING -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFET_SittingSpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Seating</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- FOUNDATIONAL PRODUCTION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFET_ResearchSpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResearchProduction</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- WEAPONS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFET_AnimalTrap"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Traps</designationCategory>
+                    </value>
+                </Operation>
+</Patch>

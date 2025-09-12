@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>        
+
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]/label</xpath>
+    <value>
+        <label>Resources</label>
+    </value>
+</Operation>
+
+<!-- CHEMFUEL  -->
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/PipeSystem.PipeNetDef[defName="VCHE_ChemfuelNet"]/designator/designationCategoryDef</xpath>
+    <value>
+        <designationCategoryDef>Ferny_ChemfuelNetwork</designationCategoryDef>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/PipeSystem.PipeNetDef[defName="VCHE_DeepchemNet"]/designator/designationCategoryDef</xpath>
+    <value>
+        <designationCategoryDef>Ferny_ChemfuelNetwork</designationCategoryDef>
+    </value>
+</Operation>
+
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCHE_ChemfuelPipe"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCHE_UndergroundChemfuelPipe"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCHE_ChemfuelValve"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="PS_ChemfuelTank"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCHE_ChemfuelTap"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCHE_ChemfuelDrain"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCHE_ChemfuelDrain"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCHE_DeepchemPipe"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCHE_UndergroundDeepchemPipe"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCHE_DeepchemValve"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="PS_DeepchemTank"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="PS_DeepchemRefinery"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCHE_DeepchemPumpjack"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCHE_DeepchemTap"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VCHE_DeepchemDrain"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+    </value>
+</Operation>
+
+</Patch>

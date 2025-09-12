@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- KITCHEN -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_RumBurialSpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Kitchen</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_GrogDispenser"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Kitchen</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- ANIMALS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_AnimalDatabase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Animals</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- CULTURE -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_RelicSmashingAltar"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ideology</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_FuturisticObelisk"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ideology</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_FuturisticStele"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ideology</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_FuturisticPyramid"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ideology</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_GreatPyramid"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ideology</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_Sphynx"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ideology</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_Megalith"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ideology</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- MEDICAL -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_AncientOperatingTable"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Medical</designationCategory>
+                    </value>
+                </Operation>
+</Patch>

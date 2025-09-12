@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>   
+
+<!-- LIGHTING -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Chemlamp"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Lighting</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="ChemlampPost"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Lighting</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- POWER GENERATION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Windmill"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- HEATING -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="ChemBoiler"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Heating</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- WEAPONS -->
+                <!-- <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Gun_GatlingGun"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation> -->
+</Patch>

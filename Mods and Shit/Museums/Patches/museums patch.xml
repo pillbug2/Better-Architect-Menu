@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>          
+
+
+<!-- SEATING -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="MuseumBench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Seating</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- HOSTING -->
+                <Operation Class="PatchOperationFindMod">
+                    <mods>
+                    <li>Hospitality (Continued)</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationReplace">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName="Museums_DonationBox"]/designationCategory</xpath>
+                        <value>
+                            <designationCategory>Ferny_Museum</designationCategory>
+                        </value>
+                        </li>
+                    </operations>
+                    </match>
+                </Operation>
+
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Museums_DonationBox"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Museums_Barrier"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Museums_Sign"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Museums_TourGatheringSpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="Museums_PedestalBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="MuseumDisplayBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
+
+
+
+                <Operation Class="PatchOperationFindMod">
+                        <mods>
+                            <li>ReBuild: Doors and Corners</li>
+                        </mods>
+                        <match Class="PatchOperationSequence">
+                    <operations>
+
+                        <li Class="PatchOperationReplace">
+                            <xpath>Defs/ThingDef[@Name="Museums_GlassWall"]/designationCategory</xpath>
+                            <value>
+                                <designationCategory>Ferny_Museum</designationCategory>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                            <xpath>Defs/ThingDef[@Name="Museums_GlassWall"]/designationCategory</xpath>
+                            <value>
+                                <designationCategory>Ferny_Museum</designationCategory>
+                            </value>
+                        </li>
+
+                    </operations>
+                        </match>
+                    </Operation>
+</Patch>

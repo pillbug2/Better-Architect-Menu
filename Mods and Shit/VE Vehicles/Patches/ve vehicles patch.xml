@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- GROUND TRANSPORT -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_BangBus_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Dirtbike_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Mule_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Prowler_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Traveller_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Charley_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadrunner_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Snatcher_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Wagon_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Wisent_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- NAVAL TRANSPORT -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Dinghy_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NavalTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Trawler_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NavalTransport</designationCategory>
+                    </value>
+                </Operation>
+
+
+
+
+
+
+
+<!-- AERIAL TRANSPORT -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Frog_Blueprint"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_AerialTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Mosquito_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_AerialTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Smuggler_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_AerialTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Toad_Blueprint"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_AerialTransport</designationCategory>
+                    </value>
+                </Operation>
+
+
+
+
+
+<!-- MILITARY TRANSPORT -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Bunsen_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilitaryTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Highwayman_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilitaryTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadkill_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilitaryTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Scytheman_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilitaryTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Bulldog_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilitaryTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Tango_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilitaryTransport</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Warbird_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilitaryTransport</designationCategory>
+                    </value>
+                </Operation>
+	            <Operation Class="PatchOperationAdd">
+		            <success>Always</success>
+		            <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Scytheman_Blueprint"]</xpath>
+		            <value>
+						<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		            </value>
+	            </Operation>
+
+<!-- INFRASTRUCTURE -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VVE_RefuelingPump"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_TransportInfrastructure</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="VVE_GarageDoorAbstract"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_TransportInfrastructure</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VVE_GarageBench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_TransportInfrastructure</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VVE_GarageBench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_TransportInfrastructure</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VVE_GarageCabinet"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_TransportInfrastructure</designationCategory>
+                    </value>
+                </Operation>
+
+
+                <Operation Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Royalty</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationReplace">
+                                <success>Always</success>
+                                <xpath>/Defs/ThingDef[defName="ShipLandingBeacon"]/designationCategory</xpath>
+                                <value>
+                                    <designationCategory>Ferny_TransportInfrastructure</designationCategory>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </Operation>
+
+<!-- BARRICADES -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VVE_TankTrap"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Barricades</designationCategory>
+                    </value>
+                </Operation>
+
+</Patch>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>          
+<Patch>       
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]/label</xpath>
+    <value>
+        <label>Resources</label>
+    </value>
+</Operation>
+
+
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/PipeSystem.PipeNetDef[defName="Reel_AmmoNet"]/designator/designationCategoryDef</xpath>
+                    <value>
+                        <designationCategoryDef>Ferny_AmmunitionNetwork</designationCategoryDef>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Reel_AmmoPipe"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_AmmunitionNetwork</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Reel_SubAmmoPipe"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_AmmunitionNetwork</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="REEL_AmmoTank"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_AmmunitionNetwork</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Reel_AmmoDrain"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_AmmunitionNetwork</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Reel_AmmoOutput"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_AmmunitionNetwork</designationCategory>
+                    </value>
+                </Operation>
+</Patch>

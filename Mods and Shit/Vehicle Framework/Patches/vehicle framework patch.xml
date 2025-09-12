@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>              
+<!-- ROAD ZONES -->
+                <Operation Class = "PatchOperationAdd">
+                    <xpath>Defs/DesignationCategoryDef[defName = "Ferny_Transport"]/specialDesignatorClasses</xpath>
+                    <value>
+                        <li>Vehicles.Designator_AreaRoadExpand</li>
+                        <li>Vehicles.Designator_AreaRoadClear</li>
+                    </value>
+                </Operation>
+                <Operation Class = "PatchOperationAdd">
+                    <xpath>Defs/DesignationCategoryDef[defName = "Ferny_GroundTransport"]/specialDesignatorClasses</xpath>
+                    <value>
+                        <li>Vehicles.Designator_AreaRoadExpand</li>
+                        <li>Vehicles.Designator_AreaRoadClear</li>
+                    </value>
+                </Operation>
+                <Operation Class = "PatchOperationAdd">
+                    <xpath>Defs/DesignationCategoryDef[defName = "Ferny_NavalTransport"]/specialDesignatorClasses</xpath>
+                    <value>
+                        <li>Vehicles.Designator_AreaRoadExpand</li>
+                        <li>Vehicles.Designator_AreaRoadClear</li>
+                    </value>
+                </Operation>
+                <Operation Class = "PatchOperationAdd">
+                    <xpath>Defs/DesignationCategoryDef[defName = "Ferny_AerialTransport"]/specialDesignatorClasses</xpath>
+                    <value>
+                        <li>Vehicles.Designator_AreaRoadExpand</li>
+                        <li>Vehicles.Designator_AreaRoadClear</li>
+                    </value>
+                </Operation>
+                <Operation Class = "PatchOperationAdd">
+                    <xpath>Defs/DesignationCategoryDef[defName = "Ferny_MilitaryTransport"]/specialDesignatorClasses</xpath>
+                    <value>
+                        <li>Vehicles.Designator_AreaRoadExpand</li>
+                        <li>Vehicles.Designator_AreaRoadClear</li>
+                    </value>
+                </Operation>
+                <Operation Class = "PatchOperationAdd">
+                    <xpath>Defs/DesignationCategoryDef[defName = "Ferny_TransportInfrastructure"]/specialDesignatorClasses</xpath>
+                    <value>
+                        <li>Vehicles.Designator_AreaRoadExpand</li>
+                        <li>Vehicles.Designator_AreaRoadClear</li>
+                    </value>
+                </Operation>
+
+<!-- VEHICLES PATCHES -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="VF_Vehicles"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Ferny_Transport</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="VF_Vehicles"]/order</xpath>
+                    <value>
+                        <order>1</order>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="VF_Vehicles"]/label</xpath>
+                    <value>
+                        <label>Other</label>
+                    </value>
+                </Operation>
+</Patch>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AC_NeuralMatrix"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Sleeving</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AC_NeuralEditor"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Sleeving</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AC_NeuralConnector"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Sleeving</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AC_CastingRelay"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Sleeving</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AC_StackCache"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Sleeving</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AC_SleeveCasket"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Sleeving</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AC_SleeveGestator"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Sleeving</designationCategory>
+    </value>
+</Operation>
+
+</Patch>

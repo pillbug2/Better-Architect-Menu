@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- MILK PIPE NETWORK -->
+    <Operation Class="PatchOperationSequence">
+            <operations>  
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="MP_MilkPipe"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilkPipeNetwork</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="MP_UndergroundMilkPipe"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilkPipeNetwork</designationCategory>
+                    </value>
+                </li>				
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/PipeSystem.PipeNetDef[defName="MP_MilkNetwork"]/designator/designationCategoryDef</xpath>
+                    <value>
+                        <designationCategoryDef>Ferny_MilkPipeNetwork</designationCategoryDef>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="MP_MilkTank"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilkPipeNetwork</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="MP_MilkDrain"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilkPipeNetwork</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="MP_MilkTap"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_MilkPipeNetwork</designationCategory>
+                    </value>
+                </li>
+            </operations>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+        <xpath>/Defs/DesignationCategoryDef[defName="MP_MilkNetworks"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/DesignationCategoryDef[defName="MP_MilkNetworks"]</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+
+
+</Patch>

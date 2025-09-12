@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<BA.Free>Free</BA.Free>
+	<BA.GroupByTechLevel>Group by Tech Level</BA.GroupByTechLevel>
+	<BA.MenuHeight>Menu height</BA.MenuHeight>
+	<BA.HideOnSelection>Hide on building selection</BA.HideOnSelection>
+	<BA.HideOnSelectionTooltip>When building is selected, fully hide the menu.</BA.HideOnSelectionTooltip>
+	<BA.RememberSubcategory>Remember subcategory</BA.RememberSubcategory>
+	<BA.RememberSubcategoryTooltip>When enabled, the mod will remember the last selected subcategory for each main category. When disabled, it will always default to the first subcategory.</BA.RememberSubcategoryTooltip>
+	<BA.Default>Default</BA.Default>
+	<BA.Label>Label</BA.Label>
+	<BA.Beauty>Beauty</BA.Beauty>
+	<BA.Comfort>Comfort</BA.Comfort>
+	<BA.Value>Value</BA.Value>
+	<BA.WorkToBuild>Work to build</BA.WorkToBuild>
+	<BA.Health>Health</BA.Health>
+	<BA.Cleanliness>Cleanliness</BA.Cleanliness>
+	<BA.SkillRequired>Skill required</BA.SkillRequired>
+	<BA.Flammability>Flammability</BA.Flammability>
+	<BA.CoverEffectiveness>Cover effectiveness</BA.CoverEffectiveness>
+	<BA.MaxPowerOutput>Max power output</BA.MaxPowerOutput>
+	<BA.PowerConsumption>Power consumption</BA.PowerConsumption>
+	<BA.RecreationPower>Recreation power</BA.RecreationPower>
+	<BA.MoveSpeed>Move speed</BA.MoveSpeed>
+	<BA.TotalStorageCapacity>Total storage capacity</BA.TotalStorageCapacity>
+	<BA.DoorOpeningSpeed>Door opening speed</BA.DoorOpeningSpeed>
+	<BA.WorkSpeedFactor>Work speed factor</BA.WorkSpeedFactor>
+	<BA.More>Other</BA.More>
+	<BA.BackgroundAlpha>Background transparency</BA.BackgroundAlpha>
+	<BA.NothingAvailableToBuild>There is nothing available to build yet.</BA.NothingAvailableToBuild>
+</LanguageData>

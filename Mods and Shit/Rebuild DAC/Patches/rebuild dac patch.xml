@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>   
+
+<!-- LIGHTING -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="RB_FloorLamp"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Lighting</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- WALLS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="RB_OverwallArmor"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Walls</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="RB_WallBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Walls</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- HEATING -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="RB_Fireplace"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Heating</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- AIR MANAGEMENT -->
+              <Operation Class="PatchOperationFindMod">
+                <mods>
+                  <li>Vanilla Temperature Expanded</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                  <operations>
+                            <li Class="PatchOperationAdd">
+                                <success>Always</success>
+                                <xpath>Defs/ThingDef[defName="RB_ACUnitFloor"]</xpath>
+                                <value>
+                                    <designationCategory>Ferny_AirManagement</designationCategory>
+                                </value>
+                            </li>
+                        </operations>
+                </match>
+              </Operation>
+
+
+</Patch>
