@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="GraveColumnMod"]/designationCategory</xpath>
@@ -8,7 +7,6 @@
 			<designationCategory>Ideology</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="OrbitalTradeColumnMod"]/designationCategory</xpath>
@@ -16,7 +14,6 @@
 			<designationCategory>Ferny_Outreach</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Wall_TradeDevice"]/designationCategory</xpath>
@@ -24,7 +21,6 @@
 			<designationCategory>Ferny_Outreach</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Wall_FirefoamPopper"]/designationCategory</xpath>
@@ -32,7 +28,6 @@
 			<designationCategory>Ferny_Firefoam</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="IceColumnMod"]/designationCategory</xpath>
@@ -40,7 +35,6 @@
 			<designationCategory>Ferny_Cooling</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Wall_CoolDevice"]/designationCategory</xpath>
@@ -48,7 +42,6 @@
 			<designationCategory>Ferny_Cooling</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Wall_HeatDevice"]/designationCategory</xpath>
@@ -56,7 +49,6 @@
 			<designationCategory>Ferny_Heating</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="SunColumnMod"]/designationCategory</xpath>
@@ -64,7 +56,6 @@
 			<designationCategory>Ferny_Lighting</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Wall_SunDevice"]/designationCategory</xpath>
@@ -72,7 +63,6 @@
 			<designationCategory>Ferny_Lighting</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="LightColumnMod"]/designationCategory</xpath>
@@ -80,7 +70,6 @@
 			<designationCategory>Ferny_Lighting</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="DarkColumnMod"]/designationCategory</xpath>
@@ -88,7 +77,6 @@
 			<designationCategory>Ferny_Lighting</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="DetColumnMod"]/designationCategory</xpath>
@@ -96,7 +84,6 @@
 			<designationCategory>Ferny_Traps</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="FlameColumnMod"]/designationCategory</xpath>
@@ -104,7 +91,6 @@
 			<designationCategory>Ferny_Traps</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="EMPColumnMod"]/designationCategory</xpath>
@@ -112,7 +98,6 @@
 			<designationCategory>Ferny_Traps</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="DeadColumnMod"]/designationCategory</xpath>
@@ -120,5 +105,4 @@
 			<designationCategory>Ferny_Traps</designationCategory>
 		</value>
 	</Operation>
-	
 </Patch>

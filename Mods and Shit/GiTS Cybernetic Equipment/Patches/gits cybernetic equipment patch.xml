@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]</xpath>
@@ -8,7 +7,14 @@
 			<designationCategory>Ferny_Medical</designationCategory>
 		</value>
 	</Operation>
-	
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="gitsCyberbodyAnchor"]/designationCategory</xpath>
+		<value>
+			<li Class="BetterArchitect.?">
+			</li>
+		</value>
+	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="gitsAnchorConsole"]/designationCategory</xpath>
@@ -16,7 +22,6 @@
 			<designationCategory>Ferny_Medical</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="gitsCyberneticsWorkbench"]/designationCategory</xpath>
@@ -24,5 +29,4 @@
 			<designationCategory>Ferny_Production</designationCategory>
 		</value>
 	</Operation>
-	
 </Patch>

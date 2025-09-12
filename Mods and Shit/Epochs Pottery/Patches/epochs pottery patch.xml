@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	
-<!-- WALLS -->
-
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="DV_BasicClayWall"]/designationCategory</xpath>
@@ -10,7 +7,6 @@
 			<designationCategory>Ferny_Walls</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="DV_CobbClayWall"]/designationCategory</xpath>
@@ -18,19 +14,6 @@
 			<designationCategory>Ferny_Walls</designationCategory>
 		</value>
 	</Operation>
-	
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="DV_BasicClayWall"]/designatorDropdown</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="DV_CobbClayWall"]/designatorDropdown</xpath>
-	</Operation>
-	
-<!-- PRODUCTION -->
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="DV_ClayTurningTable"]/designationCategory</xpath>
@@ -38,7 +21,6 @@
 			<designationCategory>Ferny_Production</designationCategory>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="DV_IndustrialClayTurningTable"]/designationCategory</xpath>
@@ -46,5 +28,12 @@
 			<designationCategory>Ferny_Production</designationCategory>
 		</value>
 	</Operation>
-	
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DV_BasicClayWall"]/designatorDropdown</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DV_CobbClayWall"]/designatorDropdown</xpath>
+	</Operation>
 </Patch>

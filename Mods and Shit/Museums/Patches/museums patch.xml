@@ -29,6 +29,13 @@
                     </match>
                 </Operation>
 
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Museums_DonationBox"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="Museums_Barrier"]/designationCategory</xpath>
                     <value>
