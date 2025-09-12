@@ -243,9 +243,10 @@
 		<li>aoba.deadmanswitch.motorized</li>
 		<li>vin.warehouse.storage</li>
 		<li>jf.royalcarpets</li>
-        <li>as1aw.morehunterdrones</li>
-        <li>tug.satyrfaun.expanded</li>
-        <li>wanzi.biggraves</li>
+    <li>as1aw.morehunterdrones</li>
+    <li>tug.satyrfaun.expanded</li>
+    <li>wanzi.smallgraves</li>
+    <li>wanzi.biggraves</li>
         <!-- (Add new mods here ^^^^^) -->
     </loadAfter>  
 </ModMetaData>
