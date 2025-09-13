@@ -52,17 +52,6 @@
 			<designationCategory>Ferny_Production</designationCategory>
 		</value>
 	</Operation>
-
-	<!-- Remove reference to Rimatomics -->
-	<!--
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="TableRimatomicsMachining"]/label</xpath>
-		<value>
-			<label>Atomics machining table</label>
-		</value>
-	</Operation>
-	-->
 	
 <!-- PROCESSING PRODUCTION -->
 
@@ -83,17 +72,6 @@
 			<designationCategory>Ferny_ResearchProduction</designationCategory>
 		</value>
 	</Operation>
-
-	<!-- Remove reference to Rimatomics -->
-	<!--
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/label</xpath>
-		<value>
-			<label>Atomics research bench</label>
-		</value>
-	</Operation>
-	-->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
