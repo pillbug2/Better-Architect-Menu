@@ -277,6 +277,7 @@
         <li>wanzi.smallgraves</li>
         <li>wanzi.biggraves</li>
 		<li>relvl.digitalstorageunit</li>
+		<li>bigbarza.vqegenerator.pipecompat</li>
         <!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
