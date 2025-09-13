@@ -82,6 +82,15 @@
 		</value>
 	</Operation>
 
+	<!-- Remove reference to Rimatomics -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/label</xpath>
+		<value>
+			<label>Atomics research bench</label>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ResearchReactor"]</xpath>
