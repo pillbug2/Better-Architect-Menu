@@ -6,78 +6,89 @@
         <xpath>Defs/DesignationCategoryDef[defName="cargoholds"]</xpath>
     </Operation>
 
-    <!-- Replace cargo hold def categories with progression storage category -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="jdgg_SqCargoHold"]</xpath>
+    <!-- Replace Cargo Holds buildables with Ferny_VehicleStorage -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="jdgg_SqCargoHold"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_VehicleStorage</designationCategory>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="jdgg_CargoHold"]</xpath>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="jdgg_CargoHold"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_VehicleStorage</designationCategory>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="jdgg_RefCargoHold"]</xpath>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="jdgg_2x2CargoHold"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_VehicleStorage</designationCategory>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="jdgg_2x2CargoHold"]</xpath>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="jdgg_MassCargoHold"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_VehicleStorage</designationCategory>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="jdgg_MassCargoHold"]</xpath>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="jdgg_SmCargoComp"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_VehicleStorage</designationCategory>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="jdgg_SmCargoComp"]</xpath>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="jdgg_RefCargoHold"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_VehicleStorage</designationCategory>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="jdgg_nCargoHold"]</xpath>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="jdgg_nCargoHold"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_VehicleStorage</designationCategory>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="jdgg_nRefCargoHold"]</xpath>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="jdgg_nRefCargoHold"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_VehicleStorage</designationCategory>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="jdgg_n2x2CargoHold"]</xpath>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="jdgg_n2x2CargoHold"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_VehicleStorage</designationCategory>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="jdgg_nMassCargoHold"]</xpath>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="jdgg_nMassCargoHold"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_VehicleStorage</designationCategory>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="jdgg_XMCH"]</xpath>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="jdgg_XMCH"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_VehicleStorage</designationCategory>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="jdgg_XMCHVB"]</xpath>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="jdgg_XMCHVB"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_VehicleStorage</designationCategory>
         </value>
     </Operation>
-
 </Patch>
