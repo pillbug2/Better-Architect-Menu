@@ -243,6 +243,8 @@
     <li IfModActive="drilledhead.MyDogsHouse">Mods and Shit/MyDogsHouse</li>
     <li IfModActive="JTCsBonereapers.FormerlyPPHHYY">Mods and Shit/BoneReapers Remarrowed</li>
     <li IfModActive="mlmlmlm.bluearchivefurniture">Mods and Shit/Blur Archive Furniture</li>
+    <li IfModActive="BuhGunGer.WallMountedFireFoamPopper">Mods and Shit/Wall Mounted Firefoam</li>
+    <li IfModActive="notdvd.fraymod">Mods and Shit/Fray of the Fog</li>
 
             <!-- (Add new mods here ^^^^^) -->
   </v1.6>
