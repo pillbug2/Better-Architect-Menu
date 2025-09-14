@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
+		<match Class="PatchOperationAddModExtension">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="Ferny_ToxicWasteNetwork"]</xpath>
+			<value>
+
+				<li Class="BetterArchitect.NestedCategoryExtension">
+					<parentCategory>VCHE_PipeNetworks</parentCategory>
+				</li>
+
+			</value>
+		</match>
+	</Operation>
+
+<!-- TOXIC WASTE -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- Networks -->
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/PipeSystem.PipeNetDef[defName="VCEUE_ToxicWasteNet"]/designator/designationCategoryDef</xpath>
+					<value>
+						<designationCategoryDef>Ferny_ToxicWasteNetwork</designationCategoryDef>
+					</value>
+				</li>
+
+				<!-- Buildings -->
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="VCEUE_ToxicWastePipe"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_ToxicWasteNetwork</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="VCEUE_UndergroundToxicWastePipe"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_ToxicWasteNetwork</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="VCEUE_ToxicWasteValve"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_ToxicWasteNetwork</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="VCEUE_ToxicWasteTank"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_ToxicWasteNetwork</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="VCEUE_ToxicWasteTap"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_ToxicWasteNetwork</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="VCEUE_ToxicWasteDrain"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_ToxicWasteNetwork</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="VCEUE_WasteDetofixier"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_ToxicWasteNetwork</designationCategory>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+	
+<!-- NEUTROAMINE-->
+
+	<!-- Networks -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="VREA_NeutroamineNet"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_NeutroamineNetwork</designationCategoryDef>
+		</value>
+	</Operation>
+
+	<!-- Buildings -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_NeutroamineRefinery"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VREA_NeutroPipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VREA_SubterraneanNeutroPipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_NeutroamineValve"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_NeutroamineTank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_NeutroamineTap"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_NeutroamineDrain"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+		</value>
+	</Operation>
+
+<!-- DYE -->
+	
+	<!-- Networks -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="VCEUE_DyeNet"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_DyeNetwork</designationCategoryDef>
+		</value>
+	</Operation>
+
+	<!-- Buildings -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_DyePipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DyeNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_UndergroundDyePipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DyeNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_DyeValve"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DyeNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_DyeTank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DyeNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_DyeTap"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DyeNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_DyeDrain"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DyeNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_DyeRefinery"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DyeNetwork</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- CHEMFUEL -->
+
+	<!-- Buildings -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_RawPlasteelRefinery"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_AdvancedAutoWeavery"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PROCESSING PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_Autoclave"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCEUE_Autoweave"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>
