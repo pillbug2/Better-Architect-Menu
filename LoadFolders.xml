@@ -245,6 +245,7 @@
     <li IfModActive="mlmlmlm.bluearchivefurniture">Mods and Shit/Blur Archive Furniture</li>
     <li IfModActive="BuhGunGer.WallMountedFireFoamPopper">Mods and Shit/Wall Mounted Firefoam</li>
     <li IfModActive="notdvd.fraymod">Mods and Shit/Fray of the Fog</li>
+    <li IfModActive="Xercaine.SmallBiofuelRefinery">Mods and Shit/Small Biofuel Refinery</li>
 
             <!-- (Add new mods here ^^^^^) -->
   </v1.6>
