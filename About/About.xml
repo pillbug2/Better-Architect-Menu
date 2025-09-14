@@ -292,6 +292,10 @@
 		<li>NoneObsidiaExpansion.LEDLightsStrip</li>
 		<li>Erin.CottageCollection</li>
     <li>jdgg.adaptive.cargoholds</li>
+	<li>GHOST.RootsofRimworld</li>
+	<li>als.anomalygravship</li>
+	<li>neronix17.geothermalcooler</li>
+	<li>HT.LUNARTIKA</li>
         <!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
