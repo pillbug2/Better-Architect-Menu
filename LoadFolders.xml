@@ -232,7 +232,8 @@
     <li IfModActive="ushanka.biologicalwarfare">Mods and Shit/Ushankas Biological Warfare</li>                              <!-- TODO Consider unpacking the weapons and traps ala VFE Deserters IEDs -->
     <li IfModActive="ushanka.luciferiumexpansion">Mods and Shit/Ushankas Luciferium Expansion</li>
     <li IfModActive="bigbarza.vqegenerator.pipecompat">Mods and Shit/VQE Generator Pipe Network Compat</li>
-    <li IfModActive="bambaryla.vcepu">Mods and Shit/VE Chemfuel Unofficial Expansion</li>                                   <!-- TODO Unpack dropdown -->
-            <!-- (Add new mods here ^^^^^) -->
+    <li IfModActive="bambaryla.vcepu">Mods and Shit/VE Chemfuel Unofficial Expansion</li>                            <!-- TODO Unpack dropdown -->
+    <li IfModActive="CP.RimmuNation.2.Security">Mods and Shit/RH2 Security</li>
+    <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
