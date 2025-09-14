@@ -217,6 +217,8 @@
     <li IfModActive="redmattis.bsfurniture">Mods and Shit/Big and Small Furniture</li>
     <li IfModActive="thatthing.mycohazard">Mods and Shit/Mycohazard</li>
     <li IfModActive="wanzi.smallgraves">Mods and Shit/Small Graves and Sarcophaguses</li>
+    <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>
+    <li IfModActive="vanillaexpanded.vbookse">Mods and Shit/VE Books</li>
     <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>	
     <li IfModActive="redmattis.dryads">Mods and Shit/Dryads and Gauranlen Trees Reworked</li>
     <li IfModActive="farxmai2.vfestandalone">Mods and Shit/Furniture Expanded Pack</li>
