@@ -78,6 +78,24 @@
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
+	
+<!-- BARRICADES -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PPCHEL"]</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RimatomicsShieldGenerator"]</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
 
 <!-- COMBAT INFRASTRUCTURE -->
 
@@ -100,14 +118,6 @@
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RadarDish"]</xpath>
-		<value>
-			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RimatomicsShieldGenerator"]</xpath>
 		<value>
 			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
 		</value>
