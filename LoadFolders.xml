@@ -191,11 +191,11 @@
     <li IfModActive="oskarpotocki.vfe.pirates">Mods and Shit/VFE Pirates</li>
     <li IfModActive="trugerman.altdeuteriumextractor">Mods and Shit/Piped Deuterium Extractor</li>
     <li IfModActive="ilyvion.colonymanagerredux">Mods and Shit/Colony Manager Redux</li>
-    <li IfModActive="aelanna.eccentrictech.defensegrid">Mods and Shit/Eccentric Tech Defense Grid</li>                      <!-- TODO Move pipe deconstruct designator -->
-    <li IfModActive="aelanna.eccentrictech.fusionpower">Mods and Shit/Eccentric Tech Fusion Power</li>                      <!-- TODO Move pipe deconstruct designator -->
+    <li IfModActive="aelanna.eccentrictech.defensegrid">Mods and Shit/Eccentric Tech Defense Grid</li>
+    <li IfModActive="aelanna.eccentrictech.fusionpower">Mods and Shit/Eccentric Tech Fusion Power</li>
     <li IfModActive="mrhydralisk.complementaryodyssey">Mods and Shit/Complementary Odyssey</li>
     <li IfModActive="windwardsnow.mechanitorweapons">Mods and Shit/Mechanitor Weapons</li>                                  <!-- TODO Unpack turret dropdown -->
-    <li IfModActive="mjeiouws.outlander.continuouscontention">Mods and Shit/Outlander Solutions Continuous Contention</li>  <!-- TODO Move pipe deconstruct designator -->
+    <li IfModActive="mjeiouws.outlander.continuouscontention">Mods and Shit/Outlander Solutions Continuous Contention</li>
     <li IfModActive="mlie.jwlatmosphericwaterprocessor">Mods and Shit/Atmospheric Water Processor</li>
     <li IfModActive="mlie.reinforcedmechanoid2">Mods and Shit/Reinforced Mechanoid 2</li>                                   <!-- Reinforced Mechanoid 2 patch split for compatibility with standalone buildings -->
 	<li IfModActive="mlie.reinforcedmechanoid2">Mods and Shit/Gestalt Engine</li>
