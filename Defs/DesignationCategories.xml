@@ -899,8 +899,23 @@
 				<parentCategory>Ferny_Hosting</parentCategory>
 			</li>
 		</modExtensions>
-  </DesignationCategoryDef>  
+  </DesignationCategoryDef>
 
-
+	<!-- VRE Androids and VE Chemfuel Unofficial Expansion both need a neutroamine network category. -->
+	<DesignationCategoryDef>
+		<defName>Ferny_NeutroamineNetwork</defName>
+		<label>Neutroamine</label>
+		<description>Manage neutroamine.</description>
+		<order>7</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>VCHE_PipeNetworks</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
 
 </Defs>

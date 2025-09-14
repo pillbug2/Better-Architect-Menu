@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+
+<!-- Move network deconstruct gizmos -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_PowerGeneration"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>EccentricPower.Designator_DeconstructPipe</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_PowerStorage"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>EccentricPower.Designator_DeconstructPipe</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_PowerManagement"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>EccentricPower.Designator_DeconstructPipe</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>/Defs/DesignationCategoryDef[defName="Power"]/specialDesignatorClasses/li[text()="EccentricPower.Designator_DeconstructPipe"]</xpath>
+	</Operation>
 	
-	<!-- POWER INFRASTRUCTURE -->
+<!-- POWER INFRASTRUCTURE -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
@@ -64,4 +95,5 @@
 		</value>
 	</Operation>
 	
+
 </Patch>
