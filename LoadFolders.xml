@@ -218,6 +218,7 @@
     <li IfModActive="thatthing.mycohazard">Mods and Shit/Mycohazard</li>
     <li IfModActive="wanzi.smallgraves">Mods and Shit/Small Graves and Sarcophaguses</li>
     <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>	
+	<li IfModActive="dubwise.rimefeller">Mods and Shit/Dubs Rimefeller</li>
 	<li IfModActive="ushanka.biologicalwarfare">Mods and Shit/Ushankas Biological Warfare</li>                              <!-- TODO Consider unpacking the weapons and traps ala VFE Deserters IEDs -->
 	<li IfModActive="ushanka.luciferiumexpansion">Mods and Shit/Ushankas Luciferium Expansion</li>
 	<li IfModActive="bigbarza.vqegenerator.pipecompat">Mods and Shit/VQE Generator Pipe Network Compat</li>

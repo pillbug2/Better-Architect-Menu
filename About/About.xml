@@ -127,7 +127,6 @@
 		<li>pyrce.mass.graves.continued</li>
 		<li>grave.cross</li>
 		<li>inglix.widermarriagespot</li>
-		<li>ushanka.luciferiumexpansion</li>
     <li>scurvyez.stevesdoors</li>
     <li>oracle.miscellania</li>
     <li>xmb.ancienturbanruins.mo</li>
@@ -281,6 +280,8 @@
 		<li>ushanka.biologicalwarfare</li>
     <li>bigbarza.vqegenerator.pipecompat</li>
     <li>bambaryla.vcepu</li>
+    <li>dubwise.rimefeller</li>
+		<li>ushanka.luciferiumexpansion</li>
         <!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
