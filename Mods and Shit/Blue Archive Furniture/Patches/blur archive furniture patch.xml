@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_Teaching_Desk"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ResearchProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_Chair"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_Bench"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_SideTable"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SideTablewithlamp"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_Desk"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Tables</designationCategory>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Classic_Candles"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Tea_Party_Table"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Tables</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Tea_party_chairA"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Tea_party_chairB"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Tea_party_chairC"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BAFloor_Lamp"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Guest_Tea_Sofa"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Guest_Tea_Table"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Tables</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_Large_Sofa"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Teaparty_Mini_Sofa"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Teaparty_Sofa_Table"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Tables</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BAWall_Clock"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Gramophone"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Classic_Book_Wagon"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Tea_Time_Tea_Cart"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_Wooden_Fence"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Ranching</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TrinityCarpetBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_Hexagonal_Carpet"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Classic_Pattern_Carpet"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Tea_Party_Geometric_Pattern_Carpet"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_Large_Bookshelf"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_Large_Bookshelf_Graphics"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_Medium_Bookshelf"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_Medium_Bookshelf_Graphics"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Mahogany_Glass_Cabinet"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Mahogany_Glass_Cabinet_Graphics"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Mahogany_Three_Tier_Bookshelf"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Mahogany_Three_Tier_Bookshelf_Graphics"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Tea_Party_Display_Shelf"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Tea_Party_Display_Shelf_Graphics"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Tea_Party_Tea_Leaf_Display_Shelf"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Tea_Party_Tea_Leaf_Display_Shelf_Graphics"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_Gun_Stand"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_Gun_Stand_Graphics"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_Storage_Cabinet"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Trinity_Storage_Cabinet_Graphics"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+</Patch>

@@ -129,6 +129,7 @@
     <li IfModActive="gy.ppextend">Mods and Shit/Power Poles Extended</li>
     <li IfModActive="rabiosus.extinguisherdrone">Mods and Shit/Extinguisher Drone</li>
     <li IfModActive="gogatio.mechanoidupgrades">Mods and Shit/Mechanoid Upgrades</li>
+    <li IfModActive="sbz.gravshipstorage">Mods and Shit/Gravship Storage</li>
     <li IfModActive="sbz.neatstorage">Mods and Shit/Neat Storage</li>
     <li IfModActive="vanillaexpanded.vfepropsanddecor">Mods and Shit/VFE Props</li>
     <li IfModActive="orion.cashregister">Mods and Shit/Cash Register</li>
@@ -214,7 +215,9 @@
     <li IfModActive="relvl.digitalstorageunit">Mods and Shit/Digital Storage Unit</li>                                      <!-- TODO Unpack dropdown -->
     <li IfModActive="jf.royalcarpets">Mods and Shit/Royal Carpets</li>
     <li IfModActive="as1aw.morehunterdrones">Mods and Shit/More Hunter Drones</li>
-    <li IfModActive="redmattis.bsfurniture">Mods and Shit/Big and Small Furniture</li>
+    <li IfModActive="redmattis.bsfurniture">Mods and Shit/Big and Small Furniture/Common</li>
+	<li IfModActiveAll="redmattis.bsfurniture,dankpyon.medieval.overhaul">Mods and Shit/Big and Small Furniture/MO</li>
+	<li IfModActiveAll="redmattis.bsfurniture,dankpyon.medieval.overhaul,VR.MOPatches">Mods and Shit/Big and Small Furniture/MOPatches</li>
     <li IfModActive="thatthing.mycohazard">Mods and Shit/Mycohazard</li>
     <li IfModActive="wanzi.smallgraves">Mods and Shit/Small Graves and Sarcophaguses</li>
     <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>
@@ -233,6 +236,22 @@
     <li IfModActive="ushanka.luciferiumexpansion">Mods and Shit/Ushankas Luciferium Expansion</li>
     <li IfModActive="bigbarza.vqegenerator.pipecompat">Mods and Shit/VQE Generator Pipe Network Compat</li>
     <li IfModActive="bambaryla.vcepu">Mods and Shit/VE Chemfuel Unofficial Expansion</li>                                   <!-- TODO Unpack dropdown -->
-            <!-- (Add new mods here ^^^^^) -->
+    <li IfModActive="DimonSever000.AnimaObelisk.Specific">Mods and Shit/Anima Obelisk</li>
+    <li IfModActive="als.anomalygravship">Mods and Shit/Anomaly for Gravship</li>
+    <li IfModActive="neronix17.geothermalcooler">Mods and Shit/Geothermal Coolers</li>
+    <li IfModActive="HT.LUNARTIKA">Mods and Shit/Heavy Truck</li>
+    <li IfModActive="GHOST.RootsofRimworld">Mods and Shit/Roots of Rimworld</li>
+    <li IfModActive="MrHydralisk.VNPEReimaginedProgression">Mods and Shit/VE Nutrient Paste Expanded</li>
+    <li IfModActive="vin.warehouse.storage.corpse">Mods and Shit/Warehouse Storage Corpses</li>
+    <li IfModActive="drilledhead.MyDogsHouse">Mods and Shit/MyDogsHouse</li>
+    <li IfModActive="JTCsBonereapers.FormerlyPPHHYY">Mods and Shit/BoneReapers Remarrowed</li>
+    <li IfModActive="mlmlmlm.bluearchivefurniture">Mods and Shit/Blur Archive Furniture</li>
+    <li IfModActive="BuhGunGer.WallMountedFireFoamPopper">Mods and Shit/Wall Mounted Firefoam</li>
+    <li IfModActive="notdvd.fraymod">Mods and Shit/Fray of the Fog</li>
+    <li IfModActive="Xercaine.SmallBiofuelRefinery">Mods and Shit/Small Biofuel Refinery</li>
+    <li IfModActive="bambaryla.vcepu">Mods and Shit/VE Chemfuel Unofficial Expansion</li>                            <!-- TODO Unpack dropdown -->
+    <li IfModActive="CP.RimmuNation.2.Security">Mods and Shit/RH2 Security</li>
+	<li IfModActive="Merthsoft.TimeOfDaySwitch">Mods and Shit/Time of day switch</li>
+    <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
