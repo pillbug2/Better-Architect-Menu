@@ -218,6 +218,7 @@
     <li IfModActive="thatthing.mycohazard">Mods and Shit/Mycohazard</li>
     <li IfModActive="wanzi.smallgraves">Mods and Shit/Small Graves and Sarcophaguses</li>
     <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>	
+	<li IfModActive="ushanka.luciferiumexpansion">Mods and Shit/Ushankas Luciferium Expansion</li>
 	<li IfModActive="bigbarza.vqegenerator.pipecompat">Mods and Shit/VQE Generator Pipe Network Compat</li>
 	<li IfModActive="bambaryla.vcepu">Mods and Shit/VE Chemfuel Unofficial Expansion</li>                                   <!-- TODO Unpack dropdown -->
             <!-- (Add new mods here ^^^^^) -->
