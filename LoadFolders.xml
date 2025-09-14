@@ -240,6 +240,7 @@
     <li IfModActive="GHOST.RootsofRimworld">Mods and Shit/Roots of Rimworld</li>
     <li IfModActive="MrHydralisk.VNPEReimaginedProgression">Mods and Shit/VE Nutrient Paste Expanded</li>
     <li IfModActive="vin.warehouse.storage.corpse">Mods and Shit/Warehouse Storage Corpses</li>
+    <li IfModActive="drilledhead.MyDogsHouse">Mods and Shit/MyDogsHouse</li>
 
             <!-- (Add new mods here ^^^^^) -->
   </v1.6>

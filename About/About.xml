@@ -298,6 +298,8 @@
 	<li>HT.LUNARTIKA</li>
 		<li>DimonSever000.AnimaObelisk.Specific</li>
   	<li>MrHydralisk.VNPEReimaginedProgression</li>
+  	<li>vin.warehouse.storage.corpse</li>
+    <li>drilledhead.MyDogsHouse</li>
 
         <!-- (Add new mods here ^^^^^) -->
     </loadAfter>
