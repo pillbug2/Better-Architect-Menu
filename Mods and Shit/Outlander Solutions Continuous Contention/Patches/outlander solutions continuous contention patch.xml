@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	
+
 <!-- WORLD -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="ContinuousContention_DefenseNet"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_World</designationCategoryDef>
+		</value>
+	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
