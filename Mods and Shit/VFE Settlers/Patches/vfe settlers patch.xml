@@ -49,7 +49,7 @@
 <!-- WEAPONS -->
                 <!-- <Operation Class="PatchOperationAdd">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="Gun_GatlingGun"]</xpath>
+                    <xpath>Defs/ThingDef[defName="Turret_GatlingGun"]</xpath>
                     <value>
                         <designationCategory>Ferny_Weapons</designationCategory>
                     </value>
