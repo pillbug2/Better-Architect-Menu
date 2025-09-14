@@ -548,43 +548,6 @@
 		            </value>
 	            </Operation>
 
-<!-- CULTURE -->
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="Grave"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="Sarcophagus"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="MarriageSpot"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="PartySpot"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[@Name="SteleBase"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-
 <!-- FARMING -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
