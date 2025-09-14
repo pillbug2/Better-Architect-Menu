@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	
+<!-- Move network deconstruct gizmos -->
 
-	<!-- COMBAT INFRASTRUCTURE -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_Weapons"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>EccentricDefenseGrid.Designator_DeconstructConduit</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_Barricades"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>EccentricDefenseGrid.Designator_DeconstructConduit</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_CombatInfrastructure"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>EccentricDefenseGrid.Designator_DeconstructConduit</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>/Defs/DesignationCategoryDef[defName="Security"]/specialDesignatorClasses/li[text()="EccentricDefenseGrid.Designator_DeconstructConduit"]</xpath>
+	</Operation>
+
+<!-- COMBAT INFRASTRUCTURE -->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
@@ -16,6 +47,32 @@
 		<xpath>Defs/ThingDef[defName="Eccentric_DefenseConduit"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- BARRICADES -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Eccentric_ShieldProjector"]</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Eccentric_ShieldProjectorWide"]</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Eccentric_ShieldProjector3x3Wide"]</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
 		</value>
 	</Operation>
 
