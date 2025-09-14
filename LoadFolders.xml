@@ -129,6 +129,7 @@
     <li IfModActive="gy.ppextend">Mods and Shit/Power Poles Extended</li>
     <li IfModActive="rabiosus.extinguisherdrone">Mods and Shit/Extinguisher Drone</li>
     <li IfModActive="gogatio.mechanoidupgrades">Mods and Shit/Mechanoid Upgrades</li>
+    <li IfModActive="sbz.gravshipstorage">Mods and Shit/Gravship Storage</li>
     <li IfModActive="sbz.neatstorage">Mods and Shit/Neat Storage</li>
     <li IfModActive="vanillaexpanded.vfepropsanddecor">Mods and Shit/VFE Props</li>
     <li IfModActive="orion.cashregister">Mods and Shit/Cash Register</li>
@@ -214,7 +215,9 @@
     <li IfModActive="relvl.digitalstorageunit">Mods and Shit/Digital Storage Unit</li>                                      <!-- TODO Unpack dropdown -->
     <li IfModActive="jf.royalcarpets">Mods and Shit/Royal Carpets</li>
     <li IfModActive="as1aw.morehunterdrones">Mods and Shit/More Hunter Drones</li>
-    <li IfModActive="redmattis.bsfurniture">Mods and Shit/Big and Small Furniture</li>
+    <li IfModActive="redmattis.bsfurniture">Mods and Shit/Big and Small Furniture/Common</li>
+	<li IfModActiveAll="redmattis.bsfurniture,dankpyon.medieval.overhaul">Mods and Shit/Big and Small Furniture/MO</li>
+	<li IfModActiveAll="redmattis.bsfurniture,dankpyon.medieval.overhaul,VR.MOPatches">Mods and Shit/Big and Small Furniture/MOPatches</li>
     <li IfModActive="thatthing.mycohazard">Mods and Shit/Mycohazard</li>
     <li IfModActive="wanzi.smallgraves">Mods and Shit/Small Graves and Sarcophaguses</li>
     <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>
@@ -246,7 +249,8 @@
     <li IfModActive="BuhGunGer.WallMountedFireFoamPopper">Mods and Shit/Wall Mounted Firefoam</li>
     <li IfModActive="notdvd.fraymod">Mods and Shit/Fray of the Fog</li>
     <li IfModActive="Xercaine.SmallBiofuelRefinery">Mods and Shit/Small Biofuel Refinery</li>
-
-            <!-- (Add new mods here ^^^^^) -->
+    <li IfModActive="bambaryla.vcepu">Mods and Shit/VE Chemfuel Unofficial Expansion</li>                            <!-- TODO Unpack dropdown -->
+    <li IfModActive="CP.RimmuNation.2.Security">Mods and Shit/RH2 Security</li>
+    <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
