@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
+		<match Class="PatchOperationAddModExtension">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="Ferny_LuciferiumNetwork"]</xpath>
+			<value>
+
+				<li Class="BetterArchitect.NestedCategoryExtension">
+					<parentCategory>VCHE_PipeNetworks</parentCategory>
+				</li>
+
+			</value>
+		</match>
+	</Operation>
+	
+<!-- MEDICAL -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_LuciferiumMedicalSimulator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Medical</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- LUCIFERIUM -->
+
+	<!-- Networks -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="ScarletNet"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_LuciferiumNetwork</designationCategoryDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="USH_ScarletMechanitesNet"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_LuciferiumNetwork</designationCategoryDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="USH_CompressedScarletSludgeNet"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_LuciferiumNetwork</designationCategoryDef>
+		</value>
+	</Operation>
+
+	<!-- Buildings -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCHE_CompressedScarletSludgePlatform"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LuciferiumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_CompressedScarletSludgePipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LuciferiumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCHE_ScarletMechanitesPlatform"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LuciferiumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_ScarletMechanitesPipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LuciferiumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_LuciferiumSynthesizer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LuciferiumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_LuciferiumPrecisionBooster"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LuciferiumNetwork</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_UndergroundScarletPipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LuciferiumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_ScarletTank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LuciferiumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ScarlettRefinery"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LuciferiumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="LuciferiumCollectorBoosterA"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LuciferiumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="LuciferiumCollectorBoosterB"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LuciferiumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="LuciferiumCollectorBoosterC"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LuciferiumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_ScarletAttractor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LuciferiumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="LuciferiumCollector"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LuciferiumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AdvancedLuciferiumCollector"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LuciferiumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+</Patch>

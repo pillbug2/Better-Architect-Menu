@@ -2,18 +2,19 @@
 <Defs>
 
   <DesignationCategoryDef>
-    <defName>Ferny_Androids</defName>
-    <label>Androids</label>
-    <description>Build androids.</description>
-    <order>900</order>
+    <defName>Ferny_UraniumNetwork</defName>
+    <label>Uranium</label>
+    <description>Manage uranium.</description>
+    <order>2</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
     </specialDesignatorClasses>
     <modExtensions>
       <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Ferny_Automation</parentCategory>
+        <parentCategory>VCHE_PipeNetworks</parentCategory>
       </li>
     </modExtensions>
   </DesignationCategoryDef>
+
 </Defs>
