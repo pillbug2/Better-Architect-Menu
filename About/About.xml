@@ -277,22 +277,23 @@
     <li>wanzi.smallgraves</li>
     <li>wanzi.biggraves</li>
     <li>relvl.digitalstorageunit</li>
-	<li>ushanka.biologicalwarfare</li>
+    <li>ushanka.biologicalwarfare</li>
     <li>bigbarza.vqegenerator.pipecompat</li>
     <li>bambaryla.vcepu</li>
     <li>dubwise.rimefeller</li>
-	<li>ushanka.luciferiumexpansion</li>
-	<li>dubwise.rimatomics</li>
-	<li>farxmai2.vfestandalone</li>
-	<li>redmattis.dryads</li>
-	<li>vanillaexpanded.vbookse</li>
-	<li>hol.extrematorium</li>
-	<li>mosi.VFEC.DoubleTents</li>
-	<li>joeyjoejoeshabidoo.EvaporationPond</li>
-	<li>NoneObsidiaExpansion.LEDLightsStrip</li>
-	<li>Erin.CottageCollection</li>
-	<li>jdgg.adaptive.cargoholds</li>
-	<li>CP.RimmuNation.2.Security</li>
+    <li>ushanka.luciferiumexpansion</li>
+    <li>dubwise.rimatomics</li>
+    <li>farxmai2.vfestandalone</li>
+    <li>redmattis.dryads</li>
+    <li>vanillaexpanded.vbookse</li>
+    <li>hol.extrematorium</li>
+    <li>mosi.VFEC.DoubleTents</li>
+    <li>joeyjoejoeshabidoo.EvaporationPond</li>
+    <li>NoneObsidiaExpansion.LEDLightsStrip</li>
+    <li>Erin.CottageCollection</li>
+    <li>jdgg.adaptive.cargoholds</li>
+    <li>CP.RimmuNation.2.Security</li>
+    <li>sbz.gravshipstorage</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
