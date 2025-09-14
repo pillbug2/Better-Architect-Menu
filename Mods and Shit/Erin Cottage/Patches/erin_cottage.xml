@@ -47,6 +47,7 @@
                     <value>
                         <designationCategory>Ferny_Decorations</designationCategory>
                     </value>  
+                </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="CCot_CottageArmchair"]/designationCategory</xpath>
                     <value>
