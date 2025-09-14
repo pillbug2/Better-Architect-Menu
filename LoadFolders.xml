@@ -251,6 +251,7 @@
     <li IfModActive="Xercaine.SmallBiofuelRefinery">Mods and Shit/Small Biofuel Refinery</li>
     <li IfModActive="bambaryla.vcepu">Mods and Shit/VE Chemfuel Unofficial Expansion</li>                            <!-- TODO Unpack dropdown -->
     <li IfModActive="CP.RimmuNation.2.Security">Mods and Shit/RH2 Security</li>
+	<li IfModActive="Merthsoft.TimeOfDaySwitch">Mods and Shit/Time of day switch</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
