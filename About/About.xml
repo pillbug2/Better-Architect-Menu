@@ -294,6 +294,7 @@
     <li>jdgg.adaptive.cargoholds</li>
     <li>CP.RimmuNation.2.Security</li>
     <li>sbz.gravshipstorage</li>
+	<li>Merthsoft.TimeOfDaySwitch</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
