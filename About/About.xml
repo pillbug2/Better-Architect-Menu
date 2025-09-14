@@ -292,6 +292,7 @@
 		<li>NoneObsidiaExpansion.LEDLightsStrip</li>
 		<li>Erin.CottageCollection</li>
     <li>jdgg.adaptive.cargoholds</li>
+    <li>sbz.gravshipstorage</li>
         <!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
