@@ -233,28 +233,28 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RR_ShelfBase"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Storage</designationCategory>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RR_ClosedUrn"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Storage</designationCategory>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RR_HandleUrn"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Storage</designationCategory>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RR_OpenUrn"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Storage</designationCategory>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 
