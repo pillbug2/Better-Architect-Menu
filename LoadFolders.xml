@@ -233,11 +233,12 @@
     <li IfModActive="ushanka.luciferiumexpansion">Mods and Shit/Ushankas Luciferium Expansion</li>
     <li IfModActive="bigbarza.vqegenerator.pipecompat">Mods and Shit/VQE Generator Pipe Network Compat</li>
     <li IfModActive="bambaryla.vcepu">Mods and Shit/VE Chemfuel Unofficial Expansion</li>                                   <!-- TODO Unpack dropdown -->
-    <li IfModActive="bambaryla.vcepu">Mods and Shit/Anima Obelisk</li>
-    <li IfModActive="bambaryla.vcepu">Mods and Shit/Anomaly for Gravship</li>
-    <li IfModActive="bambaryla.vcepu">Mods and Shit/Geothermal Coolers</li>
-    <li IfModActive="bambaryla.vcepu">Mods and Shit/Heavy Truck</li>
-    <li IfModActive="bambaryla.vcepu">Mods and Shit/Roots of Rimworld</li>
+    <li IfModActive="DimonSever000.AnimaObelisk.Specific">Mods and Shit/Anima Obelisk</li>
+    <li IfModActive="als.anomalygravship">Mods and Shit/Anomaly for Gravship</li>
+    <li IfModActive="neronix17.geothermalcooler">Mods and Shit/Geothermal Coolers</li>
+    <li IfModActive="HT.LUNARTIKA">Mods and Shit/Heavy Truck</li>
+    <li IfModActive="GHOST.RootsofRimworld">Mods and Shit/Roots of Rimworld</li>
+    <li IfModActive="MrHydralisk.VNPEReimaginedProgression">Mods and Shit/VE Nutrient Paste Expanded</li>
             <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
