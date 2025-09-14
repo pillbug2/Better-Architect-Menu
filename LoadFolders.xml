@@ -235,6 +235,20 @@
     <li IfModActive="ushanka.biologicalwarfare">Mods and Shit/Ushankas Biological Warfare</li>                              <!-- TODO Consider unpacking the weapons and traps ala VFE Deserters IEDs -->
     <li IfModActive="ushanka.luciferiumexpansion">Mods and Shit/Ushankas Luciferium Expansion</li>
     <li IfModActive="bigbarza.vqegenerator.pipecompat">Mods and Shit/VQE Generator Pipe Network Compat</li>
+    <li IfModActive="bambaryla.vcepu">Mods and Shit/VE Chemfuel Unofficial Expansion</li>                                   <!-- TODO Unpack dropdown -->
+    <li IfModActive="DimonSever000.AnimaObelisk.Specific">Mods and Shit/Anima Obelisk</li>
+    <li IfModActive="als.anomalygravship">Mods and Shit/Anomaly for Gravship</li>
+    <li IfModActive="neronix17.geothermalcooler">Mods and Shit/Geothermal Coolers</li>
+    <li IfModActive="HT.LUNARTIKA">Mods and Shit/Heavy Truck</li>
+    <li IfModActive="GHOST.RootsofRimworld">Mods and Shit/Roots of Rimworld</li>
+    <li IfModActive="MrHydralisk.VNPEReimaginedProgression">Mods and Shit/VE Nutrient Paste Expanded</li>
+    <li IfModActive="vin.warehouse.storage.corpse">Mods and Shit/Warehouse Storage Corpses</li>
+    <li IfModActive="drilledhead.MyDogsHouse">Mods and Shit/MyDogsHouse</li>
+    <li IfModActive="JTCsBonereapers.FormerlyPPHHYY">Mods and Shit/BoneReapers Remarrowed</li>
+    <li IfModActive="mlmlmlm.bluearchivefurniture">Mods and Shit/Blur Archive Furniture</li>
+    <li IfModActive="BuhGunGer.WallMountedFireFoamPopper">Mods and Shit/Wall Mounted Firefoam</li>
+    <li IfModActive="notdvd.fraymod">Mods and Shit/Fray of the Fog</li>
+    <li IfModActive="Xercaine.SmallBiofuelRefinery">Mods and Shit/Small Biofuel Refinery</li>
     <li IfModActive="bambaryla.vcepu">Mods and Shit/VE Chemfuel Unofficial Expansion</li>                            <!-- TODO Unpack dropdown -->
     <li IfModActive="CP.RimmuNation.2.Security">Mods and Shit/RH2 Security</li>
     <!-- (Add new mods here ^^^^^) -->
