@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>              
+  
+<!-- POWER MANAGEMENT -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="TimerSwitch"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_PowerManagement</designationCategory>
+                    </value>
+                </Operation>
+
+</Patch>
