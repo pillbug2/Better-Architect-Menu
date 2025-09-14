@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
+		<match Class="PatchOperationAddModExtension">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="Ferny_UraniumNetwork"]</xpath>
+			<value>
+
+				<li Class="BetterArchitect.NestedCategoryExtension">
+					<parentCategory>VCHE_PipeNetworks</parentCategory>
+				</li>
+
+			</value>
+		</match>
+	</Operation>
+
+	
+<!-- URANIUM -->
+
+	<!-- Networks -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="ARCUraniumNet"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_UraniumNetwork</designationCategoryDef>
+		</value>
+	</Operation>
+
+	<!-- Buildings -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PipedARC_UraniumPipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_UraniumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PipedARC_HiddenUraniumPipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_UraniumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PipedARC_UraniumHopper"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_UraniumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PipedARC_UraniumValve"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_UraniumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PipedARC_UraniumTank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_UraniumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+</Patch>
