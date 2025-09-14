@@ -218,9 +218,11 @@
     <li IfModActive="thatthing.mycohazard">Mods and Shit/Mycohazard</li>
     <li IfModActive="wanzi.smallgraves">Mods and Shit/Small Graves and Sarcophaguses</li>
     <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>
+    <li IfModActive="mosi.VFEC.DoubleTents">Mods and Shit/Double Tents</li>
+    <li IfModActive="joeyjoejoeshabidoo.EvaporationPond">Mods and Shit/Evaporation Pond</li>
+    <li IfModActive="NoneObsidiaExpansion.LEDLightsStrip">Mods and Shit/Led Lights Strip</li>
     <li IfModActive="hol.extrematorium">Mods and Shit/Extrematorium Etc</li>
     <li IfModActive="vanillaexpanded.vbookse">Mods and Shit/VE Books</li>
-    <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>	
     <li IfModActive="redmattis.dryads">Mods and Shit/Dryads and Gauranlen Trees Reworked</li>
     <li IfModActive="farxmai2.vfestandalone">Mods and Shit/Furniture Expanded Pack</li>
     <li IfModActive="dubwise.rimatomics">Mods and Shit/Dubs Rimatomics</li>
