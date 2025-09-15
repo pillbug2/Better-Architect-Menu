@@ -131,6 +131,14 @@
                     </value>
                 </Operation>
 
+<!-- JOY AT THE TOP -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="Joy"]/order</xpath>
+                    <value>
+                        <order>9999</order>
+                    </value>
+                </Operation>
 
 <!-- RENAME TEMPERATURE -->
                 <Operation Class="PatchOperationReplace">
