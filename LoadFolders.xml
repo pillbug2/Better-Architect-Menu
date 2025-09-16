@@ -252,6 +252,9 @@
     <li IfModActive="bambaryla.vcepu">Mods and Shit/VE Chemfuel Unofficial Expansion</li>                            <!-- TODO Unpack dropdown -->
     <li IfModActive="CP.RimmuNation.2.Security">Mods and Shit/RH2 Security</li>
     <li IfModActive="Merthsoft.TimeOfDaySwitch">Mods and Shit/Time of day switch</li>
+    <li IfModActive="tradingcontrol.tad.rimworld.core">Mods and Shit/Trading Control</li>
+    <li IfModActive="bambaryla.bor">Mods and Shit/Beyond Our Reach</li>
+    <li IfModActive="mlie.autopsytable">Mods and Shit/AutopsyTable</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
