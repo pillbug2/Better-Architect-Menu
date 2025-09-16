@@ -540,6 +540,22 @@
     <defName>Ferny_Childhood</defName>
     <label>Childhood</label>
     <description>Things that relate to childhood.</description>
+    <order>3</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Life</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Memorial</defName>
+    <label>Memorial</label>
+    <description>Things that relate to burials or memorials.</description>
     <order>2</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
