@@ -51,7 +51,7 @@
 			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="BS_BigTribalBed"]</xpath>
 		<value>
