@@ -4,19 +4,19 @@
 	<!-- Package ID: redmattis.bsfurniture -->
 	<!-- Author: 3024478368 -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="BS_Giant_Bed_DoubleErgonomic"]</xpath>
+		<xpath>Defs/ThingDef[defName="BS_Giant_Bed_DoubleErgonomic"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="BS_Giant_Bed_Ergonomic"]</xpath>
+		<xpath>Defs/ThingDef[defName="BS_Giant_Bed_Ergonomic"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="BS_Giant_Bed_Kingsize"]</xpath>
+		<xpath>Defs/ThingDef[defName="BS_Giant_Bed_Kingsize"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
