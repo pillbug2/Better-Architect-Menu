@@ -218,6 +218,7 @@
     <li IfModActive="redmattis.bsfurniture">Mods and Shit/Big and Small Furniture/Common</li>
     <li IfModActiveAll="redmattis.bsfurniture,dankpyon.medieval.overhaul">Mods and Shit/Big and Small Furniture/MO</li>
     <li IfModActiveAll="redmattis.bsfurniture,dankpyon.medieval.overhaul,VR.MOPatches">Mods and Shit/Big and Small Furniture/MOPatches</li>
+    <li IfModActiveAll="redmattis.bsfurniture,vanillaexpanded.vfecore">Mods and Shit/Big and Small Furniture/VFE</li>
     <li IfModActive="thatthing.mycohazard">Mods and Shit/Mycohazard</li>
     <li IfModActive="wanzi.smallgraves">Mods and Shit/Small Graves and Sarcophaguses</li>
     <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>
