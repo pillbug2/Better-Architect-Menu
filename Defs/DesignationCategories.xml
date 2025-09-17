@@ -1051,7 +1051,8 @@
     </modExtensions>
   </DesignationCategoryDef>
 
-	<DesignationCategoryDef>
+<!-- Not a fan for now -->
+	<!-- <DesignationCategoryDef>
 		<defName>Ferny_Trade</defName>
 		<label>Trade</label>
 		<description>Manage trade.</description>
@@ -1065,7 +1066,7 @@
 				<parentCategory>Ferny_World</parentCategory>
 			</li>
 		</modExtensions>
-	</DesignationCategoryDef>
+	</DesignationCategoryDef> -->
 
 	<DesignationCategoryDef>
 		<defName>Ferny_Summon</defName>

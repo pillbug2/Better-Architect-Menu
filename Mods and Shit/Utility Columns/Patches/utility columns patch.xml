@@ -13,7 +13,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="OrbitalTradeColumnMod"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Trade</designationCategory>
+			<designationCategory>Ferny_Outreach</designationCategory>
 		</value>
 	</Operation>
 
@@ -21,7 +21,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Wall_TradeDevice"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Trade</designationCategory>
+			<designationCategory>Ferny_Outreach</designationCategory>
 		</value>
 	</Operation>
 
