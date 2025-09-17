@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-<!-- DEPLOYABLE -->
+<!-- WEAPONS -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="DV_Turret_PulseAutogun"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_DeployableWeapons</designationCategory>
+                        <designationCategory>Ferny_Weapons</designationCategory>
                     </value>
                 </Operation>
 </Patch>

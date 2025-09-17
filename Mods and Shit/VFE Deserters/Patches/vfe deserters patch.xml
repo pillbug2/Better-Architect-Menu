@@ -14,7 +14,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[@Name="VFED_RemoteChargeBase"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Traps</designationCategory>
+                        <designationCategory>Ferny_Explosives</designationCategory>
                     </value>
                 </Operation>
 

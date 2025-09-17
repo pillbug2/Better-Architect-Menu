@@ -88,13 +88,13 @@
 		</value>
 	</Operation>
 	
-<!-- DEPLOYABLE -->
+<!-- WEAPONS -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="DMS_Turret_Vasilek"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_DeployableWeapons</designationCategory>
+			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
 	
