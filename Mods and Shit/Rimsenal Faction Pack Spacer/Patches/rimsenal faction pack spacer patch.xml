@@ -2,6 +2,14 @@
 <Patch>
 
 <!-- CARAVAN -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SurvivalStation"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Caravan</designationCategory>
+		</value>
+	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
