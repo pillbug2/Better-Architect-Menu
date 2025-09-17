@@ -44,6 +44,7 @@
     <li IfModActive="rooboid.paintings.ex">Mods and Shit/Roo's Painting</li>
     <li IfModActive="vanillaexpanded.vfemedical">Mods and Shit/VFE Medical</li>
     <li IfModActive="hobbes.bamba.evenmorelinkables">Mods and Shit/Even More Linkables</li>
+	<li IfModActive="hobbes.bamba.evenmorelinkables16">Mods and Shit/Even More Linkables</li>
     <li IfModActive="primitiveproduction.velcroboy333">Mods and Shit/Primitive Workbenches</li>
     <li IfModActive="vanillaexpanded.vfearchitect">Mods and Shit/VFE Architect</li>
     <li IfModActive="vanillaexpanded.vgeneticse">Mods and Shit/VE Genetics</li>
@@ -195,7 +196,7 @@
     <li IfModActive="aelanna.eccentrictech.defensegrid">Mods and Shit/Eccentric Tech Defense Grid</li>
     <li IfModActive="aelanna.eccentrictech.fusionpower">Mods and Shit/Eccentric Tech Fusion Power</li>
     <li IfModActive="mrhydralisk.complementaryodyssey">Mods and Shit/Complementary Odyssey</li>
-    <li IfModActive="windwardsnow.mechanitorweapons">Mods and Shit/Mechanitor Weapons</li>                                  <!-- TODO Unpack turret dropdown -->
+    <li IfModActive="windwardsnow.mechanitorweapons">Mods and Shit/Mechanitor Weapons</li>
     <li IfModActive="mjeiouws.outlander.continuouscontention">Mods and Shit/Outlander Solutions Continuous Contention</li>
     <li IfModActive="mlie.jwlatmosphericwaterprocessor">Mods and Shit/Atmospheric Water Processor</li>
     <li IfModActive="mlie.reinforcedmechanoid2">Mods and Shit/Reinforced Mechanoid 2</li>                                   <!-- Reinforced Mechanoid 2 patch split for compatibility with standalone buildings -->
@@ -249,9 +250,47 @@
     <li IfModActive="BuhGunGer.WallMountedFireFoamPopper">Mods and Shit/Wall Mounted Firefoam</li>
     <li IfModActive="notdvd.fraymod">Mods and Shit/Fray of the Fog</li>
     <li IfModActive="Xercaine.SmallBiofuelRefinery">Mods and Shit/Small Biofuel Refinery</li>
-    <li IfModActive="bambaryla.vcepu">Mods and Shit/VE Chemfuel Unofficial Expansion</li>                            <!-- TODO Unpack dropdown -->
     <li IfModActive="CP.RimmuNation.2.Security">Mods and Shit/RH2 Security</li>
     <li IfModActive="Merthsoft.TimeOfDaySwitch">Mods and Shit/Time of day switch</li>
+	<li IfModActive="twomoon.spacecowboyvehicles">Mods and Shit/Space Cowboy Vehicles</li>
+	<li IfModActive="aelanna.eccentrictech.core">Mods and Shit/Eccentric Tech Core</li>
+	<li IfModActive="hol.rimputersforked">Mods and Shit/Rimputers</li>
+	<li IfModActive="happycam.multianalyzers">Mods and Shit/More Multi-Analyzers</li>
+	<li IfModActive="rimsenal.core">Mods and Shit/Rimsenal Core</li>
+	<li IfModActive="rimsenal.federation">Mods and Shit/Rimsenal Faction Pack Federation</li>
+	<li IfModActive="rimsenal.feral">Mods and Shit/Rimsenal Faction Pack Feral</li>
+	<li IfModActive="rimsenal.spacer">Mods and Shit/Rimsenal Faction Pack Spacer</li>
+	<li IfModActive="ushanka.glittertechexpansion">Mods and Shit/Ushankas Glittertech Expansion</li>
+	<li IfModActive="veltaris.spacesolar">Mods and Shit/Space Solar Panels</li>
+	<li IfModActive="jelly.caravangear">Mods and Shit/Caravan Gear</li>
+	<li IfModActive="ucp.walldecorations">Mods and Shit/Wall Decorations</li>
+	<li IfModActive="ucp.tabletopdecorations">Mods and Shit/Tabletop Decorations</li>
+	<li IfModActive="aoba.fortress.medieval">Mods and Shit/Fortifications Medieval</li>
+	<li IfModActive="aoba.fortress.medieval.material">Mods and Shit/Fortifications Medieval Material</li>
+	<li IfModActive="aoba.fortress.industrial">Mods and Shit/Fortification Industrial</li>
+	<li IfModActive="aoba.fortress.neolithic">Mods and Shit/Fortifications Neolithic</li>
+	<li IfModActive="aoba.fortress.industrial.citadel">Mods and Shit/Fortification Industrial Citadel</li>
+	<li IfModActive="aoba.fortress.frontier">Mods and Shit/Fortification Industrial Frontier</li>
+	<li IfModActive="aoba.fortress.industrial.nucleardawn">Mods and Shit/Fortification Industrial Nuclear Dawn</li>
+	<li IfModActive="aoba.fortress.industrial.concrete">Mods and Shit/Industrial Concrete</li>
+	<li IfModActive="nuanki.garagedoorsexpanded">Mods and Shit/Garage Doors Expanded</li>
+	<li IfModActive="nuanki.boathouse">Mods and Shit/Boathouse Doors</li>
+    <li IfModActive="fox.simplelearning">Mods and Shit/Simple Learning</li>
+	<li IfModActive="meltup.polyamorybeds.vanilla">Mods and Shit/Polyamory Beds</li>
+	<li IfModActive="redmattis.betterprerequisites">Mods and Shit/Big and Small Framework</li>
+	<li IfModActive="rimsenal.security">Mods and Shit/Rimsenal Security Pack</li>
+	<li IfModActive="aoba.tent">Mods and Shit/Camping Tent</li>
+	<li IfModActive="aoba.exosuit.framework">Mods and Shit/Exosuit Framework</li>
+	<li IfModActive="aoba.deadmanswitch.mobiledragoon">Mods and Shit/DMS MobileDragoon</li>
+	<li IfModActive="mosi.vfec.doubletents">Mods and Shit/VFE Classical Double Tents</li>
+	<li IfModActive="aoba.tentshelters">Mods and Shit/Post-apocalyptic Shelters</li>
+	<li IfModActive="sarg.alphamemes">Mods and Shit/Alpha Memes</li>
+	<li IfModActive="harkon.veaddon.vanillaexpandedextraembrasures">Mods and Shit/VE Extra Embrasures</li>
+	<li IfModActive="aelanna.eccentrictech.furniture">Mods and Shit/Eccentric Tech Furniture</li>
+	<li IfModActive="frozensnowfox.frozensnowfoxtweaks">Mods and Shit/FrozenSnowFox Tweaks</li>
+	<!--
+	<li IfModActive="">Mods and Shit/</li>
+	-->
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

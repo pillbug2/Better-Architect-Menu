@@ -103,14 +103,12 @@
 			<designationCategory>Ferny_Logistics</designationCategory>
 		</value>
 	</Operation>PRF_Puller_Base
-
-	<!-- AUTOMATION OTHER -->
 	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@ParentName="PRF_MiniDroneStation"]</xpath>
 		<value>
-			<designationCategory>Ferny_Automation</designationCategory>
+			<designationCategory>Ferny_Logistics</designationCategory>
 		</value>
 	</Operation>
 
@@ -132,7 +130,7 @@
 		</value>
 	</Operation>
 
-	<!-- POWER STORAGE -->
+<!-- POWER STORAGE -->
 	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
@@ -159,6 +157,16 @@
 		<xpath>Defs/ThingDef[defName="PRF_ResearchTerminal"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_ResearchProduction</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- MINING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PRF_MineShaft"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MiningProduction</designationCategory>
 		</value>
 	</Operation>
 	

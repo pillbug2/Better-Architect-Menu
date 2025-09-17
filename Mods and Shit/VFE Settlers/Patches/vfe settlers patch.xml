@@ -46,12 +46,12 @@
                     </value>
                 </Operation>
 
-<!-- WEAPONS -->
-                <!-- <Operation Class="PatchOperationAdd">
+<!-- DEPLOYABLE -->
+                <Operation Class="PatchOperationAdd">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="Turret_GatlingGun"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Weapons</designationCategory>
+                        <designationCategory>Ferny_DeployableWeapons</designationCategory>
                     </value>
-                </Operation> -->
+                </Operation>
 </Patch>

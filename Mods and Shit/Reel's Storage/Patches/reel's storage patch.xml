@@ -2,15 +2,14 @@
 <Patch>          
 
 <!-- RANCHING -->
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_Ranching</designationCategory>
-                    </value>
-                </Operation>
-
-
+	
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]</xpath>
+        <value>
+            <designationCategory>Ferny_Ranching</designationCategory>
+        </value>
+    </Operation>
 
 <!-- GENERAL -->
                 <Operation Class="PatchOperationAdd">
@@ -44,18 +43,6 @@
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelStorageNewMedicineCabinet"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="ReelStorageSkip"]</xpath>
                     <value>
                         <designationCategory>Ferny_GeneralStorage</designationCategory>
@@ -68,34 +55,62 @@
                     </value>
                 </Operation>
 
+<!-- Information storage -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]</xpath>
+		<value>
+			<designationCategory>Ferny_InformationStorage</designationCategory>
+		</value>
+	</Operation>
 
 <!-- Food storage -->
-                <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelStorageMeatHook"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_FoodStorage</designationCategory>
-                    </value>
-                </Operation>
+	
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ReelStorageMeatHook"]</xpath>
+        <value>
+            <designationCategory>Ferny_FoodStorage</designationCategory>
+        </value>
+    </Operation>
+	
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]</xpath>
+        <value>
+            <designationCategory>Ferny_FoodStorage</designationCategory>
+        </value>
+    </Operation>
+	
+<!-- Medical storage -->
+	
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ReelStorageNewMedicineCabinet"]</xpath>
+        <value>
+            <designationCategory>Ferny_MedicalStorage</designationCategory>
+        </value>
+    </Operation>
 
 <!-- Gear storage -->
-                <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelStorageVerticalWeaponRack"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_GearStorage</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelStorageHorizontalWeaponRack"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_GearStorage</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_GearStorage</designationCategory>
-                    </value>
-                </Operation>
+	
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ReelStorageVerticalWeaponRack"]</xpath>
+        <value>
+            <designationCategory>Ferny_GearStorage</designationCategory>
+        </value>
+    </Operation>
+	
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ReelStorageHorizontalWeaponRack"]</xpath>
+        <value>
+            <designationCategory>Ferny_GearStorage</designationCategory>
+        </value>
+    </Operation>
+	
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker"]</xpath>
+        <value>
+            <designationCategory>Ferny_GearStorage</designationCategory>
+        </value>
+    </Operation>
 
 <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! VE PROPS -->
 
@@ -190,12 +205,6 @@
                 </Operation>
                 <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="ReelStorageWoodChest"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]</xpath>
                     <value>
                         <designationCategory>Ferny_GeneralStorage</designationCategory>
                     </value>

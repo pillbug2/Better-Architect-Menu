@@ -21,13 +21,13 @@
 		</value>
 	</Operation>
 	
-<!-- OTHER PRODUCTION -->
+<!-- MINING -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="AsteroidCollector"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Production</designationCategory>
+			<designationCategory>Ferny_MiningProduction</designationCategory>
 		</value>
 	</Operation>
 	
