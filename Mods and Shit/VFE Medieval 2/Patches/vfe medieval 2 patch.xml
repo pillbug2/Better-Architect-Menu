@@ -155,6 +155,13 @@
                         <designationCategory>Ferny_Decorations</designationCategory>
                     </value>
                 </Operation>
+	            <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_StandingBanner"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
 
 <!-- GENERAL STORAGE -->
                 <Operation Class="PatchOperationAdd">

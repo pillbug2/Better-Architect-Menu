@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch>              
+<Patch>
 
 <!-- RENAME IDEOLOGY -->
                 <Operation Class="PatchOperationReplace">
@@ -31,7 +31,7 @@
                 </Operation>
 
 
-<!-- MEDICAL -->   
+<!-- MEDICAL -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="BiosculpterPod"]/designationCategory</xpath>
@@ -64,46 +64,34 @@
                         <designationCategory>Ferny_Decorations</designationCategory>
                     </value>
                 </Operation>
-
-<!-- PEOPLE -->
-	            <!-- Moved these as they are more about managing people (e.g., pawn style and slave suppression) and not ideology/culture -->
+	
+<!-- CONTROL -->
+	
 	            <Operation Class="PatchOperationReplace">
 		            <success>Always</success>
 		            <xpath>Defs/ThingDef[defName="StylingStation"]/designationCategory</xpath>
 		            <value>
-			            <designationCategory>Ferny_Life</designationCategory>
+			            <designationCategory>Ferny_Control</designationCategory>
 		            </value>
-	            </Operation>
-		            <Operation Class="PatchOperationReplace">
+				</Operation>
+					
+		        <Operation Class="PatchOperationReplace">
 		            <success>Always</success>
 		            <xpath>Defs/ThingDef[defName="Skullspike"]/designationCategory</xpath>
 		            <value>
-			            <designationCategory>Ferny_Life</designationCategory>
+			            <designationCategory>Ferny_Control</designationCategory>
 		            </value>
+						
 	            </Operation>
 		            <Operation Class="PatchOperationReplace">
 		            <success>Always</success>
 		            <xpath>Defs/ThingDef[defName="GibbetCage"]/designationCategory</xpath>
 		            <value>
-			            <designationCategory>Ferny_Life</designationCategory>
+			            <designationCategory>Ferny_Control</designationCategory>
 		            </value>
 	            </Operation>
 
 <!-- CULTURE -->
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="Grave"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="Sarcophagus"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="MarriageSpot"]/designationCategory</xpath>
@@ -114,13 +102,6 @@
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="PartySpot"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[@Name="SteleBase"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ideology</designationCategory>
                     </value>

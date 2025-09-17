@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- EQUIPMENT -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="MaintanenceBayBase"]</xpath>
+		<value>
+			<designationCategory>Ferny_CombatEquipment</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="WG_BaseGantryLinkable"]</xpath>
+		<value>
+			<designationCategory>Ferny_CombatEquipment</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MF_Building_ScaffoldStair"]</xpath>
+		<value>
+			<designationCategory>Ferny_CombatEquipment</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MF_Building_Scaffold"]</xpath>
+		<value>
+			<designationCategory>Ferny_CombatEquipment</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MF_Building_PayloadStorage"]</xpath>
+		<value>
+			<designationCategory>Ferny_CombatEquipment</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="WG_BaseScaffold"]/designatorDropdown</xpath>
+	</Operation>
+	
+</Patch>

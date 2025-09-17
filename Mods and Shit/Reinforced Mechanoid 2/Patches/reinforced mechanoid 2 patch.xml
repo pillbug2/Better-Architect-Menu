@@ -32,4 +32,30 @@
 		</value>
 	</Operation>
 	
+<!-- TERRAFORMING -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RM_WeatherController"]</xpath>
+		<value>
+			<designationCategory>Ferny_Terraforming</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RM_ClimateAdjuster"]</xpath>
+		<value>
+			<designationCategory>Ferny_Terraforming</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RM_SunBlocker"]</xpath>
+		<value>
+			<designationCategory>Ferny_Terraforming</designationCategory>
+		</value>
+	</Operation>
+	
 </Patch>

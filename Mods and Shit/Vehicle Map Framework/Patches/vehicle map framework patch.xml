@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ORBIT -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="VMF_GravshipWheelBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Odyssey</designationCategory>
+                    </value>
+                </Operation>
+
+</Patch>

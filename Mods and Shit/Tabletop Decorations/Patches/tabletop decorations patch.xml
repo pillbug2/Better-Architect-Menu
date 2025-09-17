@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- DECORATIONS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_picnic2x1c"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_picnic1x2c"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_picnic1x1c"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_picnic2x2c"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_picnic4x2c"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_picnic2x4c"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_picnicdresser"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_viseautopistol"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_workmat"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_workmatlong"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_register"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_bullets"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_remote"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_hammer"]/designatorDropdown</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_measure"]/designatorDropdown</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_"]/designatorDropdown</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_tongs"]/designatorDropdown</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_ballpeen"]/designatorDropdown</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_blueprint"]/designatorDropdown</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_pencil"]/designatorDropdown</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_wrench"]/designatorDropdown</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_picnicdresser"]/designatorDropdown</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_bullets"]/designatorDropdown</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_remote"]/designatorDropdown</xpath>
+	</Operation>
+	
+<!-- LIGHTING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_tablelamp"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_picniclamp"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_picniclamp"]/designatorDropdown</xpath>
+	</Operation>
+
+<!-- AUXILIARIES -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_vise"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_toolbox"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_screwdrivers"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_aerosol"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_scraps"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_textileroll"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_roboarm"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_hammer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_measure"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_tongs"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_ballpeen"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_blueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_pencil"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_wrench"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

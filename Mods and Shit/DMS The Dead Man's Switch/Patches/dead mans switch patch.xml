@@ -68,13 +68,13 @@
 		</value>
 	</Operation>
 
-<!-- OUTREACH -->
+<!-- SUMMON -->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@ParentName="DMS_BossCallerBase"]</xpath>
 		<value>
-			<designationCategory>Ferny_Outreach</designationCategory>
+			<designationCategory>Ferny_Summon</designationCategory>
 		</value>
 	</Operation>
 
@@ -83,6 +83,16 @@
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@ParentName="DMS_BaseCannonBuilding"]</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- WEAPONS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMS_Turret_Vasilek"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>

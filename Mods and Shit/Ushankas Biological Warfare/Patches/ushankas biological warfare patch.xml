@@ -57,13 +57,13 @@
 		</value>
 	</Operation>
 	
-<!-- RESEARCH PRODUCTION -->
+<!-- PRODUCTION -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="USH_AntigensAnalyzer"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_ResearchProduction</designationCategory>
+			<designationCategory>Ferny_Production</designationCategory>
 		</value>
 	</Operation>
 	
