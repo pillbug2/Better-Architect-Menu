@@ -104,34 +104,34 @@
     <li>vanillaexpanded.vcookestews</li>
     <li>vanillaexpanded.vcookesushi</li>
     <li>vanillaexpanded.vfeproduction</li>
-	<li>rooboid.paintings.ex</li>
-	<li>vanillaexpanded.vfemedical</li>
-	<li>hobbes.bamba.evenmorelinkables</li>
-	<li>hobbes.bamba.evenmorelinkables16</li>
-	<li>primitiveproduction.velcroboy333</li>
-	<li>VanillaExpanded.VGeneticsE</li>
-	<li>VanillaExpanded.VGeneticsEMoreLabStuff</li>
-	<li>VanillaExpanded.VFEArchitect</li>
-	<li>ferny.xenooranimalgenetics</li>
-	<li>animal.bedsnew</li>
-	<li>sarg.alphaimplants</li>
-	<li>reel.expanded.storage</li>
-	<li>owlchemist.giddyup</li>
-	<li>mlie.runandhide</li>
-	<li>ferny.categoriesspots</li>
-	<li>zal.animalcages</li>
-	<li>neceros.animalmedicalbed</li>
-	<li>Mlie.AnimalHarvestingSpot</li>
-	<li>mn.autoAnimalFlap</li>
-	<li>cucumpear.animalbeds</li>
-	<li>Reel.TurretPipeline</li>
-	<li>oskarpotocki.vfe.pirates</li>
+    <li>rooboid.paintings.ex</li>
+    <li>vanillaexpanded.vfemedical</li>
+    <li>hobbes.bamba.evenmorelinkables</li>
+    <li>hobbes.bamba.evenmorelinkables16</li>
+    <li>primitiveproduction.velcroboy333</li>
+    <li>VanillaExpanded.VGeneticsE</li>
+    <li>VanillaExpanded.VGeneticsEMoreLabStuff</li>
+    <li>VanillaExpanded.VFEArchitect</li>
+    <li>ferny.xenooranimalgenetics</li>
+    <li>animal.bedsnew</li>
+    <li>sarg.alphaimplants</li>
+    <li>reel.expanded.storage</li>
+    <li>owlchemist.giddyup</li>
+    <li>mlie.runandhide</li>
+    <li>ferny.categoriesspots</li>
+    <li>zal.animalcages</li>
+    <li>neceros.animalmedicalbed</li>
+    <li>Mlie.AnimalHarvestingSpot</li>
+    <li>mn.autoAnimalFlap</li>
+    <li>cucumpear.animalbeds</li>
+    <li>Reel.TurretPipeline</li>
+    <li>oskarpotocki.vfe.pirates</li>
     <li>deadmano.rimanoarchitecticons</li>
-	<li>overpl.AnimalSarcophagus</li>
-	<li>VanillaExpanded.VMemesE</li>
-	<li>pyrce.mass.graves.continued</li>
-	<li>grave.cross</li>
-	<li>inglix.widermarriagespot</li>
+    <li>overpl.AnimalSarcophagus</li>
+    <li>VanillaExpanded.VMemesE</li>
+    <li>pyrce.mass.graves.continued</li>
+    <li>grave.cross</li>
+    <li>inglix.widermarriagespot</li>
     <li>scurvyez.stevesdoors</li>
     <li>oracle.miscellania</li>
     <li>xmb.ancienturbanruins.mo</li>
@@ -300,8 +300,8 @@
     <li>jdgg.adaptive.cargoholds</li>
 	<li>GHOST.RootsofRimworld</li>
 	<!-- <li>als.anomalygravship</li> -->
-	<li>neronix17.geothermalcooler</li>
-	<li>HT.LUNARTIKA</li>
+    <li>neronix17.geothermalcooler</li>
+    <li>HT.LUNARTIKA</li>
     <li>DimonSever000.AnimaObelisk.Specific</li>
   	<li>MrHydralisk.VNPEReimaginedProgression</li>
   	<li>vin.warehouse.storage.corpse</li>
@@ -313,46 +313,45 @@
     <li>Xercaine.SmallBiofuelRefinery</li>
     <li>CP.RimmuNation.2.Security</li>
     <li>sbz.gravshipstorage</li>
-	<li>Merthsoft.TimeOfDaySwitch</li>
-	<li>twomoon.spacecowboyvehicles</li>
-	<li>aelanna.eccentrictech.core</li>
-	<li>hol.rimputersforked</li>
-	<li>happycam.multianalyzers</li>
-	<li>rimsenal.core</li>
-	<li>rimsenal.federation</li>
-	<li>rimsenal.feral</li>
-	<li>rimsenal.spacer</li>
-	<li>ushanka.glittertechexpansion</li>
-	<li>veltaris.spacesolar</li>
-	<li>jelly.caravangear</li>
-	<li>ucp.walldecorations</li>
-	<li>ucp.tabletopdecorations</li>
-	<li>aoba.fortress.medieval</li>
-	<li>aoba.fortress.medieval.material</li>
-	<li>aoba.fortress.industrial</li>
-	<li>aoba.fortress.neolithic</li>
-	<li>aoba.fortress.industrial.citadel</li>
-	<li>aoba.fortress.frontier</li>
-	<li>aoba.fortress.industrial.nucleardawn</li>
+    <li>Merthsoft.TimeOfDaySwitch</li>
+    <li>CP.Uncle.Boris.Used.Furniture</li>
+    <li>Erin.JapaneseFurniture</li>
+    <li>twomoon.spacecowboyvehicles</li>
+    <li>aelanna.eccentrictech.core</li>
+    <li>hol.rimputersforked</li>
+    <li>happycam.multianalyzers</li>
+    <li>rimsenal.core</li>
+    <li>rimsenal.federation</li>
+    <li>rimsenal.feral</li>
+    <li>rimsenal.spacer</li>
+    <li>ushanka.glittertechexpansion</li>
+    <li>veltaris.spacesolar</li>
+    <li>jelly.caravangear</li>
+    <li>ucp.walldecorations</li>
+    <li>ucp.tabletopdecorations</li>
+    <li>aoba.fortress.medieval</li>
+    <li>aoba.fortress.medieval.material</li>
+    <li>aoba.fortress.industrial</li>
+    <li>aoba.fortress.neolithic</li>
+    <li>aoba.fortress.industrial.citadel</li>
+    <li>aoba.fortress.frontier</li>
+    <li>aoba.fortress.industrial.nucleardawn</li>
     <li>aoba.fortress.industrial.concrete</li>
     <li>nuanki.garagedoorsexpanded</li>
-	<li>nuanki.boathouse</li>
-	<li>fox.simplelearning</li>
-	<li>meltup.polyamorybeds.vanilla</li>
-	<li>redmattis.betterprerequisites</li>
-	<li>aoba.exosuit.framework</li>
-	<li>aoba.deadmanswitch.mobiledragoon</li>
+    <li>nuanki.boathouse</li>
+    <li>fox.simplelearning</li>
+    <li>meltup.polyamorybeds.vanilla</li>
+    <li>redmattis.betterprerequisites</li>
+    <li>aoba.exosuit.framework</li>
+    <li>aoba.deadmanswitch.mobiledragoon</li>
     <li>mosi.vfec.doubletents</li>
-	<li>aoba.tent</li>
-	<li>aoba.tentshelters</li>
-	<li>sarg.alphamemes</li>
-	<li>harkon.veaddon.vanillaexpandedextraembrasures</li>
+    <li>aoba.tent</li>
+    <li>aoba.tentshelters</li>
+    <li>sarg.alphamemes</li>
+    <li>harkon.veaddon.vanillaexpandedextraembrasures</li>
     <li>aelanna.eccentrictech.furniture</li>
-	<li>frozensnowfox.frozensnowfoxtweaks</li>
-	<li>dd.unofficial.notfood.mendandrecycle</li>
-	<!--
-	<li></li>
-	-->
+    <li>frozensnowfox.frozensnowfoxtweaks</li>
+    <li>dd.unofficial.notfood.mendandrecycle</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

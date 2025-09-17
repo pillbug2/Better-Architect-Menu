@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Erin_Zabuton"]</xpath>
+    <value>
+        <designationCategory>Ferny_Seating</designationCategory>
+    </value>
+</Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Erin_Zaisu" or defName="Erin_LowTable" or defName="Erin_Kotatsu"]</xpath>
+    <value>
+        <designationCategory>Ferny_Tables</designationCategory>
+    </value>
+</Operation>
+
+      <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Erin_ElectricAndon" or defName="Erin_TorchAndon"]</xpath>
+    <value>
+        <designationCategory>Ferny_Tables</designationCategory>
+    </value>
+</Operation>
+
+  </Patch>

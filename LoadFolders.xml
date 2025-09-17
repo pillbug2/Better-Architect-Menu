@@ -253,6 +253,8 @@
     <li IfModActive="Xercaine.SmallBiofuelRefinery">Mods and Shit/Small Biofuel Refinery</li>
     <li IfModActive="CP.RimmuNation.2.Security">Mods and Shit/RH2 Security</li>
     <li IfModActive="Merthsoft.TimeOfDaySwitch">Mods and Shit/Time of day switch</li>
+    <li IfModActive="CP.Uncle.Boris.Used.Furniture">Mods and Shit/RH2 Uncle Boris</li>
+    <li IfModActive="Erin.JapaneseFurniture">Mods and Shit/Erin Japanese</li>
     <li IfModActive="twomoon.spacecowboyvehicles">Mods and Shit/Space Cowboy Vehicles</li>
     <li IfModActive="aelanna.eccentrictech.core">Mods and Shit/Eccentric Tech Core</li>
     <li IfModActive="hol.rimputersforked">Mods and Shit/Rimputers</li>
