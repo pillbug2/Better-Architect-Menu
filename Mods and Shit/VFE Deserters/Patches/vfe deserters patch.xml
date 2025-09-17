@@ -8,11 +8,13 @@
                         <designationCategory>Ferny_Weapons</designationCategory>
                     </value>
                 </Operation>
+
+<!-- TRAPS --> <!-- Moved to Traps to avoid Weapons bloat; little distinction with modded traps. -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[@Name="VFED_RemoteChargeBase"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Weapons</designationCategory>
+                        <designationCategory>Ferny_Traps</designationCategory>
                     </value>
                 </Operation>
 
