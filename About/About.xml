@@ -49,6 +49,9 @@
     <li>Ludeon.RimWorld.Anomaly</li>
     <li>Ludeon.RimWorld.Odyssey</li>
 
+<!-- ARCHITECT ICONS -->
+    <li>com.bymarcin.architecticons</li>
+
 <!-- LOAD AFTER PROGRESSION -->
     <li>ferny.progressionfantasy</li>
     <li>ferny.progressionstorytellers</li>
@@ -293,7 +296,7 @@
     <li>Erin.CottageCollection</li>
     <li>jdgg.adaptive.cargoholds</li>
 	<li>GHOST.RootsofRimworld</li>
-	<li>als.anomalygravship</li>
+	<!-- <li>als.anomalygravship</li> -->
 	<li>neronix17.geothermalcooler</li>
 	<li>HT.LUNARTIKA</li>
     <li>DimonSever000.AnimaObelisk.Specific</li>

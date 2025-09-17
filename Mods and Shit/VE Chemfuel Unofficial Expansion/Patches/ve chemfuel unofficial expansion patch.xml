@@ -16,6 +16,17 @@
 		</match>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/DesignationCategoryDef[defName="Ferny_NeutroamineNetwork"]/modExtensions</xpath>
+		<value>
+			<modExtensions>
+				<li Class="BetterArchitect.NestedCategoryExtension">
+					<parentCategory>VCHE_PipeNetworks</parentCategory>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>
+
 <!-- TOXIC WASTE -->
 
 	<Operation Class="PatchOperationFindMod">
