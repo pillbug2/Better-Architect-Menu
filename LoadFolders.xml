@@ -103,7 +103,7 @@
     <li IfModActive="vanillaexpanded.vnutriente">Mods and Shit/VE Nutrient Paste</li>
     <li IfModActive="reel.turretpipeline">Mods and Shit/Reel Turret Pipes</li>
     <li IfModActive="vemp.pipenetwork">Mods and Shit/Milk Pipe Network</li>
-    <li IfModActive="oskarpotocki.vfe.deserters">Mods and Shit/VFE Deserters</li>
+    <li IfModActive="oskarpotocki.vfe.deserters">Mods and Shit/VFE Deserters</li>                                           <!-- Implicit support for Pressure Plate -->
     <li IfModActive="oskarpotocki.vfe.tribals">Mods and Shit/VFE Tribals</li>
     <li IfModActive="adaptive.storage.framework">Mods and Shit/Adaptive Storage Framework</li>
     <li IfModActive="sarg.alphaprefabs">Mods and Shit/Alpha Prefabs</li>
