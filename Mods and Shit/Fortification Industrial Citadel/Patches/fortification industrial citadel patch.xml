@@ -93,13 +93,13 @@
 		</value>
 	</Operation>
 	
-<!-- KITCHEN -->
+<!-- CARAVAN -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="FTC_FieldKitchen"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Kitchen</designationCategory>
+			<designationCategory>Ferny_Caravan</designationCategory>
 		</value>
 	</Operation>
 	
