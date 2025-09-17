@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch>              
+<Patch>
 
 <!-- RENAME IDEOLOGY -->
                 <Operation Class="PatchOperationReplace">
@@ -31,7 +31,7 @@
                 </Operation>
 
 
-<!-- MEDICAL -->   
+<!-- MEDICAL -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="BiosculpterPod"]/designationCategory</xpath>
@@ -94,20 +94,6 @@
 <!-- CULTURE -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="Grave"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="Sarcophagus"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="MarriageSpot"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ideology</designationCategory>
@@ -116,13 +102,6 @@
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="PartySpot"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[@Name="SteleBase"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ideology</designationCategory>
                     </value>
