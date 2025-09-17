@@ -218,6 +218,7 @@
     <li IfModActive="redmattis.bsfurniture">Mods and Shit/Big and Small Furniture/Common</li>
     <li IfModActiveAll="redmattis.bsfurniture,dankpyon.medieval.overhaul">Mods and Shit/Big and Small Furniture/MO</li>
     <li IfModActiveAll="redmattis.bsfurniture,dankpyon.medieval.overhaul,VR.MOPatches">Mods and Shit/Big and Small Furniture/MOPatches</li>
+    <li IfModActiveAll="redmattis.bsfurniture,vanillaexpanded.vfecore">Mods and Shit/Big and Small Furniture/VFE</li>
     <li IfModActive="thatthing.mycohazard">Mods and Shit/Mycohazard</li>
     <li IfModActive="wanzi.smallgraves">Mods and Shit/Small Graves and Sarcophaguses</li>
     <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>
@@ -252,6 +253,9 @@
     <li IfModActive="bambaryla.vcepu">Mods and Shit/VE Chemfuel Unofficial Expansion</li>                            <!-- TODO Unpack dropdown -->
     <li IfModActive="CP.RimmuNation.2.Security">Mods and Shit/RH2 Security</li>
     <li IfModActive="Merthsoft.TimeOfDaySwitch">Mods and Shit/Time of day switch</li>
+    <li IfModActive="tradingcontrol.tad.rimworld.core">Mods and Shit/Trading Control</li>
+    <li IfModActive="bambaryla.bor">Mods and Shit/Beyond Our Reach</li>
+    <li IfModActive="mlie.autopsytable">Mods and Shit/AutopsyTable</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

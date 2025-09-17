@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch>   
+<Patch>
 
 
 <!-- LIGHTING -->
@@ -287,12 +287,12 @@
                     </value>
                 </Operation>
 
-<!-- CULTURE -->
+<!-- MEMORIAL -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_AnimalSarcophagus"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ideology</designationCategory>
+                        <designationCategory>Ferny_Memorial</designationCategory>
                     </value>
                 </Operation>
 

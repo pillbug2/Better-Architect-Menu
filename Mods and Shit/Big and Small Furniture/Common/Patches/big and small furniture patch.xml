@@ -66,22 +66,8 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="BS_Giant_Bed_DoubleErgonomic"]</xpath>
-		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="BS_Giant_Bed_Ergonomic"]</xpath>
-		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="BS_Giant_Bed_Kingsize"]</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_Giant_Bed_Kingsize"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
