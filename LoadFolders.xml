@@ -231,7 +231,7 @@
     <li IfModActive="vanillaexpanded.vbookse">Mods and Shit/VE Books</li>
     <li IfModActive="redmattis.dryads">Mods and Shit/Dryads and Gauranlen Trees Reworked</li>
     <li IfModActive="farxmai2.vfestandalone">Mods and Shit/Furniture Expanded Pack</li>
-    <li IfModActive="dubwise.rimatomics">Mods and Shit/Dubs Rimatomics</li>
+    <li IfModActive="dubwise.rimatomics">Mods and Shit/Dubs Rimatomics</li>                                                 <!-- Implicit support for Advanced Cooling Radiator -->
     <li IfModActive="dubwise.rimefeller">Mods and Shit/Dubs Rimefeller</li>
     <li IfModActive="ushanka.biologicalwarfare">Mods and Shit/Ushankas Biological Warfare</li>                              <!-- TODO Consider unpacking the weapons and traps ala VFE Deserters IEDs -->
     <li IfModActive="ushanka.luciferiumexpansion">Mods and Shit/Ushankas Luciferium Expansion</li>

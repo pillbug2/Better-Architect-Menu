@@ -23,6 +23,89 @@
 		</value>
 	</Operation>
 	
+<!-- Add pipe designators -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_PowerGeneration"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>Rimatomics.Designator_RemovePipe</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_PowerManagement"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>Rimatomics.Designator_RemovePipe</li>
+		</value>
+	</Operation>
+	
+<!-- POWER INFRASTRUCTURE -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="BasedPower"]</xpath>
+		<value>
+			<designationCategory>Ferny_PowerManagement</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RadiationShielding"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerManagement</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DU_Blastdoor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerManagement</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="BaseSarc"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerManagement</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="BaseSarc"]/designatorDropdown</xpath>
+	</Operation>
+	
+<!-- POWER GENERATION -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RimatomicsRTG"]</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turbine"]</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BigTurbine"]</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+	
 <!-- PRODUCTION -->
 
 	<Operation Class="PatchOperationAdd">
