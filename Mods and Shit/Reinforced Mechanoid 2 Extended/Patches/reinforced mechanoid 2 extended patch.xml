@@ -3,19 +3,19 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="RP_BurnoutMechlinkBoosterC"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Outreach</designationCategory>
+			<designationCategory>Ferny_Summon</designationCategory>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="RP_BurnoutMechlinkBoosterL"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Outreach</designationCategory>
+			<designationCategory>Ferny_Summon</designationCategory>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="RP_BurnoutMechlinkBoosterW"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Outreach</designationCategory>
+			<designationCategory>Ferny_Summon</designationCategory>
 		</value>
 	</Operation>
 </Patch>

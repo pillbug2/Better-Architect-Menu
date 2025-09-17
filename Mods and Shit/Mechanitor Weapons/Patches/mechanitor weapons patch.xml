@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	
+<!-- WEAPONS -->
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="WS_Turret_RecycledChargeBlaster"]/designationCategory</xpath>
@@ -7,6 +10,7 @@
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="WS_Turret_Minishotgun"]/designationCategory</xpath>
@@ -14,6 +18,7 @@
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="WS_Turret_MechMinigunTurret"]</xpath>
@@ -21,6 +26,7 @@
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="WS_Turret_NeedleSniperTurret"]/designationCategory</xpath>
@@ -28,6 +34,7 @@
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="WS_Turret_MiniChargeRailgun"]/designationCategory</xpath>
@@ -35,6 +42,7 @@
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="WS_Turret_MechAMR_Turret"]/designationCategory</xpath>
@@ -42,4 +50,26 @@
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WS_Turret_Minishotgun"]/designatorDropdown</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WS_Turret_MechMinigunTurret"]/designatorDropdown</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WS_Turret_NeedleSniperTurret"]/designatorDropdown</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WS_Turret_MiniChargeRailgun"]/designatorDropdown</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WS_Turret_MechAMR_Turret"]/designatorDropdown</xpath>
+	</Operation>
+	
 </Patch>

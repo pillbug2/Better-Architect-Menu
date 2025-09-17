@@ -27,6 +27,22 @@
 			<designationCategory>Ferny_GearStorage</designationCategory>
 		</value>
 	</Operation>
+	
+<!-- MEDICAL STORAGE -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Vin_MR"]</xpath>
+		<value>
+			<designationCategory>Ferny_MedicalStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Vin_MRS"]</xpath>
+		<value>
+			<designationCategory>Ferny_MedicalStorage</designationCategory>
+		</value>
+	</Operation>
 
 <!-- GENERAL STORAGE -->
 	
@@ -60,20 +76,6 @@
 	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Vin_GRS"]</xpath>
-		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Vin_MR"]</xpath>
-		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Vin_MRS"]</xpath>
 		<value>
 			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
