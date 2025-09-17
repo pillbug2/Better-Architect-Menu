@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>          
-<!-- WEAPONS -->   
+<!-- DEPLOYABLE -->   
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="AM_MechDisruptor"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Weapons</designationCategory>
+                        <designationCategory>Ferny_DeployableWeapons</designationCategory>
                     </value>
                 </Operation>
 
-<!-- OUTREACH -->
+<!-- SUMMON -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="AM_InfernusMechlinkBooster"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Outreach</designationCategory>
+                        <designationCategory>Ferny_Summon</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="AM_WarEmpressMechlinkBooster"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Outreach</designationCategory>
+                        <designationCategory>Ferny_Summon</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="AM_ApoptosisMechlinkBooster"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Outreach</designationCategory>
+                        <designationCategory>Ferny_Summon</designationCategory>
                     </value>
                 </Operation>
 

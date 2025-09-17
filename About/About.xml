@@ -38,6 +38,7 @@
         <li>ferny.outreachcategory</li>
         <li>ferny.transportcategory</li>
         <li>cedaro.tidy.designation</li>
+		<li>kahirdragoon.nomythiccategory</li>
     </incompatibleWith>
     <loadAfter>
 
@@ -106,6 +107,7 @@
 	<li>rooboid.paintings.ex</li>
 	<li>vanillaexpanded.vfemedical</li>
 	<li>hobbes.bamba.evenmorelinkables</li>
+	<li>hobbes.bamba.evenmorelinkables16</li>
 	<li>primitiveproduction.velcroboy333</li>
 	<li>VanillaExpanded.VGeneticsE</li>
 	<li>VanillaExpanded.VGeneticsEMoreLabStuff</li>
@@ -286,6 +288,7 @@
     <li>dubwise.rimefeller</li>
     <li>ushanka.luciferiumexpansion</li>
     <li>dubwise.rimatomics</li>
+    <li>bbcat.advancedbuilding</li>
     <li>farxmai2.vfestandalone</li>
     <li>redmattis.dryads</li>
     <li>vanillaexpanded.vbookse</li>
@@ -311,6 +314,45 @@
     <li>CP.RimmuNation.2.Security</li>
     <li>sbz.gravshipstorage</li>
 	<li>Merthsoft.TimeOfDaySwitch</li>
+	<li>twomoon.spacecowboyvehicles</li>
+	<li>aelanna.eccentrictech.core</li>
+	<li>hol.rimputersforked</li>
+	<li>happycam.multianalyzers</li>
+	<li>rimsenal.core</li>
+	<li>rimsenal.federation</li>
+	<li>rimsenal.feral</li>
+	<li>rimsenal.spacer</li>
+	<li>ushanka.glittertechexpansion</li>
+	<li>veltaris.spacesolar</li>
+	<li>jelly.caravangear</li>
+	<li>ucp.walldecorations</li>
+	<li>ucp.tabletopdecorations</li>
+	<li>aoba.fortress.medieval</li>
+	<li>aoba.fortress.medieval.material</li>
+	<li>aoba.fortress.industrial</li>
+	<li>aoba.fortress.neolithic</li>
+	<li>aoba.fortress.industrial.citadel</li>
+	<li>aoba.fortress.frontier</li>
+	<li>aoba.fortress.industrial.nucleardawn</li>
+    <li>aoba.fortress.industrial.concrete</li>
+    <li>nuanki.garagedoorsexpanded</li>
+	<li>nuanki.boathouse</li>
+	<li>fox.simplelearning</li>
+	<li>meltup.polyamorybeds.vanilla</li>
+	<li>redmattis.betterprerequisites</li>
+	<li>aoba.exosuit.framework</li>
+	<li>aoba.deadmanswitch.mobiledragoon</li>
+    <li>mosi.vfec.doubletents</li>
+	<li>aoba.tent</li>
+	<li>aoba.tentshelters</li>
+	<li>sarg.alphamemes</li>
+	<li>harkon.veaddon.vanillaexpandedextraembrasures</li>
+    <li>aelanna.eccentrictech.furniture</li>
+	<li>frozensnowfox.frozensnowfoxtweaks</li>
+	<li>dd.unofficial.notfood.mendandrecycle</li>
+	<!--
+	<li></li>
+	-->
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

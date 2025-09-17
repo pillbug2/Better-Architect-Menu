@@ -296,19 +296,19 @@
                     </value>
                 </Operation>
 
-<!-- AREA -->
+<!-- FILTH -->
 	            <Operation Class="PatchOperationReplace">
 		            <success>Always</success>
 		            <xpath>Defs/ThingDef[defName="Bin_Large"]/designationCategory</xpath>
 		            <value>
-			            <designationCategory>Temperature</designationCategory>
+			            <designationCategory>Ferny_Filth</designationCategory>
 		            </value>
 	            </Operation>
 	            <Operation Class="PatchOperationReplace">
 		            <success>Always</success>
 		            <xpath>Defs/ThingDef[defName="Bin_Small"]/designationCategory</xpath>
 		            <value>
-			            <designationCategory>Temperature</designationCategory>
+			            <designationCategory>Ferny_Filth</designationCategory>
 		            </value>
 	            </Operation>
 </Patch>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-<!-- BEDROOM -->
+<!-- CARAVAN -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFEC_Tent"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Bedroom</designationCategory>
+                        <designationCategory>Ferny_Caravan</designationCategory>
                     </value>
                 </Operation>
 
@@ -35,6 +35,15 @@
                         <designationCategory>Ferny_Heating</designationCategory>
                     </value>
                 </Operation>
+	
+<!-- PRODICTION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEC_CraftingBench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
 
 <!-- PROCESSING PRODUCTION -->
                 <Operation Class="PatchOperationReplace">
@@ -59,21 +68,21 @@
                     </value>
                 </Operation>
 
-<!-- OUTREACH -->
+<!-- SUMMON -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFEC_Beacon"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Outreach</designationCategory>
+                        <designationCategory>Ferny_Summon</designationCategory>
                     </value>
                 </Operation>
 
-  <!-- WEAPONS -->
+  <!-- DEPLOYABLE -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFEC_Turret_Scorpion"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Weapons</designationCategory>
+                        <designationCategory>Ferny_DeployableWeapons</designationCategory>
                     </value>
                 </Operation>
 </Patch>
