@@ -383,6 +383,15 @@
 	<li>ponpeco.pfkidsroom</li>
     <li>spesscarp.pressureplate</li>
 	<li>amch.moresleepaccelerators</li>
+	<li>lingluo.itemcuter</li>
+	<li>aoba.craftingtable</li>
+	<li>leo.decoystandee</li>
+	<li>harryrobinson.frostpunkgeneratortower</li>
+	<li>harryrobinson.frostpunkheatgeneratortower</li>
+	<li>bart.magmarefinery</li>
+	<li>esp.outdoorstuff</li>
+	<li>happywindinkg.psystorage</li>
+	<li>sdgp.minacator</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

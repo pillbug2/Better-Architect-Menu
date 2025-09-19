@@ -326,6 +326,15 @@
 	<li IfModActive="ponpeco.pfkidsroom">Mods and Shit/Ponpeco Furnitures Kids Room</li>
 	<li IfModActive="spesscarp.pressureplate">Mods and Shit/Pressure Plate</li>
 	<li IfModActive="amch.moresleepaccelerators">Mods and Shit/More Sleep Accelerators</li>
+	<li IfModActive="lingluo.itemcuter">Mods and Shit/Auto Cutter</li>
+    <li IfModActive="aoba.craftingtable">Mods and Shit/Crafting Table</li>
+	<li IfModActive="leo.decoystandee">Mods and Shit/Decoy Standee</li>
+	<li IfModActive="harryrobinson.frostpunkgeneratortower">Mods and Shit/Frostpunk Electricity Generator Tower</li>
+	<li IfModActive="harryrobinson.frostpunkheatgeneratortower">Mods and Shit/Frostpunk Heat Generator Tower</li>
+	<li IfModActive="bart.magmarefinery">Mods and Shit/Magma Refinery</li>
+	<li IfModActive="esp.outdoorstuff">Mods and Shit/Outdoor Stuff</li>
+	<li IfModActive="happywindinkg.psystorage">Mods and Shit/Psy Storage</li>
+	<li IfModActive="sdgp.minacator">Mods and Shit/The Minacator</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
