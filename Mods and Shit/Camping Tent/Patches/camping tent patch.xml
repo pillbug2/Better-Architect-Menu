@@ -5,7 +5,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Canopy"]</xpath>
 		<value>
-			<designationCategory>Ferny_Caravan</designationCategory>
+			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>
 
@@ -13,7 +13,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="WoodenCanopy"]</xpath>
 		<value>
-			<designationCategory>Ferny_Caravan</designationCategory>
+			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>
 
@@ -21,7 +21,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Teepee"]</xpath>
 		<value>
-			<designationCategory>Ferny_Caravan</designationCategory>
+			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>
 
@@ -29,7 +29,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Tent"]</xpath>
 		<value>
-			<designationCategory>Ferny_Caravan</designationCategory>
+			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>
 
@@ -37,7 +37,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="VikingTent"]</xpath>
 		<value>
-			<designationCategory>Ferny_Caravan</designationCategory>
+			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>
 
@@ -45,7 +45,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ModernTent"]</xpath>
 		<value>
-			<designationCategory>Ferny_Caravan</designationCategory>
+			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>
 
@@ -53,7 +53,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="FoldingTent"]</xpath>
 		<value>
-			<designationCategory>Ferny_Caravan</designationCategory>
+			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>
 	
@@ -61,7 +61,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="CampingLuggages"]</xpath>
 		<value>
-			<designationCategory>Ferny_Caravan</designationCategory>
+			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>
 
@@ -69,7 +69,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="WoodPile"]</xpath>
 		<value>
-			<designationCategory>Ferny_Caravan</designationCategory>
+			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>
 	

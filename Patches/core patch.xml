@@ -217,24 +217,22 @@
                         <designationCategory>Ferny_Bedroom</designationCategory>
                     </value>
                 </Operation>
-	
-<!-- CARAVAN -->
 
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Bedroll"]</xpath>
-		<value>
-			<designationCategory>Ferny_Caravan</designationCategory>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[@Name="BedrollBase"]</xpath>
-		<value>
-			<designationCategory>Ferny_Caravan</designationCategory>
-		</value>
-	</Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Bedroll"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Bedroom</designationCategory>
+                    </value>
+                </Operation>
+                
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="BedrollBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Bedroom</designationCategory>
+                    </value>
+                </Operation>
 
 <!-- KITCHEN -->
                 <Operation Class="PatchOperationReplace">
@@ -458,13 +456,11 @@
                     </value>
                 </Operation>
 	
-<!-- DEPLOYABLE -->
-
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Turret_MiniTurret"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_DeployableWeapons</designationCategory>
+			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
 
@@ -472,7 +468,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="BaseArtilleryBuilding"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_DeployableWeapons</designationCategory>
+			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
 
@@ -994,7 +990,7 @@
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="OrbitalTradeBeacon"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_Trade</designationCategory>
+            <designationCategory>Ferny_Outreach</designationCategory>
         </value>
     </Operation>
 

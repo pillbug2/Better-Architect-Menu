@@ -83,6 +83,8 @@
 		</value>
 	</Operation>
 
+<!-- ORBIT -->
+  
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@Name="VMF_GravshipWheelBase"]</xpath>
 		<match Class="PatchOperationSequence">
@@ -92,7 +94,7 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[@Name="VMF_GravshipWheelBase"]/designationCategory</xpath>
 					<value>
-						<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+						<designationCategory>Odyssey</designationCategory>
 					</value>
 				</li>
 

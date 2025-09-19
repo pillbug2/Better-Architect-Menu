@@ -87,7 +87,9 @@
     </modExtensions>
   </DesignationCategoryDef>
 
-	<DesignationCategoryDef>
+<!-- Not a fan of this -->
+
+	<!-- <DesignationCategoryDef>
 		<defName>Ferny_Caravan</defName>
 		<label>Caravan</label>
 		<description>Furnish a caravan.</description>
@@ -101,7 +103,7 @@
 				<parentCategory>Furniture</parentCategory>
 			</li>
 		</modExtensions>
-	</DesignationCategoryDef>
+	</DesignationCategoryDef> -->
 
   <DesignationCategoryDef>
     <defName>Ferny_Production</defName>
@@ -377,6 +379,22 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_Explosives</defName>
+    <label>Explosives</label>
+    <description>Build explosives for your enemies.</description>
+    <order>900</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Security</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_Barricades</defName>
     <label>Barricades</label>
     <description>Build barricades for your enemies.</description>
@@ -424,7 +442,11 @@
     </modExtensions>
   </DesignationCategoryDef>
 
-	<DesignationCategoryDef>
+
+
+<!-- Not a fan of this, we need to come up with a different way of splitting weapons if ever. -->
+
+	<!-- <DesignationCategoryDef>
 		<defName>Ferny_DeployableWeapons</defName>
 		<label>Deployable</label>
 		<description>Manage deployable weapons.</description>
@@ -438,7 +460,7 @@
 				<parentCategory>Security</parentCategory>
 			</li>
 		</modExtensions>
-	</DesignationCategoryDef>
+	</DesignationCategoryDef> -->
 
   <DesignationCategoryDef>
     <defName>Ferny_CombatInfrastructure</defName>
@@ -634,7 +656,7 @@
 		<defName>Ferny_Control</defName>
 		<label>Manage</label>
 		<description>Control pawn behavior.</description>
-		<order>2</order>
+		<order>9999</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
 			<li>Designator_Deconstruct</li>
@@ -863,24 +885,6 @@
     </modExtensions>
   </DesignationCategoryDef>
 
-	<DesignationCategoryDef>
-		<defName>Ferny_InformationStorage</defName>
-		<label>Information</label>
-		<description>Build information storages.</description>
-		<order>8</order>
-		<specialDesignatorClasses>
-			<li>Designator_Cancel</li>
-			<li>Designator_Deconstruct</li>
-			<li>Designator_ZoneAddStockpile_Resources</li>
-			<li>Designator_ZoneAddStockpile_Dumping</li>
-		</specialDesignatorClasses>
-		<modExtensions>
-			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Ferny_Storage</parentCategory>
-			</li>
-		</modExtensions>
-	</DesignationCategoryDef>
-
   <DesignationCategoryDef>
     <defName>Ferny_ResourcesStorage</defName>
     <label>Resource</label>
@@ -934,6 +938,24 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>Ferny_InformationStorage</defName>
+		<label>Information</label>
+		<description>Build information storages.</description>
+		<order>8</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+			<li>Designator_ZoneAddStockpile_Resources</li>
+			<li>Designator_ZoneAddStockpile_Dumping</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Storage</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
 
 	<DesignationCategoryDef>
 		<defName>Ferny_MedicalStorage</defName>
@@ -1029,7 +1051,8 @@
     </modExtensions>
   </DesignationCategoryDef>
 
-	<DesignationCategoryDef>
+<!-- Not a fan for now -->
+	<!-- <DesignationCategoryDef>
 		<defName>Ferny_Trade</defName>
 		<label>Trade</label>
 		<description>Manage trade.</description>
@@ -1043,7 +1066,7 @@
 				<parentCategory>Ferny_World</parentCategory>
 			</li>
 		</modExtensions>
-	</DesignationCategoryDef>
+	</DesignationCategoryDef> -->
 
 	<DesignationCategoryDef>
 		<defName>Ferny_Summon</defName>
@@ -1122,6 +1145,11 @@
 			<li>Designator_Cancel</li>
 			<li>Designator_Deconstruct</li>
 		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Storage</parentCategory>
+			</li>
+		</modExtensions>
 	</DesignationCategoryDef>
 
 </Defs>

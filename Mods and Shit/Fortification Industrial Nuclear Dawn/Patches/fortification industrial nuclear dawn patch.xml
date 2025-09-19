@@ -3,13 +3,15 @@
 	
 <!-- CARAVAN -->
 
-	<Operation Class="PatchOperationReplace">
+<!-- Replace this with something not using the rejected def -->
+
+	<!-- <Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="FT_RTG"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Caravan</designationCategory>
 		</value>
-	</Operation>
+	</Operation> -->
 	
 <!-- POWER GENERATION -->
 
