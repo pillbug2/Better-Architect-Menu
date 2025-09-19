@@ -3,9 +3,9 @@
 	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Building_SubspaceBurstTransponder"]/designationCategory</xpath>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="CVN_Rock_Blueprint"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Summon</designationCategory>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
 		</value>
 	</Operation>
 	

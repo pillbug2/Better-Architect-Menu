@@ -289,6 +289,36 @@
 	<li IfModActive="aelanna.eccentrictech.furniture">Mods and Shit/Eccentric Tech Furniture</li>
 	<li IfModActive="frozensnowfox.frozensnowfoxtweaks">Mods and Shit/FrozenSnowFox Tweaks</li>
 	<li IfModActive="dd.unofficial.notfood.mendandrecycle">Mods and Shit/MendAndRecycle</li>
+	<li IfModActive="garbageday.convectionalwarcrimes">Mods and Shit/Convectional War Crimes</li>
+	<li IfModActive="tug.terraformerpumps">Mods and Shit/Terraforming Devices</li>
+	<li IfModActive="zal.morearchotechgarbage">Mods and Shit/More Archotech Garbage</li>
+	<li IfModActive="dimonsever000.terraformingasteroids">Mods and Shit/Terraforming Asteroids</li>
+	<li IfModActive="rabbit.hovercar">Mods and Shit/Edge of Descension Hovercrafts</li>
+	<li IfModActive="oels.mapvehicles">Mods and Shit/Map Vehicles</li>
+	<li IfModActive="rx97.mapvehicles">Mods and Shit/RX97 Simple Raft</li>
+	<li IfModActive="mo.technicalvehicles">Mods and Shit/Technical Vehicles</li>
+	<li IfModActive="mo.technicalmapvehicles">Mods and Shit/Technical Map Vehicles</li>
+	<li IfModActive="mrhydralisk.voepowergrid">Mods and Shit/VE Outposts Power Grid</li>
+	<li IfModActive="oels.vehiclemapframework">Mods and Shit/Vehicle Map Framework</li>
+	<li IfModActiveAny="mingtuwuxiang.fishingdecorative,mingtuwuxiang.gothicdecorative,mingtuwuxiang.spacebasedecorative">Mods and Shit/MUS Common Patch</li>
+	<li IfModActive="mingtuwuxiang.fishingdecorative">Mods and Shit/MUS FishingDecorative</li>
+	<li IfModActive="mingtuwuxiang.gothicdecorative">Mods and Shit/MUS Gothicstyle Vampire Furniture</li>
+	<li IfModActive="mingtuwuxiang.spacebasedecorative">Mods and Shit/MUS Space Base Furniture</li>
+	<li IfModActive="mlie.drawbridges">Mods and Shit/Drawbridges</li>
+	<li IfModActive="mitasamodel.preemptivestrike">Mods and Shit/Preemptive Strike</li>
+	<li IfModActive="tot.celetech.sub.fbs">Mods and Shit/CeleTech Subsonic Disruptor</li>
+	<li IfModActive="tot.celetech.mkiii">Mods and Shit/CeleTech Arsenal</li>
+	<li IfModActive="lingluo.pawncuter">Mods and Shit/Auto Dissector</li>
+	<li IfModActive="nyar.nclvstw">Mods and Shit/Mechanoids Total Warfare</li>
+	<li IfModActive="rashomcree.odyssey.orbitalplatforms">Mods and Shit/Orbital Platforms</li>
+	<li IfModActive="deon.rimtek.docmate">Mods and Shit/RimTek DocMate</li>
+	<li IfModActive="trigger.building.voidextractor">Mods and Shit/Void Extractor</li>
+	<li IfModActive="jerry.boulder">Mods and Shit/Pioneer Rock</li>
+	<li IfModActive="jahv.spacervehicleshal.continued">Mods and Shit/Titan Vehicles</li>
+	<li IfModActive="tractor.therealcaptrex">Mods and Shit/Tractor</li>
+	<li IfModActive="badoaks.campfirestews">Mods and Shit/Campfire Stews</li>
+	<li IfModActive="sbz.neatstorageworkbenchshelf">Mods and Shit/Workbench Shelf</li>
+	<li IfModActive="ponpeco.pfkidsroom">Mods and Shit/Ponpeco Furnitures Kids Room</li>
 	<!--
 	<li IfModActive="">Mods and Shit/</li>
 	-->

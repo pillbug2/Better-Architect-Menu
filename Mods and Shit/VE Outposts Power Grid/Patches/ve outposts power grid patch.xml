@@ -3,9 +3,9 @@
 	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Building_SubspaceBurstTransponder"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="Outpost_PowerGrid_DeliverySpot"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Summon</designationCategory>
+			<designationCategory>Ferny_PowerManagement</designationCategory>
 		</value>
 	</Operation>
 	
