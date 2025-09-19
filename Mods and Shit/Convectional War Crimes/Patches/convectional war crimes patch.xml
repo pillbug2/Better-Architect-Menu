@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-<!-- TRAPS -->
+<!-- WEAPONS -->
 	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="GDCWC_ChemfuelThrower"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Traps</designationCategory>
+			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
 	

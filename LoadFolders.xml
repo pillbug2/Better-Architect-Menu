@@ -286,7 +286,6 @@
     <li IfModActive="aoba.exosuit.framework">Mods and Shit/Exosuit Framework</li>
     <li IfModActive="aoba.deadmanswitch.mobiledragoon">Mods and Shit/DMS MobileDragoon</li>
     <li IfModActive="mosi.vfec.doubletents">Mods and Shit/VFE Classical Double Tents</li>
-    <li IfModActive="aoba.tentshelters">Mods and Shit/Post-apocalyptic Shelters</li>
     <li IfModActive="sarg.alphamemes">Mods and Shit/Alpha Memes</li>
     <li IfModActive="harkon.veaddon.vanillaexpandedextraembrasures">Mods and Shit/VE Extra Embrasures</li>
     <li IfModActive="aelanna.eccentrictech.furniture">Mods and Shit/Eccentric Tech Furniture</li>
@@ -325,9 +324,8 @@
 	<li IfModActive="badoaks.campfirestews">Mods and Shit/Campfire Stews</li>
 	<li IfModActive="sbz.neatstorageworkbenchshelf">Mods and Shit/Workbench Shelf</li>
 	<li IfModActive="ponpeco.pfkidsroom">Mods and Shit/Ponpeco Furnitures Kids Room</li>
-	<!--
-	<li IfModActive="">Mods and Shit/</li>
-	-->
+	<li IfModActive="spesscarp.pressureplate">Mods and Shit/Pressure Plate</li>
+	<li IfModActive="amch.moresleepaccelerators">Mods and Shit/More Sleep Accelerators</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
