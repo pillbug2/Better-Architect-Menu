@@ -335,6 +335,9 @@
 	<li IfModActive="esp.outdoorstuff">Mods and Shit/Outdoor Stuff</li>
 	<li IfModActive="happywindinkg.psystorage">Mods and Shit/Psy Storage</li>
 	<li IfModActive="sdgp.minacator">Mods and Shit/The Minacator</li>
+    <li IfModActive="xercaine.fireplace">Mods and Shit/Fireplace</li>
+	<li IfModActive="grandyy.get">Mods and Shit/Grandyy's Enhanced Mini Turrets</li>
+	<li IfModActive="temeez.floorlights2">Mods and Shit/Floor Lights 2</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
