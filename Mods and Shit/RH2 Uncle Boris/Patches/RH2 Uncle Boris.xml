@@ -1,74 +1,88 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch>          
-                <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="RH_Armored_DoorBase" or @Name="RH_FenceGate_DoorBase"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_Doors</designationCategory>
-                    </value>
-                </Operation>
+<Patch>
 
-                  <Operation Class="PatchOperationAdd">
+<Operation Class="PatchOperationAdd">
+ <xpath>Defs/ThingDef[@Name="RH_Armored_DoorBase" or @Name="RH_FenceGate_DoorBase"]</xpath>
+  <value>
+   <designationCategory>Ferny_Doors</designationCategory>
+  </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="RH2_ClassicFootlocker" or defName="RH2_MilitaryCrateDresser"]</xpath>
                     <value>
                         <designationCategory>Ferny_Bedroom</designationCategory>
                     </value>
-                </Operation> 
-  
-                  <Operation Class="PatchOperationAdd">
+</Operation> 
+
+<Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="RH2_LampEndTable" or defName="RH2_DoubleWardrobe"]</xpath>
                     <value>
                         <designationCategory>Ferny_Bedroom</designationCategory>
                     </value>
-                </Operation>
+</Operation>
 
-                    <Operation Class="PatchOperationAdd">
+<Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="RH2_FoldingTable1x2c"]</xpath>
                     <value>
                         <designationCategory>Ferny_Tables</designationCategory>
                     </value>
-                </Operation>
+</Operation>
 
-  
-                    <Operation Class="PatchOperationAdd">
+<Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="RH2_FoldingChair" or defName="RH2_CanvasChair" or defName="RH2_LoungeArmchair"]</xpath>
                     <value>
                         <designationCategory>Ferny_Seating</designationCategory>
                     </value>
-                </Operation>
+</Operation>
 
-                      <Operation Class="PatchOperationReplace">
+                    <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[@Name="RH2_MainLampBase"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Lighting</designationCategory>
                     </value>
-                </Operation>
+</Operation>
 
-                      <Operation Class="PatchOperationAdd">
+<Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="RH2_CzechHedgehogBarricade"]</xpath>
                     <value>
                         <designationCategory>Ferny_Traps</designationCategory>
                     </value>
-                </Operation>
+</Operation>
 
-                        <Operation Class="PatchOperationReplace">
+<Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="RH2_FIRMAN3650_Generator" or defName="RH2_DEWEY2KW_Generator" or defName="RH2_MEP007B_Generator" or defName="RH2_DEFENDER1_Generator"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_PowerGeneration</designationCategory>
                     </value>
-                </Operation>
+</Operation>
 
-                          <Operation Class="PatchOperationReplace">
+<Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="RH_HESCO_Wall" or defName="RH_HESCO_Wall_Embrasure" or defName="RH_Bunker_Wall_Embrasure" or defName="RH_Corrugated_Sheet_Wall" or defName="RH_Plywood_Wall" or defName="RH_Blast_T_Wall"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Walls</designationCategory>
                     </value>
-                </Operation>
+</Operation>
 
-                            <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="RH_Jersey_Barrier"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Barricades</designationCategory>
-                    </value>
-                </Operation>
+<Operation Class="PatchOperationReplace">
+<xpath>Defs/ThingDef[defName="RH_Jersey_Barrier"]/designationCategory</xpath>
+  <value>
+     <designationCategory>Ferny_Barricades</designationCategory>
+  </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+<xpath>Defs/ThingDef[defName="RH2_MissionBoard" or defName="RH2_LaptopCommsConsole"]/designationCategory</xpath>
+  <value>
+     <designationCategory>Ferny_Outreach</designationCategory>
+  </value>
+</Operation>
   
-  </Patch>
+<Operation Class="PatchOperationAdd">
+<xpath>Defs/ThingDef[defName="RH2_DeskLamplight"]</xpath>
+  <value>
+     <designationCategory>Ferny_Lighting</designationCategory>
+  </value>
+</Operation>
+  
+</Patch>
