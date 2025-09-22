@@ -36,7 +36,7 @@
                     </value>
 </Operation>
 
-<Operation Class="PatchOperationReplace">
+                    <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[@Name="RH2_MainLampBase"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Lighting</designationCategory>
