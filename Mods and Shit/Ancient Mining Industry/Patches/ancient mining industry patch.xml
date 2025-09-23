@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	
-<!-- MINING PRODUCTION -->
-
-<!-- Move this somewhere else -->
-	<!-- <Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[@ParentName="BreadMoAM_MiningFacilities"]</xpath>
-		<value>
-			<designationCategory>Ferny_MiningProduction</designationCategory>
-		</value>
-	</Operation> -->
-	
-<!-- PROCESSING PRODUCTION -->
+<!-- PRODUCTION INFRASTRUCTURE -->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="BreadMoAM_OreDressingMachine"]</xpath>
+		<xpath>Defs/ThingDef[@ParentName="BreadMoAM_MiningFacilities"]</xpath>
 		<value>
-			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+			<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- TERRAFORMING -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BreadMoAM_TunnelBoringMachine"]</xpath>
+		<value>
+			<designationCategory>Ferny_Terraforming</designationCategory>
 		</value>
 	</Operation>
 	

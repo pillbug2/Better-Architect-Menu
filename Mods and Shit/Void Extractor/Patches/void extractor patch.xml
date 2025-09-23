@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<!--Move these somewhere else-->
-	<!-- <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="VoidMiner"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_MiningProduction</designationCategory>
+			<designationCategory>Ferny_Production</designationCategory>
 		</value>
 	</Operation>
 
@@ -14,8 +13,8 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="AutoVoidMiner"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_MiningProduction</designationCategory>
+			<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
 		</value>
 	</Operation>
-	 -->
+	
 </Patch>
