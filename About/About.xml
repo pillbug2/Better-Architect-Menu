@@ -397,6 +397,8 @@
     <li>temeez.floorlights2</li>
     <li>princeofpluto.vehicles.trains</li>
     <li>HE.RRS</li>
+    <li>ceteam.combatextended</li>
+    <li>ceteam.combatextendedarmory</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
