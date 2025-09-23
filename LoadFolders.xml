@@ -340,6 +340,8 @@
     <li IfModActive="xercaine.fireplace">Mods and Shit/Fireplace</li>
     <li IfModActive="grandyy.get">Mods and Shit/Grandyy's Enhanced Mini Turrets</li>
     <li IfModActive="temeez.floorlights2">Mods and Shit/Floor Lights 2</li>
+	<li IfModActive="xale86.smallbedroomfurniture">Mods and Shit/Small Bedroom Furniture</li>
+	<li IfModActive="limetreesnake.furnishing">Mods and Shit/LTS Furnishing</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
