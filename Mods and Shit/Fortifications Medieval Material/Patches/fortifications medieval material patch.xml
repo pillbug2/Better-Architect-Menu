@@ -11,16 +11,15 @@
 		</value>
 	</Operation>
 	
-<!-- MINING PRODUCTION -->
+<!-- PRODUCTION -->
 
-<!-- Move this somewhere else -->
-	<!-- <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="FT_GatheringSpot"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_MiningProduction</designationCategory>
+			<designationCategory>Ferny_Production</designationCategory>
 		</value>
-	</Operation> -->
+	</Operation>
 	
 <!-- BARRICADES -->
 

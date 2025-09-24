@@ -162,13 +162,12 @@
 	
 <!-- MINING -->
 
-<!-- Move this somewher elese -->
-	<!-- <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PRF_MineShaft"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_MiningProduction</designationCategory>
+			<designationCategory>Ferny_Production</designationCategory>
 		</value>
-	</Operation> -->
+	</Operation>
 	
 </Patch>

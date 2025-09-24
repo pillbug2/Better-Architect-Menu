@@ -87,24 +87,6 @@
     </modExtensions>
   </DesignationCategoryDef>
 
-<!-- Not a fan of this -->
-
-	<!-- <DesignationCategoryDef>
-		<defName>Ferny_Caravan</defName>
-		<label>Caravan</label>
-		<description>Furnish a caravan.</description>
-		<order>455</order>
-		<specialDesignatorClasses>
-			<li>Designator_Cancel</li>
-			<li>Designator_Deconstruct</li>
-		</specialDesignatorClasses>
-		<modExtensions>
-			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Furniture</parentCategory>
-			</li>
-		</modExtensions>
-	</DesignationCategoryDef> -->
-
   <DesignationCategoryDef>
     <defName>Ferny_Production</defName>
     <label>Produce</label>
@@ -203,23 +185,6 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
-
-<!-- Not a fan -->
-	<!-- <DesignationCategoryDef>
-		<defName>Ferny_MiningProduction</defName>
-		<label>Mining</label>
-		<description>Things that relate to mining.</description>
-		<order>640</order>
-		<specialDesignatorClasses>
-			<li>Designator_Cancel</li>
-			<li>Designator_Deconstruct</li>
-		</specialDesignatorClasses>
-		<modExtensions>
-			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Production</parentCategory>
-			</li>
-		</modExtensions>
-	</DesignationCategoryDef> -->
 
   <DesignationCategoryDef>
     <defName>Ferny_Auxiliaries</defName>
@@ -442,26 +407,6 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
-
-
-
-<!-- Not a fan of this, we need to come up with a different way of splitting weapons if ever. -->
-
-	<!-- <DesignationCategoryDef>
-		<defName>Ferny_DeployableWeapons</defName>
-		<label>Deployable</label>
-		<description>Manage deployable weapons.</description>
-		<order>901</order>
-		<specialDesignatorClasses>
-			<li>Designator_Cancel</li>
-			<li>Designator_Deconstruct</li>
-		</specialDesignatorClasses>
-		<modExtensions>
-			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Security</parentCategory>
-			</li>
-		</modExtensions>
-	</DesignationCategoryDef> -->
 
   <DesignationCategoryDef>
     <defName>Ferny_CombatInfrastructure</defName>
@@ -1051,23 +996,6 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
-
-<!-- Not a fan for now -->
-	<!-- <DesignationCategoryDef>
-		<defName>Ferny_Trade</defName>
-		<label>Trade</label>
-		<description>Manage trade.</description>
-		<order>225</order>
-		<specialDesignatorClasses>
-			<li>Designator_Cancel</li>
-			<li>Designator_Deconstruct</li>
-		</specialDesignatorClasses>
-		<modExtensions>
-			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Ferny_World</parentCategory>
-			</li>
-		</modExtensions>
-	</DesignationCategoryDef> -->
 
 	<DesignationCategoryDef>
 		<defName>Ferny_Summon</defName>
