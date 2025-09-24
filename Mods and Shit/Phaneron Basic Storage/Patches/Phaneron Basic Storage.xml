@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationAdd">
+   <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer"]</xpath>
+   <value>
+     <designationCategory>Ferny_GeneralStorage</designationCategory>
+   </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+   <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]</xpath>
+   <value>
+     <designationCategory>Ferny_GeneralStorage</designationCategory>
+   </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+   <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle"]</xpath>
+   <value>
+     <designationCategory>Ferny_GeneralStorage</designationCategory>
+   </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+   <xpath>Defs/ThingDef[defName="BasicStorageLargeCrate" or defName="BasicStorageMediumCrate" or defName="BasicStorageWoodenCrate"]</xpath>
+   <value>
+     <designationCategory>Ferny_GeneralStorage</designationCategory>
+   </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+   <xpath>Defs/ThingDef[defName="BasicStoragePalletLarge" or defName="BasicStoragePalletSmall"]</xpath>
+   <value>
+     <designationCategory>Ferny_GeneralStorage</designationCategory>
+   </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+   <xpath>Defs/ThingDef[defName="BasicStorageMetalCrate"]</xpath>
+   <value>
+     <designationCategory>Ferny_GeneralStorage</designationCategory>
+   </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+   <xpath>Defs/ThingDef[defName="BasicStorageSack"]</xpath>
+   <value>
+     <designationCategory>Ferny_FoodStorage</designationCategory>
+   </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+   <xpath>Defs/ThingDef[defName="BasicStorageFoodBarrel" or defName="BasicStorageFoodCupboard" or defName="BasicStorageMealStorage"]</xpath>
+   <value>
+     <designationCategory>Ferny_FoodStorage</designationCategory>
+   </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+   <xpath>Defs/ThingDef[defName="BasicStorageCask"]</xpath>
+   <value>
+     <designationCategory>Ferny_FoodStorage</designationCategory>
+   </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+   <xpath>Defs/ThingDef[defName="BasicStorageMeatHook"]</xpath>
+   <value>
+     <designationCategory>Ferny_FoodStorage</designationCategory>
+   </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+   <xpath>Defs/ThingDef[defName="BasicStorageFuelTank" or defName="BasicStorageIndustrialContainer"]</xpath>
+   <value>
+     <designationCategory>Ferny_ResourcesStorage</designationCategory>
+   </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+   <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]</xpath>
+   <value>
+     <designationCategory>Ferny_GearStorage</designationCategory>
+   </value>
+</Operation>
+
+</Patch>  

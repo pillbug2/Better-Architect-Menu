@@ -173,6 +173,7 @@
     <li IfModActive="divineDerivative.tilledsoil">Mods and Shit/Configurable Tilled Soil</li>
     <li IfModActive="BriannBanned.BriannsMissileFramework">Mods and Shit/Brianns Missiles</li>
     <li IfModActive="Poncho.AutomaticHydroponics">Mods and Shit/Automatic Hydroponics</li>
+    <li IfModActive="AutomaticHydroponics.Expanded">Mods and Shit/Automatic Hydroponics Expanded</li>
     <li IfModActive="biotexpans.mythic">Mods and Shit/Biotech Expansion Mythic</li>
     <li IfModActive="ccyt.stargatesmod">Mods and Shit/Stargates!</li>
     <li IfModActive="blues.breaker">Mods and Shit/Circuit Breaker</li>
@@ -340,7 +341,12 @@
     <li IfModActive="xercaine.fireplace">Mods and Shit/Fireplace</li>
     <li IfModActive="grandyy.get">Mods and Shit/Grandyy's Enhanced Mini Turrets</li>
     <li IfModActive="temeez.floorlights2">Mods and Shit/Floor Lights 2</li>
-	<li IfModActive="ushanka.hackingexpansion">Mods and Shit/Ushankas Hacking Expansion</li>
+    <li IfModActive="ushanka.hackingexpansion">Mods and Shit/Ushankas Hacking Expansion</li>
+    <li IfModActive="ceteam.combatextended">Mods and Shit/Combat Extended</li>
+    <li IfModActive="ceteam.combatextendedarmory">Mods and Shit/Combat Extended Armory</li>    
+    <li IfModActive="xale86.smallbedroomfurniture">Mods and Shit/Small Bedroom Furniture</li>
+    <li IfModActive="limetreesnake.furnishing">Mods and Shit/LTS Furnishing</li>
+    <li IfModActive="phaneron.basic.storage">Mods and Shit/Phaneron Basic Storage</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
