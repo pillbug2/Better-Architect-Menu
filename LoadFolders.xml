@@ -2,11 +2,18 @@
   <v1.6>
     <li>/</li>
     <li>1.6</li>
+  
+  <!-- CORE + DLCS -->
     <li IfModActive="Ludeon.Rimworld.Royalty">Mods and Shit/Royalty</li>
     <li IfModActive="Ludeon.Rimworld.Ideology">Mods and Shit/Ideology</li>
     <li IfModActive="Ludeon.Rimworld.Biotech">Mods and Shit/Biotech</li>
     <li IfModActive="Ludeon.Rimworld.Anomaly">Mods and Shit/Anomaly</li>
     <li IfModActive="Ludeon.Rimworld.Odyssey">Mods and Shit/Odyssey</li>
+
+<!-- PROGRESSION -->
+    <li IfModActive="ferny.progressioneducation">Mods and Shit/Progression Education</li>
+
+<!-- THE REST -->
     <li IfModActive="smashphil.vehicleframework">Mods and Shit/Vehicle Framework</li>
     <li IfModActive="VanillaExpanded.VFECore">Mods and Shit/VE Furniture</li>
     <li IfModActive="VanillaExpanded.VFESpacer">Mods and Shit/VFE Spacer</li>
@@ -44,7 +51,7 @@
     <li IfModActive="rooboid.paintings.ex">Mods and Shit/Roo's Painting</li>
     <li IfModActive="vanillaexpanded.vfemedical">Mods and Shit/VFE Medical</li>
     <li IfModActive="hobbes.bamba.evenmorelinkables">Mods and Shit/Even More Linkables</li>
-	<li IfModActive="hobbes.bamba.evenmorelinkables16">Mods and Shit/Even More Linkables</li>
+    <li IfModActive="hobbes.bamba.evenmorelinkables16">Mods and Shit/Even More Linkables</li>
     <li IfModActive="primitiveproduction.velcroboy333">Mods and Shit/Primitive Workbenches</li>
     <li IfModActive="vanillaexpanded.vfearchitect">Mods and Shit/VFE Architect</li>
     <li IfModActive="vanillaexpanded.vgeneticse">Mods and Shit/VE Genetics</li>
