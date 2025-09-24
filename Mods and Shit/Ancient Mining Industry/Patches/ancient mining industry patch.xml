@@ -10,7 +10,17 @@
 			<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
 		</value>
 	</Operation>
-	
+
+<!-- PROCESSING PRODUCTION -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BreadMoAM_OreDressingMachine"]</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
 <!-- TERRAFORMING -->
 
 	<Operation Class="PatchOperationAdd">
