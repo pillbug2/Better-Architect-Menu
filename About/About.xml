@@ -397,7 +397,9 @@
     <li>temeez.floorlights2</li>
     <li>princeofpluto.vehicles.trains</li>
     <li>HE.RRS</li>
-	<li>phaneron.basic.storage</li>
+    <li>xale86.smallbedroomfurniture</li>
+    <li>limetreesnake.furnishing</li>
+    <li>phaneron.basic.storage</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
