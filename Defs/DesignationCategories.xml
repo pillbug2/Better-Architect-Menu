@@ -204,7 +204,8 @@
     </modExtensions>
   </DesignationCategoryDef>
 
-	<DesignationCategoryDef>
+<!-- Not a fan -->
+	<!-- <DesignationCategoryDef>
 		<defName>Ferny_MiningProduction</defName>
 		<label>Mining</label>
 		<description>Things that relate to mining.</description>
@@ -218,7 +219,7 @@
 				<parentCategory>Production</parentCategory>
 			</li>
 		</modExtensions>
-	</DesignationCategoryDef>
+	</DesignationCategoryDef> -->
 
   <DesignationCategoryDef>
     <defName>Ferny_Auxiliaries</defName>

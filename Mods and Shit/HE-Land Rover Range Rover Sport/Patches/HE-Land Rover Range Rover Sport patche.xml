@@ -4,7 +4,7 @@
 <Operation Class="PatchOperationConditional">
         <xpath>Defs/Vehicles.VehicleBuildDef[designationCategory="HE_Vehicles"]/designationCategory</xpath>
         <match Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[designationCategory="HE_Vehicles"]/designationCategory</xpath>
+            <xpath>Defs/Vehicles.VehicleBuildDef[designationCategory="HE_Vehicles"]/designationCategory</xpath>
             <value>
                 <designationCategory>Ferny_GroundTransport</designationCategory>
             </value>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>   
-
-  
+ 
 <!-- KITCHEN -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
@@ -45,6 +44,17 @@
                         <designationCategory>Ferny_Heating</designationCategory>
                     </value>
                 </Operation>
+
+
+<!-- SUPPORTS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Post"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Supports</designationCategory>
+                    </value>
+                </Operation>
+
 
 <!-- WEAPONS -->
                 <Operation Class="PatchOperationAdd">
