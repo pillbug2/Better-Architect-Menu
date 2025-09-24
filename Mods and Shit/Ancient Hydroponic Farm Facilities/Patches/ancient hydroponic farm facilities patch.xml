@@ -4,10 +4,17 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/DesignationCategoryDef[defName="NutrientSolutionPipeSystem"]/label</xpath>
 		<value>
-			<label>Nutrient Solution</label>
+			<label>Hydroponics</label>
 		</value>
 	</Operation>
-	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/DesignationCategoryDef[defName="NutrientSolutionPipeSystem"]/order</xpath>
+		<value>
+			<order>2</order>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
 		<match Class="PatchOperationAddModExtension">
