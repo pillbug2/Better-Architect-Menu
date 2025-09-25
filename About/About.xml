@@ -405,6 +405,7 @@
     <li>limetreesnake.furnishing</li>
     <li>phaneron.basic.storage</li>
     <li>AutomaticHydroponics.Expanded</li>
+    <li>tug.minotaur</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

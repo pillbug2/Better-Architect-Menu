@@ -33,14 +33,14 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Vin_MR"]</xpath>
 		<value>
-			<designationCategory>Ferny_MedicalStorage</designationCategory>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Vin_MRS"]</xpath>
 		<value>
-			<designationCategory>Ferny_MedicalStorage</designationCategory>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 

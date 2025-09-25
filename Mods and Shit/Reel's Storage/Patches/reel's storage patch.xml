@@ -80,15 +80,6 @@
         </value>
     </Operation>
 	
-<!-- Medical storage -->
-	
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="ReelStorageNewMedicineCabinet"]</xpath>
-        <value>
-            <designationCategory>Ferny_MedicalStorage</designationCategory>
-        </value>
-    </Operation>
-
 <!-- Gear storage -->
 	
     <Operation Class="PatchOperationAdd">
@@ -161,6 +152,13 @@
 
 
 <!-- GENERAL -->
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ReelStorageNewMedicineCabinet"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+
                 <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="ReelStorageCargoContainer"]</xpath>
                     <value>

@@ -354,6 +354,7 @@
     <li IfModActive="xale86.smallbedroomfurniture">Mods and Shit/Small Bedroom Furniture</li>
     <li IfModActive="limetreesnake.furnishing">Mods and Shit/LTS Furnishing</li>
     <li IfModActive="phaneron.basic.storage">Mods and Shit/Phaneron Basic Storage</li>
+    <li IfModActive="tug.minotaur">Mods and Shit/Roo Minotaur</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

@@ -11,6 +11,23 @@
                     </value>
                 </Operation>
 
+                <Operation Class="PatchOperationFindMod">
+                    <mods>
+                    <li>Progression: Aesthetics</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationReplace">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName="DA_OssuaryWall"]/designationCategory</xpath>
+                        <value>
+                            <designationCategory></designationCategory>
+                        </value>
+                        </li>
+                    </operations>
+                    </match>
+                </Operation>
+
 
 <!-- LIGHTING -->
                 <Operation Class="PatchOperationReplace">

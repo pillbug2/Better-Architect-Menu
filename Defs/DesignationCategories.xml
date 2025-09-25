@@ -903,7 +903,8 @@
 		</modExtensions>
 	</DesignationCategoryDef>
 
-	<DesignationCategoryDef>
+<!-- Not a fan -->
+	<!-- <DesignationCategoryDef>
 		<defName>Ferny_MedicalStorage</defName>
 		<label>Medical</label>
 		<description>Build medical storage.</description>
@@ -919,7 +920,7 @@
 				<parentCategory>Ferny_Storage</parentCategory>
 			</li>
 		</modExtensions>
-	</DesignationCategoryDef>
+	</DesignationCategoryDef> -->
 
 	<DesignationCategoryDef>
 		<defName>Ferny_Logistics</defName>
@@ -1013,11 +1014,27 @@
 		</modExtensions>
 	</DesignationCategoryDef>
 
+	<DesignationCategoryDef>
+		<defName>Ferny_Hacking</defName>
+		<label>Hacking</label>
+		<description>Hack stuff.</description>
+		<order>225</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_World</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
   <DesignationCategoryDef>
     <defName>Ferny_Automation</defName>
     <label>Automation</label>
     <description>Things that automate stuff.</description>
-    <order>540</order>
+    <order>12</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
