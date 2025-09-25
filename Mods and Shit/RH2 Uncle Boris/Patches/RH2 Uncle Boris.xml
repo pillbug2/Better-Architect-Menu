@@ -46,7 +46,7 @@
 <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="RH2_CzechHedgehogBarricade"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Barricade</designationCategory>
+                        <designationCategory>Ferny_Barricades</designationCategory>
                     </value>
 </Operation>
 
@@ -72,7 +72,7 @@
 </Operation>
 
 <Operation Class="PatchOperationReplace">
-<xpath>Defs/ThingDef[defName="RH2_MissionBoard" or defName="RH2_LaptopCommsConsole" or defName="RH_RadioTradeBeacon]/designationCategory</xpath>
+<xpath>Defs/ThingDef[defName="RH2_MissionBoard" or defName="RH2_LaptopCommsConsole" or defName="RH_RadioTradeBeacon"]/designationCategory</xpath>
   <value>
      <designationCategory>Ferny_Outreach</designationCategory>
   </value>
