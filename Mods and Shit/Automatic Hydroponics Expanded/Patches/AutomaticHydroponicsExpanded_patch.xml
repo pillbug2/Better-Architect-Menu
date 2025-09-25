@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpathDefs/ThingDef[defName="TinyAutoHydroponic"
-          or defName="FloralHydroponic"
-          or defName="SmallFloralHydroponic"
-          or defName="TinyFloralHydroponic"]</xpath>
+		<xpath>Defs/ThingDef[defName="TinyAutoHydroponic"
+			or defName="FloralHydroponic"
+			or defName="SmallFloralHydroponic"
+			or defName="TinyFloralHydroponic"]</xpath>
 		<value>
 			<designationCategory>Ferny_Farming</designationCategory>
 		</value>
