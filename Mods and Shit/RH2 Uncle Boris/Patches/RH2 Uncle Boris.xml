@@ -71,6 +71,13 @@
   </value>
 </Operation>
 
+<Operation Class="PatchOperationAdd">
+<xpath>Defs/ThingDef[defName="RH2_Trashcan_Office"]</xpath>
+  <value>
+     <designationCategory>Ferny_Filth</designationCategory>
+  </value>
+</Operation>
+
 <Operation Class="PatchOperationReplace">
 <xpath>Defs/ThingDef[defName="RH2_MissionBoard" or defName="RH2_LaptopCommsConsole" or defName="RH_RadioTradeBeacon"]/designationCategory</xpath>
   <value>
