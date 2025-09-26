@@ -356,6 +356,7 @@
     <li IfModActive="phaneron.basic.storage">Mods and Shit/Phaneron Basic Storage</li>
     <li IfModActive="tug.minotaur">Mods and Shit/Roo Minotaur</li>
     <li IfModActive="bjr1984.dubsskylights.addon">Mods and Shit/Dubs Skylights Addon</li>
+    <li IfModActive="Mlie.TinyWorkbenchs">Mods and Shit/Tiny Workbenchs</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
