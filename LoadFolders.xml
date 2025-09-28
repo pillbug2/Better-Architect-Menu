@@ -357,11 +357,11 @@
     <li IfModActive="tug.minotaur">Mods and Shit/Roo Minotaur</li>
     <li IfModActive="bjr1984.dubsskylights.addon">Mods and Shit/Dubs Skylights Addon</li>
     <li IfModActive="Mlie.TinyWorkbenchs">Mods and Shit/Tiny Workbenchs</li>
-    erin.decorations
-    khamenman.OutfitStandsPLus
-    vat.epoeforked
-    sarg.alphavehiclesearlycars
-    sarg.alphavehiclesageofsail
+    <li IfModActive="erin.decorations">Mods and Shit/Erin Decorations</li>
+    <li IfModActive="khamenman.OutfitStandsPLus">Mods and Shit/Outfit Stand Plus</li>
+    <li IfModActive="vat.epoeforked">Mods and Shit/EPOE Forked</li>
+    <li IfModActive="sarg.alphavehiclesearlycars">Mods and Shit/Alpha Vehicles Early Cars</li>
+    <li IfModActive="sarg.alphavehiclesageofsail">Mods and Shit/Alpha Vehicles Age of Sail</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
