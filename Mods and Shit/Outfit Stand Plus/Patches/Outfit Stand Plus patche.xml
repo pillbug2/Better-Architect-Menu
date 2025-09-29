@@ -2,7 +2,7 @@
 <Patch>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="OutfitStandsPlus_MendingOutfitStandBase" or defName="OutfitStandsPlus_MechanizedOutfitStandBase"]</xpath>
+		<xpath>Defs/ThingDef[@Name="OutfitStandsPlus_MendingOutfitStandBase" or @Name="OutfitStandsPlus_MechanizedOutfitStandBase"]</xpath>
 		<value>
 			<designationCategory>Ferny_GearStorage</designationCategory>
 		</value>
