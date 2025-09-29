@@ -1,0 +1,68 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Cog_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NavalTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Junk_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NavalTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Longship_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NavalTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Caravel_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NavalTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_PirateCaravel_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NavalTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Sloop_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NavalTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Brig_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NavalTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Frigate_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NavalTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Galleon_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_NavalTransport</designationCategory>
+                    </value>
+                </Operation>
+
+</Patch>
