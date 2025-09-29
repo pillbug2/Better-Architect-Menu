@@ -362,6 +362,8 @@
     <li IfModActive="vat.epoeforked">Mods and Shit/EPOE Forked</li>
     <li IfModActive="sarg.alphavehiclesearlycars">Mods and Shit/Alpha Vehicles Early Cars</li>
     <li IfModActive="sarg.alphavehiclesageofsail">Mods and Shit/Alpha Vehicles Age of Sail</li>
+    <li IfModActive="warlocksforge.fishtraps">Mods and Shit/Fish Traps</li>
+    <li IfModActive="VE.VanillaChristmasExpanded">Mods and Shit/Vanilla Christmas Expanded</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

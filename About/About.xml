@@ -407,11 +407,13 @@
     <li>AutomaticHydroponics.Expanded</li>
     <li>tug.minotaur</li>
     <li>bjr1984.dubsskylights.addon</li>
-	<li>erin.decorations</li>
-	<li>khamenman.OutfitStandsPLus</li>
-	<li>vat.epoeforked</li>
-	<li>sarg.alphavehiclesearlycars</li>
-	<li>sarg.alphavehiclesageofsail</li>
+    <li>erin.decorations</li>
+    <li>khamenman.OutfitStandsPLus</li>
+    <li>vat.epoeforked</li>
+    <li>sarg.alphavehiclesearlycars</li>
+    <li>sarg.alphavehiclesageofsail</li>
+    <li>warlocksforge.fishtraps</li>
+    <li>VE.VanillaChristmasExpanded</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
