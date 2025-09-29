@@ -357,6 +357,21 @@
     <li IfModActive="tug.minotaur">Mods and Shit/Roo Minotaur</li>
     <li IfModActive="bjr1984.dubsskylights.addon">Mods and Shit/Dubs Skylights Addon</li>
     <li IfModActive="Mlie.TinyWorkbenchs">Mods and Shit/Tiny Workbenchs</li>
+	<li IfModActive="lambdapatch.sake">Mods and Shit/Sake Brewery</li>
+    <li IfModActive="cixwow.advancedmoisturepump">Mods and Shit/Advanced Moisture Pump</li>
+    <li IfModActive="bart.wbe">Mods and Shit/Aquatic Repopulation</li>
+	<li IfModActive="redmattis.bigsmall.core">Mods and Shit/Big and Small Genes</li>
+	<li IfModActive="redmattis.madapril2025">Mods and Shit/Randy Randoms Rayguns</li>
+	<li IfModActive="unagi.funiture.build.window">Mods and Shit/Unagi Decorative Furniture</li>
+	<li IfModActive="samael.vehicles">Mods and Shit/CV90 Combat Vehicle</li>
+	<li IfModActive="aoba.rtg">Mods and Shit/Radioisotope Thermoelectric Generator</li>
+	<li IfModActive="aoba.cargocontainer">Mods and Shit/Cargo Container</li>
+	<li IfModActive="aoba.cargocontainer.waste">Mods and Shit/Cargo Waste Container</li>
+	<li IfModActive="aoba.trashbin">Mods and Shit/Independent Trash Bin</li>
+	<li IfModActive="bunx.hel3addon">Mods and Shit/HEL3 Helium Extraction</li>
+	<li IfModActive="aaa.gravshiplights">Mods and Shit/Elucidator Array</li>
+	<li IfModActive="van.foodfamine">Mods and Shit/Famine Food</li>
+	<li IfModActive="cixwow.vfespaceraddon">Mods and Shit/VFE Spacer AddOn</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

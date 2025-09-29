@@ -407,6 +407,22 @@
     <li>AutomaticHydroponics.Expanded</li>
     <li>tug.minotaur</li>
     <li>bjr1984.dubsskylights.addon</li>
+	<li>Mlie.TinyWorkbenchs</li>
+	<li>lambdapatch.sake</li>
+	<li>cixwow.advancedmoisturepump</li>
+	<li>bart.wbe</li>
+	<li>redmattis.bigsmall.core</li>
+	<li>redmattis.madapril2025</li>
+	<li>unagi.funiture.build.window</li>
+	<li>samael.vehicles</li>
+	<li>aoba.rtg</li>
+	<li>aoba.cargocontainer</li>
+	<li>aoba.cargocontainer.waste</li>
+	<li>aoba.trashbin</li>
+	<li>bunx.hel3addon</li>
+    <li>aaa.gravshiplights</li>
+	<li>van.foodfamine</li>
+	<li>cixwow.vfespaceraddon</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

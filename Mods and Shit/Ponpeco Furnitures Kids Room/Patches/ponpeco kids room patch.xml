@@ -124,6 +124,22 @@
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFKDecorPlushie"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFKDecorPlushieL"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="PFKRugBase"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Decorations</designationCategory>

@@ -442,7 +442,7 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_Ranching</defName>
-    <label>Ranching</label>
+    <label>Husbandry</label>
     <description>Farming your animals.</description>
     <order>900</order>
     <specialDesignatorClasses>
@@ -599,8 +599,24 @@
   </DesignationCategoryDef>
 
 	<DesignationCategoryDef>
-		<defName>Ferny_Control</defName>
+		<defName>Ferny_Management</defName>
 		<label>Manage</label>
+		<description>Manage your pawns.</description>
+		<order>9999</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Life</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>Ferny_Control</defName>
+		<label>Control</label>
 		<description>Control pawn behavior.</description>
 		<order>9999</order>
 		<specialDesignatorClasses>
@@ -895,40 +911,6 @@
 			<li>Designator_Deconstruct</li>
 			<li>Designator_ZoneAddStockpile_Resources</li>
 			<li>Designator_ZoneAddStockpile_Dumping</li>
-		</specialDesignatorClasses>
-		<modExtensions>
-			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Ferny_Storage</parentCategory>
-			</li>
-		</modExtensions>
-	</DesignationCategoryDef>
-
-<!-- Not a fan -->
-	<!-- <DesignationCategoryDef>
-		<defName>Ferny_MedicalStorage</defName>
-		<label>Medical</label>
-		<description>Build medical storage.</description>
-		<order>7</order>
-		<specialDesignatorClasses>
-			<li>Designator_Cancel</li>
-			<li>Designator_Deconstruct</li>
-			<li>Designator_ZoneAddStockpile_Resources</li>
-			<li>Designator_ZoneAddStockpile_Dumping</li>
-		</specialDesignatorClasses>
-		<modExtensions>
-			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Ferny_Storage</parentCategory>
-			</li>
-		</modExtensions>
-	</DesignationCategoryDef> -->
-
-	<DesignationCategoryDef>
-		<defName>Ferny_Logistics</defName>
-		<label>Logistics</label>
-		<order>7</order>
-		<specialDesignatorClasses>
-			<li>Designator_Cancel</li>
-			<li>Designator_Deconstruct</li>
 		</specialDesignatorClasses>
 		<modExtensions>
 			<li Class="BetterArchitect.NestedCategoryExtension">

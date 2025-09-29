@@ -335,7 +335,7 @@
 		</match>
 	</Operation>
 	
-<!-- CONTROL -->
+<!-- MANAGEMENT -->
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -349,7 +349,7 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="MUS_SpaceBase_StylingStation"]/designationCategory</xpath>
 					<value>
-						<designationCategory>Ferny_Control</designationCategory>
+						<designationCategory>Ferny_Management</designationCategory>
 					</value>
 				</li>
 
