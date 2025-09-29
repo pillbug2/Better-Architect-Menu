@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="UNAGI_Furniture"]/order</xpath>
+                    <value>
+                        <order>2</order>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="UNAGI_Furniture"]/label</xpath>
+                    <value>
+                        <label>UNA Decor</label>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="UNAGI_Furniture"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Furniture</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+                </Operation>
+
+
+</Patch>
