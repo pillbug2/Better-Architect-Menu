@@ -415,6 +415,8 @@
     <li>sarg.alphavehiclesageofsail</li>
     <li>warlocksforge.fishtraps</li>
     <li>VE.VanillaChristmasExpanded</li>
+    <li>ling.thelowcooler</li>
+    <li>godlyannihilator.thelowcooler</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
