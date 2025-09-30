@@ -364,6 +364,8 @@
     <li IfModActive="sarg.alphavehiclesageofsail">Mods and Shit/Alpha Vehicles Age of Sail</li>
     <li IfModActive="warlocksforge.fishtraps">Mods and Shit/Fish Traps</li>
     <li IfModActive="VE.VanillaChristmasExpanded">Mods and Shit/Vanilla Christmas Expanded</li>
+    <li IfModActiveAny="ling.thelowcooler,godlyannihilator.thelowcooler">Mods and Shit/Cooler</li>    
+    <li IfModActive="unagi.funiture.build.window">Mods and Shit/UNAGI Decorative Furniture</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
