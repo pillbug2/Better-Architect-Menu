@@ -408,21 +408,68 @@
     <li>tug.minotaur</li>
     <li>bjr1984.dubsskylights.addon</li>
 	<li>Mlie.TinyWorkbenchs</li>
-	<li>lambdapatch.sake</li>
-	<li>cixwow.advancedmoisturepump</li>
-	<li>bart.wbe</li>
-	<li>redmattis.bigsmall.core</li>
-	<li>redmattis.madapril2025</li>
-	<li>unagi.funiture.build.window</li>
-	<li>samael.vehicles</li>
-	<li>aoba.rtg</li>
-	<li>aoba.cargocontainer</li>
-	<li>aoba.cargocontainer.waste</li>
-	<li>aoba.trashbin</li>
-	<li>bunx.hel3addon</li>
+    <li>lambdapatch.sake</li>
+    <li>cixwow.advancedmoisturepump</li>
+    <li>bart.wbe</li>
+    <li>redmattis.bigsmall.core</li>
+    <li>redmattis.madapril2025</li>
+    <li>unagi.funiture.build.window</li>
+    <li>samael.vehicles</li>
+    <li>aoba.rtg</li>
+    <li>aoba.cargocontainer</li>
+    <li>aoba.cargocontainer.waste</li>
+    <li>aoba.trashbin</li>
+    <li>bunx.hel3addon</li>
     <li>aaa.gravshiplights</li>
-	<li>van.foodfamine</li>
-	<li>cixwow.vfespaceraddon</li>
+    <li>van.foodfamine</li>
+    <li>cixwow.vfespaceraddon</li>
+	<li>shashlichnik.deepanddeeper</li>
+	<li>kanae.buildableancientstockpiles</li>
+	<li>ferny.worldbuilder</li>
+	<li>mlie.hightechlaboratoryfacilities</li>
+	<li>propickelz.tinkerbench</li>
+	<li>cantaloupetheclown.medicalivsfork</li>
+	<li>rimthunder.furniture</li>
+	<li>salvador143.mthings.medical</li>
+	<li>salvador143.mthings.geysers</li>
+	<li>drilledhead.preservationsarcophagus</li>
+	<li>drilledhead.zipline</li>
+	<li>bart.app</li>
+	<li>bart.stg</li>
+	<li>bart.atg</li>
+	<li>redmattis.genenodes</li>
+	<li>redmattis.geneextractor</li>
+	<li>scorpio.biotechnology</li>
+	<li>mrhydralisk.anomaliesexpected</li>
+	<li>lts.rh</li>
+	<li>echotidefish.repairhubsforked</li>
+	<li>aoba.rimthunder.redarmy.coldfront</li>
+	<li>rimthunderteams.rimthunder.flyingchariot</li>
+	<li>aoba.rimthunder.roca</li>
+	<li>rimthunderteams.rimthunder.timeforward</li>
+	<li>lat.rimstro</li>
+	<li>mlie.morefurniture</li>
+	<li>gloomy.furniture.continued.fix</li>
+	<li>zal.gloomyextrakitchen</li>
+	<li>jxw.dailyfurniturecontinued</li>
+	<li>resurrectionem.furnitureasia</li>
+	<li>resurrectionem.furniture</li>
+	<li>mlmlmlm.bluearchivefurniture</li>
+	<li>wwskyon.mediterranean.furniture</li>
+	<li>hmc.wall.furniture</li>
+	<li>daylight.rimlifeexfurmod</li>
+	<li>mewn.medievalsigns</li>
+	<li>honeybadger.wallmountedturretsversiontwo</li>
+	<li>mjeiouws.raisedstuff</li>
+	<li>alexprotopopov.vaultsofvagarempl</li>
+	<li>qq.expanded.woodwork</li>
+	<li>kyzy.shipwallenhanced</li>
+	<li>mlie.apothecary</li>
+	<li>untamo.apothecary.expansion</li>
+	<li>mrwireman.gausscannon</li>
+    <li>fleshforge.defilergenerator</li>
+    <li>gaz.officechair</li>
+	<li>lunartika.os</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

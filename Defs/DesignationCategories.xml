@@ -616,8 +616,8 @@
 
 	<DesignationCategoryDef>
 		<defName>Ferny_Control</defName>
-		<label>Control</label>
-		<description>Control pawn behavior.</description>
+		<label>Influence</label>
+		<description>Influence pawn behavior.</description>
 		<order>9999</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
