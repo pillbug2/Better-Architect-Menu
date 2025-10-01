@@ -409,19 +409,20 @@
 	<li IfModActive="fleshforge.defilergenerator">Mods and Shit/Defiler Generator</li>
 	<li IfModActive="gaz.officechair">Mods and Shit/Office Chair</li>
 	<li IfModActive="lunartika.os">Mods and Shit/Office Supplies</li>
-	  <!--
+	<!--
 	        <li IfModActive="resurrectionem.furnitureasia">Mods and Shit/RR Furniture Longyun</li>
 	        <li IfModActive="resurrectionem.furniture">Mods and Shit/RR Furniture Rapture</li>
 	        <li IfModActive="mlmlmlm.bluearchivefurniture">Mods and Shit/Blue Archive Furniture</li>
 	        <li IfModActive="zal.gloomyextrakitchen">Mods and Shit/Gloomy Extra Kitchen</li>
-			-->
+			<li IfModActiveAny="daylight.rimlifeexfurmod">Mods and Shit/RimLife Expansion Common</li>
 			<li IfModActive="daylight.rimlifeexfurmod">Mods and Shit/RimLife Expansion Furniture</li>
-			<li IfModActive="daylight.rimlifeexspwmod">Mods and Shit/RimLife Expansion Electric Power</li>
-		    <li IfModActive="daylight.rlesexpansionproductps">Mods and Shit/RimLife Expansion Production Plus</li>
-		    <li IfModActive="daylight.rimlifeexscymod">Mods and Shit/RimLife Expansion Security</li>
+			<li IfModActive="daylight.rlesexpansionproductps">Mods and Shit/RimLife Expansion Production Plus</li>
+			<li IfModActive="daylight.rimlifeexscymod">Mods and Shit/RimLife Expansion Security</li>
 		    <li IfModActive="daylight.rimlifeexsrcmod">Mods and Shit/RimLife Expansion Structure</li>
 		    <li IfModActive="daylight.rimlifeexstfmod">Mods and Shit/RimLife Expansion Terrain and Floor</li>
-		    <li IfModActive="daylight.rimlifeextrgmod">Mods and Shit/RimLife Expansion Trading items</li>
+	-->
+	<li IfModActive="daylight.rimlifeexspwmod">Mods and Shit/RimLife Expansion Electric Power</li>
+	<li IfModActive="daylight.rimlifeextrgmod">Mods and Shit/RimLife Expansion Trading Items</li>
 	<li IfModActive="mlie.apothecary">Mods and Shit/Apothecary</li>
 	<li IfModActive="daylight.wbsmorelinkf">Mods and Shit/WorkBench Support</li>
 	<li IfModActive="lts.rh">Mods and Shit/Repair Hubs</li>
@@ -429,6 +430,24 @@
 	<li IfModActive="qq.expanded.woodwork">Mods and Shit/Expanded Woodworking 2</li>
 	<li IfModActive="honeybadger.wallmountedturretsversiontwo">Mods and Shit/Wall Mounted Turrets</li>
 	<li IfModActive="koro.mapvehicles.nomadiccarts">Mods and Shit/Nomadic Carts</li>
+	<li IfModActive="akreedz.ra2bunker">Mods and Shit/RA2Bunker</li>
+	<li IfModActive="mlie.cargopodtransport">Mods and Shit/Cargo Pod Transport</li>
+	<li IfModActive="xmb.ancientthreat.mo">Mods and Shit/Ancient Amorphous Threat</li>
+	<li IfModActive="flammpfeil.simpleportal">Mods and Shit/SimplePortal</li>
+	<li IfModActive="22.portal">Mods and Shit/Portal</li>
+	<li IfModActive="mlie.beammeupscotty">Mods and Shit/Beam Me Up Scotty</li>
+	<li IfModActive="vex.crossdimensionalpipes">Mods and Shit/Cross Dimensional Pipes</li>
+	<li IfModActive="xannihilusx.teleportarium">Mods and Shit/Teleportarium</li>
+	<li IfModActive="akreedz.teleportdoor">Mods and Shit/TeleportDoor</li>
+	<li IfModActive="hopeseekr.betterrimworlds.teleporterroom">Mods and Shit/Teleporter Room</li>
+	<li IfModActive="portesel.corpsestarch">Mods and Shit/Corpse Starch</li>
+	<li IfModActive="gerrymon.personalsofa">Mods and Shit/Personal Sofa</li>
+	<li IfModActive="mlie.drakkenlaserdrill">Mods and Shit/Drakken Laser Drill</li>
+	<li IfModActive="lionelcg.ceilingandfloorlamps">Mods and Shit/Ceiling and Floor Lamps</li>
+	<li IfModActive="speedentron.skullthrone">Mods and Shit/Skull Throne</li>
+    <li IfModActive="zal.gardenbox">Mods and Shit/Garden Box</li>
+	<li IfModActive="scorpio.itemteleporter">Mods and Shit/Item Teleporter</li>
+	    <li IfModActive="vanillaexpanded.vanillagravshipsexpanded">Mods and Shit/VE Gravships</li><!-- Untested! Unreleased! -->
 	<!-- BEGIN Provisional patches -->
 	<!-- These mods have not been updated to 1.6. Support has been tested to work but is provisional. -->
 	<li IfModActive="rimthunder.furniture">Mods and Shit/RimThunder Functional Furniture Expanded</li>
