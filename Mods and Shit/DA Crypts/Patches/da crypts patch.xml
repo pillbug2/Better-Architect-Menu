@@ -4,7 +4,6 @@
 
 <!-- WALLS -->
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="DA_OssuaryWall"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Walls</designationCategory>
@@ -31,129 +30,60 @@
 
 <!-- LIGHTING -->
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[@Name="DA_CandelabraBase"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Lighting</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[@Name="DA_SepulchralBrazierBase"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Lighting</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[@Name="SepulchralStatueBase"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Lighting</designationCategory>
                     </value>
                 </Operation>
-
-<!-- CULTURE -->
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DA_CandleBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Lighting</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- MEMORIAL -->
+                <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="DA_Coffin"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Memorial</designationCategory>
                     </value>
                 </Operation>
+  
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="DA_GrandSarcophagus"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Memorial</designationCategory>
                     </value>
                 </Operation>
+  
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[@Name="DA_StatueBase"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Memorial</designationCategory>
                     </value>
                 </Operation>
+  
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="DA_BurialUrn"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Memorial</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="DA_BloodflameSepulchralStatue"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Memorial</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="DA_SepulchralBrazier"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Memorial</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="DA_DarklightSepulchralBrazier"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Memorial</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="DA_BloodflameSepulchralBrazier"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Memorial</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[@Name="SepulchralStatue"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Memorial</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[@ParentName="SepulchralStatue"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Memorial</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[@Name="DA_BloodflameSepulchralStatue"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Memorial</designationCategory>
                     </value>
                 </Operation>
 
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="DA_Candles"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Lighting</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="DA_DarkCandles"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Lighting</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="DA_BloodCandles"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Lighting</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="DA_WallTomb"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Memorial</designationCategory>
