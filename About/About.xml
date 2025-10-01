@@ -413,7 +413,7 @@
     <li>bart.wbe</li>
     <li>redmattis.bigsmall.core</li>
     <li>redmattis.madapril2025</li>
-    <li>unagi.funiture.build.window</li>
+        <li>unagi.funiture.build.window</li>
     <li>samael.vehicles</li>
     <li>aoba.rtg</li>
     <li>aoba.cargocontainer</li>
@@ -451,7 +451,7 @@
 	<li>mlie.morefurniture</li>
 	<li>gloomy.furniture.continued.fix</li>
 	<li>zal.gloomyextrakitchen</li>
-	<li>jxw.dailyfurniturecontinued</li>
+	<li>zerowhite.dailyfurniture</li>
 	<li>resurrectionem.furnitureasia</li>
 	<li>resurrectionem.furniture</li>
 	<li>mlmlmlm.bluearchivefurniture</li>
@@ -470,6 +470,31 @@
     <li>fleshforge.defilergenerator</li>
     <li>gaz.officechair</li>
 	<li>lunartika.os</li>
+		<li>daylight.rimlifeexspwmod</li>
+		<li>daylight.rimlifeexfurmod</li>
+		<li>daylight.rlesexpansionproductps</li>
+		<li>daylight.rimlifeexscymod</li>
+		<li>daylight.rimlifeexsrcmod</li>
+		<li>daylight.rimlifeexstfmod</li>
+		<li>daylight.rimlifeextrgmod</li>
+		<li>daylight.wbsmorelinkf</li>
+	<li>mo.rimfield5042</li>
+	<li>rimthunderteams.rimthunder.breakthrough</li>
+	<li>rimthunderteams.rimthunder.desertsabre</li>
+	<li>rimthunderteams.rimthunder.dragonascend</li>
+	<li>aoba.rimthunder.easternskies</li>
+	<li>layla.rimthunder.gruppakrovi</li>
+	<li>rimthunderteams.rimthunder.lakeladoga</li>
+	<li>rimthunderteams.rimthunder.libertyofdelivery</li>
+	<li>rimthunderteams.rimthunder.projectkv</li>
+	<li>rimthunderteams.rimthunder.redcavalry</li>
+	<li>rimthunderteams.rimthunder.reddragon</li>
+	<li>rimthunderteams.rimthunder.royalguard</li>
+	<li>rimthunderteams.rimthunder.talvisota</li>
+	<li>rimthunderteams.rimthunder.torrentpioneer</li>
+	<li>rimthunderteams.rimthunder.warhorseofreich</li>
+	<li>rimthunderteams.rimthunder.waytosamurai</li>
+	    <li>myde.aerocraftframework</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

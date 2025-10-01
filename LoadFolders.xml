@@ -362,7 +362,7 @@
     <li IfModActive="bart.wbe">Mods and Shit/Aquatic Repopulation</li>
 	<li IfModActive="redmattis.bigsmall.core">Mods and Shit/Big and Small Genes</li>
 	<li IfModActive="redmattis.madapril2025">Mods and Shit/Randy Randoms Rayguns</li>
-	    <li IfModActive="unagi.funiture.build.window">Mods and Shit/Unagi Decorative Furniture</li>
+	    <li IfModActive="unagi.funiture.build.window">Mods and Shit/Unagi Decorative Furniture</li> 
 	<li IfModActive="samael.vehicles">Mods and Shit/CV90 Combat Vehicle</li>
 	<li IfModActive="aoba.rtg">Mods and Shit/Radioisotope Thermoelectric Generator</li>
 	<li IfModActive="aoba.cargocontainer">Mods and Shit/Cargo Container</li>
@@ -377,7 +377,6 @@
 	<li IfModActive="mlie.hightechlaboratoryfacilities">Mods and Shit/High Tech Laboratory Facilities</li>
 	<li IfModActive="propickelz.tinkerbench">Mods and Shit/Tinkering Bench and Biohacking Station</li>
 	    <li IfModActive="cantaloupetheclown.medicalivsfork">Mods and Shit/Medical IVs Fork</li>
-	<li IfModActive="rimthunder.furniture">Mods and Shit/RimThunder Functional Furniture Expanded</li>
 	<li IfModActive="salvador143.mthings.medical">Mods and Shit/Medieval Things Medical</li>
 	<li IfModActive="salvador143.mthings.geysers">Mods and Shit/Medieval Things Geysers</li>
 	<li IfModActive="drilledhead.preservationsarcophagus">Mods and Shit/Preservation Sarcophagus</li>
@@ -397,7 +396,7 @@
 	    <li IfModActive="lat.rimstro">Mods and Shit/Rimstro</li>
 	    <li IfModActive="mlie.morefurniture">Mods and Shit/More Furniture</li>
 	    <li IfModActive="gloomy.furniture.continued.fix">Mods and Shit/GloomyFurniture</li>
-	    <li IfModActive="jxw.dailyfurniturecontinued">Mods and Shit/Daily Furniture</li>
+	    <li IfModActive="zerowhite.dailyfurniture">Mods and Shit/Daily Furniture</li>
 	    <li IfModActiveAny="resurrectionem.furniture,resurrectionem.furnitureasia">Mods and Shit/RR Furniture Common</li>
 	    <li IfModActive="wwskyon.mediterranean.furniture">Mods and Shit/Mediterranean Furniture</li>
 	<li IfModActive="hmc.wall.furniture">Mods and Shit/Wall Furniture</li>
@@ -421,7 +420,36 @@
 	        <li IfModActive="zal.gloomyextrakitchen">Mods and Shit/Gloomy Extra Kitchen</li>
 	        <li IfModActive="lts.rh">Mods and Shit/Repair Hubs</li>
 	        <li IfModActive="echotidefish.repairhubsforked">Mods and Shit/Repair Hubs</li>
-	  -->
+			<li IfModActive="daylight.rimlifeexspwmod">Mods and Shit/RimLife Expansion Electric Power</li>
+		    <li IfModActive="daylight.rlesexpansionproductps">Mods and Shit/RimLife Expansion Production Plus</li>
+		    <li IfModActive="daylight.rimlifeexscymod">Mods and Shit/RimLife Expansion Security</li>
+		    <li IfModActive="daylight.rimlifeexsrcmod">Mods and Shit/RimLife Expansion Structure</li>
+		    <li IfModActive="daylight.rimlifeexstfmod">Mods and Shit/RimLife Expansion Terrain and Floor</li>
+		    <li IfModActive="daylight.rimlifeextrgmod">Mods and Shit/RimLife Expansion Trading items</li>
+		    <li IfModActive="daylight.wbsmorelinkf">Mods and Shit/WorkBench Support</li>
+		-->
+	  <!-- BEGIN Provisional patches -->
+	  <!-- These mods have not been updated to 1.6. Support has been tested to work but is provisional. -->
+	  <li IfModActive="rimthunder.furniture">Mods and Shit/RimThunder Functional Furniture Expanded</li>
+		    <li IfModActive="mo.rimfield5042">Mods and Shit/RimField5042</li>
+		    <li IfModActive="rimthunderteams.rimthunder.breakthrough">Mods and Shit/RimThunder Breakthrough</li>
+		    <li IfModActive="rimthunderteams.rimthunder.desertsabre">Mods and Shit/RimThunder Desert Sabre</li>
+		    <li IfModActive="rimthunderteams.rimthunder.dragonascend">Mods and Shit/RimThunder Dragon Ascend</li>
+		    <li IfModActive="aoba.rimthunder.easternskies">Mods and Shit/RimThunder Eastern Skies</li>
+		    <li IfModActive="layla.rimthunder.gruppakrovi">Mods and Shit/RimThunder Gruppa Krovi</li>
+		    <li IfModActive="rimthunderteams.rimthunder.lakeladoga">Mods and Shit/RimThunder Lake Ladoga</li>
+		    <li IfModActive="rimthunderteams.rimthunder.libertyofdelivery">Mods and Shit/RimThunder Liberty of Delivery</li>
+		    <li IfModActive="rimthunderteams.rimthunder.projectkv">Mods and Shit/RimThunder Project KV</li>
+		    <li IfModActive="rimthunderteams.rimthunder.redcavalry">Mods and Shit/RimThunder Red Cavalry</li>
+		    <li IfModActive="rimthunderteams.rimthunder.reddragon">Mods and Shit/RimThunder Red Dragon</li>
+		    <li IfModActive="rimthunderteams.rimthunder.royalguard">Mods and Shit/RimThunder Royal Guard</li>
+		    <li IfModActive="rimthunderteams.rimthunder.talvisota">Mods and Shit/RimThunder Talvisota</li>
+		    <li IfModActive="rimthunderteams.rimthunder.torrentpioneer">Mods and Shit/RimThunder Torrent Pioneer</li>
+		    <li IfModActive="rimthunderteams.rimthunder.warhorseofreich">Mods and Shit/RimThunder Warhorse of the Reich</li>
+		    <li IfModActive="rimthunderteams.rimthunder.waytosamurai">Mods and Shit/RimThunder Way to Samurai</li>
+		    <li IfModActive="myde.aerocraftframework">Mods and Shit/Aerocraft Framework</li>
+	  <!-- END Provisional patches -->
+	  
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

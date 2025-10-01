@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	
-<!-- MILITARY TRANSPORT -->
-	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Kurganets25_Blueprint"]</xpath>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Pr1124T_Blueprint"]</xpath>
 		<value>
 			<designationCategory>Ferny_MilitaryTransport</designationCategory>
 		</value>
@@ -13,7 +11,7 @@
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Boomerang_Vehicle_Blueprint"]</xpath>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Pr1125R_Blueprint"]</xpath>
 		<value>
 			<designationCategory>Ferny_MilitaryTransport</designationCategory>
 		</value>
@@ -21,7 +19,15 @@
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_T90M_MainBattleTank_Blueprint"]</xpath>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_SF40light_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_DType_Blueprint"]</xpath>
 		<value>
 			<designationCategory>Ferny_MilitaryTransport</designationCategory>
 		</value>
