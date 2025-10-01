@@ -245,6 +245,10 @@
 		<li>jf.royalcarpets</li>
         <li>as1aw.morehunterdrones</li>
         <li>tug.satyrfaun.expanded</li>
+        <li>test.ford</li>
+        <li>Killerbot.JLTV</li>
+		<li>Killerbot.NavistarMaxxPro</li>
+		<li>Killerbot.SubaruForester</li>
         <!-- (Add new mods here ^^^^^) -->
     </loadAfter>  
 </ModMetaData>
