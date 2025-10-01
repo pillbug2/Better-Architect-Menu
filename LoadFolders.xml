@@ -179,6 +179,10 @@
     <li IfModActive="dubwise.dubsskylights">Mods and Shit/Dubs Skylights</li>
     <li IfModActive="as1aw.morehunterdrones">Mods and Shit/More Hunter Drones</li>
     <li IfModActive="tug.satyrfaun.expanded">Mods and Shit/Roo SFE</li>
+    <li IfModActive="test.ford">Mods and Shit/Rim-Bronco Ford</li>
+    <li IfModActive="Killerbot.JLTV">Mods and Shit/GTEK Oshkosh LATV</li>
+    <li IfModActive="Killerbot.NavistarMaxxPro">Mods and Shit/GTEK Navistar</li>
+    <li IfModActive="Killerbot.SubaruForester">Mods and Shit/GTEK Subaru Forester</li>
             <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
