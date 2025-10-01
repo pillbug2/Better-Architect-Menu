@@ -413,7 +413,6 @@
     <li>bart.wbe</li>
     <li>redmattis.bigsmall.core</li>
     <li>redmattis.madapril2025</li>
-        <li>unagi.funiture.build.window</li>
     <li>samael.vehicles</li>
     <li>aoba.rtg</li>
     <li>aoba.cargocontainer</li>
@@ -470,14 +469,14 @@
     <li>fleshforge.defilergenerator</li>
     <li>gaz.officechair</li>
 	<li>lunartika.os</li>
-		<li>daylight.rimlifeexspwmod</li>
-		<li>daylight.rimlifeexfurmod</li>
-		<li>daylight.rlesexpansionproductps</li>
-		<li>daylight.rimlifeexscymod</li>
-		<li>daylight.rimlifeexsrcmod</li>
-		<li>daylight.rimlifeexstfmod</li>
-		<li>daylight.rimlifeextrgmod</li>
-		<li>daylight.wbsmorelinkf</li>
+	<li>daylight.rimlifeexspwmod</li>
+	<li>daylight.rimlifeexfurmod</li>
+	<li>daylight.rlesexpansionproductps</li>
+	<li>daylight.rimlifeexscymod</li>
+	<li>daylight.rimlifeexsrcmod</li>
+	<li>daylight.rimlifeexstfmod</li>
+	<li>daylight.rimlifeextrgmod</li>
+	<li>daylight.wbsmorelinkf</li>
 	<li>mo.rimfield5042</li>
 	<li>rimthunderteams.rimthunder.breakthrough</li>
 	<li>rimthunderteams.rimthunder.desertsabre</li>
@@ -494,7 +493,7 @@
 	<li>rimthunderteams.rimthunder.torrentpioneer</li>
 	<li>rimthunderteams.rimthunder.warhorseofreich</li>
 	<li>rimthunderteams.rimthunder.waytosamurai</li>
-	    <li>myde.aerocraftframework</li>
+	<li>myde.aerocraftframework</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
