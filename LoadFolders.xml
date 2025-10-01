@@ -366,6 +366,7 @@
     <li IfModActive="VE.VanillaChristmasExpanded">Mods and Shit/Vanilla Christmas Expanded</li>
     <li IfModActiveAny="ling.thelowcooler,godlyannihilator.thelowcooler">Mods and Shit/Cooler</li>    
     <li IfModActive="unagi.funiture.build.window">Mods and Shit/UNAGI Decorative Furniture</li>
+    <li IfModActive="xercaine.wallheater">Mods and Shit/Wall Heater</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
