@@ -10,5 +10,12 @@
 			</li>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/DesignationCategoryDef[defName="BiotechnologyDesignation"]/label</xpath>
+		<value>
+			<label>Cloning</label>
+		</value>
+	</Operation>
 	
 </Patch>
