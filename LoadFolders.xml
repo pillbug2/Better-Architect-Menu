@@ -367,10 +367,10 @@
     <li IfModActiveAny="ling.thelowcooler,godlyannihilator.thelowcooler">Mods and Shit/Cooler</li>    
     <li IfModActive="unagi.funiture.build.window">Mods and Shit/UNAGI Decorative Furniture</li>
     <li IfModActive="xercaine.wallheater">Mods and Shit/Wall Heater</li>
-	  <li IfModActive="lambdapatch.sake">Mods and Shit/Sake Brewery</li>
+    <li IfModActive="lambdapatch.sake">Mods and Shit/Sake Brewery</li>
     <li IfModActive="cixwow.advancedmoisturepump">Mods and Shit/Advanced Moisture Pump</li>
     <li IfModActive="bart.wbe">Mods and Shit/Aquatic Repopulation</li>
-	  <li IfModActive="redmattis.bigsmall.core">Mods and Shit/Big and Small Genes</li>
+    <li IfModActive="redmattis.bigsmall.core">Mods and Shit/Big and Small Genes</li>
     <li IfModActive="redmattis.madapril2025">Mods and Shit/Randy Randoms Rayguns</li>
     <li IfModActive="samael.vehicles">Mods and Shit/CV90 Combat Vehicle</li>
     <li IfModActive="aoba.rtg">Mods and Shit/Radioisotope Thermoelectric Generator</li>
@@ -388,6 +388,11 @@
     <li IfModActive="cantaloupetheclown.medicalivsfork">Mods and Shit/Medical IVs Fork</li>
     <li IfModActive="salvador143.mthings.medical">Mods and Shit/Medieval Things Medical</li>
     <li IfModActive="salvador143.mthings.geysers">Mods and Shit/Medieval Things Geysers</li>
+	<li IfModActive="silkcircuit.resistancerestraintsmod">Mods and Shit/Prisoner Restraints</li>
+    <li IfModActive="tsa.torturepod">Mods and Shit/Torture Pod</li>
+    <li IfModActive="mlie.bondagebedtorture">Mods and Shit/BondageBed Torture</li>
+    <li IfModActive="tsa.archotechresistancebreaker">Mods and Shit/Archotech Resistance Breaker</li>
+    <li IfModActive="paranautic.cyberpunknomadsworkshop">Mods and Shit/Cyberpunk Nomads Workshop</li>
     <li IfModActive="drilledhead.preservationsarcophagus">Mods and Shit/Preservation Sarcophagus</li>
     <li IfModActive="drilledhead.zipline">Mods and Shit/ZiplineMod</li>
     <li IfModActive="bart.app">Mods and Shit/Advanced Pollution Pump</li>
@@ -450,6 +455,7 @@
     <li IfModActive="scorpio.itemteleporter">Mods and Shit/Item Teleporter</li>
 <!-- BEGIN Provisional patches -->
 <!-- These mods have not been updated to 1.6. Support has been tested to work but is provisional. -->
+	<li IfModActive="happycam.ornithopter">Mods and Shit/Ornithopter</li>
     <li IfModActive="rimthunder.furniture">Mods and Shit/RimThunder Functional Furniture Expanded</li>
     <li IfModActive="mo.rimfield5042">Mods and Shit/RimField5042</li>
     <li IfModActive="rimthunderteams.rimthunder.breakthrough">Mods and Shit/RimThunder Breakthrough</li>

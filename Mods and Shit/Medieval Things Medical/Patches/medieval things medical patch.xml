@@ -18,12 +18,5 @@
 			<designationCategory>Ferny_Medical</designationCategory>
 		</value>
 	</Operation>
-
-<!-- FLOORS -->
-
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[Name="MThingsMedical_PolishedStoneTile"]/designatorDropdown</xpath>
-	</Operation>
 	
 </Patch>
