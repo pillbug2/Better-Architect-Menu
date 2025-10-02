@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_BenzPatentMotorwagen_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                 <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_FordModelA_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_FordModelAAmbulance_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_FordModelAFireTruck_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+  
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_FordModelT_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_FordModelTVan_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_OldsmobileLightTonneau_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_OldsmobileModelRCurvedDash_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_RenaultTypeK_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_RollsRoyceSilverGhost_Blueprint"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GroundTransport</designationCategory>
+                    </value>
+                </Operation>
+</Patch>
