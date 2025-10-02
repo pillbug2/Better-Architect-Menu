@@ -147,7 +147,7 @@
 		</value>
 	</Operation>
 	
-<!-- HYGIENE or COMBAT EQUIPMENT -->
+<!-- HYGIENE or PROCESSING PRODUCTION -->
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -164,7 +164,7 @@
 			<success>Always</success>
 			<xpath>Defs/ThingDef[defName="AYApparelWashingTub"]/designationCategory</xpath>
 			<value>
-				<designationCategory>Ferny_CombatEquipment</designationCategory>
+				<designationCategory>Ferny_ProcessingProduction</designationCategory>
 			</value>
 		</nomatch>
 	</Operation>
