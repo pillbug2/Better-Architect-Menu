@@ -18,14 +18,5 @@
 			<designationCategory>Ferny_Medical</designationCategory>
 		</value>
 	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[@Name="IV_Base"]/designatorDropdown</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[@Name="IV_E_Base"]/designatorDropdown</xpath>
-	</Operation>
 	
 </Patch>
