@@ -5,89 +5,10 @@
 	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName="EW2BridgeBase"]/designationCategory</xpath>
+		<xpath>Defs/TerrainDef[@Name="EW2BridgeBase"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Foundations</designationCategory>
 		</value>
-	</Operation>
-	
-<!-- FLOORS -->
-
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName="PlankFloorBamboo"]/designatorDropdown</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName="PlankFloorBirch"]/designatorDropdown</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName="PlankFloorPalm"]/designatorDropdown</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName="PlankFloorCecropia"]/designatorDropdown</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName="PlankFloorCocoa"]/designatorDropdown</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName="PlankFloorCypress"]/designatorDropdown</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName="PlankFloorDrago"]/designatorDropdown</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName="PlankFloorMaple"]/designatorDropdown</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName="PlankFloorOak"]/designatorDropdown</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName="PlankFloorPine"]/designatorDropdown</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName="PlankFloorPoplar"]/designatorDropdown</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName="PlankFloorSucculent"]/designatorDropdown</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName="PlankFloorTeak"]/designatorDropdown</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName="PlankFloorWillow"]/designatorDropdown</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Ideology</li>
-		</mods>
-		<match Class="PatchOperationRemove">
-			<success>Always</success>
-			<xpath>Defs/TerrainDef[defName="PlankFloorGauranlen"]/designatorDropdown</xpath>
-		</match>
-	</Operation>
-
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>ReGrowth 2</li>
-		</mods>
-		<match Class="PatchOperationRemove">
-			<success>Always</success>
-			<xpath>Defs/TerrainDef[defName="PlankFloorElm"]/designatorDropdown</xpath>
-		</match>
 	</Operation>
 	
 <!-- PROCESSING PRODUCTION -->
