@@ -393,18 +393,8 @@
 	<li IfModActive="zyszhao.rimthunder.westerngreen">Mods and Shit/RimThunder Western Green</li>
 	<li IfModActive="rimthunderteams.rimthunder.zarya">Mods and Shit/RimThunder Zarya</li>
     <li IfModActiveAny="resurrectionem.furniture,resurrectionem.furnitureasia">Mods and Shit/RR Furniture Common</li>
-	<!-- BEGIN TODO complete these patches - split items into different categories. -->
-	<!-- Unimplemented:
 	<li IfModActive="resurrectionem.furnitureasia">Mods and Shit/RR Furniture Longyun</li>
 	<li IfModActive="resurrectionem.furniture">Mods and Shit/RR Furniture Rapture</li>
-	<li IfModActive="mlmlmlm.bluearchivefurniture">Mods and Shit/Blue Archive Furniture</li>
-	<li IfModActive="zal.gloomyextrakitchen">Mods and Shit/Gloomy Extra Kitchen</li>
-	-->
-	<li IfModActive="lat.rimstro">Mods and Shit/Rimstro</li>
-	<li IfModActive="gloomy.furniture.continued.fix">Mods and Shit/GloomyFurniture</li>
-	<li IfModActive="zerowhite.dailyfurniture">Mods and Shit/Daily Furniture</li>
-	<li IfModActive="wwskyon.mediterranean.furniture">Mods and Shit/Mediterranean Furniture</li>
-	<!-- END TODO -->
 	<li IfModActive="mlie.morefurniture">Mods and Shit/More Furniture</li>
 	<li IfModActive="hmc.wall.furniture">Mods and Shit/Wall Furniture</li>
 	<li IfModActive="mewn.medievalsigns">Mods and Shit/Medieval Signs</li>
@@ -448,7 +438,6 @@
 	<li IfModActive="speedentron.skullthrone">Mods and Shit/Skull Throne</li>
     <li IfModActive="zal.gardenbox">Mods and Shit/Garden Box</li>
 	<li IfModActive="scorpio.itemteleporter">Mods and Shit/Item Teleporter</li>
-	<!-- li IfModActive="vanillaexpanded.vanillagravshipsexpanded">Mods and Shit/VE Gravships</li> --> <!-- Unreleased! -->
 	<!-- BEGIN Provisional patches -->
 	<!-- These mods have not been updated to 1.6. Support has been tested to work but is provisional. -->
 	<li IfModActive="rimthunder.furniture">Mods and Shit/RimThunder Functional Furniture Expanded</li>
@@ -470,7 +459,6 @@
 	<li IfModActive="rimthunderteams.rimthunder.waytosamurai">Mods and Shit/RimThunder Way to Samurai</li>
 	<li IfModActive="myde.aerocraftframework">Mods and Shit/Aerocraft Framework</li>
 	<!-- END Provisional patches -->
-	  
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
