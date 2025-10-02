@@ -428,7 +428,6 @@
 	<li>mlie.hightechlaboratoryfacilities</li>
 	<li>propickelz.tinkerbench</li>
 	<li>cantaloupetheclown.medicalivsfork</li>
-	<li>rimthunder.furniture</li>
 	<li>salvador143.mthings.medical</li>
 	<li>salvador143.mthings.geysers</li>
 	<li>drilledhead.preservationsarcophagus</li>
@@ -446,6 +445,8 @@
 	<li>rimthunderteams.rimthunder.flyingchariot</li>
 	<li>aoba.rimthunder.roca</li>
 	<li>rimthunderteams.rimthunder.timeforward</li>
+	<li>zyszhao.rimthunder.westerngreen</li>
+	<li>rimthunderteams.rimthunder.zarya</li>
 	<li>mlie.morefurniture</li>
 	<li>zerowhite.dailyfurniture</li>
 	<li>resurrectionem.furnitureasia</li>
@@ -467,7 +468,7 @@
 	<li>anthitei.athsstyleableframework.style</li>
 	<li>daylight.rimlifeexstfmod</li>
 	<li>daylight.rimlifeexspwmod</li>
-	<li>daylight.rimlifeexfurmod</li>
+	<li>daylight.rimlifeexfurmod</li>daylight.rimlifeexspwmod
 	<li>daylight.rlesexpansionproductps</li>
 	<li>daylight.rimlifeexscymod</li>
 	<li>daylight.rimlifeexsrcmod</li>
@@ -492,6 +493,7 @@
 	<li>speedentron.skullthrone</li>
 	<li>zal.gardenbox</li>
 	<li>scorpio.itemteleporter</li>
+	<li>rimthunder.furniture</li>
 	<li>mo.rimfield5042</li>
 	<li>rimthunderteams.rimthunder.breakthrough</li>
 	<li>rimthunderteams.rimthunder.desertsabre</li>
