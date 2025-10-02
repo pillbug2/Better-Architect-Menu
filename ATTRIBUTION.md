@@ -8,3 +8,5 @@ Not all icons are attributed. Putting this here for my additions in case it is n
   modified for `Textures/UI/ArchitectureIcons/Default/BiotechnologyDesignation.png`.
 * [Gear SVG Vector by game-icons.net](https://www.svgrepo.com/svg/479352/gear)
   modified for `Textures/UI/ArchitectureIcons/Default/Ferny_ProductionInfrastructure.png`.
+* [Lung 1 SVG Vector by Icooon Mono](https://www.svgrepo.com/svg/482747/lung-1)
+  modified for `Textures/UI/ArchitectureIcons/Default/Ferny_OxygenNetwork.png`
