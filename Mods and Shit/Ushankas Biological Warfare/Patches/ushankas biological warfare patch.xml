@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- WEAPONS -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="USH_BiologicalMissileLauncherBase"]</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- EXPLOSIVES -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="USH_BiologicalBarrelBase"]</xpath>
+		<value>
+			<designationCategory>Ferny_Explosives</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- COMBAT INFRASTRUCTURE -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="USH_BiologicalVentBase"]</xpath>
+		<value>
+			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_GasVentsController"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PROCESS PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_VirusReplicator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_BacteriaIncubator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_AntigensAnalyzer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

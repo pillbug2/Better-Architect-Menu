@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EccentricNanoassembler"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+
+<!-- PROCESSING PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EccentricNanofabricator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- RESEARCH PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EccentricAuroraCore"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

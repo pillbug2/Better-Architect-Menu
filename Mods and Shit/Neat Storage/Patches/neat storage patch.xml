@@ -26,6 +26,18 @@
                         <designationCategory>Ferny_GeneralStorage</designationCategory>
                     </value>
                 </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_Safe"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_Drum"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
 
 <!-- FOOD STORAGE -->
                 <Operation Class="PatchOperationAdd">

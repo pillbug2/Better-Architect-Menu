@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationConditional">
+        <xpath>Defs/Vehicles.VehicleBuildDef[designationCategory="HE_Vehicles"]/designationCategory</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/Vehicles.VehicleBuildDef[designationCategory="HE_Vehicles"]/designationCategory</xpath>
+            <value>
+                <designationCategory>Ferny_GroundTransport</designationCategory>
+            </value>
+        </match>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="HE_Vehicles"]</xpath>
+</Operation>
+
+</Patch>

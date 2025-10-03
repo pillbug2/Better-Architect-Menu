@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch>              
+<Patch>
 
 <!-- RENAME IDEOLOGY -->
                 <Operation Class="PatchOperationReplace">
@@ -21,17 +21,7 @@
                     </value>
                 </Operation>
 
-<!-- BEDROOM -->
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="SleepAccelerator"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Bedroom</designationCategory>
-                    </value>
-                </Operation>
-
-
-<!-- MEDICAL -->   
+<!-- MEDICAL -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="BiosculpterPod"]/designationCategory</xpath>
@@ -62,6 +52,48 @@
                     <xpath>Defs/ThingDef[defName="PlantPot_Bonsai"]</xpath>
                     <value>
                         <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+	
+<!-- CONTROL -->
+	
+	            <Operation Class="PatchOperationReplace">
+		            <success>Always</success>
+		            <xpath>Defs/ThingDef[defName="StylingStation"]/designationCategory</xpath>
+		            <value>
+			            <designationCategory>Ferny_Control</designationCategory>
+		            </value>
+				</Operation>
+					
+		        <Operation Class="PatchOperationReplace">
+		            <success>Always</success>
+		            <xpath>Defs/ThingDef[defName="Skullspike"]/designationCategory</xpath>
+		            <value>
+			            <designationCategory>Ferny_Control</designationCategory>
+		            </value>
+						
+	            </Operation>
+		            <Operation Class="PatchOperationReplace">
+		            <success>Always</success>
+		            <xpath>Defs/ThingDef[defName="GibbetCage"]/designationCategory</xpath>
+		            <value>
+			            <designationCategory>Ferny_Control</designationCategory>
+		            </value>
+	            </Operation>
+
+<!-- CULTURE -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="MarriageSpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ideology</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="PartySpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ideology</designationCategory>
                     </value>
                 </Operation>
 

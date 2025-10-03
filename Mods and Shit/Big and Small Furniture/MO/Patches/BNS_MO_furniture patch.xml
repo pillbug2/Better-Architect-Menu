@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Big and Small Furniture -->
+	<!-- Medieval Overhaul additions from BNS mod -->
+	<!-- Package ID: redmattis.bsfurniture -->
+	<!-- Author: 3024478368 -->
+	<!-- Since Original Patch removed the DesignationCategoryDef we need to replace the existance of this as well for MO beds in BNS-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_Giant_RoyalTudorBed"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_Giant_BedFur"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BS_Giant_BedFurDouble"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>
+</Patch>

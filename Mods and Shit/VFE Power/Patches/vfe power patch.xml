@@ -41,20 +41,6 @@
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="VFE_PortableWoodFiredGenerator"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="VFE_PortableChemfuelPoweredGenerator"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_IndustrialWoodFiredGenerator"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_PowerGeneration</designationCategory>
@@ -110,8 +96,20 @@
                     </value>
                 </Operation>
 
-
-
-
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFE_PortableWoodFiredGenerator"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                    </value>
+                </Operation>
                 
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFE_PortableChemfuelPoweredGenerator"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                    </value>
+                </Operation>
+                            
 </Patch>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <!-- CORE MOD CONTENT -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_TableSculptingMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_TableButcherMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_HandTailoringBenchMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_ElectricTailoringBenchMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_FueledSmithyMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_ElectricSmithyMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_TableMachiningMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_ElectricStoveMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_FueledStoveMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_TableStonecutterMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_ProcessingProduction</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_BreweryMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_DrugLabMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_TableSculptingMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_ElectricSmelterMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_ProcessingProduction</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_FabricationBenchMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_TableSculptingMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_SimpleResearchBenchMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_ResearchProduction</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TWB_HiTechResearchBenchMini"]</xpath>
+        <value>
+            <designationCategory Inherit="False">Ferny_ResearchProduction</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="TWB_NutrientPasteDispenser"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- MOD PATCH CONTENT -->
+
+    <!-- Combat Extended -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="TWB_AmmoBenchMini"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="TWB_AmmoBenchMini"]</xpath>
+            <value>
+                <designationCategory Inherit="False">Ferny_Production</designationCategory>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- VE Helixien Gas -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="TWB_VHGE_GasPoweredSmelterMini"]</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="TWB_VHGE_GasPoweredSmelterMini"]/designationCategory</xpath>
+            <value>
+                <designationCategory>Ferny_PowerGeneration</designationCategory>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="TWB_VHGE_GasPoweredStoveMini"]</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="TWB_VHGE_GasPoweredStoveMini"]/designationCategory</xpath>
+            <value>
+                <designationCategory>Ferny_HelixienGasNetwork</designationCategory>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="TWB_VHGE_GasPoweredSmithyMini"]</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="TWB_VHGE_GasPoweredSmithyMini"]/designationCategory</xpath>
+            <value>
+                <designationCategory>Ferny_HelixienGasNetwork</designationCategory>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- VFE Production -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="TWB_VFE_TableButcherElectricMini"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="TWB_VFE_TableButcherElectricMini"]</xpath>
+            <value>
+                <designationCategory Inherit="False">Ferny_Kitchen</designationCategory>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="TWB_VFE_TableDrugLabElectricMini"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="TWB_VFE_TableDrugLabElectricMini"]</xpath>
+            <value>
+                <designationCategory Inherit="False">Ferny_Production</designationCategory>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="TWB_VFE_FueledSmelterMini"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="TWB_VFE_FueledSmelterMini"]</xpath>
+            <value>
+                <designationCategory Inherit="False">Ferny_ProcessingProduction</designationCategory>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="TWB_VFE_TableStonecutterElectricMini"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="TWB_VFE_TableStonecutterElectricMini"]</xpath>
+            <value>
+                <designationCategory Inherit="False">Ferny_ProcessingProduction</designationCategory>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>

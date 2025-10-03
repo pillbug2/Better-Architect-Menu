@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>              
+
+<!-- TRAPS -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="RH_TrapC4Base"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Traps</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="RN2Explosive_M18Claymore"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Traps</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- WEAPONS -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="RN2_BaseArtilleryBuilding"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="RN2Gun_DSHK_HMG" or defName="RN2Gun_M82A1_MountedAMR" or defName="RN2Gun_MIM23_SAM_TurretBase" or defName="RN2Turret_SentryGun" or defName="RN2Gun_M60Mounted_MG" or defName="RN2Gun_M2Browning_MG" or defName="RN2Gun_M134Minigun_MG" or defName="RN2Gun_MK19_GL" or defName="RN2Gun_TOW_Launcher"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>  
+</Patch>
