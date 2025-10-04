@@ -467,7 +467,6 @@
       <designationCategory>Ferny_NeutroniumNetwork</designationCategory>
     </value>
   </Operation>
-
   <Operation Class="PatchOperationReplace">
     <success>Always</success>
     <xpath>Defs/PipeSystem.PipeNetDef[defName="BOR_NeutroniumNet"]/designator/designationCategoryDef</xpath>
@@ -476,4 +475,244 @@
     </value>
   </Operation>
 
+  <!-- Dropdown Removal -->
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_MegascreenTelevision_I"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_MegascreenTelevision_II"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_MegascreenTelevision_III"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Telescope_I"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Telescope_II"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Telescope_III"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_PC_I"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_PC_II"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_PC_III"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Research_Unlocker_I"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Research_Unlocker_II"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Research_Unlocker_III"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Research_Unlocker_IV"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_ToolCabinet_I"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_ToolCabinet_II"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_ToolCabinet_III"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_HydroponicsBasin_I"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_HydroponicsBasin_II"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_HydroponicsBasin_Tileable_II"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_HydroponicsBasin_III"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_PollutionPump_I"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_PollutionPump_II"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_PollutionPump_III"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Bench_I"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Bench_II"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Bench_III"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Bench_IV"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_MedicineBench_I"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_MedicineBench_II"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_MedicineBench_III"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Forge_I"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Forge_II"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Forge_III"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Forge_IV"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Reactor_I"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Reactor_II"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Reactor_III"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Reactor_IV"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Battery_I"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Battery_II"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_Battery_III"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Building_RTMagneticShield"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_PowerLinkI"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_PowerLinkII"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Building_RTMagneticShield_I"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Building_RTMagneticShield_III"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_NeutroniumRefinery_II"]/designatorDropdown</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="BOR_NeutroniumRefinery_III"]/designatorDropdown</xpath>
+</Operation>
 </Patch>
