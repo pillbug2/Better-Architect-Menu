@@ -9,4 +9,9 @@
       <designationCategory>Ferny_Terraforming</designationCategory>
     </value>
   </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>
+      Defs/ThingDef[@Name="Reverse_Engineered_ConditionCauserBase"]/designatorDropdown
+    </xpath>
+  </Operation>
 </Patch>
