@@ -18,22 +18,6 @@
 			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RRQujingScreen"]</xpath>
-		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RRBaoshanScreen"]</xpath>
-		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
-		</value>
-	</Operation>
 	
 <!-- SEATING -->
 
@@ -110,6 +94,22 @@
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RRLixiaCupboard"]</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRQujingScreen"]</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRBaoshanScreen"]</xpath>
 		<value>
 			<designationCategory>Ferny_Decorations</designationCategory>
 		</value>
