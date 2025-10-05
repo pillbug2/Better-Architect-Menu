@@ -455,6 +455,13 @@
     <li IfModActive="scorpio.itemteleporter">Mods and Shit/Item Teleporter</li>
 	<li IfModActive="mlie.eggincubator">Mods and Shit/Egg Incubator</li>
 	<li IfModActive="cn.theresnothinghere">Mods and Shit/There's Nothing Here</li>
+	<li IfModActive="leo.propsdecor">Mods and Shit/Miniature Props and Decor</li>
+	<li IfModActive="arandomkiwi.powerpp">Mods and Shit/Power Plus Plus</li>
+	<li IfModActive="jtc.grineer">Mods and Shit/Rimframe Vatgrown Hate</li>
+	<li IfModActive="jtc.grineerfurniture">Mods and Shit/Rimframe Vatgrown Home</li>
+	<li IfModActive="mt.jerry">Mods and Shit/Mammoth Tank</li>
+	<li IfModActive="jerry.ratracer">Mods and Shit/The Rat Runner</li>
+    <li IfModActive="rabiosus.vfbluearchivepuipuisenacar">Mods and Shit/Gehenna Emergency Vehicle</li>
 <!-- BEGIN Provisional patches -->
 <!-- These mods have not been updated to 1.6. Support has been tested to work but is provisional. -->
 	<li IfModActive="happycam.ornithopter">Mods and Shit/Ornithopter</li>
