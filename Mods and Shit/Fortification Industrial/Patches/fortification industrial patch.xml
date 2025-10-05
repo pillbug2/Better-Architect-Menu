@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	
-<!-- CARAVAN -->
+<!-- POWER GENERATION -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
@@ -11,6 +11,35 @@
 		</value>
 	</Operation>
 	
+<!-- POWER INFRASTRUCTURE -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Power Poles</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="FT_PowerPole"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_PowerManagement</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="FT_PowerPole_Lamp"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_PowerManagement</designationCategory>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
 <!-- PRODUCTION -->
 
 	<Operation Class="PatchOperationAdd">
@@ -158,20 +187,10 @@
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
-	
-<!-- WEAPONS -->
 
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[@ParentName="FT_BaseCannonBuilding_Deployable"]</xpath>
-		<value>
-			<designationCategory>Ferny_Weapons</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[@ParentName="FT_BaseCannonBuilding_Mobile"]</xpath>
+		<xpath>Defs/ThingDef[@Name="FT_BaseCannonBuilding"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
