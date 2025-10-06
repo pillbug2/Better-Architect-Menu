@@ -3,29 +3,24 @@
 	
 <!-- WALLS -->
 
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="MUS_Fishingstyle_wall"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Walls</designationCategory>
-		</value>
-	</Operation>
-
+	<!-- Progression: Aesthetics compat -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 		<li>Progression: Aesthetics</li>
 		</mods>
-		<match Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationReplace">
-			<success>Always</success>
-			<xpath>Defs/ThingDef[defName="MUS_Fishingstyle_wall"]/designationCategory</xpath>
-			<value>
-				<designationCategory></designationCategory>
-			</value>
-			</li>
-		</operations>
-		</match>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="MUS_Fishingstyle_wall"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_Walls</designationCategory>
+					</value>
+				</li>
+				
+			</operations>
+		</nomatch>
 	</Operation>
 	
 <!-- SUPPORTS -->

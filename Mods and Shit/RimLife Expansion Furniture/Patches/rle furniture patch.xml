@@ -1,57 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	
-<!-- GENERAL and RESOURCES STORAGE -->
+<!-- GENERAL STORAGE -->
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Adaptive Storage Framework</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_EquipmentTable"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
 
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="RLE_EquipmentTable"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ferny_GeneralStorage</designationCategory>
-					</value>
-				</li>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_WoodCrate"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
 
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="RLE_WoodCrate"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ferny_GeneralStorage</designationCategory>
-					</value>
-				</li>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_MetalCrate"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
 
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="RLE_MetalCrate"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ferny_GeneralStorage</designationCategory>
-					</value>
-				</li>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_Strongbox"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- RESOURCES STORAGE -->
 
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="RLE_Strongbox"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ferny_GeneralStorage</designationCategory>
-					</value>
-				</li>
-
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="RLE_Oiltank"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ferny_ResourcesStorage</designationCategory>
-					</value>
-				</li>
-
-			</operations>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_Oiltank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ResourcesStorage</designationCategory>
+		</value>
 	</Operation>
 	
 <!-- HEATING -->

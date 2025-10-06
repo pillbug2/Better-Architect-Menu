@@ -156,7 +156,7 @@
     <li IfModActive="scherub.planningextended">Mods and Shit/Planning Extended</li>
     <li IfModActive="chaoticenrico.researchpapers">Mods and Shit/Research Papers</li>
     <li IfModActive="k.glitternet">Mods and Shit/GlitterNet</li>
-    <li IfModActive="bulldog.vanillachemfuelexpandedodysseypatch">Mods and Shit/VE Chemfuel Odyssey Patch</li>  <!-- Implicit support for Small Tanks, GravTech tank -->
+    <li IfModActive="bulldog.vanillachemfuelexpandedodysseypatch">Mods and Shit/VE Chemfuel Odyssey Patch</li>              <!-- Implicit support for Small Tanks, GravTech-->
     <li IfModActive="als.gravtech">Mods and Shit/GravTech</li>
     <li IfModActive="sumghai.replimat">Mods and Shit/Replimat</li>
     <li IfModActive="bart.bioformmatrix">Mods and Shit/Bioform Matrix</li>
@@ -179,8 +179,8 @@
     <li IfModActive="tug.satyrfaun.expanded">Mods and Shit/Roo SFE</li>
     <li IfModActive="divineDerivative.tilledsoil">Mods and Shit/Configurable Tilled Soil</li>
     <li IfModActive="BriannBanned.BriannsMissileFramework">Mods and Shit/Brianns Missiles</li>
-    <li IfModActive="Poncho.AutomaticHydroponics">Mods and Shit/Automatic Hydroponics</li>
-    <li IfModActive="AutomaticHydroponics.Expanded">Mods and Shit/Automatic Hydroponics Expanded</li>
+    <li IfModActive="Poncho.AutomaticHydroponics">Mods and Shit/Automatic Hydroponics</li>                                  <!-- TODO use inheritance? -->
+    <li IfModActive="AutomaticHydroponics.Expanded">Mods and Shit/Automatic Hydroponics Expanded</li>                       <!-- TODO patch is empty? -->
     <li IfModActive="biotexpans.mythic">Mods and Shit/Biotech Expansion Mythic</li>
     <li IfModActive="ccyt.stargatesmod">Mods and Shit/Stargates!</li>
     <li IfModActive="blues.breaker">Mods and Shit/Circuit Breaker</li>
@@ -242,10 +242,10 @@
     <li IfModActive="farxmai2.vfestandalone">Mods and Shit/Furniture Expanded Pack</li>
     <li IfModActive="dubwise.rimatomics">Mods and Shit/Dubs Rimatomics</li>                                                 <!-- Implicit support for Advanced Cooling Radiator -->
     <li IfModActive="dubwise.rimefeller">Mods and Shit/Dubs Rimefeller</li>
-    <li IfModActive="ushanka.biologicalwarfare">Mods and Shit/Ushankas Biological Warfare</li>                              <!-- TODO Consider unpacking the weapons and traps ala VFE Deserters IEDs -->
+    <li IfModActive="ushanka.biologicalwarfare">Mods and Shit/Ushankas Biological Warfare</li>
     <li IfModActive="ushanka.luciferiumexpansion">Mods and Shit/Ushankas Luciferium Expansion</li>
     <li IfModActive="bigbarza.vqegenerator.pipecompat">Mods and Shit/VQE Generator Pipe Network Compat</li>
-    <li IfModActive="bambaryla.vcepu">Mods and Shit/VE Chemfuel Unofficial Expansion</li>                                   <!-- TODO Unpack dropdown -->
+    <li IfModActive="bambaryla.vcepu">Mods and Shit/VE Chemfuel Unofficial Expansion</li>                                   <!-- TODO Unpack dropdown? -->
     <li IfModActive="DimonSever000.AnimaObelisk.Specific">Mods and Shit/Anima Obelisk</li>
     <!-- <li IfModActive="als.anomalygravship">Mods and Shit/Anomaly for Gravship</li> -->
     <li IfModActive="neronix17.geothermalcooler">Mods and Shit/Geothermal Coolers</li>
@@ -255,7 +255,7 @@
     <li IfModActive="vin.warehouse.storage.corpse">Mods and Shit/Warehouse Storage Corpses</li>
     <li IfModActive="drilledhead.MyDogsHouse">Mods and Shit/MyDogsHouse</li>
     <li IfModActive="JTCsBonereapers.FormerlyPPHHYY">Mods and Shit/BoneReapers Remarrowed</li>
-    <li IfModActive="mlmlmlm.bluearchivefurniture">Mods and Shit/Blue Archive Furniture</li>
+    <li IfModActive="mlmlmlm.bluearchivefurniture">Mods and Shit/Blue Archive Furniture</li>                                <!-- TODO move mod category under Furniture -->
     <li IfModActive="BuhGunGer.WallMountedFireFoamPopper">Mods and Shit/Wall Mounted Firefoam</li>
     <li IfModActive="notdvd.fraymod">Mods and Shit/Fray of the Fog</li>
     <li IfModActive="Xercaine.SmallBiofuelRefinery">Mods and Shit/Small Biofuel Refinery</li>
@@ -303,7 +303,7 @@
     <li IfModActive="bambaryla.bor">Mods and Shit/Beyond Our Reach</li>
     <li IfModActive="mlie.autopsytable">Mods and Shit/AutopsyTable</li>
     <li IfModActive="princeofpluto.vehicles.trains">Mods and Shit/Trains of the Rim</li>
-    <li IfModActive="HE.RRS">Mods and Shit/HE-Land Rover Range Rover Sport</li>
+    <li IfModActive="HE.RRS">Mods and Shit/HE-Land Rover Range Rover Sport</li>                                             <!-- TODO improve conditionals? -->
     <li IfModActive="garbageday.convectionalwarcrimes">Mods and Shit/Convectional War Crimes</li>
     <li IfModActive="tug.terraformerpumps">Mods and Shit/Terraforming Devices</li>
     <li IfModActive="zal.morearchotechgarbage">Mods and Shit/More Archotech Garbage</li>
@@ -316,8 +316,8 @@
     <li IfModActive="mrhydralisk.voepowergrid">Mods and Shit/VE Outposts Power Grid</li>
     <li IfModActive="oels.vehiclemapframework">Mods and Shit/Vehicle Map Framework</li>
     <li IfModActiveAny="mingtuwuxiang.fishingdecorative,mingtuwuxiang.gothicdecorative,mingtuwuxiang.spacebasedecorative">Mods and Shit/MUS Common Patch</li>
-    <li IfModActive="mingtuwuxiang.fishingdecorative">Mods and Shit/MUS FishingDecorative</li>
-    <li IfModActive="mingtuwuxiang.gothicdecorative">Mods and Shit/MUS Gothicstyle Vampire Furniture</li>
+    <li IfModActive="mingtuwuxiang.fishingdecorative">Mods and Shit/MUS FishingDecorative</li>                              <!-- Progression: Aesthetics compat -->
+    <li IfModActive="mingtuwuxiang.gothicdecorative">Mods and Shit/MUS Gothicstyle Vampire Furniture</li>                   <!-- Progression: Aesthetics compat -->
     <li IfModActive="mingtuwuxiang.spacebasedecorative">Mods and Shit/MUS Space Base Furniture</li>
     <li IfModActive="mlie.drawbridges">Mods and Shit/Drawbridges</li>
     <li IfModActive="mitasamodel.preemptivestrike">Mods and Shit/Preemptive Strike</li>
@@ -333,7 +333,7 @@
     <li IfModActive="tractor.therealcaptrex">Mods and Shit/Tractor</li>
     <li IfModActive="badoaks.campfirestews">Mods and Shit/Campfire Stews</li>
     <li IfModActive="sbz.neatstorageworkbenchshelf">Mods and Shit/Workbench Shelf</li>
-    <li IfModActive="ponpeco.pfkidsroom">Mods and Shit/Ponpeco Furnitures Kids Room</li>
+    <li IfModActive="ponpeco.pfkidsroom">Mods and Shit/Ponpeco Furnitures Kids Room</li>                                    <!-- TODO improve conditionals? --><!-- TODO some decor not covered -->
     <li IfModActive="spesscarp.pressureplate">Mods and Shit/Pressure Plate</li>
     <li IfModActive="amch.moresleepaccelerators">Mods and Shit/More Sleep Accelerators</li>
     <li IfModActive="lingluo.itemcuter">Mods and Shit/Auto Cutter</li>
@@ -355,8 +355,8 @@
     <li IfModActive="limetreesnake.furnishing">Mods and Shit/LTS Furnishing</li>
     <li IfModActive="phaneron.basic.storage">Mods and Shit/Phaneron Basic Storage</li>
     <li IfModActive="tug.minotaur">Mods and Shit/Roo Minotaur</li>
-    <li IfModActive="bjr1984.dubsskylights.addon">Mods and Shit/Dubs Skylights Addon</li>
-    <li IfModActive="Mlie.TinyWorkbenchs">Mods and Shit/Tiny Workbenchs</li>
+    <li IfModActive="bjr1984.dubsskylights.addon">Mods and Shit/Dubs Skylights Addon</li>                                   <!-- TODO any inheritance that could be used? -->
+    <li IfModActive="Mlie.TinyWorkbenchs">Mods and Shit/Tiny Workbenchs</li>                                                <!-- TODO any inheritance that could be used? -->
     <li IfModActive="erin.decorations">Mods and Shit/Erin Decorations</li>
     <li IfModActive="khamenman.OutfitStandsPLus">Mods and Shit/Outfit Stand Plus</li>
     <li IfModActive="vat.epoeforked">Mods and Shit/EPOE Forked</li>
@@ -398,7 +398,7 @@
     <li IfModActive="bart.app">Mods and Shit/Advanced Pollution Pump</li>
     <li IfModActive="bart.stg">Mods and Shit/Gravship Toxifier Generator</li>
     <li IfModActive="bart.atg">Mods and Shit/Advanced Toxifier Generator</li>
-    <li IfModActive="redmattis.geneextractor">Mods and Shit/Gene Extractor Tiers</li>   <!-- Implicit support for Gene Nodes - Genes for Sale -->
+    <li IfModActive="redmattis.geneextractor">Mods and Shit/Gene Extractor Tiers</li>                                       <!-- Implicit support for Gene Nodes - Genes for Sale -->
     <li IfModActive="scorpio.biotechnology">Mods and Shit/Biotechnology</li>
     <li IfModActive="mrhydralisk.anomaliesexpected">Mods and Shit/Anomalies Expected</li>
     <li IfModActive="aoba.rimthunder.redarmy.coldfront">Mods and Shit/RimThunder Cold Front</li>
@@ -415,7 +415,7 @@
     <li IfModActive="mewn.medievalsigns">Mods and Shit/Medieval Signs</li>
     <li IfModActive="mjeiouws.raisedstuff">Mods and Shit/Raised Platforms</li>
     <li IfModActive="alexprotopopov.vaultsofvagarempl">Mods and Shit/Vaults of Vagar Emplacements</li>
-    <li IfModActive="kyzy.shipwallenhanced">Mods and Shit/Ship Wall Enhanced</li>
+    <li IfModActive="kyzy.shipwallenhanced">Mods and Shit/Ship Wall Enhanced</li>                                           <!-- Support for VE Chemfuel - Odyssey patch -->
     <li IfModActive="untamo.apothecary.expansion">Mods and Shit/Apothecary Expansion</li>
     <li IfModActive="mrwireman.gausscannon">Mods and Shit/Buildable Orbital Cannon</li>
     <li IfModActive="fleshforge.defilergenerator">Mods and Shit/Defiler Generator</li>

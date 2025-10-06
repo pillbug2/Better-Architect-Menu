@@ -149,10 +149,10 @@
 	
 <!-- HYGIENE or PROCESSING PRODUCTION -->
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Dubs Bad Hygiene</li>
-		</mods>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/DesignationCategoryDef[defName="Hygiene"]</xpath>
+
+		<!-- Dubs Bad Hygiene category -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
 			<xpath>Defs/ThingDef[defName="AYApparelWashingTub"]/designationCategory</xpath>
@@ -160,6 +160,8 @@
 				<designationCategory>Hygiene</designationCategory>
 			</value>
 		</match>
+		
+		<!-- Fallback category -->
 		<nomatch Class="PatchOperationReplace">
 			<success>Always</success>
 			<xpath>Defs/ThingDef[defName="AYApparelWashingTub"]/designationCategory</xpath>
@@ -167,6 +169,7 @@
 				<designationCategory>Ferny_ProcessingProduction</designationCategory>
 			</value>
 		</nomatch>
+		
 	</Operation>
 	
 </Patch>

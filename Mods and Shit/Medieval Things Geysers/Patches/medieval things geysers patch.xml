@@ -62,17 +62,12 @@
 
 <!-- PRODUCTION INFRASTRUCTURE -->
 	
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>A RimWorld of Magic</li>
-		</mods>
-		<match Class="PatchOperationReplace">
-			<success>Always</success>
-			<xpath>Defs/ThingDef[defName="MThingsGeysersMagicyteHarvester"]/designationCategory</xpath>
-			<value>
-				<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
-			</value>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MThingsGeysersMagicyteHarvester"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
+		</value>
 	</Operation>
 	
 </Patch>

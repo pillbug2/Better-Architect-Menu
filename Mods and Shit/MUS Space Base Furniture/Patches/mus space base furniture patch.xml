@@ -315,46 +315,22 @@
 	
 <!-- CHILDHOOD -->
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Biotech</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<success>Normal</success>
-			<operations>
-
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="MUS_SpaceBase_Crib"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ferny_Childhood</designationCategory>
-					</value>
-				</li>
-
-			</operations>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MUS_SpaceBase_Crib"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Childhood</designationCategory>
+		</value>
 	</Operation>
 	
 <!-- MANAGEMENT -->
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Ideology</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<success>Normal</success>
-			<operations>
-
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="MUS_SpaceBase_StylingStation"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ferny_Management</designationCategory>
-					</value>
-				</li>
-
-			</operations>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MUS_SpaceBase_StylingStation"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Management</designationCategory>
+		</value>
 	</Operation>
 
 <!-- ANIMAL BEDDING -->
