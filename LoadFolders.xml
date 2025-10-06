@@ -464,6 +464,14 @@
     <li IfModActive="rabiosus.vfbluearchivepuipuisenacar">Mods and Shit/Gehenna Emergency Vehicle</li>
 	<li IfModActive="ninedaylongbow.pigeonsframework">Mods and Shit/Pigeon's Framework Old World Remains</li>
 	<li IfModActive="esoc.veryreasonableexpansion">Mods and Shit/Very Reasonable Expansion</li>
+	<li IfModActive="kearril.tradetransportpod">Mods and Shit/Trade Transport Pod</li>
+	<li IfModActive="losts1ght.eternalscience.250601">Mods and Shit/Eternal Science</li>
+	<li IfModActive="kindseal.lol">Mods and Shit/UF Heavy Industries</li>
+	<li IfModActive="sbz.neatstoragefridge">Mods and Shit/sbz Fridge</li>
+	<li IfModActive="floor.mounted.aquarium">Mods and Shit/Floor-Mounted Aquarium</li>
+	<li IfModActive="cain.mineshaft">Mods and Shit/Mines 2.0</li>
+	<li IfModActive="none1637.hkjblacktech.core">Mods and Shit/BlackTech Core</li>
+	<li IfModActive="spdskatr.ssbiggerbatteries">Mods and Shit/SS Bigger Batteries</li>
 <!-- BEGIN Provisional patches -->
 <!-- These mods have not been updated to 1.6. Support has been tested to work but is provisional. -->
 	<li IfModActive="happycam.ornithopter">Mods and Shit/Ornithopter</li>

@@ -3,9 +3,9 @@
 	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName=""]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="MinesAutomated_ThingDef_Mine"]/designationCategory</xpath>
 		<value>
-			<designationCategory></designationCategory>
+			<designationCategory>Ferny_Production</designationCategory>
 		</value>
 	</Operation>
 	
