@@ -462,6 +462,8 @@
 	<li IfModActive="mt.jerry">Mods and Shit/Mammoth Tank</li>
 	<li IfModActive="jerry.ratracer">Mods and Shit/The Rat Runner</li>
     <li IfModActive="rabiosus.vfbluearchivepuipuisenacar">Mods and Shit/Gehenna Emergency Vehicle</li>
+	<li IfModActive="ninedaylongbow.pigeonsframework">Mods and Shit/Pigeon's Framework Old World Remains</li>
+	<li IfModActive="esoc.veryreasonableexpansion">Mods and Shit/Very Reasonable Expansion</li>
 <!-- BEGIN Provisional patches -->
 <!-- These mods have not been updated to 1.6. Support has been tested to work but is provisional. -->
 	<li IfModActive="happycam.ornithopter">Mods and Shit/Ornithopter</li>
