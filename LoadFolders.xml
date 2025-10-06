@@ -179,8 +179,8 @@
     <li IfModActive="tug.satyrfaun.expanded">Mods and Shit/Roo SFE</li>
     <li IfModActive="divineDerivative.tilledsoil">Mods and Shit/Configurable Tilled Soil</li>
     <li IfModActive="BriannBanned.BriannsMissileFramework">Mods and Shit/Brianns Missiles</li>
-    <li IfModActive="Poncho.AutomaticHydroponics">Mods and Shit/Automatic Hydroponics</li>                                  <!-- TODO use inheritance? -->
-    <li IfModActive="AutomaticHydroponics.Expanded">Mods and Shit/Automatic Hydroponics Expanded</li>                       <!-- TODO patch is empty? -->
+    <li IfModActive="Poncho.AutomaticHydroponics">Mods and Shit/Automatic Hydroponics</li>
+    <li IfModActive="AutomaticHydroponics.Expanded">Mods and Shit/Automatic Hydroponics Expanded</li>
     <li IfModActive="biotexpans.mythic">Mods and Shit/Biotech Expansion Mythic</li>
     <li IfModActive="ccyt.stargatesmod">Mods and Shit/Stargates!</li>
     <li IfModActive="blues.breaker">Mods and Shit/Circuit Breaker</li>
