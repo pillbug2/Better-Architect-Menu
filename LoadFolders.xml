@@ -3,17 +3,17 @@
     <li>/</li>
     <li>1.6</li>
   
-  <!-- CORE + DLCS (Managed by Ferny)-->
+  <!-- CORE + DLCS -->
     <li IfModActive="Ludeon.Rimworld.Royalty">Mods and Shit/Royalty</li>
     <li IfModActive="Ludeon.Rimworld.Ideology">Mods and Shit/Ideology</li>
     <li IfModActive="Ludeon.Rimworld.Biotech">Mods and Shit/Biotech</li>
     <li IfModActive="Ludeon.Rimworld.Anomaly">Mods and Shit/Anomaly</li>
     <li IfModActive="Ludeon.Rimworld.Odyssey">Mods and Shit/Odyssey</li>
 
-<!-- PROGRESSION (Managed by Ferny)-->
+<!-- PROGRESSION -->
     <li IfModActive="ferny.progressioneducation">Mods and Shit/Progression Education</li>
 
-<!-- PROVISIONAL PATCHES (Managed by Pillbug) -->
+<!-- PROVISIONAL PATCHES (Currently primarily managed by Pillbug) -->
 <!-- These mods have not been updated to 1.6. Support has been tested to work but is provisional. -->
 	<li IfModActive="happycam.ornithopter">Mods and Shit/Ornithopter</li>
     <li IfModActive="rimthunder.furniture">Mods and Shit/RimThunder Functional Furniture Expanded</li>
@@ -421,7 +421,7 @@
     <li IfModActive="cantaloupetheclown.medicalivsfork">Mods and Shit/Medical IVs Fork</li>
     <li IfModActive="salvador143.mthings.medical">Mods and Shit/Medieval Things Medical</li>
     <li IfModActive="salvador143.mthings.geysers">Mods and Shit/Medieval Things Geysers</li>
-	<li IfModActive="silkcircuit.resistancerestraintsmod">Mods and Shit/Prisoner Restraints</li>
+    <li IfModActive="silkcircuit.resistancerestraintsmod">Mods and Shit/Prisoner Restraints</li>
     <li IfModActive="tsa.torturepod">Mods and Shit/Torture Pod</li>
     <li IfModActive="mlie.bondagebedtorture">Mods and Shit/BondageBed Torture</li>
     <li IfModActive="tsa.archotechresistancebreaker">Mods and Shit/Archotech Resistance Breaker</li>
@@ -486,25 +486,25 @@
     <li IfModActive="speedentron.skullthrone">Mods and Shit/Skull Throne</li>
     <li IfModActive="zal.gardenbox">Mods and Shit/Garden Box</li>
     <li IfModActive="scorpio.itemteleporter">Mods and Shit/Item Teleporter</li>
-	<li IfModActive="mlie.eggincubator">Mods and Shit/Egg Incubator</li>
-	<li IfModActive="cn.theresnothinghere">Mods and Shit/There's Nothing Here</li>
-	<li IfModActive="leo.propsdecor">Mods and Shit/Miniature Props and Decor</li>
-	<li IfModActive="arandomkiwi.powerpp">Mods and Shit/Power Plus Plus</li>
-	<li IfModActive="jtc.grineer">Mods and Shit/Rimframe Vatgrown Hate</li>
-	<li IfModActive="jtc.grineerfurniture">Mods and Shit/Rimframe Vatgrown Home</li>
-	<li IfModActive="mt.jerry">Mods and Shit/Mammoth Tank</li>
-	<li IfModActive="jerry.ratracer">Mods and Shit/The Rat Runner</li>
+    <li IfModActive="mlie.eggincubator">Mods and Shit/Egg Incubator</li>
+    <li IfModActive="cn.theresnothinghere">Mods and Shit/There's Nothing Here</li>
+    <li IfModActive="leo.propsdecor">Mods and Shit/Miniature Props and Decor</li>
+    <li IfModActive="arandomkiwi.powerpp">Mods and Shit/Power Plus Plus</li>
+    <li IfModActive="jtc.grineer">Mods and Shit/Rimframe Vatgrown Hate</li>
+    <li IfModActive="jtc.grineerfurniture">Mods and Shit/Rimframe Vatgrown Home</li>
+    <li IfModActive="mt.jerry">Mods and Shit/Mammoth Tank</li>
+    <li IfModActive="jerry.ratracer">Mods and Shit/The Rat Runner</li>
     <li IfModActive="rabiosus.vfbluearchivepuipuisenacar">Mods and Shit/Gehenna Emergency Vehicle</li>
-	<li IfModActive="ninedaylongbow.pigeonsframework">Mods and Shit/Pigeon's Framework Old World Remains</li>
-	<li IfModActive="esoc.veryreasonableexpansion">Mods and Shit/Very Reasonable Expansion</li>
-	<li IfModActive="kearril.tradetransportpod">Mods and Shit/Trade Transport Pod</li>
-	<li IfModActive="losts1ght.eternalscience.250601">Mods and Shit/Eternal Science</li>
-	<li IfModActive="kindseal.lol">Mods and Shit/UF Heavy Industries</li>
-	<li IfModActive="sbz.neatstoragefridge">Mods and Shit/sbz Fridge</li>
-	<li IfModActive="floor.mounted.aquarium">Mods and Shit/Floor-Mounted Aquarium</li>
-	<li IfModActive="cain.mineshaft">Mods and Shit/Mines 2.0</li>
-	<li IfModActive="none1637.hkjblacktech.core">Mods and Shit/BlackTech Core</li>
-	<li IfModActive="spdskatr.ssbiggerbatteries">Mods and Shit/SS Bigger Batteries</li>
+    <li IfModActive="ninedaylongbow.pigeonsframework">Mods and Shit/Pigeon's Framework Old World Remains</li>
+    <li IfModActive="esoc.veryreasonableexpansion">Mods and Shit/Very Reasonable Expansion</li>
+    <li IfModActive="kearril.tradetransportpod">Mods and Shit/Trade Transport Pod</li>
+    <li IfModActive="losts1ght.eternalscience.250601">Mods and Shit/Eternal Science</li>
+    <li IfModActive="kindseal.lol">Mods and Shit/UF Heavy Industries</li>
+    <li IfModActive="sbz.neatstoragefridge">Mods and Shit/sbz Fridge</li>
+    <li IfModActive="floor.mounted.aquarium">Mods and Shit/Floor-Mounted Aquarium</li>
+    <li IfModActive="cain.mineshaft">Mods and Shit/Mines 2.0</li>
+    <li IfModActive="none1637.hkjblacktech.core">Mods and Shit/BlackTech Core</li>
+    <li IfModActive="spdskatr.ssbiggerbatteries">Mods and Shit/SS Bigger Batteries</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
