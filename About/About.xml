@@ -552,6 +552,20 @@
     <li>rimthunderteams.rimthunder.warhorseofreich</li>
     <li>rimthunderteams.rimthunder.waytosamurai</li>
     <li>myde.aerocraftframework</li>
+	<li>acutus.electrofishing</li>
+	<li>kearril.fishingspotsandanglerkits</li>
+	<li>xercaine.smallhydroponicsbasins</li>
+	<li>nalzurin.autoimplanter</li>
+	<li>xercaine.medieval.cannon</li>
+	<li>xercaine.smallstoves</li>
+	<li>xercaine.medieval.catapult</li>
+	<li>xercaine.fueledcrematorium</li>
+	<li>xercaine.fueledsmelter</li>
+	<li>xercaine.smalltable</li>
+	<li>xercaine.smalldresser</li>
+	<li>xercaine.smallsleepingspot</li>
+	<li>xercaine.wallsunlamp</li>
+	<li>xercaine.industrialage.artillery</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
