@@ -522,6 +522,9 @@
 	<li IfModActive="unofficialstatus.hlcombineoverwatch">Mods and Shit/Combine Overwatch Rim Sector</li>
 	<li IfModActive="wvc.sergkart.ultraexpansion">Mods and Shit/WVC Ultra Expansion II</li>
 	<li IfModActive="ponpeco.kidsclothes">Mods and Shit/Ponpeco Kids Clothes</li>
+	<li IfModActive="alma.richsoilpump">Mods and Shit/Enrichment Toxifier</li>
+	<li IfModActive="hyousol.grasslighting">Mods and Shit/Grasslighting</li>
+	<li IfModActive="hyousol.crunglegenerator">Mods and Shit/Fissionsalt Generator</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
