@@ -566,6 +566,9 @@
 	<li>xercaine.smallsleepingspot</li>
 	<li>xercaine.wallsunlamp</li>
 	<li>xercaine.industrialage.artillery</li>
+	<li>unofficialstatus.hlcombineoverwatch</li>
+	<li>wvc.sergkart.ultraexpansion</li>
+	<li>ponpeco.kidsclothes</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
