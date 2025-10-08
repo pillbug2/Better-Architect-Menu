@@ -572,6 +572,7 @@
 	<li>alma.richsoilpump</li>
 	<li>hyousol.grasslighting</li>
 	<li>hyousol.crunglegenerator</li>
+	<li>vanillaexpanded.gravship</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

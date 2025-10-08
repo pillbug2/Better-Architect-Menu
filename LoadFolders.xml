@@ -525,6 +525,7 @@
 	<li IfModActive="alma.richsoilpump">Mods and Shit/Enrichment Toxifier</li>
 	<li IfModActive="hyousol.grasslighting">Mods and Shit/Grasslighting</li>
 	<li IfModActive="hyousol.crunglegenerator">Mods and Shit/Fissionsalt Generator</li>
+	<li IfModActive="vanillaexpanded.gravship">Mods and Shit/VE Gravship</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
