@@ -175,6 +175,14 @@ namespace BetterArchitect
             foreach (var cat in allCategories)
             {
                 var allDesignators = cat.ResolvedAllowedDesignators.Where(d => d.Visible).ToList();
+                
+                // TODO: Add all designators in Floors' subcategories to floorData.allDesignators
+                if (tab.def == DesignationCategoryDefOf.Floors && BetterArchitectSettings.useSpecialFloorsTab)
+                {
+                    List<Designator> subcategoryDesignators = new List<Designator>();
+                    allDesignators.AddRange(subcategoryDesignators);
+                }
+
                 var (buildables, orders) = SeparateDesignatorsByType(allDesignators, cat);
                 designatorDataList.Add(new DesignatorCategoryData(cat, cat == tab.def, allDesignators, buildables, orders));
             }
