@@ -3,7 +3,7 @@
 
 	<Operation Class="PatchOperationAddModExtension">
 		<success>Always</success>
-		<xpath>Defs/designationCategoryDef[defName="CGF1_MWP_Category_GunsGalore"]</xpath>
+		<xpath>Defs/DesignationCategoryDef[defName="CGF1_MWP_Category_GunsGalore"]</xpath>
 		<value>
 			<li Class="BetterArchitect.NestedCategoryExtension">
 				<parentCategory>Security</parentCategory>
