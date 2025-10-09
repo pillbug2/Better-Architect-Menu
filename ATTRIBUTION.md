@@ -10,3 +10,5 @@ Not all icons are attributed. Putting this here for my additions in case it is n
   modified for `Textures/UI/ArchitectureIcons/Default/Ferny_ProductionInfrastructure.png`.
 * [Lung 1 SVG Vector by Icooon Mono](https://www.svgrepo.com/svg/482747/lung-1)
   modified for `Textures/UI/ArchitectureIcons/Default/Ferny_OxygenNetwork.png`
+* [Space Shuttle SVG Vector by Klever Space](https://www.svgrepo.com/svg/488688/space-shuttle)
+  modified for `Textures/UI/ArchitectureIcons/Default/Ferny_Spaceport.png`
