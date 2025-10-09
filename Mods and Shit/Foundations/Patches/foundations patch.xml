@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<!-- Not using @Name="FoundationBase". It feels too generic to be safe. -->
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[@Name="ConcreteFoundationBase"]</xpath>
+		<value>
+			<designationCategory>Ferny_Foundations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[@Name="WoodFoundationBase"]</xpath>
+		<value>
+			<designationCategory>Ferny_Foundations</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

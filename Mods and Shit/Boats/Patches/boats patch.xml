@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="Boats_Rowboat_Blueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NavalTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="Boats_Caravel_Blueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NavalTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="Boats_FishingBoat_Blueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NavalTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="Boats_Galleon_Blueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NavalTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="Boats_PaddleSteamer_Blueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NavalTransport</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>
