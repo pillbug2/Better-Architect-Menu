@@ -8,6 +8,102 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_FloorsCarpet</defName>
+    <label>Wood</label>
+    <description>Carpeted Floors.</description>
+    <order>0</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_FloorsClean</defName>
+    <label>Clean</label>
+    <description>Clean Floors.</description>
+    <order>0</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_FloorsConcrete</defName>
+    <label>Concrete</label>
+    <description>Concrete Floors.</description>
+    <order>0</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_FloorsMetal</defName>
+    <label>Metal</label>
+    <description>Metal Floors.</description>
+    <order>0</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_FloorsStone</defName>
+    <label>Stone</label>
+    <description>Stone Floors.</description>
+    <order>0</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_FloorsWood</defName>
+    <label>Wood</label>
+    <description>Wooden Floors.</description>
+    <order>0</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_Seating</defName>
     <label>Seating</label>
     <description>Manage seating.</description>

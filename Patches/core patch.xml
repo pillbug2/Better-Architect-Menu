@@ -166,6 +166,56 @@
                 </Operation>
 
 
+                <!-- FLOORS (only used if UseSpecialFloorsTab is false) -->
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/TerrainTemplateDef[defName="Carpet"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FloorsCarpet</designationCategory>
+                    </value>
+                </Operation>
+                
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/TerrainDef[defName="SterileTile"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FloorsClean</designationCategory>
+                    </value>
+                </Operation>
+                
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/TerrainDef[defName="Concrete" or defName="PavedTile"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FloorsConcrete</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/TerrainDef[@ParentName="TileMetalBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FloorsMetal</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/TerrainDef[@ParentName="TileStoneBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FloorsStone</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/TerrainDef[@ParentName="FlagstoneBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FloorsStone</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/TerrainDef[defName="WoodPlankFloor"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FloorsWood</designationCategory>
+                    </value>
+                </Operation>
+
 
 <!-- LIGHTING -->
                 <Operation Class="PatchOperationReplace">
