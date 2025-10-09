@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Ballista"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Cannon"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TurretGunLongRange"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_MGEmplacement"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

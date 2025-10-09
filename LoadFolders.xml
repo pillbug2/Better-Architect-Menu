@@ -526,6 +526,23 @@
 	<li IfModActive="hyousol.grasslighting">Mods and Shit/Grasslighting</li>
 	<li IfModActive="hyousol.crunglegenerator">Mods and Shit/Fissionsalt Generator</li>
 	<li IfModActive="vanillaexpanded.gravship">Mods and Shit/VE Gravship</li>
+	<li IfModActive="shadowron.ogliss.bishop.smokeleafindustryreborn">Mods and Shit/Smokeleaf Industry Reborn</li>
+	<li IfModActive="mlie.kvinfinitestorage">Mods and Shit/Infinite Storage</li>
+	<li IfModActive="mlie.syrmetallicbatteries">Mods and Shit/Metallic Batteries</li>
+	<li IfModActive="mlie.syrprosthetictable">Mods and Shit/Prosthetic Table</li>
+	<li IfModActive="mlie.autotamer">Mods and Shit/Auto Tamer</li>
+	<li IfModActive="mlie.comigosnutrition">Mods and Shit/Comigo's Nutrition</li>
+	<li IfModActive="mlie.industrialisation">Mods and Shit/Industrialisation</li>
+	<li IfModActive="mlie.machinegundefence">Mods and Shit/Machine Gun Defense</li>
+	<li IfModActive="mlie.mealprinter">Mods and Shit/Meal Printer</li>
+	<li IfModActive="mlie.medicalbay">Mods and Shit/Medical Bay</li>
+	<li IfModActive="mlie.passitthroughthewindow">Mods and Shit/Pass It Through The Window</li>
+	<li IfModActive="mlie.questionableethicsenhanced">Mods and Shit/Questionable Ethics Enhanced</li>
+	<li IfModActive="mlie.radiology">Mods and Shit/Radiology</li>
+	<li IfModActive="mlie.simpleminingextension">Mods and Shit/Simple Mining Extension</li>
+	<li IfModActive="mlie.thermalpowerreactor">Mods and Shit/Thermal Power Reactor</li>
+	<li IfModActive="mlie.tranquilizerturret">Mods and Shit/Tranquilizer Turret</li>
+	<li IfModActive="mlie.xndteturretexpansion">Mods and Shit/TE Turret Expansion</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
