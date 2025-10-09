@@ -29,6 +29,10 @@ namespace BetterArchitect
             listingStandard.CheckboxLabeled("BA.HideOnSelection".Translate(), ref BetterArchitectSettings.hideOnSelection, "BA.HideOnSelectionTooltip".Translate());
             listingStandard.Gap();
             listingStandard.CheckboxLabeled("BA.RememberSubcategory".Translate(), ref BetterArchitectSettings.rememberSubcategory, "BA.RememberSubcategoryTooltip".Translate());
+
+            listingStandard.Gap();
+            listingStandard.CheckboxLabeled("BA.UseSpecialFloorsTab".Translate(), ref BetterArchitectSettings.useSpecialFloorsTab, "BA.UseSpecialFloorsTabTooltip".Translate());
+
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);
         }

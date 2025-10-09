@@ -183,7 +183,7 @@ namespace BetterArchitect
             List<Designator> orderDesignators;
             DesignationCategoryDef category;
 
-            if (tab.def == DesignationCategoryDefOf.Floors)
+            if (tab.def == DesignationCategoryDefOf.Floors && BetterArchitectSettings.useSpecialFloorsTab)
             {
                 Designator_Build_ProcessInput_Transpiler.shouldSkipFloatMenu = true;
                 var floorData = designatorDataList.FirstOrDefault(d => d.def == tab.def);
