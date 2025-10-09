@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- SUPPORTS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DM_VampirePillar"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Supports</designationCategory>
+		</value>
+	</Operation>
+
+</Patch>

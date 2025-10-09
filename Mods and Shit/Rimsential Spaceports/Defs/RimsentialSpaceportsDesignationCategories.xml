@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- <DesignationCategoryDef>
-    <defName>Ferny_AnimalGenetics</defName>
-    <label>Genetics</label>
-    <description>Manage animal genetics.</description>
-    <order>6</order>
+  <DesignationCategoryDef>
+    <defName>Ferny_Spaceport</defName>
+    <label>Spaceport</label>
+    <description>Manage your spaceport.</description>
+    <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
     </specialDesignatorClasses>
     <modExtensions>
       <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Ferny_animals</parentCategory>
+        <parentCategory>Ferny_Hosting</parentCategory>
       </li>
     </modExtensions>
-  </DesignationCategoryDef> -->
+  </DesignationCategoryDef>
 
 </Defs>
