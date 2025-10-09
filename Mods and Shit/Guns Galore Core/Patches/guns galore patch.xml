@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/designationCategoryDef[defName="CGF1_MWP_Category_GunsGalore"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Security</parentCategory>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CGF1_MWP_Building_Gunsmith_Old"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CGF1_MWP_Building_Gunsmith"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>
