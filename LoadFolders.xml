@@ -526,7 +526,6 @@
 	<li IfModActive="hyousol.grasslighting">Mods and Shit/Grasslighting</li>
 	<li IfModActive="hyousol.crunglegenerator">Mods and Shit/Fissionsalt Generator</li>
 	<li IfModActive="vanillaexpanded.gravship">Mods and Shit/VE Gravship</li>
-    <!-- (Add new mods here ^^^^^) -->
 	<li IfModActive="shadowron.ogliss.bishop.smokeleafindustryreborn">Mods and Shit/Smokeleaf Industry Reborn</li>
 	<li IfModActive="mlie.kvinfinitestorage">Mods and Shit/Infinite Storage</li>
 	<li IfModActive="mlie.syrmetallicbatteries">Mods and Shit/Metallic Batteries</li>
@@ -608,6 +607,6 @@
 	        <li IfModActive="he.bearcatg3">Mods and Shit/HE-Lenco BearCat G3 '13</li>
 	        <li IfModActive="he.mstat">Mods and Shit/HE-M60A3 Patton Medium Tank '78</li>
 	        <li IfModActive="he.pa">Mods and Shit/HE-Pierce Arrow Pumper '90</li>
-	  <!-- (Add new mods here ^^^^^) -->
+    <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
