@@ -588,31 +588,5 @@
 	<li IfModActive="he.bfot">Mods and Shit/HE-Vehicles/HE-Bell 412 Helicopter '81</li>
 	<li IfModActive="he.mstat">Mods and Shit/HE-Vehicles/HE-M60A3 Patton Medium Tank '78</li>
     <!-- (Add new mods here ^^^^^) -->
-	  
-	  
-	 <!--
-	    Look into refactoring these mods using the below code to move category items en masse:
-		1. RimField5042 (obsolete w Aerocraft Framework prob)
-		2. Celetech Arsenal (prob remove last section w AF update too)
-		3. Aerocraft Framework
-		4. Floor Lights 2
-		5. Fortification Industrial Citadel
-		6. UF Industries
-		7. BiotExpans Mythic
-		8. Eternal Science
-		9. Technical vehicles
-		10. Preemptive Strike
-		11. Rimatomics (consolidate everything too)
-	 
-	 	<Operation Class="PatchOperationConditional">
-		    <xpath>Defs/ThingDef[designationCategory="AMC"]/designationCategory</xpath>
-		    <match Class="PatchOperationReplace">
-			    <xpath>Defs/ThingDef[designationCategory="AMC"]/designationCategory</xpath>
-			    <value>
-				    <designationCategory>Ferny_Weapons</designationCategory>
-			    </value>
-		    </match>
-	    </Operation>
-	 -->
   </v1.6>
 </loadFolders>
