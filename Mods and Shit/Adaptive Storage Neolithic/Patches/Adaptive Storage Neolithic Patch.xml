@@ -30,16 +30,9 @@
     </Operation>
     
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[]</xpath>
-        <value>
-            <designationCategory>Ferny_FoodStorage</designationCategory>
-        </value>
-    </Operation>
-    
-    <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[@ParentName="ASNeolithicPlinthBase"]</xpath>
         <value>
-            <designationCategory>Ferny_General</designationCategory>
+            <designationCategory>Ferny_GeneralStorage</designationCategory>
         </value>
     </Operation>
     
