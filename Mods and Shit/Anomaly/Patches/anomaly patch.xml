@@ -24,6 +24,14 @@
                     </value>
                 </Operation>
 
+                <!-- Floors -->
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/TerrainDef[defName="BioferritePlate"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FloorsMetal</designationCategory>
+                    </value>
+                </Operation>
+
 <!-- POWER GENERATION -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
