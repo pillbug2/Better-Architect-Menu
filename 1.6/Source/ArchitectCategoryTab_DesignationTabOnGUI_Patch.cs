@@ -196,7 +196,6 @@ namespace BetterArchitect
 
                 foreach (var designator in allFloorDesignators)
                 {
-                    Log.Message("Designator:" + designator.Label);
                     if (designator is Designator_Dropdown dropdown)
                     {
                         if (dropdown.Elements.OfType<Designator_Place>().Any(x => x.PlacingDef.designatorDropdown?.includeEyeDropperTool == true))
