@@ -505,6 +505,7 @@
 	<li IfModActive="cain.mineshaft">Mods and Shit/Mines 2.0</li>
 	<li IfModActive="none1637.hkjblacktech.core">Mods and Shit/BlackTech Core</li>
 	<li IfModActive="spdskatr.ssbiggerbatteries">Mods and Shit/SS Bigger Batteries</li>
+	<li IfModActive="zal.FishingBoats">Mods and Shit/Fishing Boats</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
