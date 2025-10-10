@@ -39,6 +39,14 @@
         </value>
     </Operation>
 
+    <!-- RESOURCE STORAGE -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="sbz_TextileRack"]</xpath>
+        <value>
+            <designationCategory>Ferny_ResourceStorage</designationCategory>
+        </value>
+    </Operation>
+     
     <!-- FOOD STORAGE -->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="sbz_MeatHook"]</xpath>
@@ -60,7 +68,6 @@
             <designationCategory>Ferny_GearStorage</designationCategory>
         </value>
     </Operation>
-
 
     <!-- ReelStorageNewBarrel -->
 </Patch>
