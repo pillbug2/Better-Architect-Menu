@@ -237,7 +237,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishingstyle_FishTank"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_AnimalFish</designationCategory>
+			<designationCategory>Ferny_Decorations</designationCategory>
 		</value>
 	</Operation>
 
@@ -245,7 +245,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishingstyle_SmallFishTank"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_AnimalFish</designationCategory>
+			<designationCategory>Ferny_Decorations</designationCategory>
 		</value>
 	</Operation>
 	

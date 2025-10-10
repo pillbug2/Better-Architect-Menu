@@ -4,7 +4,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="WFFT_FishTrap" or defName="WFFT_FishNet"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_AnimalFish</designationCategory>
+			<designationCategory>Ferny_Farming</designationCategory>
 		</value>
 	</Operation>
 
