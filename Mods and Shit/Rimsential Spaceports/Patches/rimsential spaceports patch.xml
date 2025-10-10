@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Spaceports_FuelProcessor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Spaceport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Spaceports_FuelTank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Spaceport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Spaceports_FuelDispenser"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Spaceport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Spaceports_ShuttleLandingPad"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Spaceport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Spaceports_VisitorSpot"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Spaceport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Spaceports_Beacon"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Spaceport</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>
