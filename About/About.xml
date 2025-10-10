@@ -573,6 +573,7 @@
 	<li>hyousol.grasslighting</li>
 	<li>hyousol.crunglegenerator</li>
 	<li>vanillaexpanded.gravship</li>
+    <li>sarg.rimbees</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
