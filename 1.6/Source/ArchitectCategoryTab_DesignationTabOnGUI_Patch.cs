@@ -175,14 +175,6 @@ namespace BetterArchitect
             foreach (var cat in allCategories)
             {
                 var allDesignators = cat.ResolvedAllowedDesignators.Where(d => d.Visible).ToList();
-                
-                // TODO: Add all designators in Floors' subcategories to floorData.allDesignators
-                if (tab.def == DesignationCategoryDefOf.Floors && BetterArchitectSettings.useSpecialFloorsTab)
-                {
-                    List<Designator> subcategoryDesignators = new List<Designator>();
-                    allDesignators.AddRange(subcategoryDesignators);
-                }
-
                 var (buildables, orders) = SeparateDesignatorsByType(allDesignators, cat);
                 designatorDataList.Add(new DesignatorCategoryData(cat, cat == tab.def, allDesignators, buildables, orders));
             }
@@ -194,11 +186,17 @@ namespace BetterArchitect
             if (tab.def == DesignationCategoryDefOf.Floors && BetterArchitectSettings.useSpecialFloorsTab)
             {
                 Designator_Build_ProcessInput_Transpiler.shouldSkipFloatMenu = true;
-                var floorData = designatorDataList.FirstOrDefault(d => d.def == tab.def);
                 var floorSpecificDesignators = new List<Designator>();
                 var orderSpecificDesignators = new List<Designator>();
-                foreach (var designator in floorData.allDesignators)
+
+                HashSet<Designator> allFloorDesignators = new HashSet<Designator>();
+                allFloorDesignators.UnionWith(designatorDataList.FirstOrDefault(d => d.def == DesignationCategoryDefOf.Floors).allDesignators);
+                foreach (DesignatorCategoryData designatorCategoryData in designatorDataList)
+                    allFloorDesignators.UnionWith(designatorCategoryData.allDesignators.Except(designatorCategoryData.orders));
+
+                foreach (var designator in allFloorDesignators)
                 {
+                    Log.Message("Designator:" + designator.Label);
                     if (designator is Designator_Dropdown dropdown)
                     {
                         if (dropdown.Elements.OfType<Designator_Place>().Any(x => x.PlacingDef.designatorDropdown?.includeEyeDropperTool == true))

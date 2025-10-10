@@ -8,61 +8,17 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
-    <defName>Ferny_FloorsCarpet</defName>
+    <defName>Ferny_FloorsWood</defName>
     <label>Wood</label>
-    <description>Carpeted Floors.</description>
-    <order>0</order>
+    <description>Wooden Floors.</description>
+    <order>000</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-    <modExtensions>
-      <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Floors</parentCategory>
-      </li>
-    </modExtensions>
-  </DesignationCategoryDef>
-
-  <DesignationCategoryDef>
-    <defName>Ferny_FloorsClean</defName>
-    <label>Clean</label>
-    <description>Clean Floors.</description>
-    <order>0</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-    <modExtensions>
-      <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Floors</parentCategory>
-      </li>
-    </modExtensions>
-  </DesignationCategoryDef>
-
-  <DesignationCategoryDef>
-    <defName>Ferny_FloorsConcrete</defName>
-    <label>Concrete</label>
-    <description>Concrete Floors.</description>
-    <order>0</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-    <modExtensions>
-      <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Floors</parentCategory>
-      </li>
-    </modExtensions>
-  </DesignationCategoryDef>
-
-  <DesignationCategoryDef>
-    <defName>Ferny_FloorsMetal</defName>
-    <label>Metal</label>
-    <description>Metal Floors.</description>
-    <order>0</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
+      <li>Designator_RemoveFloor</li>
+      <li>Designator_RemoveFoundation</li>
+      <li>Designator_SmoothFloors</li>
+      <li>Designator_PaintFloor</li>
+      <li>Designator_RemoveFloorPaint</li>
     </specialDesignatorClasses>
     <modExtensions>
       <li Class="BetterArchitect.NestedCategoryExtension">
@@ -75,10 +31,14 @@
     <defName>Ferny_FloorsStone</defName>
     <label>Stone</label>
     <description>Stone Floors.</description>
-    <order>0</order>
+    <order>100</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
+      <li>Designator_RemoveFloor</li>
+      <li>Designator_RemoveFoundation</li>
+      <li>Designator_SmoothFloors</li>
+      <li>Designator_PaintFloor</li>
+      <li>Designator_RemoveFloorPaint</li>
     </specialDesignatorClasses>
     <modExtensions>
       <li Class="BetterArchitect.NestedCategoryExtension">
@@ -88,13 +48,77 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
-    <defName>Ferny_FloorsWood</defName>
-    <label>Wood</label>
-    <description>Wooden Floors.</description>
-    <order>0</order>
+    <defName>Ferny_FloorsConcrete</defName>
+    <label>Concrete</label>
+    <description>Concrete Floors.</description>
+    <order>200</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
+      <li>Designator_RemoveFloor</li>
+      <li>Designator_RemoveFoundation</li>
+      <li>Designator_SmoothFloors</li>
+      <li>Designator_PaintFloor</li>
+      <li>Designator_RemoveFloorPaint</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_FloorsMetal</defName>
+    <label>Metal</label>
+    <description>Metal Floors.</description>
+    <order>300</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_RemoveFloor</li>
+      <li>Designator_RemoveFoundation</li>
+      <li>Designator_SmoothFloors</li>
+      <li>Designator_PaintFloor</li>
+      <li>Designator_RemoveFloorPaint</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_FloorsCarpet</defName>
+    <label>Carpet</label>
+    <description>Carpeted Floors.</description>
+    <order>400</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_RemoveFloor</li>
+      <li>Designator_RemoveFoundation</li>
+      <li>Designator_SmoothFloors</li>
+      <li>Designator_PaintFloor</li>
+      <li>Designator_RemoveFloorPaint</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_FloorsClean</defName>
+    <label>Clean</label>
+    <description>Clean Floors.</description>
+    <order>500</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_RemoveFloor</li>
+      <li>Designator_RemoveFoundation</li>
+      <li>Designator_SmoothFloors</li>
+      <li>Designator_PaintFloor</li>
+      <li>Designator_RemoveFloorPaint</li>
     </specialDesignatorClasses>
     <modExtensions>
       <li Class="BetterArchitect.NestedCategoryExtension">
