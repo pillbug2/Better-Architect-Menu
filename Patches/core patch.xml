@@ -186,7 +186,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/TerrainDef[defName="Concrete" or defName="PavedTile"]</xpath>
         <value>
-            <designationCategory>Ferny_FloorsConcrete</designationCategory>
+            <designationCategory>Ferny_FloorsStone</designationCategory>
         </value>
     </Operation>
 
