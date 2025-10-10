@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="Triple_Ergonomic"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Triple_Ergonomic"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Ferny_Bedroom</designationCategory>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="Quadra_Ergonomic"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Quadra_Ergonomic"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Ferny_Bedroom</designationCategory>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>

@@ -839,13 +839,13 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[@Name="DankPyon_StorageBase"]/designationCategory</xpath>
                     <value>
-                    <designationCategory>ASFstorage</designationCategory>
+                    <designationCategory>Ferny_Storage</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[@Name="DankPyon_VanillaShelfBase"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>ASFstorage</designationCategory>
+                        <designationCategory>Ferny_Storage</designationCategory>
                     </value>
                 </Operation>
 
@@ -1232,6 +1232,34 @@
                         <designationCategory>Ferny_Walls</designationCategory>
                     </value>
                 </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_LogWall"]</xpath>
+                    <value>
+                        <uiOrder Inherit="false">4000</uiOrder>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationFindMod">
+                    <mods>
+                    <li>Fuck Embrasures</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationReplace">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName="DankPyon_CastleWallEmbrasures"]/designationCategory</xpath>
+                        <value>
+                            <designationCategory></designationCategory>
+                        </value>
+                        </li>
+                    </operations>
+                    </match>
+                </Operation>
+
+
+
 
 <!-- AMENITIES -->
                 <Operation Class="PatchOperationReplace">

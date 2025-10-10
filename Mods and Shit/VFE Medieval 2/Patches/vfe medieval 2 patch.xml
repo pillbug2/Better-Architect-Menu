@@ -10,6 +10,13 @@
                         <designationCategory>Ferny_Kitchen</designationCategory>
                     </value>
                 </Operation>
+                  <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_WineBarrel"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Kitchen</designationCategory>
+                    </value>
+                </Operation>
 
 <!-- AUXILIARIES -->
                 <Operation Class="PatchOperationReplace">
@@ -24,6 +31,20 @@
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFEM2_ClothWall"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Walls</designationCategory>
+                    </value>
+                </Operation>
+                    <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_LowCastleWall"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Walls</designationCategory>
+                    </value>
+                </Operation>
+                  <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_CastleWall"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Walls</designationCategory>
                     </value>
@@ -110,10 +131,33 @@
                     </value>
                 </Operation>
 
+	            <Operation Class="PatchOperationReplace">
+		            <success>Always</success>
+		            <xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench"]/designationCategory</xpath>
+		            <value>
+			            <designationCategory>Ferny_Production</designationCategory>
+		            </value>
+	            </Operation>
+
+	            <Operation Class="PatchOperationReplace">
+		            <success>Always</success>
+		            <xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench_Electric"]/designationCategory</xpath>
+		            <value>
+			            <designationCategory>Ferny_Production</designationCategory>
+		            </value>
+	            </Operation>
+
 <!-- DECORATIONS -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFEE_ImperialBanner"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+	            <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_StandingBanner"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Decorations</designationCategory>
                     </value>

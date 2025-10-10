@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	
+<!-- POWER INFRASTRUCTURE -->
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="TemperatureSwitch"]/designationCategory</xpath>
@@ -7,4 +10,23 @@
 			<designationCategory>Ferny_PowerManagement</designationCategory>
 		</value>
 	</Operation>
+	
+<!-- AIRFLOW -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TemperatureGauge"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AirManagement</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TemperatureGaugeWall"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AirManagement</designationCategory>
+		</value>
+	</Operation>
+	
 </Patch>

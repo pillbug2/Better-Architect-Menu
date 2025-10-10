@@ -8,6 +8,126 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_FloorsWood</defName>
+    <label>Wood</label>
+    <description>Wooden Floors.</description>
+    <order>000</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_RemoveFloor</li>
+      <li>Designator_RemoveFoundation</li>
+      <li>Designator_SmoothFloors</li>
+      <li>Designator_PaintFloor</li>
+      <li>Designator_RemoveFloorPaint</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_FloorsStone</defName>
+    <label>Stone</label>
+    <description>Stone Floors.</description>
+    <order>100</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_RemoveFloor</li>
+      <li>Designator_RemoveFoundation</li>
+      <li>Designator_SmoothFloors</li>
+      <li>Designator_PaintFloor</li>
+      <li>Designator_RemoveFloorPaint</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_FloorsConcrete</defName>
+    <label>Concrete</label>
+    <description>Concrete Floors.</description>
+    <order>200</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_RemoveFloor</li>
+      <li>Designator_RemoveFoundation</li>
+      <li>Designator_SmoothFloors</li>
+      <li>Designator_PaintFloor</li>
+      <li>Designator_RemoveFloorPaint</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_FloorsMetal</defName>
+    <label>Metal</label>
+    <description>Metal Floors.</description>
+    <order>300</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_RemoveFloor</li>
+      <li>Designator_RemoveFoundation</li>
+      <li>Designator_SmoothFloors</li>
+      <li>Designator_PaintFloor</li>
+      <li>Designator_RemoveFloorPaint</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_FloorsCarpet</defName>
+    <label>Carpet</label>
+    <description>Carpeted Floors.</description>
+    <order>400</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_RemoveFloor</li>
+      <li>Designator_RemoveFoundation</li>
+      <li>Designator_SmoothFloors</li>
+      <li>Designator_PaintFloor</li>
+      <li>Designator_RemoveFloorPaint</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_FloorsClean</defName>
+    <label>Clean</label>
+    <description>Clean Floors.</description>
+    <order>500</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_RemoveFloor</li>
+      <li>Designator_RemoveFoundation</li>
+      <li>Designator_SmoothFloors</li>
+      <li>Designator_PaintFloor</li>
+      <li>Designator_RemoveFloorPaint</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_Seating</defName>
     <label>Seating</label>
     <description>Manage seating.</description>
@@ -86,8 +206,6 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
-
-
 
   <DesignationCategoryDef>
     <defName>Ferny_Production</defName>
@@ -347,6 +465,22 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_Explosives</defName>
+    <label>Explosives</label>
+    <description>Build explosives for your enemies.</description>
+    <order>900</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Security</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_Barricades</defName>
     <label>Barricades</label>
     <description>Build barricades for your enemies.</description>
@@ -396,7 +530,7 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_CombatInfrastructure</defName>
-    <label>Locations</label>
+    <label>Infrastructure</label>
     <description>Build infrastructure for your enemies.</description>
     <order>900</order>
     <specialDesignatorClasses>
@@ -410,9 +544,25 @@
     </modExtensions>
   </DesignationCategoryDef>
 
+	<DesignationCategoryDef>
+		<defName>Ferny_CombatEquipment</defName>
+		<label>Equipment</label>
+		<description>Manage combat equipment.</description>
+		<order>900</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Security</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
   <DesignationCategoryDef>
     <defName>Ferny_Ranching</defName>
-    <label>Ranching</label>
+    <label>Husbandry</label>
     <description>Farming your animals.</description>
     <order>900</order>
     <specialDesignatorClasses>
@@ -525,6 +675,38 @@
     </modExtensions>
   </DesignationCategoryDef>
 
+	<DesignationCategoryDef>
+		<defName>Ferny_Filth</defName>
+		<label>Filth</label>
+		<description>Manage filth.</description>
+		<order>900</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Temperature</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>Ferny_Terraforming</defName>
+		<label>Terraforming</label>
+		<description>Manage the area environment.</description>
+		<order>7</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Temperature</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
   <DesignationCategoryDef>
     <defName>Ferny_Life</defName>
     <label>People</label>
@@ -536,10 +718,58 @@
     </specialDesignatorClasses>
   </DesignationCategoryDef>
 
+	<DesignationCategoryDef>
+		<defName>Ferny_Management</defName>
+		<label>Manage</label>
+		<description>Manage your pawns.</description>
+		<order>9999</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Life</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>Ferny_Control</defName>
+		<label>Influence</label>
+		<description>Influence pawn behavior.</description>
+		<order>9999</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Life</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+	
   <DesignationCategoryDef>
     <defName>Ferny_Childhood</defName>
     <label>Childhood</label>
     <description>Things that relate to childhood.</description>
+    <order>3</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Life</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Memorial</defName>
+    <label>Memorial</label>
+    <description>Things that relate to burials or memorials.</description>
     <order>2</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
@@ -689,7 +919,7 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
-  
+
   <DesignationCategoryDef>
     <defName>Ferny_TransportInfrastructure</defName>
     <label>Infrastructure</label>
@@ -739,7 +969,7 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_ResourcesStorage</defName>
-    <label>Resources</label>
+    <label>Resource</label>
     <description>Build resources storages.</description>
     <order>8</order>
     <specialDesignatorClasses>
@@ -791,6 +1021,42 @@
     </modExtensions>
   </DesignationCategoryDef>
 
+	<DesignationCategoryDef>
+		<defName>Ferny_InformationStorage</defName>
+		<label>Information</label>
+		<description>Build information storages.</description>
+		<order>8</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+			<li>Designator_ZoneAddStockpile_Resources</li>
+			<li>Designator_ZoneAddStockpile_Dumping</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Storage</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_VehicleStorage</defName>
+    <label>Vehicle</label>
+    <description>Build vehicle storage.</description>
+    <order>6</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Designator_ZoneAddStockpile_Resources</li>
+      <li>Designator_ZoneAddStockpile_Dumping</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Storage</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
   <DesignationCategoryDef>
     <defName>Ferny_AmmunitionNetwork</defName>
     <label>Ammunition</label>
@@ -807,7 +1073,6 @@
     </modExtensions>
   </DesignationCategoryDef>
 
-  
   <DesignationCategoryDef>
     <defName>Ferny_World</defName>
     <label>World</label>
@@ -834,11 +1099,44 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>Ferny_Summon</defName>
+		<label>Summon</label>
+		<description>Things that reach out into the world.</description>
+		<order>225</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_World</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>Ferny_Hacking</defName>
+		<label>Hacking</label>
+		<description>Hack stuff.</description>
+		<order>225</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_World</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
   <DesignationCategoryDef>
     <defName>Ferny_Automation</defName>
     <label>Automation</label>
     <description>Things that automate stuff.</description>
-    <order>540</order>
+    <order>12</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -853,8 +1151,8 @@
 		  <li>Designator_Cancel</li>
 		  <li>Designator_Deconstruct</li>
 		</specialDesignatorClasses>
-  </DesignationCategoryDef>  
-  
+  </DesignationCategoryDef>
+
 	<DesignationCategoryDef>
 		<defName>Ferny_Market</defName>
 		<label>Market</label>
@@ -868,7 +1166,7 @@
 				<parentCategory>Ferny_Hosting</parentCategory>
 			</li>
 		</modExtensions>
-  </DesignationCategoryDef>  
+  </DesignationCategoryDef>
 
 	<DesignationCategoryDef>
 		<defName>Ferny_Museum</defName>
@@ -883,8 +1181,23 @@
 				<parentCategory>Ferny_Hosting</parentCategory>
 			</li>
 		</modExtensions>
-  </DesignationCategoryDef>  
+  </DesignationCategoryDef>
 
-
+	<!-- VRE Androids and VE Chemfuel Unofficial Expansion both need a neutroamine network category. -->
+	<DesignationCategoryDef>
+		<defName>Ferny_NeutroamineNetwork</defName>
+		<label>Neutroamine</label>
+		<description>Manage neutroamine.</description>
+		<order>7</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Storage</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
 
 </Defs>

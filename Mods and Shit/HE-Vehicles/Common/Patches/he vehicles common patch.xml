@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="HE_Vehicles"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Transport</parentCategory>
+			</li>
+		</value>
+	</Operation>
+
+	<!--
+	These mods are mostly civilian cars.
+	Put everything in Ferny_GroundTransport and handle the military and air vehicles separately.
+	-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[designationCategory="HE_Vehicles"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[designationCategory="HE_Vehicles"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Ferny_GroundTransport</designationCategory>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>
