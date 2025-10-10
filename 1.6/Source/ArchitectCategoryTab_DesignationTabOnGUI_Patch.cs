@@ -183,13 +183,18 @@ namespace BetterArchitect
             List<Designator> orderDesignators;
             DesignationCategoryDef category;
 
-            if (tab.def == DesignationCategoryDefOf.Floors)
+            if (tab.def == DesignationCategoryDefOf.Floors && BetterArchitectSettings.useSpecialFloorsTab)
             {
                 Designator_Build_ProcessInput_Transpiler.shouldSkipFloatMenu = true;
-                var floorData = designatorDataList.FirstOrDefault(d => d.def == tab.def);
                 var floorSpecificDesignators = new List<Designator>();
                 var orderSpecificDesignators = new List<Designator>();
-                foreach (var designator in floorData.allDesignators)
+
+                HashSet<Designator> allFloorDesignators = new HashSet<Designator>();
+                allFloorDesignators.UnionWith(designatorDataList.FirstOrDefault(d => d.def == DesignationCategoryDefOf.Floors).allDesignators);
+                foreach (DesignatorCategoryData designatorCategoryData in designatorDataList)
+                    allFloorDesignators.UnionWith(designatorCategoryData.allDesignators.Except(designatorCategoryData.orders));
+
+                foreach (var designator in allFloorDesignators)
                 {
                     if (designator is Designator_Dropdown dropdown)
                     {

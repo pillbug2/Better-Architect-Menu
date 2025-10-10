@@ -1,46 +1,54 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Patch>              
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
 
 
-<!-- Rename category -->   
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/DesignationCategoryDef[defName="Anomaly"]/label</xpath>
-                    <value>
-                        <label>Monolith</label>
-                    </value>
-                </Operation>      
+    <!-- Rename category -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Anomaly"]/label</xpath>
+        <value>
+            <label>Monolith</label>
+        </value>
+    </Operation>
 
 
-<!-- NEST INTO WORLD -->
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/DesignationCategoryDef[defName="Anomaly"]</xpath>
-                    <value>
-                        <modExtensions>
-                        <li Class="BetterArchitect.NestedCategoryExtension">
-                            <parentCategory>Ferny_World</parentCategory>
-                        </li>
-                        </modExtensions>
-                    </value>
-                </Operation>
+    <!-- NEST INTO WORLD -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/DesignationCategoryDef[defName="Anomaly"]</xpath>
+        <value>
+            <modExtensions>
+                <li Class="BetterArchitect.NestedCategoryExtension">
+                    <parentCategory>Ferny_World</parentCategory>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
 
-<!-- POWER GENERATION -->
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="BioferriteGenerator"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
-                    </value>
-                </Operation>
+    <!-- Floors -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="BioferritePlate"]</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsMetal</designationCategory>
+        </value>
+    </Operation>
 
-<!-- TERRAFORMING -->
+    <!-- POWER GENERATION -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="BioferriteGenerator"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_PowerGeneration</designationCategory>
+        </value>
+    </Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="AtmosphericHeater"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Terraforming</designationCategory>
-		</value>
-	</Operation>
+    <!-- TERRAFORMING -->
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="AtmosphericHeater"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Terraforming</designationCategory>
+        </value>
+    </Operation>
 
 </Patch>

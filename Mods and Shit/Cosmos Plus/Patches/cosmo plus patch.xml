@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Cosmos_CenterNovax"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Outreach</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Cosmos_CargoBeacon"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Outreach</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Cosmos_StationHive"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Outreach</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>
