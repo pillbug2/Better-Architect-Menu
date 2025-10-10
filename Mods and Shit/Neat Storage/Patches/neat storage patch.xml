@@ -43,7 +43,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="sbz_TextileRack"]</xpath>
         <value>
-            <designationCategory>Ferny_ResourceStorage</designationCategory>
+            <designationCategory>Ferny_ResourcesStorage</designationCategory>
         </value>
     </Operation>
      
