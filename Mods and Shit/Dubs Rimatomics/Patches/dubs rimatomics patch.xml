@@ -7,11 +7,9 @@
 		<success>Always</success>
 		<xpath>Defs/DesignationCategoryDef[defName="Rimatomics"]</xpath>
 		<value>
-
 			<li Class="BetterArchitect.NestedCategoryExtension">
 				<parentCategory>Power</parentCategory>
 			</li>
-
 		</value>
 	</Operation>
 	

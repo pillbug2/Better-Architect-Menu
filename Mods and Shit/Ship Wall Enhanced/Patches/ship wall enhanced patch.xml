@@ -139,7 +139,7 @@
 		</value>
 	</Operation>
 	
-	<!-- WEAPONS -->
+<!-- WEAPONS -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>

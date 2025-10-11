@@ -60,15 +60,17 @@
 		</value>
 	</Operation>
 	
-<!-- WEAPONS -->
+<!-- BARRICADES -->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ContinuousContention_Turret_Skyscreen"]</xpath>
 		<value>
-			<designationCategory>Ferny_Weapons</designationCategory>
+			<designationCategory>Ferny_Barricades</designationCategory>
 		</value>
 	</Operation>
+	
+<!-- WEAPONS -->
 	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>

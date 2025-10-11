@@ -293,12 +293,15 @@
 	
 <!-- AIRFLOW -->
 
+	<!-- Keeping this in the Orbital category for now. -->
+	<!--
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="VGE_SealantPopper"]</xpath>
 		<value>
 			<designationCategory>Ferny_AirManagement</designationCategory>
 		</value>
 	</Operation>
+	-->
 
 <!-- OUTREACH -->
 
