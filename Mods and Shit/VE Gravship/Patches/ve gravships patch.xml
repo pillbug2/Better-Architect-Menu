@@ -37,6 +37,28 @@
 		</value>
 	</Operation>
 
+	<!-- Vanilla chemfuel tanks are repurposed as astrofuel tanks -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ChemfuelTank"]</xpath>
+		<value>
+			<designationCategory>Ferny_AstrofuelNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LargeChemfuelTank"]</xpath>
+		<value>
+			<designationCategory>Ferny_AstrofuelNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VGE_GiantAstrofuelTank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AstrofuelNetwork</designationCategory>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_AstrofuelPipe"]/designationCategory</xpath>
 		<value>
@@ -46,13 +68,6 @@
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_AstrofuelValve"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_AstrofuelNetwork</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="VGE_GiantAstrofuelTank"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_AstrofuelNetwork</designationCategory>
 		</value>

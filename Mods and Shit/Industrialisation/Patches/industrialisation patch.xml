@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- POWER GENERATION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Ind_NuclearPowerPlant"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+<!-- POWER STORAGE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Ind_IndustrialBattery"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerStorage</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- POWER INFRASTRUCTURE -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Ind_IndustrialCable"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerManagement</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PROCESSING PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Ind_ConcreteMixer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Ind_ElectricArcFurnace"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Ind_DeepMine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>
