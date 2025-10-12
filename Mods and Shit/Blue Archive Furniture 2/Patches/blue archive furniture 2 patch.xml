@@ -81,15 +81,25 @@
         </value>
     </Operation>
 
-    <!-- ========== DECORATIONS ========== -->
+    
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>
-            Defs/ThingDef[defName="Gehenna_Stone_Fence"]/designationCategory |
+            Defs/ThingDef[defName="Gehenna_Stone_Fence"]/designationCategory 
+        </xpath>
+        <value>
+            <designationCategory>Ferny_Ranching</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- ========== DECORATIONS ========== -->
+     <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
             Defs/ThingDef[defName="Gehenna_Flag"]/designationCategory
         </xpath>
         <value>
-            <designationCategory>Ferny_Decorations</designationCategory>
+            <designationCategory>Ferny_DecoHanging</designationCategory>
         </value>
     </Operation>
 

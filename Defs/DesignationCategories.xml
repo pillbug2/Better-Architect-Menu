@@ -242,7 +242,7 @@
 
   <DesignationCategoryDef>
 		<defName>Ferny_DecoHanging</defName>
-		<label>Curtains</label>
+		<label>Hanging</label>
 		<description>Manage Hanging Decorations such as signs, banners and curtains.</description>
 		<order>700</order>
 		<specialDesignatorClasses>
