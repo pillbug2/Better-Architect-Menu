@@ -3,7 +3,6 @@
 
 <!-- Stupid category nest if its still there -->
                 <Operation Class="PatchOperationConditional">
-                <success>Always</success>
                     <xpath>/Defs/DesignationCategoryDef[defName="AM_FLOOR"]</xpath>
                     <match Class="PatchOperationSequence">
                         <operations>
@@ -31,7 +30,6 @@
 
 <!-- POWER GENERATION -->
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="AM_SmallGenerator"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_PowerGeneration</designationCategory>
@@ -40,7 +38,6 @@
 
 <!-- POWER MANAGEMENT -->
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="AM_ElectricalBox"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_PowerManagement</designationCategory>
@@ -50,7 +47,6 @@
 
 <!-- PRODUCTION -->
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="AM_AncientDismantlingWorkbench"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Production</designationCategory>
@@ -58,9 +54,8 @@
                 </Operation>
 
   <!-- SEATING -->
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AM_DiningChair"]/designationCategory</xpath>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AM_DiningChair"]</xpath>
                     <value>
                         <designationCategory>Ferny_Seating</designationCategory>
                     </value>
