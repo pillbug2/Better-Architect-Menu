@@ -13,14 +13,12 @@
 
 <!-- WEAPONS -->
 
-	<Operation Class="PatchOperationConditional">
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
 		<xpath>Defs/ThingDef[designationCategory="AMC"]/designationCategory</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[designationCategory="AMC"]/designationCategory</xpath>
-			<value>
-				<designationCategory>Ferny_Weapons</designationCategory>
-			</value>
-		</match>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
 	</Operation>
 	
 <!-- PRODUCTION -->

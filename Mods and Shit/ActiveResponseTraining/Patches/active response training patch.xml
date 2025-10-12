@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ShootingRangeLeft"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Management</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ShootingRangeRight"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Management</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ShootingRange"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Management</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MrDummy"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Management</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

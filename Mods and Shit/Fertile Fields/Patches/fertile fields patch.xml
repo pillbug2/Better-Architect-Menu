@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="RFF_Adds"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Temperature</parentCategory>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="RFF_Farm"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Temperature</parentCategory>
+			</li>
+		</value>
+	</Operation>
+	
+<!-- TERRAFORMING -->
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_Terraforming"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>RFF_Code.Designator_Terraform_RichSoil</li>
+			<li>RFF_Code.Designator_Terraform_TilledSoil</li>
+			<li>RFF_Code.Designator_Terraform_Topsoil</li>
+			<li>RFF_Code.Designator_Terraform_RichTopsoil</li>
+			<li>RFF_Code.Designator_Terraform_Stone</li>
+			<li>RFF_Code.Designator_Terraform_RockySoil</li>
+			<li>RFF_Code.Designator_Terraform_Sand</li>
+			<li>RFF_Code.Designator_Terraform_Gravel</li>
+			<li>RFF_Code.Designator_Terraform_PackedDirt</li>
+			<li>RFF_Code.Designator_Terraform_Mud</li>
+			<li>RFF_Code.Designator_Terraform_Soil</li>
+			<li>RFF_Code.Designator_Terraform_MarshySoil</li>
+			<li>RFF_Code.Designator_Terraform_Marsh</li>
+			<li>RFF_Code.Designator_Terraform_WaterShallow</li>
+			<li>RFF_Code.Designator_Terraform_WaterDeep</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="RFF_TerraformBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Terraforming</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Terraform_Stone-Topsoil"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Terraforming</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Terraform_Topsoil-DirtFert"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Terraforming</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Terraform_SoilF-SoilRich"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Terraforming</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Terraform_SoilRich-SoilRich"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Terraforming</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Terraform_SoilRich-SoilTilled"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Terraforming</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PROCESSING PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RockMill"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<!-- TODO Should the below items be in Ferny_Farming?? -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CompostBin"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CompostBarrel"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- POWER GENERATION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RFF_ScrapGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+<!-- LIGHTING -->
+
+	<!-- Reverts mod's change to vanilla item -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SunLamp"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

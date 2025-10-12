@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="Fences"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Animals</parentCategory>
+			</li>
+		</value>
+	</Operation>
+	vv vvvvv
+<!-- HUSBANDRY -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="FencesAFGateBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Ranching</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="FencesAFBuildingBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Ranching</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- BARRICADES -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SecurityBarrier"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

@@ -662,8 +662,8 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_Firefoam</defName>
-    <label>Firefoam</label>
-    <description>Manage firefoam.</description>
+    <label>Fire safety</label>
+    <description>Manage fires and firefoam.</description>
     <order>900</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
@@ -700,6 +700,8 @@
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
 			<li>Designator_Deconstruct</li>
+			<li>Designator_RemoveFloor</li>     <!-- Required by [sd] Bridges, Fertile Fields -->
+			<li>Designator_SmoothSurface</li>   <!-- Required by [sd] Bridges, Fertile Fields -->
 		</specialDesignatorClasses>
 		<modExtensions>
 			<li Class="BetterArchitect.NestedCategoryExtension">

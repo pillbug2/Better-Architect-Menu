@@ -7,11 +7,9 @@
 		<success>Always</success>
 		<xpath>Defs/DesignationCategoryDef[defName="Rimatomics"]</xpath>
 		<value>
-
 			<li Class="BetterArchitect.NestedCategoryExtension">
 				<parentCategory>Power</parentCategory>
 			</li>
-
 		</value>
 	</Operation>
 	
@@ -158,6 +156,7 @@
 	
 <!-- BARRICADES -->
 
+	<!--
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PPCHEL"]</xpath>
@@ -165,6 +164,7 @@
 			<designationCategory>Ferny_Barricades</designationCategory>
 		</value>
 	</Operation>
+	-->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
