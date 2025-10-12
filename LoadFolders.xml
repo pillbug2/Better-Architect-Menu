@@ -5,16 +5,16 @@
   
 <!--   !!! Welcome contributors! If you are here to add support for a mod just scroll to the very bottom and put it there.   -->
     
-    
+
+<!-- PROGRESSION EDUCATION (To override Odyssey's stuff) -->
+    <li IfModActive="ferny.progressioneducation">Mods and Shit/Progression Education</li>
+
   <!-- CORE + DLCS -->
     <li IfModActive="Ludeon.Rimworld.Royalty">Mods and Shit/Royalty</li>
     <li IfModActive="Ludeon.Rimworld.Ideology">Mods and Shit/Ideology</li>
     <li IfModActive="Ludeon.Rimworld.Biotech">Mods and Shit/Biotech</li>
     <li IfModActive="Ludeon.Rimworld.Anomaly">Mods and Shit/Anomaly</li>
     <li IfModActive="Ludeon.Rimworld.Odyssey">Mods and Shit/Odyssey</li>
-
-<!-- PROGRESSION -->
-    <li IfModActive="ferny.progressioneducation">Mods and Shit/Progression Education</li>
 
 <!-- PROVISIONAL PATCHES (Currently primarily managed by Pillbug) -->
 <!-- These mods have not been updated to 1.6. Support has been tested to work but is provisional. -->
@@ -44,10 +44,6 @@
     <!-- Add any of HighlyE's H- series vehicles to the below string please. -->
     <li IfModActiveAny="he.rrs,he.agmtfat,he.agmnne,he.bfot,he.ct,he.fbbus,he.fcvpi,he.fe,he.f350a,he.fltdcv,he.bearcatg3,he.mstat,he.pa">Mods and Shit/HE-Vehicles/Common</li>
 
-    
-    
-    
-    
     
 <!-- THE REST (Add whatever you'd like here)-->
     <li IfModActive="smashphil.vehicleframework">Mods and Shit/Vehicle Framework</li>
@@ -600,6 +596,14 @@
     <li IfModActive="he.bfot">Mods and Shit/HE-Vehicles/HE-Bell 412 Helicopter '81</li>
     <li IfModActive="he.mstat">Mods and Shit/HE-Vehicles/HE-M60A3 Patton Medium Tank '78</li>
     <li IfModActive="zal.FishingBoats">Mods and Shit/Fishing Boats</li>
+    <li IfModActive="dismarzero.vgp.vgpgardenfabrics">Mods and Shit/VGP Garden Fabrics</li>
+    <li IfModActive="dismarzero.vgp.vgpgardencanning">Mods and Shit/VGP Garden Canning</li>
+    <li IfModActive="dismarzero.vgp.vgpvegetablegarden">Mods and Shit/VGP Vegetable Garden</li>
+    <li IfModActive="dismarzero.vgp.vgpgardendrinks">Mods and Shit/VGP Garden Drinks</li>
+    <li IfModActive="dismarzero.vgp.vgpgardengourmet">Mods and Shit/VGP Garden Gourmet</li>
+    <li IfModActive="sarg.rimbees">Mods and Shit/Alpha Bees</li>
+    <li IfModActive="eeg.architecture">Mods and Shit/Architecture of the Rim Corners</li>
+    <li IfModActive="adaptive.simplestorage">Mods and Shit/Adaptive Simple Storage</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
