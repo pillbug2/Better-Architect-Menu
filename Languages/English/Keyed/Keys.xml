@@ -8,8 +8,8 @@
 	<BA.HideOnSelectionTooltip>When building is selected, fully hide the menu.</BA.HideOnSelectionTooltip>
 	<BA.RememberSubcategory>Remember subcategory</BA.RememberSubcategory>
 	<BA.RememberSubcategoryTooltip>When enabled, the mod will remember the last selected subcategory for each main category. When disabled, it will always default to the first subcategory.</BA.RememberSubcategoryTooltip>
-	<BA.UseSpecialFloorsTab>Use special Floors tab.</BA.UseSpecialFloorsTab>
-	<BA.UseSpecialFloorsTabTooltip>Use a special Floors tab with subcategories for each material.</BA.UseSpecialFloorsTabTooltip>
+	<BA.UseSpecialFloorsTab>Use custom floor menu</BA.UseSpecialFloorsTab>
+	<BA.UseSpecialFloorsTabTooltip>Whether the menu should use subcategories for each material, or be more broadly sorted. (WIP)</BA.UseSpecialFloorsTabTooltip>
 	<BA.Default>Default</BA.Default>
 	<BA.Label>Label</BA.Label>
 	<BA.Beauty>Beauty</BA.Beauty>

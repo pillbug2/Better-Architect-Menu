@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
+		<match Class="PatchOperationAddModExtension">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="Ferny_WoodNetwork"]</xpath>
+			<value>
+				<li Class="BetterArchitect.NestedCategoryExtension">
+					<parentCategory>VCHE_PipeNetworks</parentCategory>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+<!-- WOOD -->
+	
+	<!-- Networks -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="NBNW_WoodLogNet"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_WoodNetwork</designationCategoryDef>
+		</value>
+	</Operation>
+
+	<!-- Buildings -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NBNW_WoodLogPipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_WoodNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NBNW_UndergroundWoodLogPipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_WoodNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NBNW_WoodLogValve"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_WoodNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NBNW_WoodLogTank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_WoodNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NBNW_WoodLogTap"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_WoodNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NBNW_WoodLogDrain"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_WoodNetwork</designationCategory>
+		</value>
+	</Operation>
+
+</Patch>

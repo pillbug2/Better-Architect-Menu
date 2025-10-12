@@ -16,7 +16,7 @@
 		<defName>Ferny_AstrofuelNetwork</defName>
 		<label>Astrofuel</label>
 		<description>Manage astrofuel.</description>
-		<order>7</order>
+		<order>6</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
 			<li>Designator_Deconstruct</li>

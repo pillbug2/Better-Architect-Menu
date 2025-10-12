@@ -59,7 +59,7 @@
 			<designationCategory>Ferny_AmmunitionNetwork</designationCategory>
 		</value>
 	</Operation>
-	
+
 <!-- WEAPONS -->
 
 	<Operation Class="PatchOperationAdd">

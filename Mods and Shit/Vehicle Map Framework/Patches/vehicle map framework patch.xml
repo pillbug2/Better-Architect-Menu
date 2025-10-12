@@ -94,14 +94,14 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[@Name="VMF_GravshipWheelBase"]/designationCategory</xpath>
 					<value>
-						<designationCategory>Odyssey</designationCategory>
+						<designationCategory>Ferny_SpacePlatform</designationCategory>
 					</value>
 				</li>
 
-				<li Class="PatchOperationRemove">
+				<!-- <li Class="PatchOperationRemove">
 					<success>Always</success>
 					<xpath>Defs/ThingDef[@Name="VMF_GravshipWheelBase"]/designatorDropdown</xpath>
-				</li>
+				</li> -->
 				
 			</operations>
 		</match>

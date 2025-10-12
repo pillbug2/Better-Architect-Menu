@@ -1,6 +1,130 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+<!-- Ferny's new stuff -->
+
+<!-- SPACE PLATFORM -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="VGE_GravshipSubscaffold"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="VGE_VacBarrierBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravEngine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VGE_GravjumperEngine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VGE_GravhulkEngine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VGE_GravFieldAmplifier"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VGE_CommsTerminal"]</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VGE_PilotCockpit"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VGE_PilotCockpit"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VGE_CopilotConsole"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="VGE_BaseHeatsink"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VGE_EngineeringConsole"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VGE_GravtechConsole"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VGE_PilotBridge"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+
+
+<!-- VACUUM -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VGE_SealantPopper"]</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VGE_VacCheckpoint"]</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
+		</value>
+	</Operation>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Old stuff, disoragnized and modified -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
 		<match Class="PatchOperationAddModExtension">
@@ -189,7 +313,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="VGE_CompactStove"]</xpath>
 		<value>
-			<designationCategory>Ferny_Kitchen</designationCategory>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
 		</value>
 	</Operation>
 
@@ -202,35 +326,35 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_CompactDrugLab"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Production</designationCategory>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_CompactMachiningTable"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Production</designationCategory>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_CompactSmithy"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Production</designationCategory>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_CompactTailor"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Production</designationCategory>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_CompactFabBench"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Production</designationCategory>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
 		</value>
 	</Operation>
 
@@ -255,7 +379,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_CompactRefinery"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
 		</value>
 	</Operation>
 
@@ -268,23 +392,24 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="VGE_GravshipBuildingBase"]</xpath>
 		<value>
-			<designationCategory>Ferny_Weapons</designationCategory>
+			<designationCategory>Ferny_SpaceCombat</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="VGE_GravshipArtilleryBase"]</xpath>
 		<value>
-			<designationCategory>Ferny_Weapons</designationCategory>
+			<designationCategory>Ferny_SpaceCombat</designationCategory>
 		</value>
 	</Operation>
 	
 <!-- COMBAT INFRASTRUCTURE -->
 
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="VGE_TargetingTerminal"]</xpath>
 		<value>
-			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
+			<designationCategory>Ferny_SpaceCombat</designationCategory>
 		</value>
 	</Operation>
 
@@ -293,7 +418,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="VGE_GravshipShelf"]</xpath>
 		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
+			<designationCategory>Ferny_VehicleStorage</designationCategory>
 		</value>
 	</Operation>
 
@@ -304,25 +429,10 @@
 		<value>
 			<designationCategory>Ferny_Firefoam</designationCategory>
 		</value>
-	</Operation>
-	
-<!-- AIRFLOW -->
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="VGE_SealantPopper"]</xpath>
-		<value>
-			<designationCategory>Ferny_AirManagement</designationCategory>
-		</value>
-	</Operation>
+  </Operation>
 
 <!-- OUTREACH -->
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="VGE_CommsTerminal"]</xpath>
-		<value>
-			<designationCategory>Ferny_Outreach</designationCategory>
-		</value>
-	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="VGE_WallOrbitalTradeBeacon"]</xpath>
@@ -330,16 +440,7 @@
 			<designationCategory>Ferny_Outreach</designationCategory>
 		</value>
 	</Operation>
-	
-<!-- RESEARCH PRODUCTION -->
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="VGE_GravtechConsole"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_ResearchProduction</designationCategory>
-		</value>
-	</Operation>
-	
 <!-- POWER GENERATION -->
 
 	<Operation Class="PatchOperationReplace">
@@ -359,23 +460,24 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_GravcorePowerCoil"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Ferny_SpacePower</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_SolarPanelling"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Ferny_SpacePower</designationCategory>
 		</value>
 	</Operation>
 	
+
 <!-- POWER STORAGE -->
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_GravshipCapacitor"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Ferny_SpacePower</designationCategory>
 		</value>
 	</Operation>
 
@@ -384,7 +486,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_Agrocell"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Farming</designationCategory>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
 		</value>
 	</Operation>
 	
@@ -393,14 +495,14 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="VGE_GravshipLivingBedBase"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
+			<designationCategory>Ferny_SpaceFurniture</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="VGE_CrewLockers"]</xpath>
 		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
+			<designationCategory>Ferny_VehicleStorage</designationCategory>
 		</value>
 	</Operation>
 	
@@ -409,7 +511,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="VGE_MedbayBed"]</xpath>
 		<value>
-			<designationCategory>Ferny_Medical</designationCategory>
+			<designationCategory>Ferny_SpaceFurniture</designationCategory>
 		</value>
 	</Operation>
 	

@@ -5,16 +5,16 @@
   
 <!--   !!! Welcome contributors! If you are here to add support for a mod just scroll to the very bottom and put it there.   -->
     
-    
+
+<!-- PROGRESSION EDUCATION (To override Odyssey's stuff) -->
+    <li IfModActive="ferny.progressioneducation">Mods and Shit/Progression Education</li>
+
   <!-- CORE + DLCS -->
     <li IfModActive="Ludeon.Rimworld.Royalty">Mods and Shit/Royalty</li>
     <li IfModActive="Ludeon.Rimworld.Ideology">Mods and Shit/Ideology</li>
     <li IfModActive="Ludeon.Rimworld.Biotech">Mods and Shit/Biotech</li>
     <li IfModActive="Ludeon.Rimworld.Anomaly">Mods and Shit/Anomaly</li>
     <li IfModActive="Ludeon.Rimworld.Odyssey">Mods and Shit/Odyssey</li>
-
-<!-- PROGRESSION -->
-    <li IfModActive="ferny.progressioneducation">Mods and Shit/Progression Education</li>
 
 <!-- PROVISIONAL PATCHES (Currently primarily managed by Pillbug) -->
 <!-- These mods have not been updated to 1.6. Support has been tested to work but is provisional. -->
@@ -37,17 +37,19 @@
     <li IfModActive="rimthunderteams.rimthunder.warhorseofreich">Mods and Shit/RimThunder Warhorse of the Reich</li>
     <li IfModActive="rimthunderteams.rimthunder.waytosamurai">Mods and Shit/RimThunder Way to Samurai</li>
     <li IfModActive="myde.aerocraftframework">Mods and Shit/Aerocraft Framework</li>
+    <li IfModActive="Adaptive.Storage.Neolithic">Mods and Shit/Adaptive Storage Neolithic</li>
+    
 
     
 <!-- BATCH PATCHES  -->
+	  <!-- Note that these may only be partial patches: E.g., moving categories. -->
+	  <!-- AUTHORS: Please check if your mod needs to be added in one of these strings as well. -->
+	  
+    <li IfModActiveAny="mingtuwuxiang.fishingdecorative,mingtuwuxiang.gothicdecorative,mingtuwuxiang.spacebasedecorative">Mods and Shit/MUS Common Patch</li>
     
-    <!-- Add any of HighlyE's H- series vehicles to the below string please. -->
     <li IfModActiveAny="he.rrs,he.agmtfat,he.agmnne,he.bfot,he.ct,he.fbbus,he.fcvpi,he.fe,he.f350a,he.fltdcv,he.bearcatg3,he.mstat,he.pa">Mods and Shit/HE-Vehicles/Common</li>
-
     
-    
-    
-    
+	<li IfModActiveAny="resurrectionem.furniture,resurrectionem.furnitureasia">Mods and Shit/RR Furniture Common</li>
     
 <!-- THE REST (Add whatever you'd like here)-->
     <li IfModActive="smashphil.vehicleframework">Mods and Shit/Vehicle Framework</li>
@@ -350,7 +352,6 @@
     <li IfModActive="mo.technicalmapvehicles">Mods and Shit/Technical Map Vehicles</li>
     <li IfModActive="mrhydralisk.voepowergrid">Mods and Shit/VE Outposts Power Grid</li>
     <li IfModActive="oels.vehiclemapframework">Mods and Shit/Vehicle Map Framework</li>
-    <li IfModActiveAny="mingtuwuxiang.fishingdecorative,mingtuwuxiang.gothicdecorative,mingtuwuxiang.spacebasedecorative">Mods and Shit/MUS Common Patch</li>
     <li IfModActive="mingtuwuxiang.fishingdecorative">Mods and Shit/MUS FishingDecorative</li>                              <!-- Progression: Aesthetics compat -->
     <li IfModActive="mingtuwuxiang.gothicdecorative">Mods and Shit/MUS Gothicstyle Vampire Furniture</li>                   <!-- Progression: Aesthetics compat -->
     <li IfModActive="mingtuwuxiang.spacebasedecorative">Mods and Shit/MUS Space Base Furniture</li>
@@ -453,7 +454,6 @@
     <li IfModActive="rimthunderteams.rimthunder.timeforward">Mods and Shit/RimThunder Time Forward</li>
     <li IfModActive="zyszhao.rimthunder.westerngreen">Mods and Shit/RimThunder Western Green</li>
     <li IfModActive="rimthunderteams.rimthunder.zarya">Mods and Shit/RimThunder Zarya</li>
-    <li IfModActiveAny="resurrectionem.furniture,resurrectionem.furnitureasia">Mods and Shit/RR Furniture Common</li>
     <li IfModActive="resurrectionem.furnitureasia">Mods and Shit/RR Furniture Longyun</li>
     <li IfModActive="resurrectionem.furniture">Mods and Shit/RR Furniture Rapture</li>
     <li IfModActive="mlie.morefurniture">Mods and Shit/More Furniture</li>
@@ -599,6 +599,210 @@
     <li IfModActive="he.agmnne">Mods and Shit/HE-Vehicles/HE-AM General M998 '92</li>
     <li IfModActive="he.bfot">Mods and Shit/HE-Vehicles/HE-Bell 412 Helicopter '81</li>
     <li IfModActive="he.mstat">Mods and Shit/HE-Vehicles/HE-M60A3 Patton Medium Tank '78</li>
+    <li IfModActive="acutus.electrofishing">Mods and Shit/Electrofishing</li>
+    <li IfModActive="kearril.fishingspotsandanglerkits">Mods and Shit/Fishing Spots and Angler Kits</li>
+    <li IfModActive="xercaine.smallhydroponicsbasins">Mods and Shit/Small Hydroponics Basins</li>
+    <li IfModActive="nalzurin.autoimplanter">Mods and Shit/Bionix Automator</li>
+    <li IfModActive="xercaine.medieval.cannon">Mods and Shit/Cannon</li>
+    <li IfModActive="xercaine.smallstoves">Mods and Shit/Small Stoves</li>
+    <li IfModActive="xercaine.medieval.catapult">Mods and Shit/Catapult</li>
+    <li IfModActive="xercaine.fueledcrematorium">Mods and Shit/Fueled Crematoriums</li>
+    <li IfModActive="xercaine.fueledsmelter">Mods and Shit/Fueled Smelters</li>
+    <li IfModActive="xercaine.smalltable">Mods and Shit/Small Table</li>
+    <li IfModActive="xercaine.smalldresser">Mods and Shit/Small Dresser</li>
+    <li IfModActive="xercaine.smallsleepingspot">Mods and Shit/Small Sleeping Slot</li>
+    <li IfModActive="xercaine.wallsunlamp">Mods and Shit/Wall Sun Lamp</li>
+    <li IfModActive="xercaine.industrialage.artillery">Mods and Shit/Artillery Gun</li>
+    <li IfModActive="unofficialstatus.hlcombineoverwatch">Mods and Shit/Combine Overwatch Rim Sector</li>
+    <li IfModActive="wvc.sergkart.ultraexpansion">Mods and Shit/WVC Ultra Expansion II</li>
+    <li IfModActive="ponpeco.kidsclothes">Mods and Shit/Ponpeco Kids Clothes</li>
+    <li IfModActive="alma.richsoilpump">Mods and Shit/Enrichment Toxifier</li>
+    <li IfModActive="hyousol.grasslighting">Mods and Shit/Grasslighting</li>
+    <li IfModActive="hyousol.crunglegenerator">Mods and Shit/Fissionsalt Generator</li>
+    <li IfModActive="vanillaexpanded.gravship">Mods and Shit/VE Gravship</li>
+    <li IfModActive="shadowron.ogliss.bishop.smokeleafindustryreborn">Mods and Shit/Smokeleaf Industry Reborn</li>
+    <li IfModActive="mlie.kvinfinitestorage">Mods and Shit/Infinite Storage</li>
+    <li IfModActive="mlie.syrmetallicbatteries">Mods and Shit/Metallic Batteries</li>
+    <li IfModActive="mlie.syrprosthetictable">Mods and Shit/Prosthetic Table</li>
+    <li IfModActive="mlie.autotamer">Mods and Shit/Auto Tamer</li>
+    <li IfModActive="mlie.comigosnutrition">Mods and Shit/Comigo's Nutrition</li>
+    <li IfModActive="mlie.industrialisation">Mods and Shit/Industrialisation</li>
+    <li IfModActive="mlie.machinegundefence">Mods and Shit/Machine Gun Defense</li>
+    <li IfModActive="mlie.mealprinter">Mods and Shit/Meal Printer</li>
+    <li IfModActive="mlie.medicalbay">Mods and Shit/Medical Bay</li>
+    <li IfModActive="mlie.passitthroughthewindow">Mods and Shit/Pass It Through The Window</li>
+    <li IfModActive="mlie.questionableethicsenhanced">Mods and Shit/Questionable Ethics Enhanced</li>
+    <li IfModActive="mlie.radiology">Mods and Shit/Radiology</li>
+    <li IfModActive="mlie.simpleminingextension">Mods and Shit/Simple Mining Extension</li>
+    <li IfModActive="mlie.thermalpowerreactor">Mods and Shit/Thermal Power Reactor</li>
+    <li IfModActive="mlie.tranquilizerturret">Mods and Shit/Tranquilizer Turret</li>
+    <li IfModActive="mlie.xndteturretexpansion">Mods and Shit/TE Turret Expansion</li>
+    <li IfModActive="cgf1.gunsgalorecore">Mods and Shit/Guns Galore Core</li>
+    <li IfModActive="zal.abmoca">Mods and Shit/Absolutely More Cannons</li>
+    <li IfModActive="bean.turretpack">Mods and Shit/Bean's Turret Pack</li>
+    <li IfModActive="zal.castlebranne">Mods and Shit/Castle Branne</li>
+    <li IfModActive="zal.coldfusionreactor">Mods and Shit/Cold Fusion Reactor</li>
+    <li IfModActive="zal.cfr">Mods and Shit/ColdFusionReactor</li>
+    <li IfModActive="zal.cosmos">Mods and Shit/Cosmos Plus</li>
+    <li IfModActive="zal.artbenchelectric">Mods and Shit/Electric Art Bench</li>
+    <li IfModActive="zal.extendedturrets">Mods and Shit/Extended Turrets</li>
+    <li IfModActive="zal.fcc">Mods and Shit/Fire Control Computers</li>
+    <li IfModActive="zal.flakturret">Mods and Shit/Flak Turret</li>
+    <li IfModActive="zal.laserturret">Mods and Shit/Laser Turret</li>
+    <li IfModActive="zal.rocketturret">Mods and Shit/Rocket Turret</li>
+    <li IfModActive="zal.morevanillaturrets">Mods and Shit/More Vanilla Turrets</li>
+    <li IfModActive="zal.foundations">Mods and Shit/Foundations</li>
+    <li IfModActive="zal.fuelednuclear">Mods and Shit/Fueled Nuclear Power Generators</li>
+    <li IfModActive="zal.advanceddeepdrill">Mods and Shit/GarlicSauce's Advanced Deep Drill</li>
+    <li IfModActive="zal.hamsterwheelgenerator">Mods and Shit/Hamster Wheel Generator</li>
+    <li IfModActive="zal.haymaker">Mods and Shit/Hay-Maker</li>
+    <li IfModActive="zal.holodoors">Mods and Shit/Holo Doors</li>
+    <li IfModActive="neronix17.cosmorim.microcommsconsole">Mods and Shit/Micro Comms Console</li>
+    <li IfModActive="zal.smallcommsconsole">Mods and Shit/Small Comms Console</li>
+    <li IfModActive="zal.tinycommsconsole">Mods and Shit/Tiny Comms Console</li>
+    <li IfModActive="zal.moritzenergy">Mods and Shit/Moritz's EnergySolutions</li>
+    <li IfModActive="zal.printingpress">Mods and Shit/Printing Press</li>
+    <li IfModActive="zal.researchspot">Mods and Shit/Research Spot</li>
+    <li IfModActive="zal.spaceports">Mods and Shit/Rimsential Spaceports</li>
+    <li IfModActive="zal.simpleclones">Mods and Shit/Simple Clones</li>
+    <li IfModActive="zal.smallpowercell">Mods and Shit/Small Power Cell</li>
+    <li IfModActive="zal.valkyriecorpgunprinting">Mods and Shit/Valkyrie Corp Gun Printing</li>
+    <li IfModActive="zal.vanotech">Mods and Shit/Vanometric Tech</li>
+    <li IfModActive="zal.pickledvegetables">Mods and Shit/Pickled Vegetables</li>
+    <li IfModActive="zal.advancedelectricstove">Mods and Shit/Advanced Electric Stove</li>
+    <li IfModActive="zal.boats">Mods and Shit/Boats</li>
+    <li IfModActive="zal.boozeomatic">Mods and Shit/Booze O Matic</li>
+    <li IfModActive="zal.combatcar">Mods and Shit/Combat Car</li>
+    <li IfModActive="zal.chickencoop">Mods and Shit/Mitz's Chicken Coop</li>
+    <li IfModActive="shira.ddgchllngr">Mods and Shit/Dodge Challenger</li>
+    <li IfModActive="sorrode.h47">Mods and Shit/H-47</li>
+    <li IfModActive="he.agmtfat">Mods and Shit/HE-Vehicles/HE-AM General M35A2 '78</li>
+    <li IfModActive="he.agmnne">Mods and Shit/HE-Vehicles/HE-AM General M998 '92</li>
+    <li IfModActive="he.bfot">Mods and Shit/HE-Vehicles/HE-Bell 412 Helicopter '81</li>
+    <li IfModActive="he.mstat">Mods and Shit/HE-Vehicles/HE-M60A3 Patton Medium Tank '78</li>
+    <li IfModActive="mlie.o21barbedwire">Mods and Shit/Barbed Wire</li>
+    <li IfModActive="mlie.sdadvancedpowergeneration">Mods and Shit/Advanced Powergeneration</li>
+    <li IfModActive="mlie.sdbridges">Mods and Shit/Bridges</li>
+    <li IfModActive="mlie.sdchickennest">Mods and Shit/Chicken Nest</li>
+    <li IfModActive="mlie.sdluciferiumproduction">Mods and Shit/Luciferium Production</li>
+    <li IfModActive="mlie.sdpillowsandbeanbags">Mods and Shit/Pillows and Beanbags</li>
+    <li IfModActive="mlie.ssmassstorage">Mods and Shit/SS Mass Storage</li>
+    <li IfModActive="mlie.acidchamberdissolveanything">Mods and Shit/Acid Chamber</li>
+    <li IfModActive="mlie.activeresponsetraining">Mods and Shit/ActiveResponseTraining</li>
+    <li IfModActive="mlie.agemorphosiscells">Mods and Shit/Age Morphosis Cells</li>
+    <li IfModActive="mlie.agrivoltaicsolarpanel">Mods and Shit/Agrivoltaic Solar Panel</li>
+    <li IfModActive="scorpio.core">Mods and Shit/Anti-Air and Anti-Mortar</li>
+    <li IfModActive="mlie.autodoc">Mods and Shit/Auto Doc</li>
+    <li IfModActive="mlie.backupgenerators">Mods and Shit/Backup Generators</li>
+    <li IfModActive="spesscarp.beach">Mods and Shit/Beach</li>
+    <li IfModActive="mlie.betterpodlauncher">Mods and Shit/Better Pod Launcher</li>
+    <li IfModActive="mlie.caravanequipment">Mods and Shit/Caravan Equipment</li>
+    <li IfModActive="mlie.centralizedclimatecontrol">Mods and Shit/Centralized Climate Control</li>
+    <li IfModActive="spesscarp.commercialserver">Mods and Shit/Commercial Server</li>
+    <li IfModActive="spesscarp.confetti">Mods and Shit/Confetti</li>
+    <li IfModActive="spesscarp.cryogenicscube">Mods and Shit/Cryogenics Cube</li>
+    <li IfModActive="mlie.cts">Mods and Shit/CTS Complete Tech Solutions</li>
+    <li IfModActive="mlie.decorativetrees">Mods and Shit/Decorative Trees</li>
+    <li IfModActive="mlie.deeprim">Mods and Shit/DeepRim</li>
+    <li IfModActive="mlie.defensivemoats">Mods and Shit/Defensive Moats</li>
+    <li IfModActive="mlie.displaycases">Mods and Shit/Display Cases</li>
+    <li IfModActive="mlie.dyevat">Mods and Shit/Dye Vat</li>
+    <li IfModActive="mlie.edlaserdrill">Mods and Shit/ED-Laser-Drill</li>
+    <li IfModActive="mlie.electricfencesandfloors">Mods and Shit/Electric Fences and Floors</li>
+    <li IfModActive="spesscarp.electricigniter">Mods and Shit/Electric Igniter</li>
+    <li IfModActive="mlie.emergencyheal">Mods and Shit/Emergency Heal</li>
+    <li IfModActive="mlie.endgamebuildings">Mods and Shit/Endgame Buildings</li>
+    <li IfModActive="mlie.extrasecurity">Mods and Shit/ExtraSecurity</li>
+    <li IfModActive="mlie.favlocker">Mods and Shit/Fav Locker</li>
+    <li IfModActive="mlie.feedingtubes">Mods and Shit/Feeding Tubes</li>
+    <li IfModActive="mlie.fencesandfloors">Mods and Shit/Fences And Floors</li>
+    <li IfModActive="mlie.fermenter">Mods and Shit/Fermenter</li>
+    <li IfModActive="spesscarp.firedoor">Mods and Shit/Fire Door</li>
+    <li IfModActive="mlie.fishindustry">Mods and Shit/FishIndustry</li>
+    <li IfModActive="mlie.fishingnets">Mods and Shit/Fishing Nets</li>
+    <li IfModActive="mlie.geysercooker">Mods and Shit/Geyser Cooker</li>
+    <li IfModActive="mlie.izzyssentials">Mods and Shit/Izzyssentials</li>
+    <li IfModActive="spesscarp.massstorage">Mods and Shit/Mass Storage</li>
+    <li IfModActive="mlie.mechanicaldefense2walls">Mods and Shit/Mechanical Defense 2 Walls</li>
+    <li IfModActive="mlie.mechanoidpower">Mods and Shit/Mechanoid Power</li>
+    <li IfModActive="spesscarp.medicalhatch">Mods and Shit/Medical Hatch</li>
+    <li IfModActive="mlie.mountainminer">Mods and Shit/Mountain Miner</li>
+    <li IfModActive="mlie.mushroomlamps">Mods and Shit/Mushroom Lamps</li>
+    <li IfModActive="mlie.naturalwells">Mods and Shit/Natural Wells</li>
+    <li IfModActive="mlie.nicelamps">Mods and Shit/Nice Lamps</li>
+    <li IfModActive="mlie.notonlyjustacannon">Mods and Shit/Not Only just a Cannon</li>
+    <li IfModActive="mlie.npdtiers">Mods and Shit/NPDTiers</li>
+    <li IfModActive="mlie.operableroof">Mods and Shit/Operable Roof</li>
+    <li IfModActive="mlie.planetarydrill">Mods and Shit/Planetary Drill</li>
+    <li IfModActive="mlie.powergenstuffed">Mods and Shit/PowerGen Stuffed</li>
+    <li IfModActive="mlie.punjisticks">Mods and Shit/Punji Sticks</li>
+    <li IfModActive="mlie.quantumstorageredux">Mods and Shit/Quantum Storage Redux</li>
+    <li IfModActive="mlie.reclaimreuserecycle">Mods and Shit/Reclaim Reuse Recycle</li>
+    <li IfModActive="mlie.redarmy">Mods and Shit/Red Army</li>
+    <li IfModActive="mlie.remotedoors">Mods and Shit/Remote Doors</li>
+    <li IfModActive="mlie.resourcegenerator">Mods and Shit/Resource Generator</li>
+    <li IfModActive="mlie.rimapps">Mods and Shit/RimApps</li>
+    <li IfModActive="mlie.rimbank">Mods and Shit/RimBank</li>
+    <li IfModActive="mlie.rimworldwesternizationproject">Mods and Shit/Rimworld Westernization Project</li>
+    <li IfModActive="mlie.rimwriter">Mods and Shit/RimWriter</li>
+    <li IfModActive="mlie.roofbomb">Mods and Shit/RoofBomb</li>
+    <li IfModActive="mlie.roughbarricade">Mods and Shit/RoughBarricade</li>
+    <li IfModActive="mlie.rtgs">Mods and Shit/RTGs</li>
+    <li IfModActive="mlie.sfcomfymeditation">Mods and Shit/SF Comfy Meditation</li>
+    <li IfModActive="mlie.sslightningrod">Mods and Shit/SS Lightning Rod</li>
+    <li IfModActive="mlie.sticklantern">Mods and Shit/Stick Lantern</li>
+    <li IfModActive="mlie.supportbeams">Mods and Shit/Support Beams</li>
+    <li IfModActive="mlie.sustainabledrill">Mods and Shit/Sustainable Drill</li>
+    <li IfModActive="mlie.teleportationtrap">Mods and Shit/Teleportation Trap</li>
+    <li IfModActive="mlie.tobesdiningroom">Mods and Shit/Tobe's Dining Room</li>
+    <li IfModActive="mlie.tranquilizerguns">Mods and Shit/Tranquilizer Guns</li>
+    <li IfModActive="mlie.transportpodmk2">Mods and Shit/Transport Pod MK2</li>
+    <li IfModActive="mlie.walkablesolarpanels">Mods and Shit/Walkable Solar Panels</li>
+    <li IfModActive="mlie.wallmountedbattery">Mods and Shit/Wallmounted Battery</li>
+    <li IfModActive="mlie.weaponsofthegods">Mods and Shit/Weapons of the Gods</li>
+    <li IfModActive="mlie.weathercontroldevice">Mods and Shit/Weather Control Device</li>
+    <li IfModActive="mlie.psreconditioningpod">Mods and Shit/Reconditioning Pod</li>
+    <li IfModActive="mlie.architectexpandedfences">Mods and Shit/Architect Expanded Fences</li>
+    <li IfModActive="jamaicancastle.rf.fertilefields">Mods and Shit/Fertile Fields</li>
+    <li IfModActive="mlie.survivalistsadditions">Mods and Shit/Survivalist's Additions</li>
+    <li IfModActive="mlie.westerado">Mods and Shit/Westerado</li>
+    <li IfModActive="mlie.rc2.core">Mods and Shit/RimCuisine 2 Core</li>
+    <li IfModActive="aranmaho.spaceballs">Mods and Shit/Mr Coffee and Mr Radar</li>
+    <li IfModActive="karvinen.tablesplus">Mods and Shit/Tables Plus</li>
+    <li IfModActive="brothority.modularresearchlab">Mods and Shit/Modular Research Lab</li>
+    <li IfModActive="pluanhurihuri.modularreactorcell">Mods and Shit/Modular Reactor Cell</li>
+    <li IfModActive="json.retractabledefenses">Mods and Shit/Retractable Defenses</li>
+    <li IfModActive="gt.sam.furnace">Mods and Shit/Furnace</li>
+    <li IfModActive="nuanki.freezer">Mods and Shit/Freezer of the Damned</li>
+    <li IfModActive="nolabritt.borginvasion">Mods and Shit/Invasion of the Borg</li>
+    <li IfModActive="horo.bteotw.betweenthestars">Mods and Shit/Between the Stars</li>
+    <li IfModActive="pphhyy.urmc">Mods and Shit/URMC</li>
+    <li IfModActive="jecrell.doorsexpanded">Mods and Shit/Doors Expanded</li>
+    <li IfModActive="eltwofour.lightlessheater">Mods and Shit/L24's Lightless Heater</li>
+    <li IfModActive="heis.edo.themed.expansion">Mods and Shit/Edo Themed Expansion</li>
+    <li IfModActive="heis.steppethemedexpansion">Mods and Shit/Steppe Themed Expansion</li>
+    <li IfModActive="nbnw.steelpipenetwork">Mods and Shit/Steel Pipe Network</li>
+    <li IfModActive="nbnw.woodlogpipenetwork">Mods and Shit/WoodLog Pipe Network</li>
+    <li IfModActive="zal.FishingBoats">Mods and Shit/Fishing Boats</li>
+    <li IfModActive="dismarzero.vgp.vgpgardenfabrics">Mods and Shit/VGP Garden Fabrics</li>
+    <li IfModActive="dismarzero.vgp.vgpgardencanning">Mods and Shit/VGP Garden Canning</li>
+    <li IfModActive="dismarzero.vgp.vgpvegetablegarden">Mods and Shit/VGP Vegetable Garden</li>
+    <li IfModActive="dismarzero.vgp.vgpgardendrinks">Mods and Shit/VGP Garden Drinks</li>
+    <li IfModActive="dismarzero.vgp.vgpgardengourmet">Mods and Shit/VGP Garden Gourmet</li>
+    <li IfModActive="sarg.rimbees">Mods and Shit/Alpha Bees</li>
+    <li IfModActive="eeg.architecture">Mods and Shit/Architecture of the Rim Corners</li>
+    <li IfModActive="adaptive.simplestorage">Mods and Shit/Adaptive Simple Storage</li>
+    <li IfModActive="gondragon.mechanoidwaiter">Mods and Shit/Mechanoid Waiter</li>
+    <li IfModActive="mgatwood.housedecor">Mods and Shit/ATW House Decor</li>
+    <li IfModActive="gloomy.furniture.continued.fix">Mods and Shit/Gloomy Furniture</li>
+    <li IfModActive="zal.gloomyextrakitchen">Mods and Shit/Gloomy Furniture Extra Kitchen</li>
+    <li IfModActive="chv.diagonalwalls2">Mods and Shit/Diagonal Walls 2</li>
+    <li IfModActive="jpt.openthewindows">Mods and Shit/JPT Open the Windows</li>
+    <li IfModActive="zal.rimkea">Mods and Shit/RIMkea</li>
+    <li IfModActive="lat.rimstro">Mods and Shit/Rimstro</li>
+    <li IfModActive="mlie.zengarden">Mods and Shit/Zen Garden</li>
+    <li IfModActive="zal.fishprops">Mods and Shit/Fishing Village Decor and Props</li>
+    <li IfModActive="mlie.barnstall">Mods and Shit/Barn Stall</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

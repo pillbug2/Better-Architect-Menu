@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	
+	<!--
+	Original:
+	Requires a manned utility console! Utility Console is located in the Security Tab.
+	-->
+	<!-- Rewritten to reflect new location. -->
+	<SubWall_MannedError>Requires a manned utility console! Utility Console is located in the Walls tab under the Build category.</SubWall_MannedError>
+	
+</LanguageData>
