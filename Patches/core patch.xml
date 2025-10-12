@@ -1583,7 +1583,7 @@
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="PlantPot"]</xpath>
         <value>
-            <designationCategory>Ferny_Decorations</designationCategory>
+            <designationCategory>Ferny_DecoPlants</designationCategory>
         </value>
     </Operation>
 
@@ -1601,10 +1601,26 @@
         <value>
             <designationCategory>Ferny_GeneralStorage</designationCategory>
         </value>
+    </Operation>\
+    <!-- DECORATIONS -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="PlantPot"]</xpath>
+        <value>
+            <designationCategory>Ferny_DecoPlants</designationCategory>
+        </value>
+    </Operation>
+    
+    <!-- DECORATIONS -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="PlantPot"]</xpath>
+        <value>
+            <designationCategory>Ferny_DecoPlants</designationCategory>
+        </value>
     </Operation>
 
     <!-- INFORMATION STORAGE -->
-
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/ThingDef[@Name="BookcaseBase"]/designationCategory</xpath>

@@ -5,7 +5,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="ExtraSigns_Base"]</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoHanging</designationCategory>
 		</value>
 	</Operation>
 	

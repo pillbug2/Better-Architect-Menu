@@ -756,6 +756,16 @@
     <li>Architecture of the Rim Corners</li>
     <li>Adaptive Simple Storage</li>	
     <li>gondragon.mechanoidwaiter</li>
+    <li>mgatwood.housedecor</li>
+    <li>gloomy.furniture.continued.fix</li>
+    <li>zal.gloomyextrakitchen</li>
+    <li>chv.diagonalwalls2</li>
+    <li>jpt.openthewindows</li>
+    <li>zal.rimkea</li>
+    <li>lat.rimstro</li>
+    <li>mlie.zengarden</li>
+    <li>zal.fishprops</li>
+    <li>mlie.barnstall</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

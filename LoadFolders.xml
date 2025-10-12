@@ -793,6 +793,16 @@
     <li IfModActive="eeg.architecture">Mods and Shit/Architecture of the Rim Corners</li>
     <li IfModActive="adaptive.simplestorage">Mods and Shit/Adaptive Simple Storage</li>
     <li IfModActive="gondragon.mechanoidwaiter">Mods and Shit/Mechanoid Waiter</li>
+    <li IfModActive="mgatwood.housedecor">Mods and Shit/ATW House Decor</li>
+    <li IfModActive="gloomy.furniture.continued.fix">Mods and Shit/Gloomy Furniture</li>
+    <li IfModActive="zal.gloomyextrakitchen">Mods and Shit/Gloomy Furniture Extra Kitchen</li>
+    <li IfModActive="chv.diagonalwalls2">Mods and Shit/Diagonal Walls 2</li>
+    <li IfModActive="jpt.openthewindows">Mods and Shit/JPT Open the Windows</li>
+    <li IfModActive="zal.rimkea">Mods and Shit/RIMkea</li>
+    <li IfModActive="lat.rimstro">Mods and Shit/Rimstro</li>
+    <li IfModActive="mlie.zengarden">Mods and Shit/Zen Garden</li>
+    <li IfModActive="zal.fishprops">Mods and Shit/Fishing Village Decor and Props</li>
+    <li IfModActive="mlie.barnstall">Mods and Shit/Barn Stall</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
