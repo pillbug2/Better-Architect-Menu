@@ -120,6 +120,16 @@
 		</value>
 	</Operation>
 	
+<!-- RUGS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="PFKRugBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DecoRugs</designationCategory>
+		</value>
+	</Operation>
+
 <!-- DECORATIONS -->
 
 	<Operation Class="PatchOperationReplace">
@@ -138,15 +148,40 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="PFKDecoWoodenToyBaseL"]/designatorDropdown</xpath>
 	</Operation>
-	
-<!-- FLOORS -->
 
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[@Name="PFKRugBase"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Floors</designationCategory>
-		</value>
+	<!-- DECORATIONS - CURTAINS -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PFK_Curtain"]</xpath>
+				<value>
+					<designationCategory>Ferny_DecoCurtains</designationCategory>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PFK_Curtain"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_DecoCurtains</designationCategory>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PFK_BigCurtain"]</xpath>
+				<value>
+					<designationCategory>Ferny_DecoCurtains</designationCategory>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PFK_BigCurtain"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_DecoCurtains</designationCategory>
+				</value>
+			</li>
+		</operations>
 	</Operation>
 	
 <!-- JOY -->
