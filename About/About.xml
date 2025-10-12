@@ -761,14 +761,11 @@
     <li>zal.gloomyextrakitchen</li>
     <li>chv.diagonalwalls2</li>
     <li>jpt.openthewindows</li>
-    <li>mlie.decorativetrees</li>
     <li>zal.rimkea</li>
     <li>lat.rimstro</li>
     <li>mlie.zengarden</li>
-    <li>mlie.tobesdiningroom</li>
     <li>zal.fishprops</li>
     <li>mlie.barnstall</li>
-    <li>karvinen.tablesplus</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

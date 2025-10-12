@@ -798,15 +798,11 @@
     <li IfModActive="zal.gloomyextrakitchen">Mods and Shit/Gloomy Furniture Extra Kitchen</li>
     <li IfModActive="chv.diagonalwalls2">Mods and Shit/Diagonal Walls 2</li>
     <li IfModActive="jpt.openthewindows">Mods and Shit/JPT Open the Windows</li>
-    <li IfModActive="mlie.decorativetrees">Mods and Shit/Decorative Trees</li>
     <li IfModActive="zal.rimkea">Mods and Shit/RIMkea</li>
     <li IfModActive="lat.rimstro">Mods and Shit/Rimstro</li>
-    <li IfModActive="mlie.morefurniture">Mods and Shit/More Furniture</li>
     <li IfModActive="mlie.zengarden">Mods and Shit/Zen Garden</li>
-    <li IfModActive="mlie.tobesdiningroom">Mods and Shit/Tobes Dining Room</li>
     <li IfModActive="zal.fishprops">Mods and Shit/Fishing Village Decor and Props</li>
     <li IfModActive="mlie.barnstall">Mods and Shit/Barn Stall</li>
-    <li IfModActive="karvinen.tablesplus">Mods and Shit/Tables Plus</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
