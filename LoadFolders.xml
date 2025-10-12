@@ -693,7 +693,6 @@
     <li IfModActive="mlie.agrivoltaicsolarpanel">Mods and Shit/Agrivoltaic Solar Panel</li>
     <li IfModActive="scorpio.core">Mods and Shit/Anti-Air and Anti-Mortar</li>
     <li IfModActive="mlie.autodoc">Mods and Shit/Auto Doc</li>
-    <li IfModActive="mlie.backupgenerators">Mods and Shit/Backup Generators</li>
     <li IfModActive="spesscarp.beach">Mods and Shit/Beach</li>
     <li IfModActive="mlie.betterpodlauncher">Mods and Shit/Better Pod Launcher</li>
     <li IfModActive="mlie.caravanequipment">Mods and Shit/Caravan Equipment</li>
