@@ -156,6 +156,7 @@
 	
 <!-- BARRICADES -->
 
+	<!--
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PPCHEL"]</xpath>
@@ -163,6 +164,7 @@
 			<designationCategory>Ferny_Barricades</designationCategory>
 		</value>
 	</Operation>
+	-->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>

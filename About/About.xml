@@ -809,6 +809,13 @@
 	<li>json.retractabledefenses</li>
 	<li>gt.sam.furnace</li>
 	<li>nuanki.freezer</li>
+	<li>nolabritt.borginvasion</li>
+	<li>horo.bteotw.betweenthestars</li>
+	<li>pphhyy.urmc</li>
+	<li>jecrell.doorsexpanded</li>
+	<li>eltwofour.lightlessheater</li>
+	<li>heis.edo.themed.expansion</li>
+	<li>heis.steppethemedexpansion</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

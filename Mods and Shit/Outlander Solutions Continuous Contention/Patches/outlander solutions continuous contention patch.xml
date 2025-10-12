@@ -59,18 +59,16 @@
 			<designationCategory>Ferny_AmmunitionNetwork</designationCategory>
 		</value>
 	</Operation>
-	
-<!-- BARRICADES -->
+
+<!-- WEAPONS -->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ContinuousContention_Turret_Skyscreen"]</xpath>
 		<value>
-			<designationCategory>Ferny_Barricades</designationCategory>
+			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
-	
-<!-- WEAPONS -->
 	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>

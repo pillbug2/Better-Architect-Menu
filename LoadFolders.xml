@@ -776,6 +776,13 @@
 	<li IfModActive="json.retractabledefenses">Mods and Shit/Retractable Defenses</li>
 	<li IfModActive="gt.sam.furnace">Mods and Shit/Furnace</li>
 	<li IfModActive="nuanki.freezer">Mods and Shit/Freezer of the Damned</li>
+	<li IfModActive="nolabritt.borginvasion">Mods and Shit/Invasion of the Borg</li>
+	<li IfModActive="horo.bteotw.betweenthestars">Mods and Shit/Between the Stars</li>
+	<li IfModActive="pphhyy.urmc">Mods and Shit/URMC</li>
+	<li IfModActive="jecrell.doorsexpanded">Mods and Shit/Doors Expanded</li>
+	<li IfModActive="eltwofour.lightlessheater">Mods and Shit/L24's Lightless Heater</li>
+	<li IfModActive="heis.edo.themed.expansion">Mods and Shit/Edo Themed Expansion</li>
+	<li IfModActive="heis.steppethemedexpansion">Mods and Shit/Steppe Themed Expansion</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
