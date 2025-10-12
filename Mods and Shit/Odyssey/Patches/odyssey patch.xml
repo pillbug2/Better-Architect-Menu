@@ -6,18 +6,29 @@
         <success>Always</success>
         <xpath>Defs/DesignationCategoryDef[defName="Odyssey"]/order</xpath>
         <value>
-            <order>6</order>
+            <order>1</order>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/DesignationCategoryDef[defName="Odyssey"]/label</xpath>
         <value>
-            <label>Orbital</label>
+            <label>More</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/DesignationCategoryDef[defName="Odyssey"]</xpath>
+        <value>
+            <modExtensions>
+            <li Class="BetterArchitect.NestedCategoryExtension">
+                <parentCategory>Ferny_Space</parentCategory>
+            </li>
+            </modExtensions>
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
+    <!-- <Operation Class="PatchOperationAdd">
         <success>Always</success>
         <xpath>Defs/DesignationCategoryDef[defName="Odyssey"]</xpath>
         <value>
@@ -27,18 +38,101 @@
             </li>
             </modExtensions>
         </value>
-    </Operation>
+    </Operation> -->
 
 <!-- POWER GENERATION -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="GravcorePowerCell"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Ferny_SpacePower</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- PLATOFRM CATEGORY -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/TerrainDef[defName="Substructure"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_SpacePlatform</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="GravshipHull"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_SpacePlatform</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VacBarrier"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_SpacePlatform</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="GravFieldExtender"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_SpacePlatform</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="PilotConsole"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_SpacePlatform</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="ThrusterBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_SpacePlatform</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="SignalJammer"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_SpacePlatform</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="GravAnchor"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_SpacePlatform</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="GravAnchor"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_SpacePlatform</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="FuelTankBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_SpacePlatform</designationCategory>
                     </value>
                 </Operation>
 
 
+
+<!-- VACUUM -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="OxygenPump"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_SpaceVacuum</designationCategory>
+                    </value>
+                </Operation>
+
+    
 <!-- TRAPS -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>

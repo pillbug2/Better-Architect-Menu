@@ -38,14 +38,14 @@
                     </value>
                 </Operation>
 
-<!-- NEST INTO TRANSPORT -->
+<!-- NEST INTO SPACE -->
                 <Operation Class="PatchOperationAdd">
                     <success>Always</success>
                     <xpath>Defs/DesignationCategoryDef[defName="Ship"]</xpath>
                     <value>
                         <modExtensions>
                         <li Class="BetterArchitect.NestedCategoryExtension">
-                            <parentCategory>Ferny_Transport</parentCategory>
+                            <parentCategory>Ferny_Space</parentCategory>
                         </li>
                         </modExtensions>
                     </value>
@@ -154,17 +154,16 @@
                     <success>Always</success>
                     <xpath>Defs/DesignationCategoryDef[defName="Ship"]/label</xpath>
                     <value>
-                        <label>Space</label>
+                        <label>Interstellar</label>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/DesignationCategoryDef[defName="Ship"]/order</xpath>
                     <value>
-                        <order>5</order>
+                        <order>1</order>
                     </value>
                 </Operation>
-
 
 
 <!-- LIGHTING -->
@@ -719,40 +718,6 @@
                     <value>
                         <designationCategory>Ferny_AerialTransport</designationCategory>
                     </value>
-                </Operation>
-
-                <Operation Class="PatchOperationConditional">
-                <success>Always</success>
-                    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_Space"]/modExtensions</xpath>
-                    <match Class="PatchOperationSequence">
-                        <operations>
-                            <li Class="PatchOperationReplace">
-                                <success>Always</success>
-                                <xpath>Defs/DesignationCategoryDef[defName="Ferny_Space"]/modExtensions</xpath>
-                                <value>
-                                    <modExtensions>
-                                    <li Class="BetterArchitect.NestedCategoryExtension">
-                                        <parentCategory>VF_Vehicles</parentCategory>
-                                    </li>
-                                    </modExtensions>
-                                </value>
-                            </li>
-                        </operations>
-                    </match>
-                    <nomatch Class="PatchOperationSequence">
-                        <operations>
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/DesignationCategoryDef[defName="Ferny_Space"]</xpath>
-                                <value>
-                                    <modExtensions>
-                                    <li Class="BetterArchitect.NestedCategoryExtension">
-                                        <parentCategory>VF_Vehicles</parentCategory>
-                                    </li>
-                                    </modExtensions>
-                                </value>
-                            </li>
-                        </operations>
-                    </nomatch>
                 </Operation>
 
 <!-- PRODUCTION -->
