@@ -687,7 +687,6 @@
 	<li>mlie.mechanicaldefense2walls</li>
 	<li>mlie.mechanoidpower</li>
 	<li>spesscarp.medicalhatch</li>
-	<li>mlie.miningcospaceship</li>
 	<li>mlie.mountainminer</li>
 	<li>mlie.mushroomlamps</li>
 	<li>mlie.naturalwells</li>
@@ -728,8 +727,9 @@
 	<li>jamaicancastle.rf.fertilefields</li>
 	<li>mlie.survivalistsadditions</li>
 	<li>mlie.westerado</li>
-	<li>mlie.rc2.mame</li>
-	<li>mlie.rc2.babe</li>
+	<li>mlie.rc2.core</li>
+	<li>mlie.rc2.mame</li>  <!-- Implicit support -->
+	<li>mlie.rc2.babe</li>  <!-- Implicit support -->
 	<li>aranmaho.spaceballs</li>
 	<li>karvinen.tablesplus</li>
 	<li>brothority.modularresearchlab</li>
