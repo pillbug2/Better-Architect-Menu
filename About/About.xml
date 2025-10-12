@@ -744,6 +744,8 @@
 	<li>eltwofour.lightlessheater</li>
 	<li>heis.edo.themed.expansion</li>
 	<li>heis.steppethemedexpansion</li>
+	<li>nbnw.steelpipenetwork</li>
+	<li>nbnw.woodlogpipenetwork</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

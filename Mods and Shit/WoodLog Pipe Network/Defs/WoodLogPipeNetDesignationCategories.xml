@@ -2,9 +2,9 @@
 <Defs>
 
   <DesignationCategoryDef>
-    <defName>Ferny_UraniumNetwork</defName>
-    <label>Uranium</label>
-    <description>Manage uranium.</description>
+    <defName>Ferny_WoodNetwork</defName>
+    <label>Wood</label>
+    <description>Manage wood.</description>
     <order>2</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>

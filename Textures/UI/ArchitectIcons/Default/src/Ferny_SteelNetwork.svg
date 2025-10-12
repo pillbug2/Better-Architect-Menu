@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 40.96 40.96"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="Ferny_SteelNetwork.svg"
+   inkscape:export-filename="Ferny_SteelNetwork.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="8.13"
+     inkscape:cx="27.921279"
+     inkscape:cy="32.04182"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <g
+     id="g1"
+     transform="matrix(1.3899348,0,0,1.3043478,1.28,1.28)"
+     style="fill:#ffffff">
+    <path
+       fill="#000000"
+       d="M 0.4103616,0 13.015083,11.023123 H 25.488585 L 12.883865,0 H 0.410445 Z m 4.1390291,8.696632 v 3.618766 L 17.331335,23.49699 v -7.10247 l -5.35764,-1.209141 z M 3.5912952,13.970878 0,14.868533 12.931791,26.184484 16.52308,25.286828 3.591375,13.970878 Z M 14.400533,12.529959 v 1.839428 l 5.357631,1.33941 v 10.55237 l -5.357631,1.339409 V 29.44 h 13.226663 v -1.839425 l -5.35764,-1.33941 V 15.708796 l 5.35764,-1.33941 v -1.839428 z"
+       id="path1"
+       style="fill:#ffffff;stroke-width:0.0837131"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccc" />
+  </g>
+</svg>

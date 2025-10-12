@@ -783,6 +783,8 @@
 	<li IfModActive="eltwofour.lightlessheater">Mods and Shit/L24's Lightless Heater</li>
 	<li IfModActive="heis.edo.themed.expansion">Mods and Shit/Edo Themed Expansion</li>
 	<li IfModActive="heis.steppethemedexpansion">Mods and Shit/Steppe Themed Expansion</li>
+	<li IfModActive="nbnw.steelpipenetwork">Mods and Shit/Steel Pipe Network</li>
+	<li IfModActive="nbnw.woodlogpipenetwork">Mods and Shit/WoodLog Pipe Network</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
