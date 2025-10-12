@@ -12,7 +12,7 @@
       Defs/ThingDef[defName="FishGear"]/designationCategory
     </xpath>
     <value>
-      <designationCategory>Ferny_DecoOutside</designationCategory>
+      <designationCategory>Ferny_DecoOutdoor</designationCategory>
     </value>
   </Operation>
 </Patch>

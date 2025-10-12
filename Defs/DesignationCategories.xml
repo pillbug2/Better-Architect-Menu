@@ -241,9 +241,9 @@
 	</DesignationCategoryDef>
 
   <DesignationCategoryDef>
-		<defName>Ferny_DecoCurtains</defName>
+		<defName>Ferny_DecoHanging</defName>
 		<label>Curtains</label>
-		<description>Manage Curtains Decorations.</description>
+		<description>Manage Hanging Decorations such as signs, banners and curtains.</description>
 		<order>700</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
@@ -259,7 +259,7 @@
   <DesignationCategoryDef>
 		<defName>Ferny_DecoArt</defName>
 		<label>Art</label>
-		<description>Manage Art Decorations.</description>
+		<description>Manage Art and Music Decorations.</description>
 		<order>700</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
@@ -273,8 +273,8 @@
 	</DesignationCategoryDef>
 
   <DesignationCategoryDef>
-		<defName>Ferny_DecoOutside</defName>
-		<label>Outside</label>
+		<defName>Ferny_DecoOutdoor</defName>
+		<label>Outdoor</label>
 		<description>Manage Outside Decorations.</description>
 		<order>600</order>
 		<specialDesignatorClasses>

@@ -135,7 +135,7 @@
             defName="RR2x1CurtainsOne"
         ]</xpath>
         <value>
-            <designationCategory>Ferny_DecoCurtains</designationCategory>
+            <designationCategory>Ferny_DecoHanging</designationCategory>
         </value>
     </Operation>
 
@@ -149,7 +149,7 @@
             defName="RRCupboardThree"
         ]</xpath>
         <value>
-            <designationCategory>Ferny_DecoFurniture</designationCategory>
+            <designationCategory>Furniture</designationCategory>
         </value>
     </Operation>
 
@@ -181,7 +181,7 @@
                         defName="RRPalermoBasin"
                     ]</xpath>
                     <value>
-                        <designationCategory>Ferny_DecoOutside</designationCategory>
+                        <designationCategory>Ferny_DecoOutdoor</designationCategory>
                     </value>
                 </li>
             </operations>

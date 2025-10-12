@@ -106,28 +106,28 @@
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="GL_BoundaryWood"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_DecoOutside</designationCategory>
+            <designationCategory>Ferny_DecoOutdoor</designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="GL_BoundaryStone"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_DecoOutside</designationCategory>
+            <designationCategory>Ferny_DecoOutdoor</designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="GL_BoundaryWoodCorner"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_DecoOutside</designationCategory>
+            <designationCategory>Ferny_DecoOutdoor</designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="GL_BoundaryStoneCorner"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_DecoOutside</designationCategory>
+            <designationCategory>Ferny_DecoOutdoor</designationCategory>
         </value>
     </Operation>
 

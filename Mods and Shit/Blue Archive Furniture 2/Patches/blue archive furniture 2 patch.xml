@@ -100,7 +100,7 @@
             Defs/ThingDef[defName="Floral_Fountain"]/designationCategory
         </xpath>
         <value>
-            <designationCategory>Ferny_DecoOutside</designationCategory>
+            <designationCategory>Ferny_DecoOutdoor</designationCategory>
         </value>
     </Operation>
 
@@ -110,7 +110,7 @@
             Defs/ThingDef[defName="Classic_2tier_Cart"]/designationCategory
         </xpath>
         <value>
-            <designationCategory>Ferny_DecoFurniture</designationCategory>
+            <designationCategory>Ferny_DecoArt</designationCategory>
         </value>
     </Operation>
 

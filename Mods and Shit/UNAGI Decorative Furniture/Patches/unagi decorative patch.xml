@@ -86,7 +86,7 @@
             Defs/ThingDef[defName="UNA_TengaiA"]/designationCategory
         </xpath>
         <value>
-            <designationCategory>Ferny_DecoCurtains</designationCategory>
+            <designationCategory>Ferny_DecoHanging</designationCategory>
         </value>
     </Operation>
 
@@ -120,7 +120,7 @@
             Defs/ThingDef[defName="UNA_gazebo"]/designationCategory
         </xpath>
         <value>
-            <designationCategory>Ferny_DecoOutside</designationCategory>
+            <designationCategory>Ferny_DecoOutdoor</designationCategory>
         </value>
     </Operation>
 

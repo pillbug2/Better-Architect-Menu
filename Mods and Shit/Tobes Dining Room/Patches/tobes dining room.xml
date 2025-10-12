@@ -54,7 +54,7 @@
 			<success>Always</success>
 			<xpath>Defs/ThingDef[defName="Fountain"]</xpath>
 			<value>
-				<designationCategory>Ferny_DecoOutside</designationCategory>
+				<designationCategory>Ferny_DecoOutdoor</designationCategory>
 			</value>
 		</nomatch>
 	</Operation>

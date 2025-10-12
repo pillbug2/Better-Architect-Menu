@@ -411,7 +411,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_SpaceBase_RockOrnament"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_DecoOutside</designationCategory>
+			<designationCategory>Ferny_DecoOutdoor</designationCategory>
 		</value>
 	</Operation>
 

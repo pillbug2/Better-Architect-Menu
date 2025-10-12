@@ -47,19 +47,19 @@
         </value>
     </Operation>
 
-    <!-- Replace Decor buildables with Ferny_DecoCurtains -->
+    <!-- Replace Decor buildables with Ferny_DecoHanging -->
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="AtwoodCurtains"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_DecoCurtains</designationCategory>
+            <designationCategory>Ferny_DecoHanging</designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="AtwoodDoubleCurtains"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_DecoCurtains</designationCategory>
+            <designationCategory>Ferny_DecoHanging</designationCategory>
         </value>
     </Operation>
 

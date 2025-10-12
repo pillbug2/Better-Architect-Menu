@@ -155,13 +155,13 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="PFK_Curtain"]</xpath>
 				<value>
-					<designationCategory>Ferny_DecoCurtains</designationCategory>
+					<designationCategory>Ferny_DecoHanging</designationCategory>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="PFK_Curtain"]/designationCategory</xpath>
 				<value>
-					<designationCategory>Ferny_DecoCurtains</designationCategory>
+					<designationCategory>Ferny_DecoHanging</designationCategory>
 				</value>
 			</li>
 		</operations>
@@ -172,13 +172,13 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="PFK_BigCurtain"]</xpath>
 				<value>
-					<designationCategory>Ferny_DecoCurtains</designationCategory>
+					<designationCategory>Ferny_DecoHanging</designationCategory>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="PFK_BigCurtain"]/designationCategory</xpath>
 				<value>
-					<designationCategory>Ferny_DecoCurtains</designationCategory>
+					<designationCategory>Ferny_DecoHanging</designationCategory>
 				</value>
 			</li>
 		</operations>

@@ -141,7 +141,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="BAWall_Clock"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_DecoFurniture</designationCategory>
+			<designationCategory>Ferny_DecoArt</designationCategory>
 		</value>
 	</Operation>
 
@@ -149,7 +149,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Gramophone"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_DecoFurniture</designationCategory>
+			<designationCategory>Ferny_DecoArt</designationCategory>
 		</value>
 	</Operation>
 
@@ -157,7 +157,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Classic_Book_Wagon"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_DecoFurniture</designationCategory>
+			<designationCategory>Furniture</designationCategory>
 		</value>
 	</Operation>
 
@@ -165,7 +165,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Tea_Time_Tea_Cart"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_DecoFurniture</designationCategory>
+			<designationCategory>Ferny_DecoArt</designationCategory>
 		</value>
 	</Operation>
 

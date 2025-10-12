@@ -75,7 +75,7 @@
                 <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="CCot_SmallBookshelf"]</xpath>
                     <value>
-                        <designationCategory>Ferny_DecoFurniture</designationCategory>
+                        <designationCategory>Furniture</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationAdd">

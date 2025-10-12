@@ -6,35 +6,35 @@
             Defs/ThingDef[defName="ZEN_ScenicBench"]/designationCategory
         </xpath>
         <value>
-            <designationCategory>Ferny_DecoOutside</designationCategory>
+            <designationCategory>Ferny_DecoOutdoor</designationCategory>
         </value>
     </Operation>
 
 	<Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[@ParentName="ZenBase"]</xpath>
         <value>
-            <designationCategory>Ferny_DecoOutside</designationCategory>
+            <designationCategory>Ferny_DecoOutdoor</designationCategory>
         </value>
     </Operation>
 
 	<Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[@ParentName="RakedBase"]</xpath>
         <value>
-            <designationCategory>Ferny_DecoOutside</designationCategory>
+            <designationCategory>Ferny_DecoOutdoor</designationCategory>
         </value>
     </Operation>
 
 	<Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[@ParentName="Zen_HalfWallParent"]</xpath>
         <value>
-            <designationCategory>Ferny_DecoOutside</designationCategory>
+            <designationCategory>Ferny_DecoOutdoor</designationCategory>
         </value>
     </Operation>
 
 	<Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[@ParentName="ZenFountainBase"]</xpath>
         <value>
-            <designationCategory>Ferny_DecoOutside</designationCategory>
+            <designationCategory>Ferny_DecoOutdoor</designationCategory>
         </value>
     </Operation>
 
@@ -42,7 +42,7 @@
         <success>Always</success>
         <xpath>Defs/TerrainDef[@ParentName="ZEN_RoughBase"]</xpath>
         <value>
-            <designationCategory>Ferny_DecoOutside</designationCategory>
+            <designationCategory>Ferny_DecoOutdoor</designationCategory>
         </value>
     </Operation>
 
@@ -50,7 +50,7 @@
         <success>Always</success>
         <xpath>Defs/TerrainDef[@ParentName="ZEN_NormalBase"]</xpath>
         <value>
-            <designationCategory>Ferny_DecoOutside</designationCategory>
+            <designationCategory>Ferny_DecoOutdoor</designationCategory>
         </value>
     </Operation>
 
