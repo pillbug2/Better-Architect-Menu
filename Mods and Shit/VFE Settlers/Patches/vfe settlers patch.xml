@@ -3,7 +3,6 @@
  
 <!-- KITCHEN -->
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="Building_ChemshineBarrel"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Kitchen</designationCategory>
@@ -13,14 +12,12 @@
   
 <!-- LIGHTING -->
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="Chemlamp"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Lighting</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="ChemlampPost"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Lighting</designationCategory>
@@ -29,7 +26,6 @@
 
 <!-- POWER GENERATION -->
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="Windmill"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_PowerGeneration</designationCategory>
@@ -38,7 +34,6 @@
 
 <!-- HEATING -->
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="ChemBoiler"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Heating</designationCategory>
@@ -46,9 +41,8 @@
                 </Operation>
 
   <!-- SEATING -->
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="StoolBar"]/designationCategory</xpath>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="StoolBar"]</xpath>
                     <value>
                         <designationCategory>Ferny_Seating</designationCategory>
                     </value>
@@ -57,7 +51,6 @@
  
 <!-- SUPPORTS -->
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="Post"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Supports</designationCategory>
@@ -67,7 +60,6 @@
 
 <!-- WEAPONS -->
                 <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="Turret_GatlingGun"]</xpath>
                     <value>
                         <designationCategory>Ferny_Weapons</designationCategory>
