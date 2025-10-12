@@ -755,6 +755,7 @@
     <li>Alpha Bees</li>
     <li>Architecture of the Rim Corners</li>
     <li>Adaptive Simple Storage</li>	
+    <li>gondragon.mechanoidwaiter</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
