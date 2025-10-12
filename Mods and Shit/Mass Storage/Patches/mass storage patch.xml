@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- RESOURCES STORAGE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="spessCarp_LargeBarrel"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ResourcesStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="spessCarp_HEcrate"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ResourcesStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="spessCarp_IngotsLarge"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ResourcesStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="spessCarp_Logs"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ResourcesStorage</designationCategory>
+		</value>
+	</Operation>
+	
+	<!-- FOOD STORAGE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="spessCarp_PileOfHay"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_FoodStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="spessCarp_Potate"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_FoodStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="spessCarp_Korn"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_FoodStorage</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>
