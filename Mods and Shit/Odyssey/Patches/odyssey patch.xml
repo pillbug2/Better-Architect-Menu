@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Patch>              
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
 
-<!-- ORBIT CATEGORY -->
+    <!-- ORBIT CATEGORY -->
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/DesignationCategoryDef[defName="Odyssey"]/order</xpath>
@@ -33,9 +33,9 @@
         <xpath>Defs/DesignationCategoryDef[defName="Odyssey"]</xpath>
         <value>
             <modExtensions>
-            <li Class="BetterArchitect.NestedCategoryExtension">
-                <parentCategory>Ferny_Transport</parentCategory>
-            </li>
+                <li Class="BetterArchitect.NestedCategoryExtension">
+                    <parentCategory>Ferny_Transport</parentCategory>
+                </li>
             </modExtensions>
         </value>
     </Operation> -->
@@ -142,29 +142,29 @@
                     </value>
                 </Operation>
 
-<!-- GEAR STORAGE -->
-	        <Operation Class="PatchOperationAdd">
-		        <success>Always</success>
-		        <xpath>Defs/ThingDef[defName="Building_OutfitStand"]</xpath>
-		        <value>
-			        <designationCategory>Ferny_GearStorage</designationCategory>
-		        </value>
-	        </Operation>
-	        <Operation Class="PatchOperationAdd">
-		        <success>Always</success>
-		        <xpath>Defs/ThingDef[defName="Building_KidOutfitStand"]</xpath>
-		        <value>
-			        <designationCategory>Ferny_GearStorage</designationCategory>
-		        </value>
-	        </Operation>
+    <!-- GEAR STORAGE -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Building_OutfitStand"]</xpath>
+        <value>
+            <designationCategory>Ferny_GearStorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Building_KidOutfitStand"]</xpath>
+        <value>
+            <designationCategory>Ferny_GearStorage</designationCategory>
+        </value>
+    </Operation>
 
-<!-- OUTREACH -->
-	        <Operation Class="PatchOperationAdd">
-		        <success>Always</success>
-		        <xpath>Defs/ThingDef[defName="OrbitalScanner"]</xpath>
-		        <value>
-			        <designationCategory>Ferny_Outreach</designationCategory>
-		        </value>
-	        </Operation>
+    <!-- OUTREACH -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="OrbitalScanner"]</xpath>
+        <value>
+            <designationCategory>Ferny_Outreach</designationCategory>
+        </value>
+    </Operation>
 
 </Patch>
