@@ -40,10 +40,14 @@
 
     
 <!-- BATCH PATCHES  -->
+	  <!-- Note that these may only be partial patches: E.g., moving categories. -->
+	  <!-- AUTHORS: Please check if your mod needs to be added in one of these strings as well. -->
+	  
+    <li IfModActiveAny="mingtuwuxiang.fishingdecorative,mingtuwuxiang.gothicdecorative,mingtuwuxiang.spacebasedecorative">Mods and Shit/MUS Common Patch</li>
     
-    <!-- Add any of HighlyE's H- series vehicles to the below string please. -->
     <li IfModActiveAny="he.rrs,he.agmtfat,he.agmnne,he.bfot,he.ct,he.fbbus,he.fcvpi,he.fe,he.f350a,he.fltdcv,he.bearcatg3,he.mstat,he.pa">Mods and Shit/HE-Vehicles/Common</li>
-
+    
+	<li IfModActiveAny="resurrectionem.furniture,resurrectionem.furnitureasia">Mods and Shit/RR Furniture Common</li>
     
     
     
@@ -350,7 +354,6 @@
     <li IfModActive="mo.technicalmapvehicles">Mods and Shit/Technical Map Vehicles</li>
     <li IfModActive="mrhydralisk.voepowergrid">Mods and Shit/VE Outposts Power Grid</li>
     <li IfModActive="oels.vehiclemapframework">Mods and Shit/Vehicle Map Framework</li>
-    <li IfModActiveAny="mingtuwuxiang.fishingdecorative,mingtuwuxiang.gothicdecorative,mingtuwuxiang.spacebasedecorative">Mods and Shit/MUS Common Patch</li>
     <li IfModActive="mingtuwuxiang.fishingdecorative">Mods and Shit/MUS FishingDecorative</li>                              <!-- Progression: Aesthetics compat -->
     <li IfModActive="mingtuwuxiang.gothicdecorative">Mods and Shit/MUS Gothicstyle Vampire Furniture</li>                   <!-- Progression: Aesthetics compat -->
     <li IfModActive="mingtuwuxiang.spacebasedecorative">Mods and Shit/MUS Space Base Furniture</li>
@@ -453,7 +456,6 @@
     <li IfModActive="rimthunderteams.rimthunder.timeforward">Mods and Shit/RimThunder Time Forward</li>
     <li IfModActive="zyszhao.rimthunder.westerngreen">Mods and Shit/RimThunder Western Green</li>
     <li IfModActive="rimthunderteams.rimthunder.zarya">Mods and Shit/RimThunder Zarya</li>
-    <li IfModActiveAny="resurrectionem.furniture,resurrectionem.furnitureasia">Mods and Shit/RR Furniture Common</li>
     <li IfModActive="resurrectionem.furnitureasia">Mods and Shit/RR Furniture Longyun</li>
     <li IfModActive="resurrectionem.furniture">Mods and Shit/RR Furniture Rapture</li>
     <li IfModActive="mlie.morefurniture">Mods and Shit/More Furniture</li>
@@ -595,8 +597,6 @@
 	<li IfModActive="zal.chickencoop">Mods and Shit/Mitz's Chicken Coop</li>
 	<li IfModActive="shira.ddgchllngr">Mods and Shit/Dodge Challenger</li>
 	<li IfModActive="sorrode.h47">Mods and Shit/H-47</li>
-	<!-- Add any of HighlyE's H- series vehicles to the below string please. -->
-    <li IfModActiveAny="he.rrs,he.agmtfat,he.agmnne,he.bfot,he.ct,he.fbbus,he.fcvpi,he.fe,he.f350a,he.fltdcv,he.bearcatg3,he.mstat,he.pa">Mods and Shit/HE-Vehicles/Common</li>
 	<li IfModActive="he.agmtfat">Mods and Shit/HE-Vehicles/HE-AM General M35A2 '78</li>
 	<li IfModActive="he.agmnne">Mods and Shit/HE-Vehicles/HE-AM General M998 '92</li>
 	<li IfModActive="he.bfot">Mods and Shit/HE-Vehicles/HE-Bell 412 Helicopter '81</li>
