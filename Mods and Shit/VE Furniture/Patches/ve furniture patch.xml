@@ -278,6 +278,13 @@
                     </value>
                 </Operation>
 
+	                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VFE_Lounger"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_DecoOutdoor</designationCategory>
+                    </value>
+                </Operation>     
+
 
 <!-- GEAR STORAGE -->
                 <Operation Class="PatchOperationReplace">
