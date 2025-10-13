@@ -359,11 +359,11 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_PottedPlants"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_PottedPlants"]</xpath>
 		<value>
-			<designationCategory>Furniture</designationCategory>
+			<designationCategory>Ferny_DecoPlants</designationCategory>
 		</value>
 	</Operation>
 
