@@ -805,6 +805,7 @@
     <li IfModActive="ferny.progressionagriculture">Mods and Shit/Progression Agriculture</li>
     <li IfModActive="kcb.pottingdeco">Mods and Shit/Plant Pot Deco</li>
     <li IfModActive="aelanna.transparentsubstructure">Mods and Shit/Transparent Substructure</li>
+    <li IfModActive="vanillaexpanded.vcookebakery">Mods and Shit/VCE Bakery</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
