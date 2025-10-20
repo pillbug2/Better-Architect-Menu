@@ -747,6 +747,10 @@
     <li>nbnw.steelpipenetwork</li>
     <li>nbnw.woodlogpipenetwork</li>
     <li>zal.FishingBoats</li>
+
+
+
+    <!-- Whoever addded these messed up and made em just the mod names and not ids, will be fixed soon hopef -->
     <li>VGP Garden Fabrics</li>
     <li>VGP Garden Canning</li>
     <li>VGP Vegetable Garden</li>
@@ -755,6 +759,7 @@
     <li>Alpha Bees</li>
     <li>Architecture of the Rim Corners</li>
     <li>Adaptive Simple Storage</li>	
+
     <li>gondragon.mechanoidwaiter</li>
     <li>mgatwood.housedecor</li>
     <li>gloomy.furniture.continued.fix</li>
@@ -767,6 +772,8 @@
     <li>zal.fishprops</li>
     <li>mlie.barnstall</li>
 	<li>kcb.pottingdeco</li>
+    <li>ferny.progressionagriculture</li>
+    <li>aelanna.transparentsubstructure</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

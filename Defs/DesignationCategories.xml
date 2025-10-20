@@ -516,7 +516,7 @@
 	<DesignationCategoryDef>
 		<defName>Ferny_Windows</defName>
 		<label>Windows</label>
-		<description>Windows for walls</description>
+		<description>Windows for walls.</description>
 		<order>850</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
@@ -524,7 +524,7 @@
 		</specialDesignatorClasses>
 		<modExtensions>
 			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Structure</parentCategory>
+				<parentCategory>Ferny_Decorations</parentCategory>
 			</li>
 		</modExtensions>
   	</DesignationCategoryDef>
