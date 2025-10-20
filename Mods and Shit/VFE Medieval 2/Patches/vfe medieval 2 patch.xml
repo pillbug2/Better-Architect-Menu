@@ -159,7 +159,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFEM2_StandingBanner"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoHanging</designationCategory>
                     </value>
                 </Operation>
 	

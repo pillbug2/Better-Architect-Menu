@@ -758,7 +758,7 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_Firefoam</defName>
-    <label>Fire safety</label>
+    <label>Firefighting</label>
     <description>Manage fires and firefoam.</description>
     <order>900</order>
     <specialDesignatorClasses>
