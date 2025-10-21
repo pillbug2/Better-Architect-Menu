@@ -309,6 +309,7 @@
     <li>drilledhead.MyDogsHouse</li>
     <li>JTCsBonereapers.FormerlyPPHHYY</li>
     <li>mlmlmlm.bluearchivefurniture</li>
+    <li>mlmlmlm.bluearchivefurniture2</li>
     <li>BuhGunGer.WallMountedFireFoamPopper</li>
     <li>notdvd.fraymod</li>
     <li>Xercaine.SmallBiofuelRefinery</li>
@@ -747,19 +748,14 @@
     <li>nbnw.steelpipenetwork</li>
     <li>nbnw.woodlogpipenetwork</li>
     <li>zal.FishingBoats</li>
-
-
-
-    <!-- Whoever addded these messed up and made em just the mod names and not ids, will be fixed soon hopef -->
-    <li>VGP Garden Fabrics</li>
-    <li>VGP Garden Canning</li>
-    <li>VGP Vegetable Garden</li>
-    <li>VGP Garden Drinks</li>
-    <li>VGP Garden Gourmet</li>
-    <li>Alpha Bees</li>
-    <li>Architecture of the Rim Corners</li>
-    <li>Adaptive Simple Storage</li>	
-
+    <li>dismarzero.vgp.vgpgardenfabrics</li>
+    <li>dismarzero.vgp.vgpgardencanning</li>
+    <li>dismarzero.vgp.vgpvegetablegarden</li>
+    <li>dismarzero.vgp.vgpgardendrinks</li>
+    <li>dismarzero.vgp.vgpgardengourmet</li>
+    <li>sarg.rimbees</li>
+    <li>eeg.architecture</li>
+    <li>adaptive.simplestorage</li>
     <li>gondragon.mechanoidwaiter</li>
     <li>mgatwood.housedecor</li>
     <li>gloomy.furniture.continued.fix</li>
