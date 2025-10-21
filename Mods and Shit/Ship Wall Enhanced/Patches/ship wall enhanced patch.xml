@@ -7,7 +7,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ShipWallSmallColdNnclearGeneratorCabin"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Ferny_SpacePower</designationCategory>
 		</value>
 	</Operation>
 
@@ -15,7 +15,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ShipWallGravcorePowerCellCabin"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Ferny_SpacePower</designationCategory>
 		</value>
 	</Operation>
 
@@ -23,7 +23,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ShipWallChemfuelPoweredGeneratorCabin"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Ferny_SpacePower</designationCategory>
 		</value>
 	</Operation>
 
@@ -31,7 +31,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ShipWallMountMiniSolarPanel"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Ferny_SpacePower</designationCategory>
 		</value>
 	</Operation>
 	
@@ -41,7 +41,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ShipWallBatteryCabin"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Ferny_SpacePower</designationCategory>
 		</value>
 	</Operation>
 
@@ -49,33 +49,18 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="SW_MountBatteryBase"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Ferny_SpacePower</designationCategory>
 		</value>
 	</Operation>
 	
 <!-- PRODUCTION INFRASTRUCTURE or CHEMFUEL NETWORK -->
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_ChemfuelNetwork"]</xpath>
-		
-		<!-- VE Chemfuel category -->
-		<match Class="PatchOperationReplace">
-			<success>Always</success>
-			<xpath>Defs/ThingDef[defName="ShipWallChemreactorCabinStandard"]/designationCategory</xpath>
-			<value>
-				<designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-			</value>
-		</match>
-		
-		<!-- Fallback category -->
-		<nomatch Class="PatchOperationReplace">
-			<success>Always</success>
-			<xpath>Defs/ThingDef[defName="ShipWallChemreactorCabinStandard"]/designationCategory</xpath>
-			<value>
-				<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
-			</value>
-		</nomatch>
-		
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ShipWallChemreactorCabinStandard"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
+		</value>
 	</Operation>
 	
 <!-- FARMING PRODUCTION -->
@@ -84,7 +69,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ShipWallStarchSynthesisCabin"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Farming</designationCategory>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
 		</value>
 	</Operation>
 
@@ -92,23 +77,18 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ShipWallProteinBreedingCabin"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Farming</designationCategory>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
 		</value>
 	</Operation>
 	
 <!-- CHEMFUEL STORAGE -->
-
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Chemfuel Expanded - Odyssey Patch</li>
-		</mods>
-		<match Class="PatchOperationReplace">
-			<success>Always</success>
-			<xpath>Defs/ThingDef[defName="ShipWallFuelTankCabin"]/designationCategory</xpath>
-			<value>
-				<designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-			</value>
-		</match>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ShipWallFuelTankCabin"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
 	</Operation>
 	
 <!-- GENERAL STORAGE -->
@@ -117,7 +97,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="SW_AdaptiveRegularStorageCabin"]</xpath>
 		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
+			<designationCategory>Ferny_VehicleStorage</designationCategory>
 		</value>
 	</Operation>
 
@@ -125,7 +105,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="SW_AdaptiveGlassStorageCabin"]</xpath>
 		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
+			<designationCategory>Ferny_VehicleStorage</designationCategory>
 		</value>
 	</Operation>
 	
@@ -135,7 +115,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="SW_AdaptiveFridgeStorageCabin"]</xpath>
 		<value>
-			<designationCategory>Ferny_FoodStorage</designationCategory>
+			<designationCategory>Ferny_VehicleStorage</designationCategory>
 		</value>
 	</Operation>
 	
@@ -146,6 +126,16 @@
 		<xpath>Defs/ThingDef[defName="ShipWallMountMiniTurret"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+<!-- SPACE COMBAT -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ShipWallShieldGeneratorCabin"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceCombat</designationCategory>
 		</value>
 	</Operation>
 	

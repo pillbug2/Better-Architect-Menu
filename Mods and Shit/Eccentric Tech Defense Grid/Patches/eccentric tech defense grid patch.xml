@@ -5,6 +5,14 @@
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_SpaceCombat"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>EccentricDefenseGrid.Designator_DeconstructConduit</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
 		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_Weapons"]/specialDesignatorClasses</xpath>
 		<value>
 			<li>EccentricDefenseGrid.Designator_DeconstructConduit</li>
@@ -86,11 +94,13 @@
 		</value>
 	</Operation>
 	
+<!-- SPACE WEAPONS -->
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Eccentric_Turret_M51AC"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Weapons</designationCategory>
+			<designationCategory>Ferny_SpaceCombat</designationCategory>
 		</value>
 	</Operation>
 	
@@ -98,7 +108,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Eccentric_Turret_M64RG"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Weapons</designationCategory>
+			<designationCategory>Ferny_SpaceCombat</designationCategory>
 		</value>
 	</Operation>
 	

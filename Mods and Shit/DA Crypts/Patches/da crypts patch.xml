@@ -74,13 +74,6 @@
                 </Operation>
   
                 <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[@Name="DA_StatueBase"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Memorial</designationCategory>
-                    </value>
-                </Operation>
-  
-                <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="DA_BurialUrn"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Memorial</designationCategory>
@@ -93,5 +86,14 @@
                         <designationCategory>Ferny_Memorial</designationCategory>
                     </value>
                 </Operation>
+	
+<!-- ART -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="DA_StatueBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DecoArt</designationCategory>
+		</value>
+	</Operation>
 
 </Patch>
