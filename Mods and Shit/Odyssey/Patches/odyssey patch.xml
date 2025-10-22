@@ -108,13 +108,6 @@
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="GravAnchor"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_SpacePlatform</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[@Name="FuelTankBase"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_SpacePlatform</designationCategory>
