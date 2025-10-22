@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-<!-- POWER -->
+<!-- SPACE POWER -->
 	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="CO_SolarArrayGenerator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Ferny_SpacePower</designationCategory>
 		</value>
 	</Operation>
 
@@ -18,6 +18,49 @@
 		<xpath>Defs/ThingDef[defName="CO_TerrainScanner"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_ResearchProduction</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- SPACE PLATFORM -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="COVacDoor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="CO_VacBarrierProjector"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+
+	<!-- TODO not working -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CO_VacRoofFraming"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CO_RoofRetractor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CO_ExtBridge"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
 		</value>
 	</Operation>
 	

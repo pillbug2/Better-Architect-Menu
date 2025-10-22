@@ -192,7 +192,6 @@
     <li IfModActive="scherub.planningextended">Mods and Shit/Planning Extended</li>
     <li IfModActive="chaoticenrico.researchpapers">Mods and Shit/Research Papers</li>
     <li IfModActive="k.glitternet">Mods and Shit/GlitterNet</li>
-    <li IfModActive="bulldog.vanillachemfuelexpandedodysseypatch">Mods and Shit/VE Chemfuel Odyssey Patch</li>              <!-- Implicit support for Small Tanks, GravTech-->
     <li IfModActive="als.gravtech">Mods and Shit/GravTech</li>
     <li IfModActive="sumghai.replimat">Mods and Shit/Replimat</li>
     <li IfModActive="bart.bioformmatrix">Mods and Shit/Bioform Matrix</li>
@@ -369,7 +368,7 @@
     <li IfModActive="tractor.therealcaptrex">Mods and Shit/Tractor</li>
     <li IfModActive="badoaks.campfirestews">Mods and Shit/Campfire Stews</li>
     <li IfModActive="sbz.neatstorageworkbenchshelf">Mods and Shit/Workbench Shelf</li>
-    <li IfModActive="ponpeco.pfkidsroom">Mods and Shit/Ponpeco Furnitures Kids Room</li>                                    <!-- TODO improve conditionals? --><!-- TODO some decor not covered -->
+    <li IfModActive="ponpeco.pfkidsroom">Mods and Shit/Ponpeco Furnitures Kids Room</li>                                    <!-- TODO improve conditionals? -->
     <li IfModActive="spesscarp.pressureplate">Mods and Shit/Pressure Plate</li>
     <li IfModActive="amch.moresleepaccelerators">Mods and Shit/More Sleep Accelerators</li>
     <li IfModActive="lingluo.itemcuter">Mods and Shit/Auto Cutter</li>
@@ -461,7 +460,7 @@
     <li IfModActive="mewn.medievalsigns">Mods and Shit/Medieval Signs</li>
     <li IfModActive="mjeiouws.raisedstuff">Mods and Shit/Raised Platforms</li>
     <li IfModActive="alexprotopopov.vaultsofvagarempl">Mods and Shit/Vaults of Vagar Emplacements</li>
-    <li IfModActive="kyzy.shipwallenhanced">Mods and Shit/Ship Wall Enhanced</li>                                           <!-- Support for VE Chemfuel - Odyssey patch -->
+    <li IfModActive="kyzy.shipwallenhanced">Mods and Shit/Ship Wall Enhanced</li>
     <li IfModActive="untamo.apothecary.expansion">Mods and Shit/Apothecary Expansion</li>
     <li IfModActive="mrwireman.gausscannon">Mods and Shit/Buildable Orbital Cannon</li>
     <li IfModActive="fleshforge.defilergenerator">Mods and Shit/Defiler Generator</li>
@@ -808,6 +807,9 @@
     <li IfModActive="kcb.pottingdeco">Mods and Shit/Plant Pot Deco</li>
     <li IfModActive="aelanna.transparentsubstructure">Mods and Shit/Transparent Substructure</li>
     <li IfModActive="vanillaexpanded.vcookebakery">Mods and Shit/VCE Bakery</li>
+    <li IfModActive="notdvd.spacerpack2">Mods and Shit/Spacer Pack Repackaged</li>
+    <li IfModActive="smxrez.powerreexamined">Mods and Shit/Power Reexamined</li>
+    <li IfModActive="van.beasts">Mods and Shit/DA Beasts and Monsters</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

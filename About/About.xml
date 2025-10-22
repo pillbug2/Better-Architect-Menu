@@ -273,7 +273,6 @@
     <li>supes.autoseller.core</li>
     <li>aelanna.eccentrictech.defensegrid</li>
     <li>mjeiouws.outlander.continuouscontention</li>
-    <li>bulldog.vanillachemfuelexpandedodysseypatch</li>
     <li>aoba.deadmanswitch.core</li>
     <li>aoba.deadmanswitch.ancientcorps</li>
     <li>redmattis.bsfurniture</li>
@@ -771,6 +770,9 @@
     <li>ferny.progressionagriculture</li>
     <li>aelanna.transparentsubstructure</li>
     <li>vanillaexpanded.vcookebakery</li>
+	<li>notdvd.spacerpack2</li>
+	<li>smxrez.powerreexamined</li>
+	<li>van.beasts</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

@@ -91,7 +91,7 @@
     <DesignationCategoryDef>
 		<defName>Ferny_DecoPlants</defName>
 		<label>Plants</label>
-		<description>Manage Plant Decorations.</description>
+		<description>Manage plant decorations.</description>
 		<order>900</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
@@ -107,7 +107,7 @@
   <DesignationCategoryDef>
 		<defName>Ferny_DecoRugs</defName>
 		<label>Rugs</label>
-		<description>Manage Rug Decorations.</description>
+		<description>Manage rug decorations.</description>
 		<order>800</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
@@ -139,7 +139,7 @@
   <DesignationCategoryDef>
 		<defName>Ferny_DecoArt</defName>
 		<label>Art</label>
-		<description>Manage Art and Music Decorations.</description>
+		<description>Manage art and music decorations.</description>
 		<order>700</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
@@ -155,7 +155,7 @@
   <DesignationCategoryDef>
 		<defName>Ferny_DecoOutdoor</defName>
 		<label>Outdoor</label>
-		<description>Manage Outside Decorations.</description>
+		<description>Manage outdoor decorations.</description>
 		<order>600</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>

@@ -1,18 +1,53 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 <!-- BIG GRAVES AND SARCOPHAGUSES -->
-    <Operation Class="PatchOperationAdd">
+	
+    <Operation Class="PatchOperationReplace">
         <success>Always</success>
-        <xpath>Defs/ThingDef[defName="Wanzi_BigGrave"]</xpath>
+        <xpath>Defs/ThingDef[defName="Wanzi_BigGrave"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_Memorial</designationCategory>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
+	
+    <Operation Class="PatchOperationReplace">
         <success>Always</success>
-        <xpath>Defs/ThingDef[defName="Wanzi_BigSarcophagus"]</xpath>
+        <xpath>Defs/ThingDef[defName="Wanzi_BigSarcophagus"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_Memorial</designationCategory>
         </value>
     </Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BigCryptoCoffin"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Memorial</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BigDA_Coffin"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Memorial</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BigDA_GrandSarcophagus"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Memorial</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="BigHPGraveBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Memorial</designationCategory>
+		</value>
+	</Operation>
+
 </Patch>

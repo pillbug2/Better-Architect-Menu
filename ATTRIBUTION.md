@@ -9,10 +9,10 @@ Not all icons are attributed. Putting this here for my additions in case it is n
 * [Gear SVG Vector by game-icons.net](https://www.svgrepo.com/svg/479352/gear)
   modified for `Textures/UI/ArchitectureIcons/Default/Ferny_ProductionInfrastructure.png`.
 * [Lung 1 SVG Vector by Icooon Mono](https://www.svgrepo.com/svg/482747/lung-1)
-  modified for `Textures/UI/ArchitectureIcons/Default/Ferny_OxygenNetwork.png`
-* [Radiation SVG Vector by FontAwesome](https://www.svgrepo.com/svg/352387/radiation)
-  modified for `Textures/UI/ArchitectureIcons/Default/Radiology.png`.
+  modified for `Textures/UI/ArchitectureIcons/Default/Ferny_OxygenNetwork.png`.
 * [I Beam SVG Vector by game-icons.net](https://www.svgrepo.com/svg/322575/i-beam)
   modified for `Textures/UI/ArchitectureIcons/Default/Ferny_SteelNetwork.png`.
 * [Wood Lumber Plank Wooden SVG by SVG Repo](https://www.svgrepo.com/svg/308938/wood-lumber-plank-wooden)
   modified for `Textures/UI/ArchitectureIcons/Default/Ferny_WoodNetwork.png`.
+* [Grave 9 SVG Vector by Icooon Mono](https://www.svgrepo.com/svg/481857/grave-9)
+  modified for `https://www.svgrepo.com/svg/481857/grave-9`.
