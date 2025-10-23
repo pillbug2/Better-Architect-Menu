@@ -38,19 +38,6 @@
         </value>
     </Operation>
 
-    <!-- NEST INTO TRANSPORT -->
-    <Operation Class="PatchOperationAdd">
-        <success>Always</success>
-        <xpath>Defs/DesignationCategoryDef[defName="Ship"]</xpath>
-        <value>
-            <modExtensions>
-                <li Class="BetterArchitect.NestedCategoryExtension">
-                    <parentCategory>Ferny_Transport</parentCategory>
-                </li>
-            </modExtensions>
-        </value>
-    </Operation>
-
     <!-- NEST INTO NETWORKS IF AVAILABLE -->
     <Operation Class="PatchOperationConditional">
         <xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
@@ -147,24 +134,6 @@
             <label>Area</label>
         </value>
     </Operation>
-
-
-    <!-- RENAME SHIP -->
-    <Operation Class="PatchOperationReplace">
-        <success>Always</success>
-        <xpath>Defs/DesignationCategoryDef[defName="Ship"]/label</xpath>
-        <value>
-            <label>Space</label>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <success>Always</success>
-        <xpath>Defs/DesignationCategoryDef[defName="Ship"]/order</xpath>
-        <value>
-            <order>5</order>
-        </value>
-    </Operation>
-
 
     <!-- FLOORS (only used if UseSpecialFloorsTab is false) -->
     <Operation Class="PatchOperationAddModExtension">
@@ -771,18 +740,6 @@
         </value>
     </Operation>
 
-<!-- NEST INTO SPACE -->
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/DesignationCategoryDef[defName="Ship"]</xpath>
-                    <value>
-                        <modExtensions>
-                        <li Class="BetterArchitect.NestedCategoryExtension">
-                            <parentCategory>Ferny_Space</parentCategory>
-                        </li>
-                        </modExtensions>
-                    </value>
-                </Operation>
 
 <!-- NEST INTO NETWORKS IF AVAILABLE -->
                 <Operation Class="PatchOperationConditional">
@@ -897,7 +854,17 @@
                         <order>1</order>
                     </value>
                 </Operation>
-
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="Ship"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Ferny_Space</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+                </Operation>
 
 <!-- LIGHTING -->
                 <Operation Class="PatchOperationReplace">
