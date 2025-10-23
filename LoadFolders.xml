@@ -851,6 +851,7 @@
 	<li IfModActive="serzhuk.primitivefridge">Mods and Shit/Primitive Fridge</li>
 	<li IfModActive="park.desrtstorm">Mods and Shit/Sundial Desrt Storm</li>
 	<li IfModActive="blackmarket420.pandoraframework">Mods and Shit/Pandora's Framework</li>
+	<li IfModActive="qq.expanded.brickwork">Mods and Shit/Expanded Brickworks</li>
 	<!-- TODO Complete and test these patches once shuttles get sorted --> <!--
 	<li IfModActive="blackmarket420.xenotype.doberkin">Mods and Shit/BM's Races Doberkins</li>
 	<li IfModActive="antediluvianjunk.odyssey.transport.shuttle">Mods and Shit/Junk Shuttle</li>
