@@ -1308,7 +1308,7 @@
 		</specialDesignatorClasses>
 		<modExtensions>
 			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>VCHE_PipeNetworks</parentCategory>
+				<parentCategory>Ferny_Storage</parentCategory>
 			</li>
 		</modExtensions>
 	</DesignationCategoryDef>
