@@ -820,6 +820,8 @@
 	<li>smallmine.heavyshuttle</li>
 	<li>barbedwire.ultratecpassengershuttle</li>
 	<li>misstalls.vrshuttle</li>
+	<li>turbopickle.gravshuttle</li>
+	<li>mrwireman.stealthshuttle</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

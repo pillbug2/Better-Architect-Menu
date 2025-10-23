@@ -857,6 +857,8 @@
 	<li IfModActive="smallmine.heavyshuttle">Mods and Shit/Orca Shuttle</li>
 	<li IfModActive="barbedwire.ultratecpassengershuttle">Mods and Shit/Ultratec Passenger Shuttle</li>
 	<li IfModActive="misstalls.vrshuttle">Mods and Shit/Misstall's Shuttle</li>
+	<li IfModActive="turbopickle.gravshuttle">Mods and Shit/Grav Shuttle</li>
+	<li IfModActive="mrwireman.stealthshuttle">Mods and Shit/Stealth Shuttle</li>
 	-->
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
