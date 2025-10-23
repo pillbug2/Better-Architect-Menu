@@ -773,6 +773,53 @@
 	<li>notdvd.spacerpack2</li>
 	<li>smxrez.powerreexamined</li>
 	<li>van.beasts</li>
+	<li>alphahawk59.missionboard</li>
+	<li>arcjc007.lasercannon</li>
+	<li>arcjc007.mlrs</li>
+	<li>arcjc007.shieldgenerator</li>
+	<li>bazel.legion.1</li>
+	<li>bazel.toxgen.1</li>
+	<li>bazel.toxgenplus.2</li>
+	<li>bulldog.vanillachemfuelexpandedodysseypatch</li>
+	<li>chirpful.oxygendetector</li>
+	<li>damjdu.cryogenicgeneratori</li>
+	<li>damjdu.cryogenicgeneratorii</li>
+	<li>damjdu.cryogenicgeneratoriii</li>
+	<li>damjdu.minicryogenicgenerator</li>
+	<li>elktor31.terrapumps</li>
+	<li>gunseeker.repairstation</li>
+	<li>mdtk.wars</li>
+	<li>hailuan.pawnspawnerbox</li>
+	<li>hailuan.voiduniverse</li>
+	<li>hope.gravreactor</li>
+	<li>isolationgate.serval</li>
+	<li>kathanon.growthaccelerator</li>
+	<li>co.uk.epicguru.antimatterannihilation</li>
+	<li>kindseal.decorativepainting</li>
+	<li>lk.sunlamp</li>
+	<li>maslo.justrazorwire</li>
+	<li>mdtk.compboards</li>
+	<li>mdtk.generatortiles</li>
+	<li>rigidodysseytechnology.serval</li>
+	<li>rimhwacha.lopain</li>
+	<li>rimhwacha.vehicle</li>
+	<li>storm.cotc</li>
+	<li>stormtail.corpsecannon</li>
+	<li>stormtail.wastepackpp</li>
+	<li>sxatter.smallresearchbench</li>
+	<li>vipok.ed.cheatreactor</li>
+	<li>zal.cocc</li>
+	<li>zal.exoticarmory</li>
+	<li>zal.ltfmindcontrol</li>
+	<li>mdtk.gse</li>
+	<li>serzhuk.primitivefridge</li>
+	<li>park.desrtstorm</li>
+	<li>blackmarket420.pandoraframework</li>
+	<li>blackmarket420.xenotype.doberkin</li>
+	<li>antediluvianjunk.odyssey.transport.shuttle</li>
+	<li>smallmine.heavyshuttle</li>
+	<li>barbedwire.ultratecpassengershuttle</li>
+	<li>misstalls.vrshuttle</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

@@ -1,21 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<DesignationCategoryDef MayRequire="ludeon.rimworld.biotech">
-		<defName>Ferny_ToxicWasteNetwork</defName>
-		<label>Toxic Waste</label>
-		<description>Manage toxic waste.</description>
-		<order>6</order>
-		<specialDesignatorClasses>
-			<li>Designator_Cancel</li>
-			<li>Designator_Deconstruct</li>
-		</specialDesignatorClasses>
-		<modExtensions>
-			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>VCHE_PipeNetworks</parentCategory>
-			</li>
-		</modExtensions>
-	</DesignationCategoryDef>
+	
+	<!-- Ferny_ToxicWasteNetwork is in main DesignationCategories.xml as it is also required by Toxic Wastepack Generator Plus mod. -->
+	<!-- TODO add support for CE resource networks -->
 
 	<DesignationCategoryDef>
 		<defName>Ferny_DyeNetwork</defName>

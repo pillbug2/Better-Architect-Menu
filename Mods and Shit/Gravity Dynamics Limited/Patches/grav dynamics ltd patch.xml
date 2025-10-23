@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- SPACE -->
+	
+	<!-- TODO These patches do nothing. They are here as a reminder to sort the shuttles when shuttles get a category. -->
+	<!--
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GDL_TPSI"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Odyssey</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GDL_TPSH"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Odyssey</designationCategory>
+		</value>
+	</Operation>
+	-->
+	
+<!-- WEAPONS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GDL_TURRET_RAILGUN"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GDL_TURRET_GATLING"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

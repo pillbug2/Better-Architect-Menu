@@ -6,6 +6,6 @@
 	Requires a manned utility console! Utility Console is located in the Security Tab.
 	-->
 	<!-- Rewritten to reflect new location. -->
-	<SubWall_MannedError>Requires a manned utility console! Utility Console is located in the Walls tab under the Build category.</SubWall_MannedError>
+	<SubWall_MannedError>A manned utility console is required! The utility console is located in the Barricades category under the Fight tab.</SubWall_MannedError>
 	
 </LanguageData>

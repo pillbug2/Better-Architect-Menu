@@ -407,7 +407,7 @@
     <li IfModActive="Killerbot.NavistarMaxxPro">Mods and Shit/GTEK Navistar</li>
     <li IfModActive="Killerbot.SubaruForester">Mods and Shit/GTEK Subaru Forester</li>
     <li IfModActive="sarg.alphabiomes">Mods and Shit/Alpha Biomes</li>
-    <li IfModActive="lts.cc">Mods and Shit/Crypto Coffins</li>
+    <li IfModActiveAny="lts.cc,echotidefish.cryptocoffinsforked">Mods and Shit/Crypto Coffins</li>
     <li IfModActive="ogliss.thewhitecrayon.quarry">Mods and Shit/Quarry</li>
     <li IfModActive="4loris4.morelinkables">Mods and Shit/More Linkables</li>
     <li IfModActive="sbz.neatstoragefridge">Mods and Shit/Fridge</li>
@@ -476,8 +476,7 @@
     <li IfModActive="daylight.rimlifeextrgmod">Mods and Shit/RimLife Expansion Trading Items</li>
     <li IfModActive="mlie.apothecary">Mods and Shit/Apothecary</li>
     <li IfModActive="daylight.wbsmorelinkf">Mods and Shit/WorkBench Support</li>
-    <li IfModActive="lts.rh">Mods and Shit/Repair Hubs</li>
-    <li IfModActive="echotidefish.repairhubsforked">Mods and Shit/Repair Hubs</li>
+    <li IfModActiveAny="lts.rh,echotidefish.repairhubsforked">Mods and Shit/Repair Hubs</li>
     <li IfModActive="qq.expanded.woodwork">Mods and Shit/Expanded Woodworking 2</li>
     <li IfModActive="honeybadger.wallmountedturretsversiontwo">Mods and Shit/Wall Mounted Turrets</li>
     <li IfModActive="koro.mapvehicles.nomadiccarts">Mods and Shit/Nomadic Carts</li>
@@ -810,6 +809,55 @@
     <li IfModActive="notdvd.spacerpack2">Mods and Shit/Spacer Pack Repackaged</li>
     <li IfModActive="smxrez.powerreexamined">Mods and Shit/Power Reexamined</li>
     <li IfModActive="van.beasts">Mods and Shit/DA Beasts and Monsters</li>
+	<li IfModActive="alphahawk59.missionboard">Mods and Shit/Mission Board</li>
+	<li IfModActive="arcjc007.lasercannon">Mods and Shit/Laser Cannon</li>
+	<li IfModActive="arcjc007.mlrs">Mods and Shit/MLRS</li>
+	<li IfModActive="arcjc007.shieldgenerator">Mods and Shit/Shield Generator</li>
+	<li IfModActive="bazel.legion.1">Mods and Shit/The Crimson Legion</li>
+	<li IfModActive="bazel.toxgen.1">Mods and Shit/Toxic Wastepack Generator</li>
+	<li IfModActive="bazel.toxgenplus.2">Mods and Shit/Toxic Wastepack Generator Plus</li>
+	<li IfModActive="bulldog.vanillachemfuelexpandedodysseypatch">Mods and Shit/VE Chemfuel Odyssey Patch</li>
+	<li IfModActive="chirpful.oxygendetector">Mods and Shit/Oxygen Detector</li>
+	<li IfModActive="damjdu.cryogenicgeneratori">Mods and Shit/Cryogenic Generator/Episode One - The Phantom Menace</li>
+	<li IfModActive="damjdu.cryogenicgeneratorii">Mods and Shit/Cryogenic Generator/two</li>
+	<li IfModActive="damjdu.cryogenicgeneratoriii">Mods and Shit/Cryogenic Generator/3</li>
+	<li IfModActive="damjdu.minicryogenicgenerator">Mods and Shit/Cryogenic Generator/mini</li>
+	<li IfModActive="elktor31.terrapumps">Mods and Shit/TerraPumps</li>
+	<li IfModActive="gunseeker.repairstation">Mods and Shit/Repair Station</li>
+	<li IfModActive="mdtk.wars">Mods and Shit/Wall Attached Repair Station</li>
+	<li IfModActive="hailuan.pawnspawnerbox">Mods and Shit/Pawn Spawner Box</li>
+	<li IfModActive="hailuan.voiduniverse">Mods and Shit/DLC Collaboration Void Universe</li>
+	<li IfModActive="hope.gravreactor">Mods and Shit/Grav Reactor</li>
+	<li IfModActive="isolationgate.serval">Mods and Shit/Isolation Gate</li>
+	<li IfModActive="kathanon.growthaccelerator">Mods and Shit/Growth Accelerator</li>
+	<li IfModActive="co.uk.epicguru.antimatterannihilation">Mods and Shit/Antimatter Annihilation</li>
+	<li IfModActive="kindseal.decorativepainting">Mods and Shit/Decorative Painting</li>
+	<li IfModActive="lk.sunlamp">Mods and Shit/LK Wall Sun Lamp</li>
+	<li IfModActive="maslo.justrazorwire">Mods and Shit/Just Razor Wire</li>
+	<li IfModActive="mdtk.compboards">Mods and Shit/CompBoards</li>
+	<li IfModActive="mdtk.generatortiles">Mods and Shit/Generator Tiles</li>
+	<li IfModActive="rigidodysseytechnology.serval">Mods and Shit/Rigid Odyssey Technology</li>                         <!-- TODO sort shuttle -->
+	<li IfModActive="rimhwacha.lopain">Mods and Shit/RIM HWACHA</li>
+	<li IfModActive="rimhwacha.vehicle">Mods and Shit/RIM HWACHA Vehicle</li>
+	<li IfModActive="storm.cotc">Mods and Shit/Children of the Corn</li>
+	<li IfModActive="stormtail.corpsecannon">Mods and Shit/Corpse Cannon</li>
+	<li IfModActive="stormtail.wastepackpp">Mods and Shit/Wastepack Powerplant</li>
+	<li IfModActive="sxatter.smallresearchbench">Mods and Shit/sx Smaller Simple Research Bench</li>
+	<li IfModActive="vipok.ed.cheatreactor">Mods and Shit/Cheat Reactor</li>
+	<li IfModActive="zal.cocc">Mods and Shit/Call of Cthulhu Cults</li>
+	<li IfModActive="zal.exoticarmory">Mods and Shit/Exotic Armory</li>
+	<li IfModActive="zal.ltfmindcontrol">Mods and Shit/Mind Control</li>
+	<li IfModActive="mdtk.gse">Mods and Shit/Gravity Dynamics Limited</li>                                              <!-- TODO sort shuttle -->
+	<li IfModActive="serzhuk.primitivefridge">Mods and Shit/Primitive Fridge</li>
+	<li IfModActive="park.desrtstorm">Mods and Shit/Sundial Desrt Storm</li>
+	<li IfModActive="blackmarket420.pandoraframework">Mods and Shit/Pandora's Framework</li>
+	<!-- TODO Complete and test these patches once shuttles get sorted --> <!--
+	<li IfModActive="blackmarket420.xenotype.doberkin">Mods and Shit/BM's Races Doberkins</li>
+	<li IfModActive="antediluvianjunk.odyssey.transport.shuttle">Mods and Shit/Junk Shuttle</li>
+	<li IfModActive="smallmine.heavyshuttle">Mods and Shit/Orca Shuttle</li>
+	<li IfModActive="barbedwire.ultratecpassengershuttle">Mods and Shit/Ultratec Passenger Shuttle</li>
+	<li IfModActive="misstalls.vrshuttle">Mods and Shit/Misstall's Shuttle</li>
+	-->
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
