@@ -66,6 +66,10 @@
 	</Operation>
 
 
+
+
+
+
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/DesignationCategoryDef[defName="VGE_Platform"]</xpath>
@@ -75,6 +79,12 @@
 				<parentCategory>Ferny_Space</parentCategory>
 			</li>
 			</modExtensions>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[designationCategory="VGE_Platform"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
@@ -88,6 +98,12 @@
 			</modExtensions>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[designationCategory="VGE_Combat"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceCombat</designationCategory>
+		</value>
+	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/DesignationCategoryDef[defName="VGE_Vacuum"]</xpath>
@@ -97,6 +113,12 @@
 				<parentCategory>Ferny_Space</parentCategory>
 			</li>
 			</modExtensions>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[designationCategory="VGE_Vacuum"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
