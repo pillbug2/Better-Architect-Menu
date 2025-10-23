@@ -59,6 +59,7 @@
     <li IfModActive="oskarpotocki.vfe.empire">Mods and Shit/VFE Empire</li>
     <li IfModActive="biomesteam.biomesfossils">Mods and Shit/Biomes Fossils</li>
     <li IfModActive="rebuild.cotr.doorsandcorners">Mods and Shit/Rebuild DAC</li>
+    <li IfModActive="rebuild.embrasures">Mods and Shit/Rebuild Embrasures</li>
     <li IfModActive="zal.lanterns">Mods and Shit/Lanterns</li>
     <li IfModActive="dankpyon.medieval.overhaul">Mods and Shit/Medieval Overhaul</li>
     <li IfModActive="zal.fireflies">Mods and Shit/Fireflies</li>
@@ -290,8 +291,8 @@
     <li IfModActive="vin.warehouse.storage.corpse">Mods and Shit/Warehouse Storage Corpses</li>
     <li IfModActive="drilledhead.MyDogsHouse">Mods and Shit/MyDogsHouse</li>
     <li IfModActive="JTCsBonereapers.FormerlyPPHHYY">Mods and Shit/BoneReapers Remarrowed</li>
-    <li IfModActive="mlmlmlm.bluearchivefurniture">Mods and Shit/Blue Archive Furniture</li>                                
-    <li IfModActive="mlmlmlm.bluearchivefurniture2">Mods and Shit/Blue Archive Furniture 2</li>    
+    <li IfModActive="mlmlmlm.bluearchivefurniture">Mods and Shit/Blue Archive Furniture</li>
+    <li IfModActive="mlmlmlm.bluearchivefurniture2">Mods and Shit/Blue Archive Furniture 2</li>
     <!-- TODO move mod category under Furniture -->
     <li IfModActive="BuhGunGer.WallMountedFireFoamPopper">Mods and Shit/Wall Mounted Firefoam</li>
     <li IfModActive="notdvd.fraymod">Mods and Shit/Fray of the Fog</li>
