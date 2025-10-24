@@ -97,19 +97,21 @@
 		</value>
 	</Operation>
 	
+<!-- WALLS -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FT_WallSandbag"]</xpath>
+		<value>
+			<designationCategory>Ferny_Walls</designationCategory>
+		</value>
+	</Operation>
+	
 <!-- BARRICADES -->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="FT_Sandbag"]</xpath>
-		<value>
-			<designationCategory>Ferny_Barricades</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="FT_WallSandbag"]</xpath>
 		<value>
 			<designationCategory>Ferny_Barricades</designationCategory>
 		</value>
