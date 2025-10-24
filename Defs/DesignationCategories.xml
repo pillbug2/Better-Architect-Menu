@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
   <DesignationCategoryDef>
     <defName>Ferny_Colony</defName>
     <label>Colony</label>
@@ -1056,6 +1057,38 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_SpaceVacuum</defName>
+    <label>Vacuum</label>
+    <description>Build space vacuum buildings.</description>
+    <order>6</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Space</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_SpaceCombat</defName>
+    <label>Combat</label>
+    <description>Build space combat buildings.</description>
+    <order>6</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Space</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+  
+  <DesignationCategoryDef>
     <defName>Ferny_SpaceFurniture</defName>
     <label>Furniture</label>
     <description>Build space furniture.</description>
@@ -1093,38 +1126,6 @@
     <defName>Ferny_SpaceProduction</defName>
     <label>Production</label>
     <description>Build space production benches.</description>
-    <order>6</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-    <modExtensions>
-      <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Ferny_Space</parentCategory>
-      </li>
-    </modExtensions>
-  </DesignationCategoryDef>
-
-  <DesignationCategoryDef>
-    <defName>Ferny_SpaceCombat</defName>
-    <label>Combat</label>
-    <description>Build space combat buildings.</description>
-    <order>6</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-    <modExtensions>
-      <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Ferny_Space</parentCategory>
-      </li>
-    </modExtensions>
-  </DesignationCategoryDef>
-
-  <DesignationCategoryDef>
-    <defName>Ferny_SpaceVacuum</defName>
-    <label>Vacuum</label>
-    <description>Build space vacuum buildings.</description>
     <order>6</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
