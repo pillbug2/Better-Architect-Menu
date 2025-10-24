@@ -861,7 +861,11 @@
 	<li IfModActive="wm.weaponstri">Mods and Shit/Traderunners Arsenal</li>
 	<li IfModActive="shunthewitch.termimother">Mods and Shit/WM420_Mother</li>
 	<li IfModActive="shunthewitch.usmcapc">Mods and Shit/USCM M557 APC</li>
+	<li IfModActive="deep.rimworldmilkingmachine">Mods and Shit/Rimworld Milking Machine</li>
+	<li IfModActive="phobos.buildablegravshipupgrades">Mods and Shit/Buildable Gravship Upgrades</li>
+	<li IfModActive="com.antediluvian.compterm">Mods and Shit/Rimnet Terminal</li>
 	<!-- TODO Complete and test these patches once shuttles get sorted --> <!--
+	<li IfModActive="antediluvian.odyssey.transport.shuttle">Mods and Shit/UFO</li>
 	<li IfModActive="blackmarket420.xenotype.doberkin">Mods and Shit/BM's Races Doberkins</li>
 	<li IfModActive="antediluvianjunk.odyssey.transport.shuttle">Mods and Shit/Junk Shuttle</li>
 	<li IfModActive="smallmine.heavyshuttle">Mods and Shit/Orca Shuttle</li>
