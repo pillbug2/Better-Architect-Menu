@@ -29,6 +29,7 @@
 		</value>
 	</Operation>
 	
+<!-- TODO Progression: Education has since released. Consider moving this into Education. -->
 <!-- MANAGEMENT -->
 
 	<Operation Class="PatchOperationReplace">

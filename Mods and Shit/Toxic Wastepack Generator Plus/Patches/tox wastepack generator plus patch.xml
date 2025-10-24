@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- TOXIC WASTE -->
+
+	<!-- Networks -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="EW_WastepackNet"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_ToxicWasteNetwork</designationCategoryDef>
+		</value>
+	</Operation>
+
+	<!-- Buildings -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EW_WastePipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ToxicWasteNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EW_UndergroundWastePipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ToxicWasteNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EW_WasteValve"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ToxicWasteNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EW_WasteTank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ToxicWasteNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EW_WasteTap"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ToxicWasteNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EW_WasteBin"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ToxicWasteNetwork</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- POWER GENERATION -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PolutionPoweredGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PortablePolutionPoweredGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="IndustrialPolutionPoweredGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

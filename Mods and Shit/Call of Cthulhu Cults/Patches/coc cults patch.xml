@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- WINDOWS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Cults_AlcoveTorch"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Windows</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Cults_Alcove"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Windows</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- SUMMON -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Cults_SignOfDagon"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Summon</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- SEATING -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Cults_PrayerPillow"]</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Cults_PewLinkable"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- RESEARCH PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Cults_ForbiddenKnowledgeCenter"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ResearchProduction</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- ART -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="ObeliskBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DecoArt</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- CULTURE -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/DesignationCategoryDef[defName="Ideology"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="Cult_SacrificialAltar"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ideology</designationCategory>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
-		<match Class="PatchOperationAddModExtension">
-			<success>Always</success>
-			<xpath>Defs/DesignationCategoryDef[defName="Ferny_ToxicWasteNetwork"]</xpath>
-			<value>
-
-				<li Class="BetterArchitect.NestedCategoryExtension">
-					<parentCategory>VCHE_PipeNetworks</parentCategory>
-				</li>
-
-			</value>
-		</match>
-	</Operation>
-
+	<!-- TODO Does this need a conditional check? Is replace the right operation? -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/DesignationCategoryDef[defName="Ferny_NeutroamineNetwork"]/modExtensions</xpath>
 		<value>

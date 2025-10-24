@@ -1297,11 +1297,22 @@
 		</modExtensions>
 	</DesignationCategoryDef>
 
-
-
-
-
-
+	<!-- VE Chemfuel Unofficial Expansion and Toxic Wastepack Generator Plus both require this category. -->
+	<DesignationCategoryDef MayRequire="ludeon.rimworld.biotech">
+		<defName>Ferny_ToxicWasteNetwork</defName>
+		<label>Toxic Waste</label>
+		<description>Manage toxic waste.</description>
+		<order>6</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Storage</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
 
 <!-- Lordbeef's floor stuff -->
   <DesignationCategoryDef>
