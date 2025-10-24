@@ -855,6 +855,10 @@
 	<li IfModActive="rick.fcp.core.tools">Mods and Shit/FCP Tools</li>
 	<li IfModActiveAny="mlie.hunterphagexenotype,joeownage.hunterphageequip">Mods and Shit/Hunterphage/Hunterphage Equipment Only</li>
 	<li IfModActive="mlie.hunterphagexenotype">Mods and Shit/Hunterphage/Hunterphage Xenotype</li>
+	<li IfModActive="scorpio.mechanoidfoundry">Mods and Shit/Mechanoid Foundry</li>
+	<li IfModActive="wm.weaponstri">Mods and Shit/Traderunners Arsenal</li>
+	<li IfModActive="shunthewitch.termimother">Mods and Shit/WM420_Mother</li>
+	<li IfModActive="shunthewitch.usmcapc">Mods and Shit/USCM M557 APC</li>
 	<!-- TODO Complete and test these patches once shuttles get sorted --> <!--
 	<li IfModActive="blackmarket420.xenotype.doberkin">Mods and Shit/BM's Races Doberkins</li>
 	<li IfModActive="antediluvianjunk.odyssey.transport.shuttle">Mods and Shit/Junk Shuttle</li>
