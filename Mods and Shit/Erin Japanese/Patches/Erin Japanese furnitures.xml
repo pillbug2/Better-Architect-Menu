@@ -32,7 +32,7 @@
 <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Erin_IncenseHolder"]</xpath>
     <value>
-        <designationCategory>Ferny_Decorations</designationCategory>
+        <designationCategory>Ferny_DecoArt</designationCategory>
     </value>
 </Operation>
 
