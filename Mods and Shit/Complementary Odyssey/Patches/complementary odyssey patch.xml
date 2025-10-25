@@ -39,10 +39,9 @@
 		</value>
 	</Operation>
 
-	<!-- TODO not working -->
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="CO_VacRoofFraming"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="CO_ExtBridge"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_SpacePlatform</designationCategory>
 		</value>
@@ -55,12 +54,28 @@
 			<designationCategory>Ferny_SpacePlatform</designationCategory>
 		</value>
 	</Operation>
-
+	
+	<!--
+	Designator_BuildVacRoof and CO_VacRoofFraming's designator seem to show up as duplicates in BAM.
+	The below appears to fix this.
+	-->
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="CO_ExtBridge"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="CO_VacRoofFraming"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_SpacePlatform</designationCategory>
+			<designationCategory/>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/DesignationCategoryDef[defName="Odyssey"]/specialDesignatorClasses/li[text()="ComplementaryOdyssey.Designator_BuildVacRoof"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_SpacePlatform"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>ComplementaryOdyssey.Designator_BuildVacRoof</li>
 		</value>
 	</Operation>
 	
