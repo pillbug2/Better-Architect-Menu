@@ -33,4 +33,18 @@
                     </value>
                 </Operation>
 
+                <Operation Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="RoyalCrib"]</xpath>
+                    <value>
+                    <designationCategory>Ferny_Childhood</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="TribalCrib"]</xpath>
+                    <value>
+                    <designationCategory>Ferny_Childhood</designationCategory>
+                    </value>
+                </Operation>
+
 </Patch>
