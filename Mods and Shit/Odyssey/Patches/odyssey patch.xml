@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<!-- Remove Designator_RemoveFoundation from former Odyssey category. Moved to Ferny_SpacePlatform. -->
-	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/DesignationCategoryDef[defName="Odyssey"]/specialDesignatorClasses/li[text()="Designator_RemoveFoundation"]</xpath>
-	</Operation>
-
     <!-- ORBIT CATEGORY -->
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
@@ -32,6 +27,7 @@
             </modExtensions>
         </value>
     </Operation>
+
 
     <!-- <Operation Class="PatchOperationAdd">
         <success>Always</success>

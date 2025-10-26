@@ -864,6 +864,15 @@
                         </modExtensions>
                     </value>
                 </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="Ship"]/specialDesignatorClasses</xpath>
+                    <value>
+                        <li>Designator_RemoveFoundation</li>
+                    </value>
+                </Operation>
+
+
 
 <!-- LIGHTING -->
                 <Operation Class="PatchOperationReplace">
