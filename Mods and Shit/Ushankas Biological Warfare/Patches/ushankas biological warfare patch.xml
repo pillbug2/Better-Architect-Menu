@@ -7,7 +7,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="USH_BiologicalMissileLauncherBase"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Weapons</designationCategory>
+			<designationCategory>Ferny_Biohazards</designationCategory>
 		</value>
 	</Operation>
 
@@ -22,7 +22,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="USH_BiologicalBarrelBase"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Explosives</designationCategory>
+			<designationCategory>Ferny_Biohazards</designationCategory>
 		</value>
 	</Operation>
 
@@ -37,7 +37,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="USH_BiologicalVentBase"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
+			<designationCategory>Ferny_Biohazards</designationCategory>
 		</value>
 	</Operation>
 
@@ -45,7 +45,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="USH_GasVentsController"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
+			<designationCategory>Ferny_Biohazards</designationCategory>
 		</value>
 	</Operation>
 
@@ -60,7 +60,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="USH_VirusReplicator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+			<designationCategory>Ferny_Biohazards</designationCategory>
 		</value>
 	</Operation>
 
@@ -68,7 +68,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="USH_BacteriaIncubator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+			<designationCategory>Ferny_Biohazards</designationCategory>
 		</value>
 	</Operation>
 	
@@ -78,7 +78,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="USH_AntigensAnalyzer"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Production</designationCategory>
+			<designationCategory>Ferny_Biohazards</designationCategory>
 		</value>
 	</Operation>
 	
