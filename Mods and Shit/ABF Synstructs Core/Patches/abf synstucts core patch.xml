@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ABF_Thing_Synstruct_Cradle"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Automation</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ABF_Thing_Synstruct_PartWorkbench"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Automation</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ABF_Thing_Synstruct_CoherenceSpot"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Automation</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ABF_Thing_Synstruct_Beamcoil"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Automation</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ABF_Thing_Synstruct_Enervoir"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Automation</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ABF_Thing_Synstruct_Powerjack"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Automation</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

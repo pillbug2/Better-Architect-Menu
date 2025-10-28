@@ -29,10 +29,11 @@
     </value>
 </Operation>
 
+<!-- TODO IDK where to put this -pillbug2 -->
 <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Erin_IncenseHolder"]</xpath>
     <value>
-        <designationCategory>Ferny_DecoArt</designationCategory>
+        <designationCategory>Ferny_Decorations</designationCategory>
     </value>
 </Operation>
 

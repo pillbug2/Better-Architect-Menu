@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="ShieldGen_PlasmaNetwork"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_Barricades</designationCategoryDef>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ShieldGen_PlasmaPipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ShieldGen_PlasmaPipeUnderground"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ShieldGen_CoolingPlug"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ShieldGen_Shield_Astroglide"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ShieldGen_Shield_Durex"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ShieldGen_Shield_Trojan"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Asimov_WirelessCharge"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Automation</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Asimov_ChargepackCharger"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Automation</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Asimov_ChargePad"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Automation</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Asimov_HibernationSpot"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Automation</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Asimov_LongRangeWirelessCharger"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Automation</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

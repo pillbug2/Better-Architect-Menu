@@ -867,6 +867,61 @@
 	<li IfModActive="ottersholdhands.villageshomes">Mods and Shit/Villages Homes</li>
 	<li IfModActive="ucp.invisiblewalls">Mods and Shit/Ollie's Invisible Walls</li>
 	<li IfModActive="ucp.generatorthing">Mods and Shit/Primary Generators Lite</li>
+	  
+	<li IfModActive="mlie.nwnrealfogofwar">Mods and Shit/Real Fog of War</li>
+	<li IfModActive="arcjc007.walldefensesv2">Mods and Shit/WallDefensesV2</li>
+	<li IfModActive="k4g.rww2.christmas">Mods and Shit/RimWorld War 2 Gifts from the Front</li>
+	<li IfModActive="kaitorisenkou.modularweapons2">Mods and Shit/ModularWeapons 2</li>
+	<li IfModActive="kit.powerprotein">Mods and Shit/Kit's Power Protein</li>
+	<li IfModActive="lumi.swfloor.floors">Mods and Shit/StarWars WallsN'Floors</li>
+	<li IfModActive="lumi.swlights">Mods and Shit/Star Wars Lights</li>
+	<li IfModActive="m3.continued.jangodsoul.starwars.bti">Mods and Shit/JDS StarWars Armory</li>
+	<li IfModActive="m3.continued.jangodsoul.theforge.anvil">Mods and Shit/JDS The Forge Anvil</li>
+	<li IfModActive="mlie.crystalball">Mods and Shit/CrystalBall</li>
+	    
+	<li IfModActive="neronix17.cosmorim.airgenerator">Mods and Shit/Air Generator</li>
+	<li IfModActive="neronix17.shieldgenerators">Mods and Shit/Shield Generators</li>
+	<li IfModActive="sgtfireball.gravshipcargopod">Mods and Shit/Gravship Cargo Pod</li>
+	<li IfModActive="slomow.p1000r">Mods and Shit/Landkreuzer P1000 Ratte</li>
+	<li IfModActive="emitbreaker.mim.wh40k.tox.core">Mods and Shit/Sustainable Toxic Environment</li>
+	    <li IfModActive="bammalting.bamstructure">Mods and Shit/BamStructure</li>
+    <li IfModActive="janson.weapontech">Mods and Shit/Weapon Tech</li>
+    <li IfModActive="neronix17.forgottenrealms">Mods and Shit/Forgotten Realms Biotech Edition</li>
+	<li IfModActive="neronix17.subpersonashells">Mods and Shit/Subpersona Shells</li>
+	<li IfModActive="killathon.artificialbeings.syncore">Mods and Shit/ABF Synstructs Core</li>
+	  
+	<li IfModActive="neronix17.asimov">Mods and Shit/Asimov</li>
+	<li IfModActive="darthstarsky.plantvszombie">Mods and Shit/Starsky's Plant vs Zombies mod</li>
+	<li IfModActive="mjeiouws.armory">Mods and Shit/Outlander Solutions Armory</li>
+	<li IfModActive="mjeiouws.sentrygrids">Mods and Shit/Sentry Grids</li>
+	<li IfModActive="mjeiouws.outlander.vehicles">Mods and Shit/Outlander Solutions Vehicles</li>
+	<li IfModActive="rimeffectrenegade.core">Mods and Shit/Rim Effect Renegade/Core</li>
+	<li IfModActive="rimeffectrenegade.asarireapers">Mods and Shit/Rim Effect Renegade/Asari and Reapers</li>
+	<li IfModActive="rimeffectrenegade.extendedcut">Mods and Shit/Rim Effect Renegade/Extended Cut</li>
+	<li IfModActive="lee.theforce.standalone">Mods and Shit/Star Wars The Force Standalone</li>
+	        <li IfModActive="guy762.mm.kotorcore">Mods and Shit/Star Wars KotOR Resources and Materials</li>
+	  
+	        <li IfModActive="neronix17.outland.core">Mods and Shit/Outland/Core</li>
+	        <li IfModActive="neronix17.outland.eastbornempire">Mods and Shit/Outland/Eastborn Empire</li>
+	        <li IfModActive="neronix17.outland.furnitureanddecor">Mods and Shit/Outland/Furniture Decor</li>
+	        <li IfModActive="neronix17.outland.motzcoalition">Mods and Shit/Outland/Motz Coalition</li>
+	        <li IfModActive="neronix17.outland.redburnpact">Mods and Shit/Outland/Redburn Pact</li>
+	        <li IfModActive="neronix17.outland.vathunnobles">Mods and Shit/Outland/Vathun Nobles</li>
+	  
+	        <li IfModActive="neronix17.outerrim.core">Mods and Shit/Outer Rim/Core</li>
+	        <li IfModActive="neronix17.outerrim.droiddepot">Mods and Shit/Outer Rim/Droid Depot</li>
+	        <li IfModActive="neronix17.outerrim.furnitureanddecor">Mods and Shit/Outer Rim/Furniture Decor</li>
+	        <li IfModActive="neronix17.outerrim.mandalore">Mods and Shit/Outer Rim/Mandalore</li>
+	  
+	        <li IfModActive="emitbreaker.mim.wh40k.core">Mods and Shit/MIM Warhammer 40k/Core</li>
+	        <li IfModActive="emitbreaker.mim.wh40k.drugs">Mods and Shit/MIM Warhammer 40k/Drugs and Consumables</li>
+	        <li IfModActive="emitbreaker.mim.wh40k.weapons">Mods and Shit/MIM Warhammer 40k/Weapons</li>
+	        <li IfModActive="emitbreaker.mim.wh40k.aa.core">Mods and Shit/MIM Warhammer 40k/Adeptus Astartes Core</li>
+	        <li IfModActive="emitbreaker.mim.wh40k.ae.core">Mods and Shit/MIM Warhammer 40k/Aeldari Core</li>
+	        <li IfModActive="emitbreaker.mim.wh40k.as.core">Mods and Shit/MIM Warhammer 40k/Adepta Sororitas Core</li>
+	        <li IfModActive="emitbreaker.mim.wh40k.ch.core">Mods and Shit/MIM Warhammer 40k/Chaos Core</li>
+	        <li IfModActive="emitbreaker.mim.wh40k.nc.core">Mods and Shit/MIM Warhammer 40k/Necron Core</li>
+	  
 	<!-- TODO Complete and test these patches once shuttles get sorted --> <!--
 	<li IfModActive="antediluvian.odyssey.transport.shuttle">Mods and Shit/UFO</li>
 	<li IfModActive="blackmarket420.xenotype.doberkin">Mods and Shit/BM's Races Doberkins</li>
