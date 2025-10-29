@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	
-<!-- PRODUCTION -->
-
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="EM_Mudpit"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Production</designationCategory>
-		</value>
-	</Operation>
-
 <!-- PROCESSING PRODUCTION -->
-
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="EM_BakingSpot"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="Building_TransmutationCircle_Refinement"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_ProcessingProduction</designationCategory>
 		</value>
@@ -23,7 +13,7 @@
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="EM_MudbrickFrame"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="Building_TransmutationCircle_Material"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_ProcessingProduction</designationCategory>
 		</value>
@@ -31,17 +21,19 @@
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="EM_PitKiln"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="Building_TransmutationCircle_PStone"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_ProcessingProduction</designationCategory>
 		</value>
 	</Operation>
+	
+<!-- MEDICAL -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="EM_KilnElectric"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="Building_ResurrectionCircle"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+			<designationCategory>Ferny_Medical</designationCategory>
 		</value>
 	</Operation>
 	

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- CHEMFUEL NETWORK -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="UCE_ChemStove"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="UCE_ChemSmith"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="UCE_ChemSmelter"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="UCE_ChemCrematorium"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- NEUTROAMINE NETWORK -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="UCE_NeutroamineNet"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_NeutroamineNetwork</designationCategoryDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="UCE_NeutroaminePipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="UCE_UndergroundNeutroaminePipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="UCE_NeutroamineTank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="UCE_NeutroamineTap"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="UCE_NeutroamineDrain"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="UCE_NeutroDistiller"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="UCE_SynthRefiner"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="UCE_HyperRefiner"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+		</value>
+	</Operation>
+
+</Patch>

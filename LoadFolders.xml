@@ -899,7 +899,26 @@
 	<li IfModActive="rimeffectrenegade.asarireapers">Mods and Shit/Rim Effect Renegade/Asari and Reapers</li>
 	<li IfModActive="rimeffectrenegade.extendedcut">Mods and Shit/Rim Effect Renegade/Extended Cut</li>
 	<li IfModActive="lee.theforce.standalone">Mods and Shit/Star Wars The Force Standalone</li>
-	        <li IfModActive="guy762.mm.kotorcore">Mods and Shit/Star Wars KotOR Resources and Materials</li>
+	<li IfModActive="guy762.mm.kotorcore">Mods and Shit/Star Wars KotOR Resources and Materials</li>
+
+	<li IfModActive="needler98.alchemy">Mods and Shit/Alchemy</li>
+	<li IfModActive="trigger.supplybox">Mods and Shit/Supply Box</li>
+	<li IfModActive="name.bloodpower">Mods and Shit/Blood Power</li>
+	<li IfModActive="tefnut.more.cannons.vanillafied">Mods and Shit/More Cannons Vanillafied</li>
+	<li IfModActive="qq.expanded.glasswork">Mods and Shit/Expanded Glasswork</li>
+	<li IfModActive="geotermal.mine">Mods and Shit/Geotermal Mining</li>
+	<li IfModActive="zal.unofficialchemfuel">Mods and Shit/Unofficial Chemfuel Expanded</li>
+	<li IfModActive="procido.neutroaminerefinery">Mods and Shit/Neutroamine Refinery</li>
+	<li IfModActive="uveren.hemogenextractor">Mods and Shit/Hemogen Extractor</li>
+	  
+	<li IfModActive="emitbreaker.mim.wh40k.core">Mods and Shit/MIM Warhammer 40k/Core</li>
+	<li IfModActive="emitbreaker.mim.wh40k.drugs">Mods and Shit/MIM Warhammer 40k/Drugs and Consumables</li>
+	<li IfModActive="emitbreaker.mim.wh40k.weapons">Mods and Shit/MIM Warhammer 40k/Weapons</li>
+	<li IfModActive="emitbreaker.mim.wh40k.aa.core">Mods and Shit/MIM Warhammer 40k/Adeptus Astartes Core</li>
+	<li IfModActive="emitbreaker.mim.wh40k.ae.core">Mods and Shit/MIM Warhammer 40k/Aeldari Core</li>
+	<li IfModActive="emitbreaker.mim.wh40k.as.core">Mods and Shit/MIM Warhammer 40k/Adepta Sororitas Core</li>
+	<li IfModActive="emitbreaker.mim.wh40k.ch.core">Mods and Shit/MIM Warhammer 40k/Chaos Core</li>
+	<li IfModActive="emitbreaker.mim.wh40k.nc.core">Mods and Shit/MIM Warhammer 40k/Necron Core</li>
 	  
 	        <li IfModActive="neronix17.outland.core">Mods and Shit/Outland/Core</li>
 	        <li IfModActive="neronix17.outland.eastbornempire">Mods and Shit/Outland/Eastborn Empire</li>
@@ -912,15 +931,6 @@
 	        <li IfModActive="neronix17.outerrim.droiddepot">Mods and Shit/Outer Rim/Droid Depot</li>
 	        <li IfModActive="neronix17.outerrim.furnitureanddecor">Mods and Shit/Outer Rim/Furniture Decor</li>
 	        <li IfModActive="neronix17.outerrim.mandalore">Mods and Shit/Outer Rim/Mandalore</li>
-	  
-	        <li IfModActive="emitbreaker.mim.wh40k.core">Mods and Shit/MIM Warhammer 40k/Core</li>
-	        <li IfModActive="emitbreaker.mim.wh40k.drugs">Mods and Shit/MIM Warhammer 40k/Drugs and Consumables</li>
-	        <li IfModActive="emitbreaker.mim.wh40k.weapons">Mods and Shit/MIM Warhammer 40k/Weapons</li>
-	        <li IfModActive="emitbreaker.mim.wh40k.aa.core">Mods and Shit/MIM Warhammer 40k/Adeptus Astartes Core</li>
-	        <li IfModActive="emitbreaker.mim.wh40k.ae.core">Mods and Shit/MIM Warhammer 40k/Aeldari Core</li>
-	        <li IfModActive="emitbreaker.mim.wh40k.as.core">Mods and Shit/MIM Warhammer 40k/Adepta Sororitas Core</li>
-	        <li IfModActive="emitbreaker.mim.wh40k.ch.core">Mods and Shit/MIM Warhammer 40k/Chaos Core</li>
-	        <li IfModActive="emitbreaker.mim.wh40k.nc.core">Mods and Shit/MIM Warhammer 40k/Necron Core</li>
 	  
 	<!-- TODO Complete and test these patches once shuttles get sorted --> <!--
 	<li IfModActive="antediluvian.odyssey.transport.shuttle">Mods and Shit/UFO</li>

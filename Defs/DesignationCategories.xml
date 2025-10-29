@@ -1287,7 +1287,7 @@
 		</modExtensions>
   </DesignationCategoryDef>
 
-	<!-- VRE Androids and VE Chemfuel Unofficial Expansion both need a neutroamine network category. -->
+	<!-- VRE Androids,VE Chemfuel Unofficial Expansion, and Unofficial Chemfuel Expanded all need a neutroamine network category. -->
 	<DesignationCategoryDef>
 		<defName>Ferny_NeutroamineNetwork</defName>
 		<label>Neutroamine</label>
