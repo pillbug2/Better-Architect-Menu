@@ -910,16 +910,40 @@
 	<li IfModActive="zal.unofficialchemfuel">Mods and Shit/Unofficial Chemfuel Expanded</li>
 	<li IfModActive="procido.neutroaminerefinery">Mods and Shit/Neutroamine Refinery</li>
 	<li IfModActive="uveren.hemogenextractor">Mods and Shit/Hemogen Extractor</li>
-	        <li IfModActive="flareshooter.vosbver16p">Mods and Shit/Very Ordinary Security Buildings</li>
+	    <li IfModActive="flareshooter.vosbver16p">Mods and Shit/Very Ordinary Security Buildings</li>
 	  
-	        <li IfModActive="flyingstar.dcdeco">Mods and Shit/DCSS statues and altars</li>
-	        <li IfModActive="flyingstar.sc2bunkeraddon">Mods and Shit/Ra2Bunker SC2 addon</li>
-	        <li IfModActive="flyingstar.automortarsunofficial">Mods and Shit/Auto Mortars</li>
-	        <li IfModActive="sierraonline.advlife">Mods and Shit/Advanced Life Support Unit</li>
-	        <li IfModActive="layyoune.citadelcable">Mods and Shit/Self repairing cables</li>
-	        <li IfModActive="lothmorg.vcg">Mods and Shit/Variable Chemfuel Generator</li>
-	        <li IfModActive="drake.replicator">Mods and Shit/Replicator</li>
-	        <li IfModActive="ww.guillotine">Mods and Shit/Guillotine</li>
+	<li IfModActive="flyingstar.dcdeco">Mods and Shit/DCSS statues and altars</li>
+	<li IfModActive="flyingstar.sc2bunkeraddon">Mods and Shit/Ra2Bunker SC2 addon</li>
+	<li IfModActive="flyingstar.automortarsunofficial">Mods and Shit/Auto Mortars</li>
+	<li IfModActive="sierraonline.advlife">Mods and Shit/Advanced Life Support Unit</li>
+	<li IfModActive="layyoune.citadelcable">Mods and Shit/Self repairing cables</li>
+	<li IfModActive="lothmorg.vcg">Mods and Shit/Variable Chemfuel Generator</li>
+	<li IfModActive="drake.replicator">Mods and Shit/Replicator</li>
+	<li IfModActive="ww.guillotine">Mods and Shit/Guillotine</li>
+	<li IfModActiveAny="exmtts.cosmic,exmttspipe.cosmic">Mods and Shit/Extra Turrets Cosmic</li>
+	<li IfModActive="para0234.snsambitioncosmic">Mods and Shit/Ambition of the Cosmic</li>
+
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	  
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
+	<li IfModActive="">Mods and Shit/</li>
 	  
 	<li IfModActive="emitbreaker.mim.wh40k.core">Mods and Shit/MIM Warhammer 40k/Core</li>
 	<li IfModActive="emitbreaker.mim.wh40k.drugs">Mods and Shit/MIM Warhammer 40k/Drugs and Consumables</li>
