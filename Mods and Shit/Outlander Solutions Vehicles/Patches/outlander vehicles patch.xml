@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- AUXILIARIES -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MJ_CorrelatorNode"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- TRANSPORT INFRASTRUCTURE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="MJ_StructureCell"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="MJ_HazardTile"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="OSVehicles_StructureGateBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- NAVAL TRANSPORT -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="SelkieBlueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_NavalTransport</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- AERIAL TRANSPORT -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="OSVehicles_JuneBlueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AerialTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="OSVehicles_JanusBlueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AerialTransport</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- MILITARY TRANSPORT -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="CyraBlueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="CirceBlueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RookBlueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="MJ_RatBlueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="TrajanBlueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="BasiliskBlueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="BrownieBlueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="BulwarkBlueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="HelotBlueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="HorsemanBlueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="SirenBlueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+<!-- Remove dropdowns -->
+	
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[designatorDropdown="MJ_Outlander_VehicleSeriesS"]/designatorDropdown</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[designatorDropdown="MJ_Outlander_VehicleSeriesB"]/designatorDropdown</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[designatorDropdown="MJ_Outlander_VehicleSeriesH"]/designatorDropdown</xpath>
+	</Operation>
+	
+</Patch>

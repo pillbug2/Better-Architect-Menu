@@ -2,6 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationReplace">
+		<success>Always</success> 
 		<xpath>Defs/ThingDef[defName="HRK_ArmoredEmbrasure"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Barricades</designationCategory>
@@ -9,6 +10,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="HRK_FineEmbrasure"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Barricades</designationCategory>
@@ -16,6 +18,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="CE_Embrasure"]</xpath>
 		<value>
 			<designationCategory>Ferny_Barricades</designationCategory>
@@ -23,6 +26,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="HRK_CastleWallEmbrasure"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Barricades</designationCategory>
@@ -30,6 +34,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="HRK_RusticEmbrasure"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Barricades</designationCategory>

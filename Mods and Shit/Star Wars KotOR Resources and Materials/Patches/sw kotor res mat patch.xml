@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<!-- Floors are handled by Patches/core patch.xml. -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="KOTOR_BuildTab"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Furniture</parentCategory>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- TODO untested - required mod has not released -->
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="MM_StarWarsShipBuildTab"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Transport</parentCategory>
+			</li>
+		</value>
+	</Operation>
+	
+<!-- RHYDONIUM NETWORK -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
+		
+		<match Class="PatchOperationAddModExtension">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="Ferny_RhydoniumNetwork"]</xpath>
+			<value>
+				<li Class="BetterArchitect.NestedCategoryExtension">
+					<parentCategory>VCHE_PipeNetworks</parentCategory>
+				</li>
+			</value>
+		</match>
+
+		<nomatch Class="PatchOperationAddModExtension">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="Ferny_RhydoniumNetwork"]</xpath>
+			<value>
+				<li Class="BetterArchitect.NestedCategoryExtension">
+					<parentCategory>Ferny_Storage</parentCategory>
+				</li>
+			</value>
+		</nomatch>
+		
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="KotORPipeSystem_Rhydonium"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_RhydoniumNetwork</designationCategoryDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_RhydoniumPipes"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_RhydoniumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_RhydoniumPipes_hidden"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_RhydoniumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_RhydoniumValve"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_RhydoniumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_RhydoniumTank_small"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_RhydoniumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_RhydoniumTank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_RhydoniumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_RhydoniumHopper_dispenser"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_RhydoniumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_RhydoniumHopper_insert"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_RhydoniumNetwork</designationCategory>
+		</value>
+	</Operation>
+
+<!-- TIBANNA NETWORK -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
+		
+		<match Class="PatchOperationAddModExtension">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="Ferny_TibannaNetwork"]</xpath>
+			<value>
+				<li Class="BetterArchitect.NestedCategoryExtension">
+					<parentCategory>VCHE_PipeNetworks</parentCategory>
+				</li>
+			</value>
+		</match>
+
+		<nomatch Class="PatchOperationAddModExtension">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="Ferny_TibannaNetwork"]</xpath>
+			<value>
+				<li Class="BetterArchitect.NestedCategoryExtension">
+					<parentCategory>Ferny_Storage</parentCategory>
+				</li>
+			</value>
+		</nomatch>
+		
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="KotORPipeSystem_Tibanna"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_TibannaNetwork</designationCategoryDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_TibannaPipes"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TibannaNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_TibannaPipes_hidden"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TibannaNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_TibannaValve"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TibannaNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_TibannaTank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TibannaNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_TibannaHopper_dispenser"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TibannaNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_TibannaHopper_insert"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TibannaNetwork</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- DECO HANGING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="GS_Banner_Temp"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DecoHanging</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- DECO RUGS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="CarpetBased"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DecoRugs</designationCategory>
+		</value>
+	</Operation>
+
+<!-- JOY -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="HoloTerminalBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Joy</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_PazaakTable"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Joy</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="guy762_DecorativeTerminalBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Joy</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- POWER GENERATION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_ReactorRhydonium_small"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_ReactorRhydonium_medium"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="kotor_plasmacatalyst"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- POWER STORAGE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_GonkBuilding"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_GonkBuilding"]/designatorDropdown</xpath>
+	</Operation>
+	
+<!-- PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="kotor_DrugLab"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="guy762_KotORWorkbench"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PROCESSING PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_FuelRefinery"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="kotor_PlasmaFurnace"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_PlasmaAmmoBank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- HYGIENE -->
+
+	<!-- Mod appears to have a non-DBH version of this def that is not buildable. -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/DesignationCategoryDef[defName="Hygiene"]</xpath>
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="KotOR_watertank"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Hygiene</designationCategory>
+			</value>
+		</match>
+	</Operation>
+	
+<!-- HYGIENE or PRODUCTION INFRASTRUCTURE -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/DesignationCategoryDef[defName="Hygiene"]</xpath>
+
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="KotOR_MoistureVaporator_big"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Hygiene</designationCategory>
+			</value>
+		</match>
+
+		<nomatch Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="KotOR_MoistureVaporator_big"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
+			</value>
+		</nomatch>
+	
+	</Operation>
+	
+<!-- COMBAT EQUIPMENT -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KOTOR_ShieldBank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_CombatEquipment</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- LIGHTING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GS_ImperialLamp"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- SEATING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GS_Palp_Throne"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- MEDICAL -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KoltoTank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Medical</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- GENERAL STORAGE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="guy762_SecretFloorPanel_BASE"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- GROUND TRANSPORT-->
+
+	<!-- TODO untested - required mod has not released -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="guy762_VehicleBaseBuildable_GroundVehicle"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- AERIAL TRANSPORT-->
+
+	<!-- TODO untested - required mod has not released -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="guy762_VehicleBaseBuildable_Starfighter"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AerialTransport</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

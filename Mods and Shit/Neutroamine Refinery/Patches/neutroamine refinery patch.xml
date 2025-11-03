@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Place building into Ferny_NeutroamineNetwork if VCHE_PipeNetworks if it exists, else Production (default). -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
+
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Building_NeutroamineRefinery"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- ROOFS -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/DesignationCategoryDef[defName="DesignationCategory_Roofs"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Structure</parentCategory>
+			</li>
+		</value>
+	</Operation>
+	
+<!-- DECORATIONS --> <!-- TODO - small/tabletop/chochkies decorations category? -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/DesignationCategoryDef[defName="TinyBuildings"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Decorations</parentCategory>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- TODO -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[@Name="TinyBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- FOUNDATIONS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[@Name="CoveredBridgeBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Foundations</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- ANIMALS -->
+
+	<!-- TODO -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FenceLight"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Animals</designationCategory>
+		</value>
+	</Operation>
+
+	<!-- TODO -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="LightPenMarker"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Animals</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- MEMORIAL -->
+
+	<!-- TODO -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Coffin"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Memorial</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- COMBAT INFRASTRUCTURE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="TownBellBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- WALLS -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="BamWallBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Walls</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- BARRICADES --> <!-- TODO This is a barricade right? Same with VFE Medieval 2 half wall? -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HalfHeightWall"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- AIRFLOW -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ElectricFan"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AirManagement</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- LIGHTING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SimpleStreetLamp"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>
