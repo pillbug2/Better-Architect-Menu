@@ -5,7 +5,7 @@
 		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
 		<match Class="PatchOperationAddModExtension">
 			<success>Always</success>
-			<xpath>Defs/DesignationCategoryDef[defName="GlitterNet"]</xpath>
+			<xpath>Defs/DesignationCategoryDef[defName=""]</xpath>
 			<value>
 				<li Class="BetterArchitect.NestedCategoryExtension">
 					<parentCategory>VCHE_PipeNetworks</parentCategory>
