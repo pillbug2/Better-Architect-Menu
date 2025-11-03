@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="SaM_Base"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Memorial</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SaM_Sign"]</xpath>
+		<value>
+			<designationCategory>Ferny_ColonyLocations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SaM_WallSign"]</xpath>
+		<value>
+			<designationCategory>Ferny_ColonyLocations</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

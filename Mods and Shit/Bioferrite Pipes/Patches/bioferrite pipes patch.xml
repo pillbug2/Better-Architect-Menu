@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- BIOFERRITE NETWORK -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
+		
+		<match Class="PatchOperationAddModExtension">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="Ferny_BioferriteNetwork"]</xpath>
+			<value>
+				<li Class="BetterArchitect.NestedCategoryExtension">
+					<parentCategory>VCHE_PipeNetworks</parentCategory>
+				</li>
+			</value>
+		</match>
+
+		<nomatch Class="PatchOperationAddModExtension">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="Ferny_BioferriteNetwork"]</xpath>
+			<value>
+				<li Class="BetterArchitect.NestedCategoryExtension">
+					<parentCategory>Ferny_Storage</parentCategory>
+				</li>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="BioferriteNet"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_BioferriteNetwork</designationCategoryDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[designatorDropdown="BioferriteFuelPipe_DropdownGroup"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_BioferriteNetwork</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[designatorDropdown="BioferriteFuelPipe_DropdownGroup"]/designatorDropdown</xpath>
+	</Operation>
+	
+</Patch>

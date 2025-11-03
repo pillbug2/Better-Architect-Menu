@@ -26,9 +26,9 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="BIF_HealingFactor"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="BIF_HealingFactor"]</xpath>
 		<value>
 			<designationCategory>Ferny_Medical</designationCategory>
 		</value>
@@ -36,9 +36,9 @@
 	
 <!-- WEAPONS -->
 
-	<Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="DIF_FlashStoperAbasia"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="DIF_FlashStoperAbasia"]</xpath>
 		<value>
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>

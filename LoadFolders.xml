@@ -867,7 +867,6 @@
 	<li IfModActive="ottersholdhands.villageshomes">Mods and Shit/Villages Homes</li>
 	<li IfModActive="ucp.invisiblewalls">Mods and Shit/Ollie's Invisible Walls</li>
 	<li IfModActive="ucp.generatorthing">Mods and Shit/Primary Generators Lite</li>
-	  
 	<li IfModActive="mlie.nwnrealfogofwar">Mods and Shit/Real Fog of War</li>
 	<li IfModActive="arcjc007.walldefensesv2">Mods and Shit/WallDefensesV2</li>
 	<li IfModActive="k4g.rww2.christmas">Mods and Shit/RimWorld War 2 Gifts from the Front</li>
@@ -878,18 +877,16 @@
 	<li IfModActive="m3.continued.jangodsoul.starwars.bti">Mods and Shit/JDS StarWars Armory</li>
 	<li IfModActive="m3.continued.jangodsoul.theforge.anvil">Mods and Shit/JDS The Forge Anvil</li>
 	<li IfModActive="mlie.crystalball">Mods and Shit/CrystalBall</li>
-	    
 	<li IfModActive="neronix17.cosmorim.airgenerator">Mods and Shit/Air Generator</li>
 	<li IfModActive="neronix17.shieldgenerators">Mods and Shit/Shield Generators</li>
 	<li IfModActive="sgtfireball.gravshipcargopod">Mods and Shit/Gravship Cargo Pod</li>
 	<li IfModActive="slomow.p1000r">Mods and Shit/Landkreuzer P1000 Ratte</li>
 	<li IfModActive="emitbreaker.mim.wh40k.tox.core">Mods and Shit/Sustainable Toxic Environment</li>
-	    <li IfModActive="bammalting.bamstructure">Mods and Shit/BamStructure</li>
+	<!-- <li IfModActive="bammalting.bamstructure">Mods and Shit/BamStructure</li> -->                                  <!-- TODO Patch is incomplete. -->
     <li IfModActive="janson.weapontech">Mods and Shit/Weapon Tech</li>
     <li IfModActive="neronix17.forgottenrealms">Mods and Shit/Forgotten Realms Biotech Edition</li>
 	<li IfModActive="neronix17.subpersonashells">Mods and Shit/Subpersona Shells</li>
 	<li IfModActive="killathon.artificialbeings.syncore">Mods and Shit/ABF Synstructs Core</li>
-	  
 	<li IfModActive="neronix17.asimov">Mods and Shit/Asimov</li>
 	<li IfModActive="darthstarsky.plantvszombie">Mods and Shit/Starsky's Plant vs Zombies mod</li>
 	<li IfModActive="mjeiouws.armory">Mods and Shit/Outlander Solutions Armory</li>
@@ -900,7 +897,6 @@
 	<li IfModActive="rimeffectrenegade.extendedcut">Mods and Shit/Rim Effect Renegade/Extended Cut</li>
 	<li IfModActive="lee.theforce.standalone">Mods and Shit/Star Wars The Force Standalone</li>
 	<li IfModActive="guy762.mm.kotorcore">Mods and Shit/Star Wars KotOR Resources and Materials</li>
-
 	<li IfModActive="needler98.alchemy">Mods and Shit/Alchemy</li>
 	<li IfModActive="trigger.supplybox">Mods and Shit/Supply Box</li>
 	<li IfModActive="name.bloodpower">Mods and Shit/Blood Power</li>
@@ -910,8 +906,7 @@
 	<li IfModActive="zal.unofficialchemfuel">Mods and Shit/Unofficial Chemfuel Expanded</li>
 	<li IfModActive="procido.neutroaminerefinery">Mods and Shit/Neutroamine Refinery</li>
 	<li IfModActive="uveren.hemogenextractor">Mods and Shit/Hemogen Extractor</li>
-	    <li IfModActive="flareshooter.vosbver16p">Mods and Shit/Very Ordinary Security Buildings</li>
-	  
+	<!-- <li IfModActive="flareshooter.vosbver16p">Mods and Shit/Very Ordinary Security Buildings</li> -->              <!-- TODO Patch is incomplete. -->
 	<li IfModActive="flyingstar.dcdeco">Mods and Shit/DCSS statues and altars</li>
 	<li IfModActive="flyingstar.sc2bunkeraddon">Mods and Shit/Ra2Bunker SC2 addon</li>
 	<li IfModActive="flyingstar.automortarsunofficial">Mods and Shit/Auto Mortars</li>
@@ -922,72 +917,36 @@
 	<li IfModActive="ww.guillotine">Mods and Shit/Guillotine</li>
 	<li IfModActiveAny="exmtts.cosmic,exmttspipe.cosmic">Mods and Shit/Extra Turrets Cosmic</li>
 	<li IfModActive="para0234.snsambitioncosmic">Mods and Shit/Ambition of the Cosmic</li>
-
-	        <li IfModActive="advancedturrets.velcroboy333">Mods and Shit/Advanced Mini-Turret Plus</li>
-	        <li IfModActive="akreedz.statueprinter">Mods and Shit/Statue Printer</li>
-	        <li IfModActive="ali.alchemy">Mods and Shit/Ali's Alchemy</li>
-	        <li IfModActive="ali.chemicalpowercell">Mods and Shit/Ali's Chemical Power Cell</li>
-	        <li IfModActive="ali.cookingtable">Mods and Shit/Ali's Cooking Table</li>
-	        <li IfModActive="ali.hives">Mods and Shit/Ali's Hives</li>
-	        <li IfModActive="ali.miniaturepastedispenser">Mods and Shit/Ali's Miniature Paste Dispenser</li>
-	        <li IfModActive="ali.organlab">Mods and Shit/Ali's Organ Lab</li>
-	        <li IfModActive="ali.powerlessbeacon">Mods and Shit/Ali's Powerless Beacon</li>
-	        <li IfModActive="ali.powerlessmoisturepump">Mods and Shit/Ali's Powerless Moisture Pump</li>
-	  
-	        <li IfModActive="ali.temperaturebonsai">Mods and Shit/Ali's Temperature Bonsai</li>
-	        <li IfModActive="bowen.ultima.artisans">Mods and Shit/Ultima Artisan's Guild</li>
-	        <li IfModActive="bowen.ultima.construction">Mods and Shit/Ultima Britannia Construction Co</li>
-	        <li IfModActive="bowen.ultima.forge">Mods and Shit/Ultima Forge of Virtue</li>
-	        <li IfModActive="caretcake.lampvarieties">Mods and Shit/Lamp Varieties</li>
-	    <li IfModActive="caveman.jellywall">Mods and Shit/Jelly Wall</li>
-	    <li IfModActive="cc.honk.sentry">Mods and Shit/Crimson HONK Sentry</li>
-	    <li IfModActive="chemical.fuel.refrigerator">Mods and Shit/Chemical fuel refrigerator</li>
-	    <li IfModActive="cruelmoose.biop">Mods and Shit/Bioferrite Pipes</li>
-	  
-	        <li IfModActive="cruelmoose.sct">Mods and Shit/Small Chemfuel Tank</li>
-	        <li IfModActive="daniledman.mechalitcore">Mods and Shit/Mechalit Core v2</li>
-	        <li IfModActive="flashpoint55.mentalshieldcrystal">Mods and Shit/Mental Shield Crystal</li>
-	        <li IfModActive="flashpoint55.poweredfloorpanelmod">Mods and Shit/Powered floor panel mod</li>
-	        <li IfModActive="generalm13.m13chemfuelgenerators">Mods and Shit/M-13's ChemFuel Generators</li>
-	        <li IfModActive="generalm13.m13geothermalgenerators">Mods and Shit/M-13's Geothermal Generators</li>
-	        <li IfModActive="generalm13.m13solarpanels">Mods and Shit/M-13's Solar Panels</li>
-	        <li IfModActive="generalm13.m13watermillgenerators">Mods and Shit/M-13's Watermill Generators</li>
-	        <li IfModActive="generalm13.m13windturbines">Mods and Shit/M-13's Wind Turbines</li>
-	        <li IfModActive="generalm13.m13woodfiredgenerators">Mods and Shit/M-13's Wood-Fired Generators</li>
-	  
-	        <li IfModActive="himkey.resources.titanium">Mods and Shit/Titanium Plus</li>
-	        <li IfModActive="hmd.rocketlauncherexpanded">Mods and Shit/Rocket Launcher Expanded</li>
-	        <li IfModActive="hol.railgunpatches">Mods and Shit/Railgun Weaponry</li>
-	        <li IfModActive="karukus.chairrimbomba">Mods and Shit/ChairRIM Bomba</li>
-	    <li IfModActive="karukus.softwall">Mods and Shit/Soft wall</li>
-	        <li IfModActive="kimothy.meteor">Mods and Shit/Meteor Attractor</li>
-	        <li IfModActive="klvlt.ledlightsfork">Mods and Shit/LED Lights</li>
-	    <li IfModActive="leion247138.medicalhiv">Mods and Shit/Medical IV</li>
-	        <li IfModActive="leion247612.higherhpower">Mods and Shit/Higher Power</li>
-	        <li IfModActive="mlie.anatomymachine">Mods and Shit/Anatomy machine</li>
-	  
-	        <li IfModActive="mlie.chemistrytech">Mods and Shit/Chemistry Tech</li>
-	        <li IfModActive="mlie.crate">Mods and Shit/Crate</li>
-	        <li IfModActive="mlie.medicalsupplements">Mods and Shit/Medical Supplements</li>
-	        <li IfModActive="mlie.signsandmemorials">Mods and Shit/Signs and Memorials</li>
-	    <li IfModActive="noflag.lifeprotectionunit.build">Mods and Shit/Life Protection Unit</li>
-	        <li IfModActive="ofb.airc">Mods and Shit/OFB 立柜空调</li>
-	    <li IfModActive="phoebepotat.replicavano">Mods and Shit/Replica Vanometric Power Cells</li>
-	        <li IfModActive="prolle.weapon.a1000">Mods and Shit/Weapon A1000</li>
-	        <li IfModActive="redrusfijorn.vby333.fantasticdecor">Mods and Shit/Fantastic Decor</li>
-	        <li IfModActive="remingtonryder.seantable">Mods and Shit/What happened to Sean?</li>
-	  
-	    <li IfModActive="s7.simplifiedgravship">Mods and Shit/Simplified Gravship</li>
+	<li IfModActive="caveman.jellywall">Mods and Shit/Jelly Wall</li>
+	<li IfModActive="cc.honk.sentry">Mods and Shit/Crimson HONK Sentry</li>
+	<li IfModActive="chemical.fuel.refrigerator">Mods and Shit/Chemical fuel refrigerator</li>
+	<li IfModActive="cruelmoose.biop">Mods and Shit/Bioferrite Pipes</li>
+	<li IfModActive="cruelmoose.sct">Mods and Shit/Small Chemfuel Tank</li>
+	<li IfModActive="himkey.resources.titanium">Mods and Shit/Titanium Plus</li>
+	<li IfModActive="hmd.rocketlauncherexpanded">Mods and Shit/Rocket Launcher Expanded</li>
+	<li IfModActive="hol.railgunpatches">Mods and Shit/Railgun Weaponry</li>
+	<li IfModActive="karukus.chairrimbomba">Mods and Shit/ChairRIM Bomba</li>
+	<li IfModActive="karukus.softwall">Mods and Shit/Soft wall</li>
+	<li IfModActive="kimothy.meteor">Mods and Shit/Meteor Attractor</li>
+	<li IfModActive="leion247138.medicalhiv">Mods and Shit/Medical IV</li>
+	<li IfModActive="leion247612.higherhpower">Mods and Shit/Higher Power</li>
+	<li IfModActive="mlie.anatomymachine">Mods and Shit/Anatomy machine</li>
+	<li IfModActive="mlie.medicalsupplements">Mods and Shit/Medical Supplements</li>
+	<li IfModActive="mlie.signsandmemorials">Mods and Shit/Signs and Memorials</li>
+	<li IfModActive="noflag.lifeprotectionunit.build">Mods and Shit/Life Protection Unit</li>
+	<li IfModActive="ofb.airc">Mods and Shit/OFB 立柜空调</li>
+	<li IfModActive="phoebepotat.replicavano">Mods and Shit/Replica Vanometric Power Cells</li>
+	<li IfModActive="prolle.weapon.a1000">Mods and Shit/Weapon A1000</li>
+	<li IfModActive="s7.simplifiedgravship">Mods and Shit/Simplified Gravship</li>
 	<li IfModActive="sariusskelrets.buildablepsyconcausers">Mods and Shit/Buildable psychic condition causers</li>
 	<li IfModActive="seekiworksmod.no4">Mods and Shit/Kind of Autobong</li>
 	<li IfModActive="spesscarp.chemfuelcage">Mods and Shit/Chemfuel Cage</li>
 	<li IfModActive="starmage21.nuclearpower">Mods and Shit/Nuclear Power</li>
 	<li IfModActive="stolij.morebatteries">Mods and Shit/More Batteries</li>
-	    <li IfModActive="thevillageguy.gen2hydro.1">Mods and Shit/2nd Generation hydroponics</li>
+	<li IfModActive="thevillageguy.gen2hydro.1">Mods and Shit/2nd Generation hydroponics</li>
 	<li IfModActive="thevillageguy.mousetraps.1">Mods and Shit/Mouse traps</li>
-	    <li IfModActive="titaniusrex.biologicalimpactfield">Mods and Shit/Biological Impact Field</li>
+	<!-- <li IfModActive="titaniusrex.biologicalimpactfield">Mods and Shit/Biological Impact Field</li> -->     <!-- TODO Some wierdness in moving buildings. -->
 	<li IfModActive="robtrg.minichemfueltank">Mods and Shit/Mini Chemfuel Tank</li>
-	  
 	<li IfModActive="velcroboy333.elvasatsfurniture">Mods and Shit/Elvasat's Furniture</li>
 	<li IfModActive="xion.moretoolboxes">Mods and Shit/More Toolboxes</li>
 	<li IfModActive="zal.alchemy">Mods and Shit/Zal Alchemy</li>
@@ -998,7 +957,7 @@
 	<li IfModActive="zal.gaussweapons">Mods and Shit/GaussWeapons</li>
 	<li IfModActive="zymex.medicaddons">Mods and Shit/sd medicaddons</li>
 	<li IfModActive="mlie.utilitysupplements">Mods and Shit/Utility Supplements</li>
-	  
+	<li IfModActive="thekiborg.projectsilversquad">Mods and Shit/Project Silver Squad</li>
 	<li IfModActive="emitbreaker.mim.wh40k.core">Mods and Shit/MIM Warhammer 40k/Core</li>
 	<li IfModActive="emitbreaker.mim.wh40k.drugs">Mods and Shit/MIM Warhammer 40k/Drugs and Consumables</li>
 	<li IfModActive="emitbreaker.mim.wh40k.weapons">Mods and Shit/MIM Warhammer 40k/Weapons</li>
@@ -1007,19 +966,6 @@
 	<li IfModActive="emitbreaker.mim.wh40k.as.core">Mods and Shit/MIM Warhammer 40k/Adepta Sororitas Core</li>
 	<li IfModActive="emitbreaker.mim.wh40k.ch.core">Mods and Shit/MIM Warhammer 40k/Chaos Core</li>
 	<li IfModActive="emitbreaker.mim.wh40k.nc.core">Mods and Shit/MIM Warhammer 40k/Necron Core</li>
-	  
-	        <li IfModActive="neronix17.outland.core">Mods and Shit/Outland/Core</li>
-	        <li IfModActive="neronix17.outland.eastbornempire">Mods and Shit/Outland/Eastborn Empire</li>
-	        <li IfModActive="neronix17.outland.furnitureanddecor">Mods and Shit/Outland/Furniture Decor</li>
-	        <li IfModActive="neronix17.outland.motzcoalition">Mods and Shit/Outland/Motz Coalition</li>
-	        <li IfModActive="neronix17.outland.redburnpact">Mods and Shit/Outland/Redburn Pact</li>
-	        <li IfModActive="neronix17.outland.vathunnobles">Mods and Shit/Outland/Vathun Nobles</li>
-	  
-	        <li IfModActive="neronix17.outerrim.core">Mods and Shit/Outer Rim/Core</li>
-	        <li IfModActive="neronix17.outerrim.droiddepot">Mods and Shit/Outer Rim/Droid Depot</li>
-	        <li IfModActive="neronix17.outerrim.furnitureanddecor">Mods and Shit/Outer Rim/Furniture Decor</li>
-	        <li IfModActive="neronix17.outerrim.mandalore">Mods and Shit/Outer Rim/Mandalore</li>
-	  
 	<!-- TODO Complete and test these patches once shuttles get sorted --> <!--
 	<li IfModActive="antediluvian.odyssey.transport.shuttle">Mods and Shit/UFO</li>
 	<li IfModActive="blackmarket420.xenotype.doberkin">Mods and Shit/BM's Races Doberkins</li>
