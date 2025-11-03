@@ -28,6 +28,7 @@
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
+		
 		<match Class="PatchOperationAddModExtension">
 			<success>Always</success>
 			<xpath>Defs/DesignationCategoryDef[defName="Ferny_RhydoniumNetwork"]</xpath>
@@ -37,6 +38,17 @@
 				</li>
 			</value>
 		</match>
+
+		<nomatch Class="PatchOperationAddModExtension">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="Ferny_RhydoniumNetwork"]</xpath>
+			<value>
+				<li Class="BetterArchitect.NestedCategoryExtension">
+					<parentCategory>Ferny_Storage</parentCategory>
+				</li>
+			</value>
+		</nomatch>
+		
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
@@ -107,6 +119,7 @@
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
+		
 		<match Class="PatchOperationAddModExtension">
 			<success>Always</success>
 			<xpath>Defs/DesignationCategoryDef[defName="Ferny_TibannaNetwork"]</xpath>
@@ -116,6 +129,17 @@
 				</li>
 			</value>
 		</match>
+
+		<nomatch Class="PatchOperationAddModExtension">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="Ferny_TibannaNetwork"]</xpath>
+			<value>
+				<li Class="BetterArchitect.NestedCategoryExtension">
+					<parentCategory>Ferny_Storage</parentCategory>
+				</li>
+			</value>
+		</nomatch>
+		
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">

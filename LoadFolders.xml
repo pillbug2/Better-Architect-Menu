@@ -338,7 +338,7 @@
     <li IfModActive="frozensnowfox.frozensnowfoxtweaks">Mods and Shit/FrozenSnowFox Tweaks</li>
     <li IfModActive="dd.unofficial.notfood.mendandrecycle">Mods and Shit/MendAndRecycle</li>
     <li IfModActive="tradingcontrol.tad.rimworld.core">Mods and Shit/Trading Control</li>
-    <!-- <li IfModActive="bambaryla.bor">Mods and Shit/Beyond Our Reach</li> -->    <!-- Borked, rewrite in progress. -->
+    <!-- <li IfModActive="bambaryla.bor">Mods and Shit/Beyond Our Reach</li> -->                                            <!-- Borked, rewrite in progress. -->
     <li IfModActive="mlie.autopsytable">Mods and Shit/AutopsyTable</li>
     <li IfModActive="slimesenpai.autovents">Mods and Shit/AutoVents</li>
     <li IfModActive="princeofpluto.vehicles.trains">Mods and Shit/Trains of the Rim</li>
@@ -853,7 +853,7 @@
 	<li IfModActive="serzhuk.primitivefridge">Mods and Shit/Primitive Fridge</li>
 	<li IfModActive="park.desrtstorm">Mods and Shit/Sundial Desrt Storm</li>
 	<li IfModActive="blackmarket420.pandoraframework">Mods and Shit/Pandora's Framework</li>
-	<li IfModActive="qq.expanded.brickwork">Mods and Shit/Expanded Brickworks</li>
+	<li IfModActive="qq.expanded.brickwork">Mods and Shit/Expanded Brickwork</li>
 	<li IfModActive="rick.fcp.core.tools">Mods and Shit/FCP Tools</li>
 	<li IfModActiveAny="mlie.hunterphagexenotype,joeownage.hunterphageequip">Mods and Shit/Hunterphage/Hunterphage Equipment Only</li>
 	<li IfModActive="mlie.hunterphagexenotype">Mods and Shit/Hunterphage/Hunterphage Xenotype</li>

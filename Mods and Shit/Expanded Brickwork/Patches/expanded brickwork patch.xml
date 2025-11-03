@@ -5,6 +5,14 @@
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EM_SpotGathering"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="EM_Mudpit"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Production</designationCategory>
@@ -32,6 +40,14 @@
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="EM_PitKiln"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EM_Kiln"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_ProcessingProduction</designationCategory>
 		</value>

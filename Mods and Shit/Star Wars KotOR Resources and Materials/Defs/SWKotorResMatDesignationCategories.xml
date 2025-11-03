@@ -1,22 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <DesignationCategoryDef>
-    <defName>Ferny_RhydoniumNetwork</defName>
-    <label>Rhydonium</label>
-    <description>Manage rhydonium.</description>
-    <order>6</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-    <modExtensions>
-	    <!-- Use Ferny_Storage as a fallback category -->
-        <li Class="BetterArchitect.NestedCategoryExtension">
-            <parentCategory>Ferny_Storage</parentCategory>
-        </li>
-    </modExtensions>
-  </DesignationCategoryDef>
+	<DesignationCategoryDef>
+		<defName>Ferny_RhydoniumNetwork</defName>
+		<label>Rhydonium</label>
+		<description>Manage rhydonium.</description>
+		<order>6</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
 
 	<DesignationCategoryDef>
 		<defName>Ferny_TibannaNetwork</defName>
@@ -27,12 +21,6 @@
 			<li>Designator_Cancel</li>
 			<li>Designator_Deconstruct</li>
 		</specialDesignatorClasses>
-		<modExtensions>
-			<!-- Use Ferny_Storage as a fallback category -->
-			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Ferny_Storage</parentCategory>
-			</li>
-		</modExtensions>
 	</DesignationCategoryDef>
 
 </Defs>
